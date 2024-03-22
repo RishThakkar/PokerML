@@ -1,0 +1,75 @@
+Backend: Vivado
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    conv1:
+      Precision:
+        bias: fixed<16,6>
+        result: fixed<16,6>
+        weight: ap_fixed<8,2>
+      Trace: true
+    conv1_input:
+      Precision:
+        result: fixed<16,6>
+      Trace: true
+    conv1_relu:
+      Precision:
+        result: fixed<16,6>
+      Trace: true
+    conv2:
+      Precision:
+        bias: fixed<16,6>
+        result: fixed<16,6>
+        weight: fixed<16,6>
+      Trace: true
+    conv2_relu:
+      Precision:
+        result: fixed<16,6>
+      Trace: true
+    dense1:
+      Precision:
+        bias: fixed<16,6>
+        result: fixed<16,6>
+        weight: fixed<16,6>
+      Trace: true
+    dense1_relu:
+      Precision:
+        result: fixed<16,6>
+      Trace: true
+    flatten:
+      Precision:
+        result: fixed<16,6>
+      Trace: true
+    maxpool1:
+      Precision:
+        result: fixed<16,6>
+      Trace: true
+    maxpool2:
+      Precision:
+        result: fixed<16,6>
+      Trace: true
+    output:
+      Precision:
+        bias: fixed<16,6>
+        result: fixed<16,6>
+        weight: fixed<16,6>
+      Trace: true
+    output_softmax:
+      Precision:
+        result: fixed<16,6>
+      Trace: true
+  Model:
+    BramFactor: 1000000000
+    Precision: fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_parallel
+InputData: null
+KerasModel: !keras_model 'model_1/hls4ml_prj_2/keras_model.h5'
+OutputDir: model_1/hls4ml_prj_2
+OutputPredictions: null
+Part: xcu250-figd2104-2L-e
+ProjectName: myproject
+Stamp: 6CbAcE72
+Version: 1.0.0
