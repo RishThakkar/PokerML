@@ -18,14 +18,14 @@ void myproject(
     static bool loaded_weights = false;
     if (!loaded_weights) {
         // hls-fpga-machine-learning insert load weights
-        nnet::load_weights_from_txt<conv1_weight_t, 108>(w2, "w2.txt");
-        nnet::load_weights_from_txt<conv1_bias_t, 4>(b2, "b2.txt");
-        nnet::load_weights_from_txt<conv2_weight_t, 288>(w5, "w5.txt");
-        nnet::load_weights_from_txt<conv2_bias_t, 8>(b5, "b5.txt");
-        nnet::load_weights_from_txt<dense1_weight_t, 50176>(w9, "w9.txt");
-        nnet::load_weights_from_txt<dense1_bias_t, 32>(b9, "b9.txt");
-        nnet::load_weights_from_txt<output_weight_t, 1664>(w11, "w11.txt");
-        nnet::load_weights_from_txt<output_bias_t, 52>(b11, "b11.txt");
+        nnet::load_weights_from_txt<model_default_t, 108>(w2, "w2.txt");
+        nnet::load_weights_from_txt<model_default_t, 4>(b2, "b2.txt");
+        nnet::load_weights_from_txt<model_default_t, 288>(w5, "w5.txt");
+        nnet::load_weights_from_txt<model_default_t, 8>(b5, "b5.txt");
+        nnet::load_weights_from_txt<model_default_t, 50176>(w9, "w9.txt");
+        nnet::load_weights_from_txt<model_default_t, 32>(b9, "b9.txt");
+        nnet::load_weights_from_txt<model_default_t, 1664>(w11, "w11.txt");
+        nnet::load_weights_from_txt<model_default_t, 52>(b11, "b11.txt");
         loaded_weights = true;
     }
 #endif
