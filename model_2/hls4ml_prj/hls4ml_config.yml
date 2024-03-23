@@ -1,6 +1,77 @@
 Backend: Vivado
 ClockPeriod: 5
 HLSConfig:
+  LayerName:
+    conv1:
+      Precision:
+        bias: fixed<16,6>
+        result: fixed<16,6>
+        weight: fixed<16,6>
+      Trace: false
+    conv1_input:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    conv1_linear:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    conv2:
+      Precision:
+        bias: fixed<16,6>
+        result: fixed<16,6>
+        weight: fixed<16,6>
+      Trace: false
+    conv2_linear:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    dense1:
+      Precision:
+        bias: fixed<16,6>
+        result: fixed<16,6>
+        weight: fixed<16,6>
+      Trace: false
+    dense1_linear:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    flatten:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    maxpool1:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    maxpool2:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    output:
+      Precision:
+        bias: fixed<16,6>
+        result: fixed<16,6>
+        weight: fixed<16,6>
+      Trace: false
+      exp_table_t: ap_fixed<18,8>
+      inv_table_t: ap_fixed<18,4>
+    output_softmax:
+      Precision:
+        result: fixed<16,6>
+      Trace: false
+    relu1:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      Trace: false
+    relu2:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      Trace: false
+    relu3:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      Trace: false
   Model:
     BramFactor: 1000000000
     Precision: fixed<16,6>
@@ -14,5 +85,5 @@ OutputDir: model_2/hls4ml_prj
 OutputPredictions: null
 Part: xcu250-figd2104-2L-e
 ProjectName: myproject
-Stamp: c83fcF03
+Stamp: 7E00149E
 Version: 1.0.0
