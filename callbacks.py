@@ -87,23 +87,23 @@ class all_callbacks:
         )
 
         self.modelbestcheck = ModelCheckpoint(
-            outputDir + "/KERAS_check_best_model.h5", monitor='val_loss', verbose=1, save_best_only=True
+            outputDir + "/check_best_model.h5", monitor='val_loss', verbose=1, save_best_only=True
         )
 
         self.modelbestcheckweights = ModelCheckpoint(
-            outputDir + "/KERAS_check_best_model_weights.h5",
+            outputDir + "/check_best_model_weights.h5",
             monitor='val_loss',
             verbose=1,
             save_best_only=True,
             save_weights_only=True,
         )
 
-        self.modelcheckperiod = ModelCheckpoint(outputDir + "/KERAS_check_model_epoch{epoch:02d}.h5", verbose=1, period=10)
+        self.modelcheckperiod = ModelCheckpoint(outputDir + "/check_model_epoch{epoch:02d}.h5", verbose=1, period=10)
 
-        self.modelcheck = ModelCheckpoint(outputDir + "/KERAS_check_model_last.h5", verbose=1)
+        self.modelcheck = ModelCheckpoint(outputDir + "/check_model_last.h5", verbose=1)
 
         self.modelcheckweights = ModelCheckpoint(
-            outputDir + "/KERAS_check_model_last_weights.h5", verbose=1, save_weights_only=True
+            outputDir + "/check_model_last_weights.h5", verbose=1, save_weights_only=True
         )
 
         self.tb = TensorBoard(log_dir=outputDir + '/logs')
