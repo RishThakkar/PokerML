@@ -5,3 +5,7 @@ help:
 jupyter:
 	jupyter notebook
 .PHONY: jupyter
+
+clean:
+	rm -rf __pycache__
+.PHONY: clean
