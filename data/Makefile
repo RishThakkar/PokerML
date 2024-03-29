@@ -7,7 +7,7 @@ run-augmentation:
 .PHONY: run-augmentation
 
 run-advanced-augmentation:
-	@python advanced_augmentation.py original augmented_WIP
+	@python advanced_augmentation.py original/jpg_v02 augmented/jpg_v02
 .PHONY: run-advanced-augmentation
 
 count-original:
