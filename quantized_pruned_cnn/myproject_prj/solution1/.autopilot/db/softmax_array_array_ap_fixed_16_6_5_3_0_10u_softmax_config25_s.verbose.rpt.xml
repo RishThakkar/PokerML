@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s'" level="0">
-<item name = "Date">Wed Apr  3 17:48:09 2024
+<item name = "Date">Wed Apr  3 21:54:26 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.280 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.410 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">22, 22, 0.110 us, 0.110 us, 22, 22, none</column>
+<column name="">38, 38, 0.190 us, 0.190 us, 38, 38, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_fu_58">softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s, 22, 22, 0.110 us, 0.110 us, 5, 5, function</column>
+<column name="grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_fu_58">softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s, 38, 38, 0.190 us, 0.190 us, 10, 10, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,19 +50,19 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 6, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">2, 10, 2744, 2932, -</column>
+<column name="Instance">2, 1, 1325, 2202, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 482, -</column>
-<column name="Register">-, -, 24, -, -</column>
+<column name="Multiplexer">-, -, -, 546, -</column>
+<column name="Register">-, -, 40, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">~0, 4, 2, 6, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, 1, 5, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_fu_58">softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s, 2, 10, 2744, 2932, 0</column>
+<column name="grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_fu_58">softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s, 2, 1, 1325, 2202, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -81,12 +81,12 @@
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state1_ignore_call20">or, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state23">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state39">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">113, 24, 1, 24</column>
+<column name="ap_NS_fsm">177, 40, 1, 40</column>
 <column name="ap_done">9, 2, 1, 2</column>
 <column name="data_V_data_0_V_blk_n">9, 2, 1, 2</column>
 <column name="data_V_data_0_V_read">9, 2, 1, 2</column>
@@ -132,7 +132,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">23, 0, 23, 0</column>
+<column name="ap_CS_fsm">39, 0, 39, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 </table>
 </item>

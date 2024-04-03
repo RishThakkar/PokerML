@@ -11,7 +11,7 @@
 <TopModelName>dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0</TopModelName>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
+<TargetInitiationInterval>128</TargetInitiationInterval>
 </UserAssignments>
 
 <PerformanceEstimates>
@@ -28,19 +28,19 @@
 <Best-caseRealTimeLatency>35.000 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>35.000 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>35.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
+<PipelineInitiationInterval>8</PipelineInitiationInterval>
 <PipelineDepth>8</PipelineDepth>
-<Interval-min>1</Interval-min>
-<Interval-max>1</Interval-max>
+<Interval-min>8</Interval-min>
+<Interval-max>8</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
+<DSP48E>12</DSP48E>
+<FF>24370</FF>
+<LUT>41153</LUT>
 <BRAM_18K>0</BRAM_18K>
-<DSP48E>25</DSP48E>
-<FF>35340</FF>
-<LUT>44363</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -72,6 +72,50 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>dense_latency.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>

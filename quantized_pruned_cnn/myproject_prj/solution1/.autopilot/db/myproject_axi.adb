@@ -11327,15 +11327,15 @@
             </item>
             <item>
               <first>DSP48E</first>
-              <second>441</second>
+              <second>50</second>
             </item>
             <item>
               <first>FF</first>
-              <second>201470</second>
+              <second>138489</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>240959</second>
+              <second>217907</second>
             </item>
           </second>
         </item>

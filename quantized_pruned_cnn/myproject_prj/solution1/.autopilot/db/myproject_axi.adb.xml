@@ -2631,7 +2631,7 @@ codeRepl:62  ret void
 </StgValue>
 </port>
 <port id="561" name="exp_table5" dir="0" iftype="1">
-<core>ROM_nP</core><StgValue><ssdm name="exp_table5"/><MemPortTyVec>1 1 </MemPortTyVec>
+<core>ROM_nP</core><StgValue><ssdm name="exp_table5"/><MemPortTyVec>1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="562" name="invert_table6" dir="0" iftype="1">

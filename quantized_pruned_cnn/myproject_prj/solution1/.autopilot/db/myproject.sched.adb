@@ -41728,8 +41728,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>1914</mMinLatency>
-			<mMaxLatency>1914</mMaxLatency>
+			<mMinLatency>14674</mMinLatency>
+			<mMaxLatency>14674</mMaxLatency>
 			<mIsDfPipe>1</mIsDfPipe>
 			<mDfPipe class_id="23" tracking_level="1" version="0" object_id="_2574">
 				<port_list class_id="24" tracking_level="0" version="0">
@@ -69259,55 +69259,55 @@
 			<first>2011</first>
 			<second>
 				<first>20</first>
-				<second>4</second>
+				<second>45</second>
 			</second>
 		</item>
 		<item>
 			<first>2012</first>
 			<second>
-				<first>25</first>
+				<first>66</first>
 				<second>2</second>
 			</second>
 		</item>
 		<item>
 			<first>2013</first>
 			<second>
-				<first>28</first>
+				<first>69</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>2014</first>
 			<second>
-				<first>30</first>
-				<second>4</second>
+				<first>71</first>
+				<second>67</second>
 			</second>
 		</item>
 		<item>
 			<first>2015</first>
 			<second>
-				<first>35</first>
+				<first>139</first>
 				<second>2</second>
 			</second>
 		</item>
 		<item>
 			<first>2016</first>
 			<second>
-				<first>38</first>
+				<first>142</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>2017</first>
 			<second>
-				<first>40</first>
+				<first>144</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>2018</first>
 			<second>
-				<first>41</first>
+				<first>145</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -69319,7 +69319,7 @@
 			<first>2019</first>
 			<second class_id="41" tracking_level="0" version="0">
 				<first>0</first>
-				<second>41</second>
+				<second>145</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

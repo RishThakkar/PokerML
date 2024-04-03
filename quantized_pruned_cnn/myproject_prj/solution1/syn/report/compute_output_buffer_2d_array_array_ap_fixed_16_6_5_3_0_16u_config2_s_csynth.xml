@@ -11,36 +11,36 @@
 <TopModelName>compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config2_s</TopModelName>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
+<TargetInitiationInterval>128</TargetInitiationInterval>
 </UserAssignments>
 
 <PerformanceEstimates>
 <PipelineType>function</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>5.019</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.535</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>7</Best-caseLatency>
-<Average-caseLatency>7</Average-caseLatency>
-<Worst-caseLatency>7</Worst-caseLatency>
-<Best-caseRealTimeLatency>35.133 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>35.133 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>35.133 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>8</PipelineDepth>
-<Interval-min>1</Interval-min>
-<Interval-max>1</Interval-max>
+<Best-caseLatency>12</Best-caseLatency>
+<Average-caseLatency>12</Average-caseLatency>
+<Worst-caseLatency>12</Worst-caseLatency>
+<Best-caseRealTimeLatency>60.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>60.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>60.000 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>13</PipelineInitiationInterval>
+<PipelineDepth>13</PipelineDepth>
+<Interval-min>13</Interval-min>
+<Interval-max>13</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<DSP48E>23</DSP48E>
-<FF>8664</FF>
-<LUT>6004</LUT>
+<DSP48E>3</DSP48E>
+<FF>6136</FF>
+<LUT>6045</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -116,17 +116,6 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ce</name>
-<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,16u&gt;,config2&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
@@ -304,6 +293,50 @@
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ce</name>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,16u&gt;,config2&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>in_elem_data_0_V_read</name>
+<Object>in_elem_data_0_V_read</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>in_elem_data_1_V_read</name>
+<Object>in_elem_data_1_V_read</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>in_elem_data_2_V_read</name>
+<Object>in_elem_data_2_V_read</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -833,39 +866,6 @@
 <Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>in_elem_data_0_V_read</name>
-<Object>in_elem_data_0_V_read</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>in_elem_data_1_V_read</name>
-<Object>in_elem_data_1_V_read</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>in_elem_data_2_V_read</name>
-<Object>in_elem_data_2_V_read</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>
 

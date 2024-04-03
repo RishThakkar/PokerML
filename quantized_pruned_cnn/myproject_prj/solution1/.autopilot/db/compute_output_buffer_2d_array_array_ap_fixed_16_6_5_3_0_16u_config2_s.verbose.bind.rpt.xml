@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config2_s'" level="0">
-<item name = "Date">Wed Apr  3 17:14:37 2024
+<item name = "Date">Wed Apr  3 21:25:01 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 5.019 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.535 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">7, 7, 35.133 ns, 35.133 ns, 1, 1, function</column>
+<column name="">12, 12, 60.000 ns, 60.000 ns, 13, 13, function</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_203">dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1, 4, 4, 20.076 ns, 20.076 ns, 1, 1, function</column>
+<column name="grp_dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1_fu_203">dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1, 10, 10, 50.000 ns, 50.000 ns, 11, 11, function</column>
 <column name="call_ret1_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_234">shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
 </table>
 </item>

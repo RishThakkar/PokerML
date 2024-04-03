@@ -288,7 +288,7 @@ architecture behav of Loop_2_proc is
 
 
 begin
-    myproject_axi_mux_104_16_1_1_U2968 : component myproject_axi_mux_104_16_1_1
+    myproject_axi_mux_104_16_1_1_U2569 : component myproject_axi_mux_104_16_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -318,7 +318,7 @@ begin
         din10 => j3_0_i_reg_194,
         dout => tmp_V_3_fu_228_p12);
 
-    myproject_axi_lshr_32ns_32ns_32_2_1_U2969 : component myproject_axi_lshr_32ns_32ns_32_2_1
+    myproject_axi_lshr_32ns_32ns_32_2_1_U2570 : component myproject_axi_lshr_32ns_32ns_32_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -334,7 +334,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_437_p2);
 
-    myproject_axi_shl_64ns_32ns_64_2_1_U2970 : component myproject_axi_shl_64ns_32ns_64_2_1
+    myproject_axi_shl_64ns_32ns_64_2_1_U2571 : component myproject_axi_shl_64ns_32ns_64_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,

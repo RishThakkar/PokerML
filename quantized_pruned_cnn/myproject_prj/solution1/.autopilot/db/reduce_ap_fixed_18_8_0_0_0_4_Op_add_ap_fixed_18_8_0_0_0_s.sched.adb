@@ -6239,7 +6239,7 @@
 				<item_version>0</item_version>
 				<item>88</item>
 			</basic_blocks>
-			<mII>1</mII>
+			<mII>3</mII>
 			<mDepth>3</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
@@ -6814,7 +6814,7 @@
 			</nodes>
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
-			<interval>1</interval>
+			<interval>3</interval>
 			<pipe_depth>3</pipe_depth>
 		</item>
 	</regions>

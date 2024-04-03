@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s'" level="0">
-<item name = "Date">Wed Apr  3 17:47:42 2024
+<item name = "Date">Wed Apr  3 21:54:01 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="">2, 2, 10.000 ns, 10.000 ns, 3, 3, function</column>
 </table>
 </item>
 <item name = "Detail">
@@ -51,8 +51,8 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, 0, 220, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 9, -</column>
-<column name="Register">-, -, 302, -, -</column>
+<column name="Multiplexer">-, -, -, 21, -</column>
+<column name="Register">-, -, 111, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
 </table>
@@ -61,10 +61,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="myproject_axi_mux_104_18_1_0_U2354">myproject_axi_mux_104_18_1_0, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_104_18_1_0_U2355">myproject_axi_mux_104_18_1_0, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_104_18_1_0_U2356">myproject_axi_mux_104_18_1_0, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_104_18_1_0_U2357">myproject_axi_mux_104_18_1_0, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_104_18_1_1_U1964">myproject_axi_mux_104_18_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_104_18_1_1_U1965">myproject_axi_mux_104_18_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_104_18_1_1_U1966">myproject_axi_mux_104_18_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_104_18_1_1_U1967">myproject_axi_mux_104_18_1_1, 0, 0, 0, 55, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -96,11 +96,11 @@
 <column name="or_ln340_12_fu_352_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln340_13_fu_438_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln340_fu_524_p2">or, 0, 0, 2, 1, 1</column>
+<column name="ap_return">select, 0, 0, 18, 1, 18</column>
 <column name="p_Val2_38_fu_374_p3">select, 0, 0, 18, 1, 18</column>
 <column name="p_Val2_39_fu_460_p3">select, 0, 0, 18, 1, 18</column>
 <column name="select_ln340_128_fu_358_p3">select, 0, 0, 18, 1, 17</column>
 <column name="select_ln340_130_fu_444_p3">select, 0, 0, 18, 1, 17</column>
-<column name="select_ln340_132_fu_546_p3">select, 0, 0, 18, 1, 18</column>
 <column name="select_ln340_fu_530_p3">select, 0, 0, 18, 1, 17</column>
 <column name="select_ln388_12_fu_366_p3">select, 0, 0, 19, 1, 19</column>
 <column name="select_ln388_13_fu_452_p3">select, 0, 0, 19, 1, 19</column>
@@ -118,30 +118,18 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_return">9, 2, 18, 36</column>
+<column name="ap_NS_fsm">21, 4, 1, 4</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_ce_reg">1, 0, 1, 0</column>
-<column name="ap_return_int_reg">18, 0, 18, 0</column>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
 <column name="p_Val2_2_reg_572">18, 0, 18, 0</column>
 <column name="p_Val2_32_reg_560">18, 0, 18, 0</column>
 <column name="p_Val2_35_reg_566">18, 0, 18, 0</column>
 <column name="p_Val2_38_reg_578">18, 0, 18, 0</column>
 <column name="p_Val2_39_reg_584">18, 0, 18, 0</column>
 <column name="p_Val2_s_reg_554">18, 0, 18, 0</column>
-<column name="x_0_V_int_reg">17, 0, 17, 0</column>
-<column name="x_1_V_int_reg">17, 0, 17, 0</column>
-<column name="x_2_V_int_reg">17, 0, 17, 0</column>
-<column name="x_3_V_int_reg">17, 0, 17, 0</column>
-<column name="x_4_V_int_reg">17, 0, 17, 0</column>
-<column name="x_5_V_int_reg">17, 0, 17, 0</column>
-<column name="x_6_V_int_reg">17, 0, 17, 0</column>
-<column name="x_7_V_int_reg">17, 0, 17, 0</column>
-<column name="x_8_V_int_reg">17, 0, 17, 0</column>
-<column name="x_9_V_int_reg">17, 0, 17, 0</column>
-<column name="x_V_offset_int_reg">5, 0, 5, 0</column>
 </table>
 </item>
 </section>
@@ -153,6 +141,10 @@
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
 <column name="ap_clk">in, 1, ap_ctrl_hs, reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;, return value</column>
 <column name="ap_rst">in, 1, ap_ctrl_hs, reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;, return value</column>
 <column name="ap_return">out, 18, ap_ctrl_hs, reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;, return value</column>
 <column name="ap_ce">in, 1, ap_ctrl_hs, reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;, return value</column>
 <column name="x_0_V">in, 17, ap_none, x_0_V, pointer</column>

@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 2044
-set name myproject_axi_mul_6ns_11s_17_2_1
+set id 1819
+set name myproject_axi_mul_6ns_12s_17_2_1
 set corename simcore_mul
 set op mul
 set stage_num 2
@@ -13,7 +13,7 @@ set reset_width 1
 set reset_signed 0
 set in0_width 6
 set in0_signed 0
-set in1_width 11
+set in1_width 12
 set in1_signed 1
 set ce_width 1
 set ce_signed 0
@@ -85,92 +85,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 2046
-set name myproject_axi_mul_6ns_11ns_16_2_1
-set corename simcore_mul
-set op mul
-set stage_num 2
-set max_latency -1
-set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 6
-set in0_signed 0
-set in1_width 11
-set in1_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 16
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
-eval "ap_gen_simcore_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mul
-set corename MulnS
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul] == "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, check your platform lib"
-}
-}
-
-
-set id 2053
+set id 1823
 set name myproject_axi_mul_6ns_12s_18_2_1
 set corename simcore_mul
 set op mul
@@ -255,91 +170,6 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 }
 
 
-set id 2062
-set name myproject_axi_mul_6ns_11ns_15_2_1
-set corename simcore_mul
-set op mul
-set stage_num 2
-set max_latency -1
-set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 6
-set in0_signed 0
-set in1_width 11
-set in1_signed 0
-set ce_width 1
-set ce_signed 0
-set out_width 15
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
-eval "ap_gen_simcore_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mul
-set corename MulnS
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul] == "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, check your platform lib"
-}
-}
-
-
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -350,7 +180,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2216 \
+    id 1826 \
     name data_0_V_read \
     type other \
     dir I \
@@ -365,7 +195,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2217 \
+    id 1827 \
     name data_1_V_read \
     type other \
     dir I \
@@ -380,7 +210,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2218 \
+    id 1828 \
     name data_2_V_read \
     type other \
     dir I \
@@ -395,7 +225,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2219 \
+    id 1829 \
     name data_3_V_read \
     type other \
     dir I \
@@ -410,7 +240,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2220 \
+    id 1830 \
     name data_4_V_read \
     type other \
     dir I \
@@ -425,7 +255,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2221 \
+    id 1831 \
     name data_5_V_read \
     type other \
     dir I \
@@ -440,7 +270,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2222 \
+    id 1832 \
     name data_6_V_read \
     type other \
     dir I \
@@ -455,7 +285,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2223 \
+    id 1833 \
     name data_7_V_read \
     type other \
     dir I \
@@ -470,7 +300,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2224 \
+    id 1834 \
     name data_8_V_read \
     type other \
     dir I \
@@ -485,7 +315,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2225 \
+    id 1835 \
     name data_9_V_read \
     type other \
     dir I \
@@ -500,7 +330,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2226 \
+    id 1836 \
     name data_10_V_read \
     type other \
     dir I \
@@ -515,7 +345,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2227 \
+    id 1837 \
     name data_11_V_read \
     type other \
     dir I \
@@ -530,7 +360,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2228 \
+    id 1838 \
     name data_12_V_read \
     type other \
     dir I \
@@ -545,7 +375,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2229 \
+    id 1839 \
     name data_13_V_read \
     type other \
     dir I \
@@ -560,7 +390,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2230 \
+    id 1840 \
     name data_14_V_read \
     type other \
     dir I \
@@ -575,7 +405,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2231 \
+    id 1841 \
     name data_15_V_read \
     type other \
     dir I \
@@ -590,7 +420,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2232 \
+    id 1842 \
     name data_16_V_read \
     type other \
     dir I \
@@ -605,7 +435,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2233 \
+    id 1843 \
     name data_17_V_read \
     type other \
     dir I \
@@ -620,7 +450,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2234 \
+    id 1844 \
     name data_18_V_read \
     type other \
     dir I \
@@ -635,7 +465,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2235 \
+    id 1845 \
     name data_19_V_read \
     type other \
     dir I \
@@ -650,7 +480,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2236 \
+    id 1846 \
     name data_20_V_read \
     type other \
     dir I \
@@ -665,7 +495,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2237 \
+    id 1847 \
     name data_21_V_read \
     type other \
     dir I \
@@ -680,7 +510,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2238 \
+    id 1848 \
     name data_22_V_read \
     type other \
     dir I \
@@ -695,7 +525,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2239 \
+    id 1849 \
     name data_23_V_read \
     type other \
     dir I \
@@ -710,7 +540,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2240 \
+    id 1850 \
     name data_24_V_read \
     type other \
     dir I \
@@ -725,7 +555,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2241 \
+    id 1851 \
     name data_25_V_read \
     type other \
     dir I \
@@ -740,7 +570,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2242 \
+    id 1852 \
     name data_26_V_read \
     type other \
     dir I \
@@ -755,7 +585,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2243 \
+    id 1853 \
     name data_27_V_read \
     type other \
     dir I \
@@ -770,7 +600,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2244 \
+    id 1854 \
     name data_28_V_read \
     type other \
     dir I \
@@ -785,7 +615,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2245 \
+    id 1855 \
     name data_29_V_read \
     type other \
     dir I \
@@ -800,7 +630,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2246 \
+    id 1856 \
     name data_30_V_read \
     type other \
     dir I \
@@ -815,7 +645,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2247 \
+    id 1857 \
     name data_31_V_read \
     type other \
     dir I \
@@ -830,7 +660,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2248 \
+    id 1858 \
     name data_32_V_read \
     type other \
     dir I \
@@ -845,7 +675,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2249 \
+    id 1859 \
     name data_33_V_read \
     type other \
     dir I \
@@ -860,7 +690,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2250 \
+    id 1860 \
     name data_34_V_read \
     type other \
     dir I \
@@ -875,7 +705,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2251 \
+    id 1861 \
     name data_35_V_read \
     type other \
     dir I \
@@ -890,7 +720,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2252 \
+    id 1862 \
     name data_36_V_read \
     type other \
     dir I \
@@ -905,7 +735,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2253 \
+    id 1863 \
     name data_37_V_read \
     type other \
     dir I \
@@ -920,7 +750,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2254 \
+    id 1864 \
     name data_38_V_read \
     type other \
     dir I \
@@ -935,7 +765,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2255 \
+    id 1865 \
     name data_39_V_read \
     type other \
     dir I \
@@ -950,7 +780,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2256 \
+    id 1866 \
     name data_40_V_read \
     type other \
     dir I \
@@ -965,7 +795,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2257 \
+    id 1867 \
     name data_41_V_read \
     type other \
     dir I \
@@ -980,7 +810,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2258 \
+    id 1868 \
     name data_42_V_read \
     type other \
     dir I \
@@ -995,7 +825,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2259 \
+    id 1869 \
     name data_43_V_read \
     type other \
     dir I \
@@ -1010,7 +840,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2260 \
+    id 1870 \
     name data_44_V_read \
     type other \
     dir I \
@@ -1025,7 +855,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2261 \
+    id 1871 \
     name data_45_V_read \
     type other \
     dir I \
@@ -1040,7 +870,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2262 \
+    id 1872 \
     name data_46_V_read \
     type other \
     dir I \
@@ -1055,7 +885,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2263 \
+    id 1873 \
     name data_47_V_read \
     type other \
     dir I \
@@ -1070,7 +900,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2264 \
+    id 1874 \
     name data_48_V_read \
     type other \
     dir I \
@@ -1085,7 +915,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2265 \
+    id 1875 \
     name data_49_V_read \
     type other \
     dir I \
@@ -1100,7 +930,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2266 \
+    id 1876 \
     name data_50_V_read \
     type other \
     dir I \
@@ -1115,7 +945,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2267 \
+    id 1877 \
     name data_51_V_read \
     type other \
     dir I \
@@ -1130,7 +960,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2268 \
+    id 1878 \
     name data_52_V_read \
     type other \
     dir I \
@@ -1145,7 +975,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2269 \
+    id 1879 \
     name data_53_V_read \
     type other \
     dir I \
@@ -1160,7 +990,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2270 \
+    id 1880 \
     name data_54_V_read \
     type other \
     dir I \
@@ -1175,7 +1005,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2271 \
+    id 1881 \
     name data_55_V_read \
     type other \
     dir I \
@@ -1190,7 +1020,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2272 \
+    id 1882 \
     name data_56_V_read \
     type other \
     dir I \
@@ -1205,7 +1035,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2273 \
+    id 1883 \
     name data_57_V_read \
     type other \
     dir I \
@@ -1220,7 +1050,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2274 \
+    id 1884 \
     name data_58_V_read \
     type other \
     dir I \
@@ -1235,7 +1065,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2275 \
+    id 1885 \
     name data_59_V_read \
     type other \
     dir I \
@@ -1250,7 +1080,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2276 \
+    id 1886 \
     name data_60_V_read \
     type other \
     dir I \
@@ -1265,7 +1095,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2277 \
+    id 1887 \
     name data_61_V_read \
     type other \
     dir I \
@@ -1280,7 +1110,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2278 \
+    id 1888 \
     name data_62_V_read \
     type other \
     dir I \
@@ -1295,7 +1125,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2279 \
+    id 1889 \
     name data_63_V_read \
     type other \
     dir I \
@@ -1311,6 +1141,20 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id -1 \
+    name ap_ctrl \
+    type ap_ctrl \
+    reset_level 1 \
+    sync_rst true \
+    corename ap_ctrl \
+    op interface \
+    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id -2 \
     name ap_return \
     type ap_return \
     reset_level 1 \
@@ -1328,7 +1172,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -2 \
+    id -3 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -1348,7 +1192,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -3 \
+    id -4 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \

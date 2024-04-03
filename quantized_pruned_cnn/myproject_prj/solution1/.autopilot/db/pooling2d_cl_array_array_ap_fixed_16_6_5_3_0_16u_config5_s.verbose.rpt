@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config5_s'
 ================================================================
-* Date:           Wed Apr  3 17:36:36 2024
+* Date:           Wed Apr  3 21:43:56 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
@@ -73,22 +73,22 @@
     +----------------------------------+-----------------------------+---------+-------+---+----+-----+
     |             Instance             |            Module           | BRAM_18K| DSP48E| FF| LUT| URAM|
     +----------------------------------+-----------------------------+---------+-------+---+----+-----+
-    |myproject_axi_mux_42_16_1_1_U156  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U157  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U158  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U159  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U160  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U161  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U162  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U163  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U164  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U165  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U166  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U167  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U168  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U169  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U170  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
-    |myproject_axi_mux_42_16_1_1_U171  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U134  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U135  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U136  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U137  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U138  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U139  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U140  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U141  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U142  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U143  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U144  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U145  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U146  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U147  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U148  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
+    |myproject_axi_mux_42_16_1_1_U149  |myproject_axi_mux_42_16_1_1  |        0|      0|  0|  55|    0|
     +----------------------------------+-----------------------------+---------+-------+---+----+-----+
     |Total                             |                             |        0|      0|  0| 880|    0|
     +----------------------------------+-----------------------------+---------+-------+---+----+-----+

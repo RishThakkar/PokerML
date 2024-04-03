@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myproject_axi'
 ================================================================
-* Date:           Wed Apr  3 17:35:48 2024
+* Date:           Wed Apr  3 21:43:16 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 5.00 ns | 5.444 ns |   0.62 ns  |
+    |ap_clk  | 5.00 ns | 5.554 ns |   0.62 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline |
     |   min   |   max   |    min   |    max   |  min  |  max  |   Type   |
     +---------+---------+----------+----------+-------+-------+----------+
-    |    29697|    29697| 0.162 ms | 0.162 ms |  29698|  29698| dataflow |
+    |    29697|    29697| 0.165 ms | 0.165 ms |  29698|  29698| dataflow |
     +---------+---------+----------+----------+-------+-------+----------+
 
     + Detail: 
@@ -38,9 +38,9 @@
         |                                                  |                                 |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline |
         |                     Instance                     |              Module             |   min   |   max   |    min    |    max    |  min  |  max  |   Type   |
         +--------------------------------------------------+---------------------------------+---------+---------+-----------+-----------+-------+-------+----------+
-        |grp_myproject_fu_1120                             |myproject                        |     1914|     1914| 10.419 us | 10.419 us |   1805|   1805| dataflow |
-        |grp_Loop_1_proc622_fu_2085                        |Loop_1_proc622                   |    29697|    29697|  0.162 ms |  0.162 ms |  29697|  29697|   none   |
-        |grp_Loop_2_proc_fu_2096                           |Loop_2_proc                      |      111|      111|  0.604 us |  0.604 us |    111|    111|   none   |
+        |grp_myproject_fu_1120                             |myproject                        |    14674|    14674| 81.502 us | 81.502 us |  14339|  14339| dataflow |
+        |grp_Loop_1_proc622_fu_2085                        |Loop_1_proc622                   |    29697|    29697|  0.165 ms |  0.165 ms |  29697|  29697|   none   |
+        |grp_Loop_2_proc_fu_2096                           |Loop_2_proc                      |      111|      111|  0.617 us |  0.617 us |    111|    111|   none   |
         |call_ln0_Block_myproject_axi_exit50_proc_fu_2115  |Block_myproject_axi_exit50_proc  |        0|        0|    0 ns   |    0 ns   |      0|      0|   none   |
         +--------------------------------------------------+---------------------------------+---------+---------+-----------+-----------+-------+-------+----------+
 
@@ -663,7 +663,7 @@ Port [ line_buffer_Array_V_5_0_20]:  wired=0; compound=1; hidden=1; nouse=1; glo
 Port [ line_buffer_Array_V_5_0_21]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[2]; IO mode=ap_memory:ce=0
 Port [ line_buffer_Array_V_5_0_22]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[2]; IO mode=ap_memory:ce=0
 Port [ line_buffer_Array_V_5_0_23]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[2]; IO mode=ap_memory:ce=0
-Port [ exp_table5]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ exp_table5]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ invert_table6]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
@@ -5154,7 +5154,7 @@ ret_ln36                 (ret                 ) [ 0000000000]
 <pin id="953" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="exp_table5"/><MemPortTyVec>1 1 </MemPortTyVec>
+<StgValue><ssdm name="exp_table5"/><MemPortTyVec>1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -8436,12 +8436,12 @@ ret_ln36                 (ret                 ) [ 0000000000]
 |----------|--------------------------------------------------|---------|---------|---------|---------|
 | Operation|                  Functional Unit                 |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|--------------------------------------------------|---------|---------|---------|---------|
-|          |               grp_myproject_fu_1120              |   441   | 971.745 |  158033 |  197526 |
+|          |               grp_myproject_fu_1120              |    45   | 333.664 |  128185 |  176981 |
 |   call   |            grp_Loop_1_proc622_fu_2085            |    0    |  5.307  |   858   |   1205  |
 |          |              grp_Loop_2_proc_fu_2096             |    0    |  7.076  |   994   |   934   |
 |          | call_ln0_Block_myproject_axi_exit50_proc_fu_2115 |    0    |    0    |    0    |    0    |
 |----------|--------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                  |   441   | 984.128 |  159885 |  199665 |
+|   Total  |                                                  |    45   | 346.047 |  130037 |  179120 |
 |----------|--------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -8625,10 +8625,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    -   |   441  |   984  | 159885 | 199665 |
+|  Function |    -   |   45   |   346  | 130037 | 179120 |
 |   Memory  |    2   |    -   |    -   |  8064  |  4032  |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |   369  |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |    2   |   441  |   984  | 168318 | 203697 |
+|   Total   |    2   |   45   |   346  | 138470 | 183152 |
 +-----------+--------+--------+--------+--------+--------+

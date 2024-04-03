@@ -143,21 +143,18 @@
       "impl\/vhdl\/myproject_axi_ashr_54ns_32ns_54_2_1.vhd",
       "impl\/vhdl\/myproject_axi_fpext_32ns_64_3_1.vhd",
       "impl\/vhdl\/myproject_axi_lshr_32ns_32ns_32_2_1.vhd",
-      "impl\/vhdl\/myproject_axi_mul_6ns_11ns_15_2_1.vhd",
-      "impl\/vhdl\/myproject_axi_mul_6ns_11ns_16_2_1.vhd",
-      "impl\/vhdl\/myproject_axi_mul_6ns_11s_17_2_1.vhd",
+      "impl\/vhdl\/myproject_axi_mul_6ns_12s_17_2_1.vhd",
       "impl\/vhdl\/myproject_axi_mul_6ns_12s_18_2_1.vhd",
-      "impl\/vhdl\/myproject_axi_mul_16s_5ns_21_2_0.vhd",
-      "impl\/vhdl\/myproject_axi_mul_16s_5s_21_2_0.vhd",
-      "impl\/vhdl\/myproject_axi_mul_16s_6ns_21_2_0.vhd",
-      "impl\/vhdl\/myproject_axi_mul_16s_6s_21_2_0.vhd",
-      "impl\/vhdl\/myproject_axi_mul_16s_12ns_26_2_1.vhd",
+      "impl\/vhdl\/myproject_axi_mul_16s_5ns_21_2_1.vhd",
+      "impl\/vhdl\/myproject_axi_mul_16s_5s_21_2_1.vhd",
+      "impl\/vhdl\/myproject_axi_mul_16s_6s_21_2_1.vhd",
+      "impl\/vhdl\/myproject_axi_mul_16s_7s_21_2_1.vhd",
       "impl\/vhdl\/myproject_axi_mul_16s_13ns_26_2_1.vhd",
       "impl\/vhdl\/myproject_axi_mul_16s_14ns_26_2_1.vhd",
       "impl\/vhdl\/myproject_axi_mul_17ns_18s_26_2_1.vhd",
       "impl\/vhdl\/myproject_axi_mux_42_16_1_1.vhd",
       "impl\/vhdl\/myproject_axi_mux_104_16_1_1.vhd",
-      "impl\/vhdl\/myproject_axi_mux_104_18_1_0.vhd",
+      "impl\/vhdl\/myproject_axi_mux_104_18_1_1.vhd",
       "impl\/vhdl\/myproject_axi_shl_64ns_32ns_64_2_1.vhd",
       "impl\/vhdl\/normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_s.vhd",
       "impl\/vhdl\/normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_s.vhd",
@@ -242,21 +239,18 @@
       "impl\/verilog\/myproject_axi_ashr_54ns_32ns_54_2_1.v",
       "impl\/verilog\/myproject_axi_fpext_32ns_64_3_1.v",
       "impl\/verilog\/myproject_axi_lshr_32ns_32ns_32_2_1.v",
-      "impl\/verilog\/myproject_axi_mul_6ns_11ns_15_2_1.v",
-      "impl\/verilog\/myproject_axi_mul_6ns_11ns_16_2_1.v",
-      "impl\/verilog\/myproject_axi_mul_6ns_11s_17_2_1.v",
+      "impl\/verilog\/myproject_axi_mul_6ns_12s_17_2_1.v",
       "impl\/verilog\/myproject_axi_mul_6ns_12s_18_2_1.v",
-      "impl\/verilog\/myproject_axi_mul_16s_5ns_21_2_0.v",
-      "impl\/verilog\/myproject_axi_mul_16s_5s_21_2_0.v",
-      "impl\/verilog\/myproject_axi_mul_16s_6ns_21_2_0.v",
-      "impl\/verilog\/myproject_axi_mul_16s_6s_21_2_0.v",
-      "impl\/verilog\/myproject_axi_mul_16s_12ns_26_2_1.v",
+      "impl\/verilog\/myproject_axi_mul_16s_5ns_21_2_1.v",
+      "impl\/verilog\/myproject_axi_mul_16s_5s_21_2_1.v",
+      "impl\/verilog\/myproject_axi_mul_16s_6s_21_2_1.v",
+      "impl\/verilog\/myproject_axi_mul_16s_7s_21_2_1.v",
       "impl\/verilog\/myproject_axi_mul_16s_13ns_26_2_1.v",
       "impl\/verilog\/myproject_axi_mul_16s_14ns_26_2_1.v",
       "impl\/verilog\/myproject_axi_mul_17ns_18s_26_2_1.v",
       "impl\/verilog\/myproject_axi_mux_42_16_1_1.v",
       "impl\/verilog\/myproject_axi_mux_104_16_1_1.v",
-      "impl\/verilog\/myproject_axi_mux_104_18_1_0.v",
+      "impl\/verilog\/myproject_axi_mux_104_18_1_1.v",
       "impl\/verilog\/myproject_axi_shl_64ns_32ns_64_2_1.v",
       "impl\/verilog\/normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_s.v",
       "impl\/verilog\/normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_s.v",
@@ -446,7 +440,7 @@
               "InstanceName": "conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_24u_config10_U0",
               "Instances": [{
                   "ModuleName": "compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_24u_config10_s",
-                  "InstanceName": "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_24u_config10_s_fu_435",
+                  "InstanceName": "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_24u_config10_s_fu_437",
                   "Instances": [
                     {
                       "ModuleName": "dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
@@ -464,7 +458,7 @@
               "InstanceName": "conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_config6_U0",
               "Instances": [{
                   "ModuleName": "compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config6_s",
-                  "InstanceName": "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config6_s_fu_419",
+                  "InstanceName": "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config6_s_fu_421",
                   "Instances": [
                     {
                       "ModuleName": "dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0",
@@ -478,14 +472,6 @@
                 }]
             },
             {
-              "ModuleName": "dense_array_ap_ufixed_64u_array_ap_fixed_16_6_5_3_0_10u_config23_s",
-              "InstanceName": "dense_array_ap_ufixed_64u_array_ap_fixed_16_6_5_3_0_10u_config23_U0",
-              "Instances": [{
-                  "ModuleName": "dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s",
-                  "InstanceName": "grp_dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s_fu_338"
-                }]
-            },
-            {
               "ModuleName": "dense_array_ap_ufixed_42u_array_ap_fixed_16_6_5_3_0_64u_config19_s",
               "InstanceName": "dense_array_ap_ufixed_42u_array_ap_fixed_16_6_5_3_0_64u_config19_U0",
               "Instances": [{
@@ -494,11 +480,19 @@
                 }]
             },
             {
+              "ModuleName": "dense_array_ap_ufixed_64u_array_ap_fixed_16_6_5_3_0_10u_config23_s",
+              "InstanceName": "dense_array_ap_ufixed_64u_array_ap_fixed_16_6_5_3_0_10u_config23_U0",
+              "Instances": [{
+                  "ModuleName": "dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s",
+                  "InstanceName": "grp_dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s_fu_338"
+                }]
+            },
+            {
               "ModuleName": "conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_16u_config2_s",
               "InstanceName": "conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_16u_config2_U0",
               "Instances": [{
                   "ModuleName": "compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config2_s",
-                  "InstanceName": "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config2_s_fu_159",
+                  "InstanceName": "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config2_s_fu_161",
                   "Instances": [
                     {
                       "ModuleName": "dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1",
@@ -512,42 +506,24 @@
                 }]
             },
             {
-              "ModuleName": "normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_s",
-              "InstanceName": "normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0"
-            },
-            {
-              "ModuleName": "normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_s",
-              "InstanceName": "normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0"
-            },
-            {
               "ModuleName": "relu_array_ap_fixed_64u_array_ap_ufixed_6_0_4_0_0_64u_relu_config22_s",
               "InstanceName": "relu_array_ap_fixed_64u_array_ap_ufixed_6_0_4_0_0_64u_relu_config22_U0"
+            },
+            {
+              "ModuleName": "normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_s",
+              "InstanceName": "normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0"
             },
             {
               "ModuleName": "pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_24u_config13_s",
               "InstanceName": "pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_24u_config13_U0"
             },
             {
-              "ModuleName": "softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s",
-              "InstanceName": "softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_U0",
-              "Instances": [{
-                  "ModuleName": "softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s",
-                  "InstanceName": "grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_fu_58",
-                  "Instances": [
-                    {
-                      "ModuleName": "reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s",
-                      "InstanceName": "grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_699"
-                    },
-                    {
-                      "ModuleName": "reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s",
-                      "InstanceName": "grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_715"
-                    }
-                  ]
-                }]
-            },
-            {
               "ModuleName": "relu_array_ap_fixed_42u_array_ap_ufixed_6_0_4_0_0_42u_relu_config18_s",
               "InstanceName": "relu_array_ap_fixed_42u_array_ap_ufixed_6_0_4_0_0_42u_relu_config18_U0"
+            },
+            {
+              "ModuleName": "normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_s",
+              "InstanceName": "normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0"
             },
             {
               "ModuleName": "pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config5_s",
@@ -556,6 +532,18 @@
             {
               "ModuleName": "pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config9_s",
               "InstanceName": "pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config9_U0"
+            },
+            {
+              "ModuleName": "softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s",
+              "InstanceName": "softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_U0",
+              "Instances": [{
+                  "ModuleName": "softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s",
+                  "InstanceName": "grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_fu_58",
+                  "Instances": [{
+                      "ModuleName": "reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s",
+                      "InstanceName": "grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_362"
+                    }]
+                }]
             },
             {
               "ModuleName": "relu_array_ap_fixed_24u_array_ap_ufixed_6_0_4_0_0_24u_relu_config12_s",
@@ -603,14 +591,14 @@
       "dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
       "compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config2_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
@@ -645,14 +633,14 @@
       "dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
       "compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config6_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
@@ -687,14 +675,14 @@
       "dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
       "compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_24u_config10_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
@@ -722,7 +710,7 @@
       "dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config15_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
@@ -750,7 +738,7 @@
       "dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config19_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
@@ -778,7 +766,7 @@
       "dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
@@ -792,7 +780,7 @@
       "reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
@@ -900,54 +888,54 @@
       },
       "dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1": {
         "Latency": {
-          "LatencyBest": "4",
-          "LatencyAvg": "4",
-          "LatencyWorst": "4",
-          "PipelineII": "1",
-          "PipelineDepth": "5",
+          "LatencyBest": "10",
+          "LatencyAvg": "10",
+          "LatencyWorst": "10",
+          "PipelineII": "11",
+          "PipelineDepth": "11",
           "PipelineType": "function"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.302"
+          "Estimate": "4.535"
         },
         "Area": {
+          "DSP48E": "3",
+          "FF": "4534",
+          "LUT": "5266",
           "BRAM_18K": "0",
-          "DSP48E": "23",
-          "FF": "7004",
-          "LUT": "5234",
           "URAM": "0"
         }
       },
       "compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config2_s": {
         "Latency": {
-          "LatencyBest": "7",
-          "LatencyAvg": "7",
-          "LatencyWorst": "7",
-          "PipelineII": "1",
-          "PipelineDepth": "8",
+          "LatencyBest": "12",
+          "LatencyAvg": "12",
+          "LatencyWorst": "12",
+          "PipelineII": "13",
+          "PipelineDepth": "13",
           "PipelineType": "function"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "5.019"
+          "Estimate": "4.535"
         },
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "23",
-          "FF": "8664",
-          "LUT": "6004",
+          "DSP48E": "3",
+          "FF": "6136",
+          "LUT": "6045",
           "URAM": "0"
         }
       },
       "conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_16u_config2_s": {
         "Latency": {
-          "LatencyBest": "1033",
-          "LatencyAvg": "1033",
-          "LatencyWorst": "1033",
-          "PipelineII": "1033",
+          "LatencyBest": "14338",
+          "LatencyAvg": "14338",
+          "LatencyWorst": "14338",
+          "PipelineII": "14338",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -959,15 +947,15 @@
         "Loops": [{
             "Name": "ReadInputHeight_ReadInputWidth",
             "TripCount": "1024",
-            "Latency": "1031",
-            "PipelineII": "1",
-            "PipelineDepth": "9"
+            "Latency": "14336",
+            "PipelineII": "14",
+            "PipelineDepth": "14"
           }],
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "23",
-          "FF": "8755",
-          "LUT": "6459",
+          "DSP48E": "3",
+          "FF": "6177",
+          "LUT": "6504",
           "URAM": "0"
         }
       },
@@ -1053,54 +1041,54 @@
       },
       "dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0": {
         "Latency": {
-          "LatencyBest": "7",
-          "LatencyAvg": "7",
-          "LatencyWorst": "7",
-          "PipelineII": "1",
-          "PipelineDepth": "8",
+          "LatencyBest": "16",
+          "LatencyAvg": "16",
+          "LatencyWorst": "16",
+          "PipelineII": "17",
+          "PipelineDepth": "17",
           "PipelineType": "function"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.362"
+          "Estimate": "4.465"
         },
         "Area": {
+          "DSP48E": "8",
+          "FF": "21435",
+          "LUT": "31548",
           "BRAM_18K": "0",
-          "DSP48E": "95",
-          "FF": "35585",
-          "LUT": "33497",
           "URAM": "0"
         }
       },
       "compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config6_s": {
         "Latency": {
-          "LatencyBest": "10",
-          "LatencyAvg": "10",
-          "LatencyWorst": "10",
-          "PipelineII": "1",
-          "PipelineDepth": "11",
+          "LatencyBest": "18",
+          "LatencyAvg": "18",
+          "LatencyWorst": "18",
+          "PipelineII": "19",
+          "PipelineDepth": "19",
           "PipelineType": "function"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "5.019"
+          "Estimate": "4.465"
         },
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "95",
-          "FF": "42032",
-          "LUT": "35099",
+          "DSP48E": "8",
+          "FF": "27827",
+          "LUT": "33197",
           "URAM": "0"
         }
       },
       "conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_config6_s": {
         "Latency": {
-          "LatencyBest": "237",
-          "LatencyAvg": "237",
-          "LatencyWorst": "237",
-          "PipelineII": "237",
+          "LatencyBest": "4502",
+          "LatencyAvg": "4502",
+          "LatencyWorst": "4502",
+          "PipelineII": "4502",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1112,15 +1100,15 @@
         "Loops": [{
             "Name": "ReadInputHeight_ReadInputWidth",
             "TripCount": "225",
-            "Latency": "235",
-            "PipelineII": "1",
-            "PipelineDepth": "12"
+            "Latency": "4500",
+            "PipelineII": "20",
+            "PipelineDepth": "20"
           }],
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "95",
-          "FF": "42123",
-          "LUT": "35671",
+          "DSP48E": "8",
+          "FF": "27868",
+          "LUT": "33797",
           "URAM": "0"
         }
       },
@@ -1209,7 +1197,7 @@
           "LatencyBest": "7",
           "LatencyAvg": "7",
           "LatencyWorst": "7",
-          "PipelineII": "1",
+          "PipelineII": "8",
           "PipelineDepth": "8",
           "PipelineType": "function"
         },
@@ -1219,41 +1207,41 @@
           "Estimate": "4.362"
         },
         "Area": {
+          "DSP48E": "12",
+          "FF": "24370",
+          "LUT": "41153",
           "BRAM_18K": "0",
-          "DSP48E": "25",
-          "FF": "35340",
-          "LUT": "44363",
           "URAM": "0"
         }
       },
       "compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_24u_config10_s": {
         "Latency": {
-          "LatencyBest": "10",
-          "LatencyAvg": "10",
-          "LatencyWorst": "10",
-          "PipelineII": "1",
-          "PipelineDepth": "11",
+          "LatencyBest": "9",
+          "LatencyAvg": "9",
+          "LatencyWorst": "9",
+          "PipelineII": "10",
+          "PipelineDepth": "10",
           "PipelineType": "function"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "5.019"
+          "Estimate": "4.429"
         },
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "25",
-          "FF": "41915",
-          "LUT": "46037",
+          "DSP48E": "12",
+          "FF": "30881",
+          "LUT": "42827",
           "URAM": "0"
         }
       },
       "conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_24u_config10_s": {
         "Latency": {
-          "LatencyBest": "48",
-          "LatencyAvg": "48",
-          "LatencyWorst": "48",
-          "PipelineII": "48",
+          "LatencyBest": "398",
+          "LatencyAvg": "398",
+          "LatencyWorst": "398",
+          "PipelineII": "398",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1265,15 +1253,15 @@
         "Loops": [{
             "Name": "ReadInputHeight_ReadInputWidth",
             "TripCount": "36",
-            "Latency": "46",
-            "PipelineII": "1",
-            "PipelineDepth": "12"
+            "Latency": "396",
+            "PipelineII": "11",
+            "PipelineDepth": "11"
           }],
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "25",
-          "FF": "42004",
-          "LUT": "46753",
+          "DSP48E": "12",
+          "FF": "30909",
+          "LUT": "43521",
           "URAM": "0"
         }
       },
@@ -1340,7 +1328,7 @@
           "LatencyBest": "6",
           "LatencyAvg": "6",
           "LatencyWorst": "6",
-          "PipelineII": "1",
+          "PipelineII": "7",
           "PipelineDepth": "7",
           "PipelineType": "function"
         },
@@ -1350,19 +1338,19 @@
           "Estimate": "4.362"
         },
         "Area": {
-          "BRAM_18K": "0",
           "DSP48E": "14",
-          "FF": "38040",
-          "LUT": "47237",
+          "FF": "27262",
+          "LUT": "43694",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "dense_array_ap_fixed_24u_array_ap_fixed_16_6_5_3_0_42u_config15_s": {
         "Latency": {
-          "LatencyBest": "14",
-          "LatencyAvg": "14",
-          "LatencyWorst": "14",
-          "PipelineII": "14",
+          "LatencyBest": "13",
+          "LatencyAvg": "13",
+          "LatencyWorst": "13",
+          "PipelineII": "13",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1379,31 +1367,31 @@
             "PipelineDepth": "2"
           }],
         "Area": {
-          "BRAM_18K": "0",
           "DSP48E": "14",
-          "FF": "40298",
-          "LUT": "48023",
+          "FF": "29520",
+          "LUT": "44477",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_s": {
         "Latency": {
-          "LatencyBest": "4",
-          "LatencyAvg": "4",
-          "LatencyWorst": "4",
-          "PipelineII": "1",
-          "PipelineDepth": "5",
+          "LatencyBest": "45",
+          "LatencyAvg": "45",
+          "LatencyWorst": "45",
+          "PipelineII": "42",
+          "PipelineDepth": "46",
           "PipelineType": "function"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "3.349"
+          "Estimate": "5.554"
         },
         "Area": {
-          "DSP48E": "42",
-          "FF": "5257",
-          "LUT": "2254",
+          "DSP48E": "1",
+          "FF": "1483",
+          "LUT": "2759",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -1435,7 +1423,7 @@
           "LatencyBest": "5",
           "LatencyAvg": "5",
           "LatencyWorst": "5",
-          "PipelineII": "1",
+          "PipelineII": "6",
           "PipelineDepth": "6",
           "PipelineType": "function"
         },
@@ -1445,19 +1433,19 @@
           "Estimate": "3.845"
         },
         "Area": {
-          "BRAM_18K": "0",
           "DSP48E": "0",
-          "FF": "13522",
-          "LUT": "19862",
+          "FF": "10704",
+          "LUT": "19260",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "dense_array_ap_ufixed_42u_array_ap_fixed_16_6_5_3_0_64u_config19_s": {
         "Latency": {
-          "LatencyBest": "8",
-          "LatencyAvg": "8",
-          "LatencyWorst": "8",
-          "PipelineII": "8",
+          "LatencyBest": "7",
+          "LatencyAvg": "7",
+          "LatencyWorst": "7",
+          "PipelineII": "7",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -1467,31 +1455,31 @@
           "Estimate": "3.845"
         },
         "Area": {
-          "BRAM_18K": "0",
           "DSP48E": "0",
-          "FF": "14809",
-          "LUT": "20887",
+          "FF": "11991",
+          "LUT": "20282",
+          "BRAM_18K": "0",
           "URAM": "0"
         }
       },
       "normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_s": {
         "Latency": {
-          "LatencyBest": "4",
-          "LatencyAvg": "4",
-          "LatencyWorst": "4",
-          "PipelineII": "1",
-          "PipelineDepth": "5",
+          "LatencyBest": "67",
+          "LatencyAvg": "67",
+          "LatencyWorst": "67",
+          "PipelineII": "64",
+          "PipelineDepth": "68",
           "PipelineType": "function"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "3.349"
+          "Estimate": "4.550"
         },
         "Area": {
-          "DSP48E": "64",
-          "FF": "8007",
-          "LUT": "3420",
+          "DSP48E": "1",
+          "FF": "2209",
+          "LUT": "4136",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -1520,45 +1508,45 @@
       },
       "dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s": {
         "Latency": {
-          "LatencyBest": "6",
-          "LatencyAvg": "6",
-          "LatencyWorst": "6",
-          "PipelineII": "1",
-          "PipelineDepth": "7",
+          "LatencyBest": "113",
+          "LatencyAvg": "113",
+          "LatencyWorst": "113",
+          "PipelineII": "114",
+          "PipelineDepth": "114",
           "PipelineType": "function"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.520"
+          "Estimate": "5.527"
         },
         "Area": {
+          "DSP48E": "10",
+          "FF": "7966",
+          "LUT": "15149",
           "BRAM_18K": "0",
-          "DSP48E": "168",
-          "FF": "18555",
-          "LUT": "30006",
           "URAM": "0"
         }
       },
       "dense_array_ap_ufixed_64u_array_ap_fixed_16_6_5_3_0_10u_config23_s": {
         "Latency": {
-          "LatencyBest": "9",
-          "LatencyAvg": "9",
-          "LatencyWorst": "9",
-          "PipelineII": "9",
+          "LatencyBest": "115",
+          "LatencyAvg": "115",
+          "LatencyWorst": "115",
+          "PipelineII": "115",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.520"
+          "Estimate": "5.527"
         },
         "Area": {
+          "DSP48E": "10",
+          "FF": "8629",
+          "LUT": "16351",
           "BRAM_18K": "0",
-          "DSP48E": "168",
-          "FF": "19111",
-          "LUT": "30746",
           "URAM": "0"
         }
       },
@@ -1567,7 +1555,7 @@
           "LatencyBest": "2",
           "LatencyAvg": "2",
           "LatencyWorst": "2",
-          "PipelineII": "1",
+          "PipelineII": "3",
           "PipelineDepth": "3",
           "PipelineType": "function"
         },
@@ -1577,8 +1565,8 @@
           "Estimate": "4.280"
         },
         "Area": {
-          "FF": "302",
-          "LUT": "613",
+          "FF": "111",
+          "LUT": "625",
           "BRAM_18K": "0",
           "DSP48E": "0",
           "URAM": "0"
@@ -1586,67 +1574,67 @@
       },
       "softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s": {
         "Latency": {
-          "LatencyBest": "22",
-          "LatencyAvg": "22",
-          "LatencyWorst": "22",
-          "PipelineII": "5",
-          "PipelineDepth": "23",
+          "LatencyBest": "38",
+          "LatencyAvg": "38",
+          "LatencyWorst": "38",
+          "PipelineII": "10",
+          "PipelineDepth": "39",
           "PipelineType": "function"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.280"
+          "Estimate": "4.410"
         },
         "Area": {
           "BRAM_18K": "2",
-          "DSP48E": "10",
-          "FF": "2744",
-          "LUT": "2932",
+          "DSP48E": "1",
+          "FF": "1325",
+          "LUT": "2202",
           "URAM": "0"
         }
       },
       "softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s": {
         "Latency": {
-          "LatencyBest": "22",
-          "LatencyAvg": "22",
-          "LatencyWorst": "22",
-          "PipelineII": "22",
+          "LatencyBest": "38",
+          "LatencyAvg": "38",
+          "LatencyWorst": "38",
+          "PipelineII": "38",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.280"
+          "Estimate": "4.410"
         },
         "Area": {
           "BRAM_18K": "2",
-          "DSP48E": "10",
-          "FF": "2768",
-          "LUT": "3420",
+          "DSP48E": "1",
+          "FF": "1365",
+          "LUT": "2754",
           "URAM": "0"
         }
       },
       "myproject": {
         "Latency": {
-          "LatencyBest": "1914",
-          "LatencyAvg": "1914",
-          "LatencyWorst": "1914",
-          "PipelineII": "1805",
+          "LatencyBest": "14674",
+          "LatencyAvg": "14674",
+          "LatencyWorst": "14674",
+          "PipelineII": "14339",
           "PipelineDepth": "",
           "PipelineType": "dataflow"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "5.444"
+          "Estimate": "5.554"
         },
         "Area": {
           "BRAM_18K": "98",
-          "DSP48E": "441",
-          "FF": "201470",
-          "LUT": "240959",
+          "DSP48E": "50",
+          "FF": "138489",
+          "LUT": "217907",
           "URAM": "0"
         }
       },
@@ -1713,13 +1701,13 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "5.444"
+          "Estimate": "5.554"
         },
         "Area": {
           "BRAM_18K": "101",
-          "DSP48E": "441",
-          "FF": "203481",
-          "LUT": "244845",
+          "DSP48E": "50",
+          "FF": "140500",
+          "LUT": "221793",
           "URAM": "0"
         }
       }
@@ -1735,7 +1723,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-04-03 17:51:14 UTC",
+    "Time": "2024-04-03 21:57:12 UTC",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

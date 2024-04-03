@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'softmax_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s'
 ================================================================
-* Date:           Wed Apr  3 17:32:40 2024
+* Date:           Wed Apr  3 21:41:04 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 5.00 ns | 4.280 ns |   0.62 ns  |
+    |ap_clk  | 5.00 ns | 4.410 ns |   0.62 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |       22|       22| 0.110 us | 0.110 us |   22|   22|   none  |
+    |       38|       38| 0.190 us | 0.190 us |   38|   38|   none  |
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                                                                                 |                                                                       |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
         |                                     Instance                                    |                                 Module                                |   min   |   max   |    min   |    max   | min | max |   Type   |
         +---------------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+----------+
-        |grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_fu_58  |softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s  |       22|       22| 0.110 us | 0.110 us |    5|    5| function |
+        |grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_fu_58  |softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s  |       38|       38| 0.190 us | 0.190 us |   10|   10| function |
         +---------------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+----------+
 
         * Loop: 
@@ -70,7 +70,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 23
+* Number of FSM states : 39
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -97,99 +97,163 @@ IsGatedGlobalClock: 0
 20 --> 21 
 21 --> 22 
 22 --> 23 
-23 --> 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 24 [23/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 24 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 40 [39/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 40 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 25 [22/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 25 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 41 [38/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 41 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 26 [21/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 26 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 42 [37/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 42 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 27 [20/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 27 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 43 [36/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 43 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 28 [19/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 28 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 44 [35/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 44 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 29 [18/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 29 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 45 [34/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 45 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 30 [17/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 30 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 46 [33/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 46 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 31 [16/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 31 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 47 [32/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 47 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 32 [15/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 32 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 48 [31/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 48 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 33 [14/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 33 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 49 [30/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 49 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 11 <SV = 10> <Delay = 0.00>
-ST_11 : Operation 34 [13/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 34 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 50 [29/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 50 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 12 <SV = 11> <Delay = 0.00>
-ST_12 : Operation 35 [12/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 35 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 51 [28/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 51 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 13 <SV = 12> <Delay = 0.00>
-ST_13 : Operation 36 [11/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 36 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 52 [27/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 52 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 14 <SV = 13> <Delay = 0.00>
-ST_14 : Operation 37 [10/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 37 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 53 [26/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 53 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 15 <SV = 14> <Delay = 0.00>
-ST_15 : Operation 38 [9/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 38 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_15 : Operation 54 [25/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 54 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 16 <SV = 15> <Delay = 0.00>
-ST_16 : Operation 39 [8/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 39 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 55 [24/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 55 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 17 <SV = 16> <Delay = 0.00>
-ST_17 : Operation 40 [7/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 40 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 56 [23/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 56 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 18 <SV = 17> <Delay = 0.00>
-ST_18 : Operation 41 [6/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 41 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_18 : Operation 57 [22/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 57 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 19 <SV = 18> <Delay = 0.00>
-ST_19 : Operation 42 [5/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 42 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_19 : Operation 58 [21/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 58 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 20 <SV = 19> <Delay = 0.00>
-ST_20 : Operation 43 [4/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 43 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_20 : Operation 59 [20/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 59 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 21 <SV = 20> <Delay = 0.00>
-ST_21 : Operation 44 [3/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 44 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 60 [19/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 60 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 22 <SV = 21> <Delay = 0.00>
-ST_22 : Operation 45 [2/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 45 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_22 : Operation 61 [18/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 61 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 23 <SV = 22> <Delay = 0.00>
-ST_23 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_9_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 46 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_8_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 47 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_7_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 48 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_6_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 49 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 50 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 51 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 52 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 53 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 54 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 55 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 56 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 57 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 58 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 59 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 60 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 61 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 62 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_6_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 62 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_7_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 63 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 64 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_8_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 64 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_9_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 65 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_23 : Operation 66 [1/23] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 66 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_23 : Operation 67 [1/1] (0.00ns)   --->   "ret void" [firmware/nnet_utils/nnet_activation_stream.h:371]   --->   Operation 67 'ret' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 62 [17/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 62 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 24 <SV = 23> <Delay = 0.00>
+ST_24 : Operation 63 [16/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 63 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 25 <SV = 24> <Delay = 0.00>
+ST_25 : Operation 64 [15/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 64 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 26 <SV = 25> <Delay = 0.00>
+ST_26 : Operation 65 [14/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 65 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 27 <SV = 26> <Delay = 0.00>
+ST_27 : Operation 66 [13/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 66 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 28 <SV = 27> <Delay = 0.00>
+ST_28 : Operation 67 [12/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 67 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 29 <SV = 28> <Delay = 0.00>
+ST_29 : Operation 68 [11/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 68 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 30 <SV = 29> <Delay = 0.00>
+ST_30 : Operation 69 [10/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 69 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 31 <SV = 30> <Delay = 0.00>
+ST_31 : Operation 70 [9/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 70 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 32 <SV = 31> <Delay = 0.00>
+ST_32 : Operation 71 [8/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 71 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 33 <SV = 32> <Delay = 0.00>
+ST_33 : Operation 72 [7/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 72 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 34 <SV = 33> <Delay = 0.00>
+ST_34 : Operation 73 [6/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 73 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 35 <SV = 34> <Delay = 0.00>
+ST_35 : Operation 74 [5/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 74 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 36 <SV = 35> <Delay = 0.00>
+ST_36 : Operation 75 [4/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 75 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 37 <SV = 36> <Delay = 0.00>
+ST_37 : Operation 76 [3/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 76 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 38 <SV = 37> <Delay = 0.00>
+ST_38 : Operation 77 [2/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 77 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 39 <SV = 38> <Delay = 0.00>
+ST_39 : Operation 78 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_9_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 78 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 79 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_8_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 79 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 80 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_7_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 80 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 81 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_6_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 81 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 82 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 82 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 83 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 83 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 84 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 84 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 85 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 85 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 86 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 87 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 87 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 88 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 88 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 89 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 90 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 90 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 91 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_4_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 92 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 93 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_5_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 93 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 94 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_6_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 94 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 95 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_7_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 95 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 96 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_8_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 96 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 97 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_9_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 97 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_39 : Operation 98 [1/39] (0.00ns)   --->   "call fastcc void @"softmax_stable<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25>"(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %data_V_data_4_V, i16* %data_V_data_5_V, i16* %data_V_data_6_V, i16* %data_V_data_7_V, i16* %data_V_data_8_V, i16* %data_V_data_9_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V, i16* %res_V_data_4_V, i16* %res_V_data_5_V, i16* %res_V_data_6_V, i16* %res_V_data_7_V, i16* %res_V_data_8_V, i16* %res_V_data_9_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 98 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_39 : Operation 99 [1/1] (0.00ns)   --->   "ret void" [firmware/nnet_utils/nnet_activation_stream.h:371]   --->   Operation 99 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -223,7 +287,7 @@ Port [ res_V_data_6_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; stati
 Port [ res_V_data_7_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
 Port [ res_V_data_8_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
 Port [ res_V_data_9_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
-Port [ exp_table5]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ exp_table5]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 Port [ invert_table6]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
@@ -231,28 +295,28 @@ Port [ invert_table6]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static
 
 <LifeTime>
 <method=bitvector/>
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-specinterface_ln0 (specinterface) [ 000000000000000000000000]
-call_ln362        (call         ) [ 000000000000000000000000]
-ret_ln371         (ret          ) [ 000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 0000000000000000000000000000000000000000]
+call_ln362        (call         ) [ 0000000000000000000000000000000000000000]
+ret_ln371         (ret          ) [ 0000000000000000000000000000000000000000]
 </LifeTime>
 
 <model>
@@ -443,7 +507,7 @@ ret_ln371         (ret          ) [ 000000000000000000000000]
 <pin id="41" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="exp_table5"/><MemPortTyVec>1 1 </MemPortTyVec>
+<StgValue><ssdm name="exp_table5"/><MemPortTyVec>1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -610,16 +674,16 @@ ret_ln371         (ret          ) [ 000000000000000000000000]
 
 * FSMD analyzer results:
   - Output states:
-	Port: res_V_data_0_V | {23 }
-	Port: res_V_data_1_V | {23 }
-	Port: res_V_data_2_V | {23 }
-	Port: res_V_data_3_V | {23 }
-	Port: res_V_data_4_V | {23 }
-	Port: res_V_data_5_V | {23 }
-	Port: res_V_data_6_V | {23 }
-	Port: res_V_data_7_V | {23 }
-	Port: res_V_data_8_V | {23 }
-	Port: res_V_data_9_V | {23 }
+	Port: res_V_data_0_V | {39 }
+	Port: res_V_data_1_V | {39 }
+	Port: res_V_data_2_V | {39 }
+	Port: res_V_data_3_V | {39 }
+	Port: res_V_data_4_V | {39 }
+	Port: res_V_data_5_V | {39 }
+	Port: res_V_data_6_V | {39 }
+	Port: res_V_data_7_V | {39 }
+	Port: res_V_data_8_V | {39 }
+	Port: res_V_data_9_V | {39 }
  - Input state : 
 	Port: softmax<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25> : data_V_data_0_V | {1 }
 	Port: softmax<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25> : data_V_data_1_V | {1 }
@@ -631,8 +695,8 @@ ret_ln371         (ret          ) [ 000000000000000000000000]
 	Port: softmax<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25> : data_V_data_7_V | {1 }
 	Port: softmax<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25> : data_V_data_8_V | {1 }
 	Port: softmax<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25> : data_V_data_9_V | {1 }
-	Port: softmax<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25> : exp_table5 | {7 8 9 10 11 12 }
-	Port: softmax<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25> : invert_table6 | {19 20 }
+	Port: softmax<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25> : exp_table5 | {7 8 9 10 11 12 13 14 15 16 17 }
+	Port: softmax<array,array<ap_fixed<16,6,5,3,0>,10u>,softmax_config25> : invert_table6 | {26 27 }
   - Chain level:
 	State 1
 	State 2
@@ -657,6 +721,22 @@ ret_ln371         (ret          ) [ 000000000000000000000000]
 	State 21
 	State 22
 	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
 
 
 ============================================================
@@ -667,9 +747,9 @@ ret_ln371         (ret          ) [ 000000000000000000000000]
 |----------|---------------------------------------------------------------------------------|---------|---------|---------|---------|
 | Operation|                                 Functional Unit                                 |  DSP48E |  Delay  |    FF   |   LUT   |
 |----------|---------------------------------------------------------------------------------|---------|---------|---------|---------|
-|   call   | grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_fu_58 |    10   | 41.2506 |   2290  |   2659  |
+|   call   | grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_fu_58 |    1    |  9.973  |   1507  |   1972  |
 |----------|---------------------------------------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                                                 |    10   | 41.2506 |   2290  |   2659  |
+|   Total  |                                                                                 |    1    |  9.973  |   1507  |   1972  |
 |----------|---------------------------------------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -691,10 +771,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   10   |   41   |  2290  |  2659  |
+|  Function |    1   |    9   |  1507  |  1972  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   10   |   41   |  2290  |  2659  |
+|   Total   |    1   |    9   |  1507  |  1972  |
 +-----------+--------+--------+--------+--------+

@@ -21,21 +21,21 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1033</Best-caseLatency>
-<Average-caseLatency>1033</Average-caseLatency>
-<Worst-caseLatency>1033</Worst-caseLatency>
-<Best-caseRealTimeLatency>5.623 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>5.623 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>5.623 us</Worst-caseRealTimeLatency>
-<Interval-min>1033</Interval-min>
-<Interval-max>1033</Interval-max>
+<Best-caseLatency>14338</Best-caseLatency>
+<Average-caseLatency>14338</Average-caseLatency>
+<Worst-caseLatency>14338</Worst-caseLatency>
+<Best-caseRealTimeLatency>78.049 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>78.049 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>78.049 us</Worst-caseRealTimeLatency>
+<Interval-min>14338</Interval-min>
+<Interval-max>14338</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <ReadInputHeight_ReadInputWidth>
 <TripCount>1024</TripCount>
-<Latency>1031</Latency>
-<PipelineII>1</PipelineII>
-<PipelineDepth>9</PipelineDepth>
+<Latency>14336</Latency>
+<PipelineII>14</PipelineII>
+<PipelineDepth>14</PipelineDepth>
 </ReadInputHeight_ReadInputWidth>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
@@ -43,9 +43,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<DSP48E>23</DSP48E>
-<FF>8755</FF>
-<LUT>6459</LUT>
+<DSP48E>3</DSP48E>
+<FF>6177</FF>
+<LUT>6504</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

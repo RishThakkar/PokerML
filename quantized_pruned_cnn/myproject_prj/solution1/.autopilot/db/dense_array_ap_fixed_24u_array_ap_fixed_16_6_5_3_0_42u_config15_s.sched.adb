@@ -36952,8 +36952,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>14</mMinLatency>
-			<mMaxLatency>14</mMaxLatency>
+			<mMinLatency>13</mMinLatency>
+			<mMaxLatency>13</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -37139,8 +37139,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>8</mMinLatency>
-			<mMaxLatency>8</mMaxLatency>
+			<mMinLatency>7</mMinLatency>
+			<mMaxLatency>7</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -40311,314 +40311,314 @@
 			<first>712</first>
 			<second>
 				<first>3</first>
-				<second>7</second>
+				<second>6</second>
 			</second>
 		</item>
 		<item>
 			<first>713</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>714</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>715</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>716</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>717</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>718</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>719</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>720</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>721</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>722</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>723</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>724</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>725</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>726</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>727</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>728</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>729</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>730</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>731</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>732</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>733</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>734</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>735</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>736</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>737</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>738</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>739</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>740</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>741</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>742</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>743</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>744</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>745</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>746</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>747</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>748</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>749</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>750</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>751</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>752</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>753</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>754</first>
 			<second>
-				<first>10</first>
+				<first>9</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>756</first>
 			<second>
-				<first>11</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>757</first>
 			<second>
-				<first>11</first>
+				<first>10</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -41491,7 +41491,7 @@
 			<first>758</first>
 			<second>
 				<first>2</first>
-				<second>10</second>
+				<second>9</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

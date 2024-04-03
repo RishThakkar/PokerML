@@ -11,6 +11,7 @@
 <TopModelName>reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s</TopModelName>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
+<TargetInitiationInterval>5</TargetInitiationInterval>
 </UserAssignments>
 
 <PerformanceEstimates>
@@ -27,17 +28,17 @@
 <Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
+<PipelineInitiationInterval>3</PipelineInitiationInterval>
 <PipelineDepth>3</PipelineDepth>
-<Interval-min>1</Interval-min>
-<Interval-max>1</Interval-max>
+<Interval-min>3</Interval-min>
+<Interval-max>3</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>302</FF>
-<LUT>613</LUT>
+<FF>111</FF>
+<LUT>625</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <URAM>0</URAM>
@@ -71,6 +72,50 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>reduce&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt;, 4, Op_add&lt;ap_fixed&lt;18, 8, 0, 0, 0&gt; &gt; &gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>

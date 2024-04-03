@@ -3827,9 +3827,9 @@
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>1</m_isOnCriticalPath>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>1</m_isStartOfPath>
+				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
 				<m_topoIndex>68</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
@@ -4544,8 +4544,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.78</m_delay>
-				<m_topoIndex>82</m_topoIndex>
+				<m_delay>4.30</m_delay>
+				<m_topoIndex>96</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_102">
@@ -5486,11 +5486,11 @@
 				</oprand_edges>
 				<opcode>icmp</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isOnCriticalPath>1</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_isStartOfPath>1</m_isStartOfPath>
 				<m_delay>2.47</m_delay>
-				<m_topoIndex>83</m_topoIndex>
+				<m_topoIndex>82</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_121">
@@ -5540,7 +5540,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>84</m_topoIndex>
+				<m_topoIndex>83</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_122">
@@ -5589,7 +5589,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>2.55</m_delay>
-				<m_topoIndex>85</m_topoIndex>
+				<m_topoIndex>84</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_123">
@@ -5639,7 +5639,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.76</m_delay>
-				<m_topoIndex>86</m_topoIndex>
+				<m_topoIndex>85</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_124">
@@ -5684,11 +5684,11 @@
 				</oprand_edges>
 				<opcode>add</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>1</m_isOnCriticalPath>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>2.55</m_delay>
-				<m_topoIndex>87</m_topoIndex>
+				<m_topoIndex>86</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_125">
@@ -5734,11 +5734,11 @@
 				</oprand_edges>
 				<opcode>select</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>1</m_isOnCriticalPath>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.69</m_delay>
-				<m_topoIndex>88</m_topoIndex>
+				<m_topoIndex>87</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_126">
@@ -5784,11 +5784,11 @@
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>1</m_isOnCriticalPath>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.76</m_delay>
-				<m_topoIndex>89</m_topoIndex>
+				<m_topoIndex>97</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_127">
@@ -5872,7 +5872,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.76</m_delay>
-				<m_topoIndex>90</m_topoIndex>
+				<m_topoIndex>88</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_129">
@@ -5922,7 +5922,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.76</m_delay>
-				<m_topoIndex>91</m_topoIndex>
+				<m_topoIndex>89</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_130">
@@ -5971,7 +5971,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>2.47</m_delay>
-				<m_topoIndex>92</m_topoIndex>
+				<m_topoIndex>90</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_131">
@@ -6021,7 +6021,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>93</m_topoIndex>
+				<m_topoIndex>91</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_132">
@@ -6070,7 +6070,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>2.55</m_delay>
-				<m_topoIndex>94</m_topoIndex>
+				<m_topoIndex>92</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_133">
@@ -6120,7 +6120,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.76</m_delay>
-				<m_topoIndex>95</m_topoIndex>
+				<m_topoIndex>93</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_134">
@@ -6169,7 +6169,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>2.55</m_delay>
-				<m_topoIndex>96</m_topoIndex>
+				<m_topoIndex>94</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_135">
@@ -6219,7 +6219,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.69</m_delay>
-				<m_topoIndex>97</m_topoIndex>
+				<m_topoIndex>95</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_136">
@@ -6253,7 +6253,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.76</m_delay>
-				<m_topoIndex>100</m_topoIndex>
+				<m_topoIndex>98</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_137">
@@ -6303,7 +6303,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.76</m_delay>
-				<m_topoIndex>98</m_topoIndex>
+				<m_topoIndex>99</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_138">
@@ -6351,7 +6351,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.76</m_delay>
-				<m_topoIndex>99</m_topoIndex>
+				<m_topoIndex>100</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_139">
@@ -9156,12 +9156,12 @@
 				<item>196</item>
 				<item>198</item>
 			</basic_blocks>
-			<mII>1</mII>
-			<mDepth>8</mDepth>
+			<mII>13</mII>
+			<mDepth>13</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>7</mMinLatency>
-			<mMaxLatency>7</mMaxLatency>
+			<mMinLatency>12</mMinLatency>
+			<mMaxLatency>12</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -9643,98 +9643,98 @@
 		<item>
 			<first>134</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>135</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>136</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>137</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>138</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>139</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>140</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>141</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>142</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>143</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>144</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>145</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>146</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>147</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -9742,174 +9742,174 @@
 			<first>149</first>
 			<second>
 				<first>1</first>
-				<second>5</second>
+				<second>10</second>
 			</second>
 		</item>
 		<item>
 			<first>150</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>151</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>152</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>153</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>154</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>155</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>156</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>157</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>158</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>159</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>160</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>161</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>162</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>163</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>164</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>165</first>
 			<second>
-				<first>6</first>
+				<first>11</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>166</first>
 			<second>
-				<first>7</first>
+				<first>12</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>167</first>
 			<second>
-				<first>7</first>
+				<first>12</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>169</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>170</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>172</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>173</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>174</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>175</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -9923,70 +9923,70 @@
 		<item>
 			<first>177</first>
 			<second>
-				<first>7</first>
+				<first>12</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>179</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>180</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>181</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>182</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>184</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>185</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>186</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>187</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>188</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -10021,14 +10021,14 @@
 		<item>
 			<first>195</first>
 			<second>
-				<first>7</first>
+				<first>12</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>197</first>
 			<second>
-				<first>7</first>
+				<first>12</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -10040,42 +10040,42 @@
 			<first>148</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
-				<second>7</second>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>168</first>
 			<second>
 				<first>1</first>
-				<second>7</second>
+				<second>12</second>
 			</second>
 		</item>
 		<item>
 			<first>171</first>
 			<second>
-				<first>1</first>
-				<second>1</second>
+				<first>0</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>178</first>
 			<second>
-				<first>1</first>
-				<second>7</second>
+				<first>0</first>
+				<second>12</second>
 			</second>
 		</item>
 		<item>
 			<first>183</first>
 			<second>
-				<first>1</first>
-				<second>1</second>
+				<first>0</first>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>189</first>
 			<second>
-				<first>1</first>
-				<second>2</second>
+				<first>0</first>
+				<second>1</second>
 			</second>
 		</item>
 		<item>
@@ -10088,15 +10088,15 @@
 		<item>
 			<first>196</first>
 			<second>
-				<first>1</first>
-				<second>7</second>
+				<first>2</first>
+				<second>12</second>
 			</second>
 		</item>
 		<item>
 			<first>198</first>
 			<second>
-				<first>7</first>
-				<second>7</second>
+				<first>12</first>
+				<second>12</second>
 			</second>
 		</item>
 	</bblk_ent_exit>
@@ -10124,8 +10124,8 @@
 			</nodes>
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
-			<interval>1</interval>
-			<pipe_depth>8</pipe_depth>
+			<interval>13</interval>
+			<pipe_depth>13</pipe_depth>
 		</item>
 	</regions>
 	<dp_fu_nodes class_id="34" tracking_level="0" version="0">

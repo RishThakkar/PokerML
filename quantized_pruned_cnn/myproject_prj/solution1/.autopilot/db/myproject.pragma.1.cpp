@@ -65340,7 +65340,7 @@ output_dense_bias_t b23[10] = {-0.0291783623, -0.0318061523, -0.0361037590, 0.07
 struct config2_mult : nnet::dense_config {
     static const unsigned n_in = 27;
     static const unsigned n_out = 16;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned strategy = nnet::latency;
     static const unsigned n_zeros = 223;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -65367,7 +65367,7 @@ struct config2 : nnet::conv2d_config {
     static const unsigned stride_width = 1;
     static const unsigned out_height = 30;
     static const unsigned out_width = 30;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned n_zeros = 223;
     static const unsigned multiplier_limit =
         ((kernel_size * n_chan * n_filt + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -65397,7 +65397,7 @@ struct relu_config4 : nnet::activ_config {
     static const unsigned n_in = 14400;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     typedef conv_act_0_table_t table_t;
 };
 
@@ -65424,7 +65424,7 @@ struct config5 : nnet::pooling2d_config {
     static const bool count_pad = false;
     static const nnet::Pool_Op pool_op = nnet::Max;
     static const nnet::conv_implementation implementation = nnet::conv_implementation::linebuffer;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     typedef model_default_t accum_t;
 };
 
@@ -65432,7 +65432,7 @@ struct config5 : nnet::pooling2d_config {
 struct config6_mult : nnet::dense_config {
     static const unsigned n_in = 144;
     static const unsigned n_out = 16;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned strategy = nnet::latency;
     static const unsigned n_zeros = 1360;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -65459,7 +65459,7 @@ struct config6 : nnet::conv2d_config {
     static const unsigned stride_width = 1;
     static const unsigned out_height = 13;
     static const unsigned out_width = 13;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned n_zeros = 1360;
     static const unsigned multiplier_limit =
         ((kernel_size * n_chan * n_filt + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -65489,7 +65489,7 @@ struct relu_config8 : nnet::activ_config {
     static const unsigned n_in = 2704;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     typedef conv_act_1_table_t table_t;
 };
 
@@ -65516,7 +65516,7 @@ struct config9 : nnet::pooling2d_config {
     static const bool count_pad = false;
     static const nnet::Pool_Op pool_op = nnet::Max;
     static const nnet::conv_implementation implementation = nnet::conv_implementation::linebuffer;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     typedef model_default_t accum_t;
 };
 
@@ -65524,7 +65524,7 @@ struct config9 : nnet::pooling2d_config {
 struct config10_mult : nnet::dense_config {
     static const unsigned n_in = 144;
     static const unsigned n_out = 24;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned strategy = nnet::latency;
     static const unsigned n_zeros = 1966;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -65551,7 +65551,7 @@ struct config10 : nnet::conv2d_config {
     static const unsigned stride_width = 1;
     static const unsigned out_height = 4;
     static const unsigned out_width = 4;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned n_zeros = 1966;
     static const unsigned multiplier_limit =
         ((kernel_size * n_chan * n_filt + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -65581,7 +65581,7 @@ struct relu_config12 : nnet::activ_config {
     static const unsigned n_in = 384;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     typedef conv_act_2_table_t table_t;
 };
 
@@ -65608,7 +65608,7 @@ struct config13 : nnet::pooling2d_config {
     static const bool count_pad = false;
     static const nnet::Pool_Op pool_op = nnet::Max;
     static const nnet::conv_implementation implementation = nnet::conv_implementation::linebuffer;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     typedef model_default_t accum_t;
 };
 
@@ -65618,7 +65618,7 @@ struct config15 : nnet::dense_config {
     static const unsigned n_out = 42;
     static const unsigned io_type = nnet::io_stream;
     static const unsigned strategy = nnet::latency;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned n_zeros = 2300;
     static const unsigned n_nonzeros = 1732;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -65637,7 +65637,7 @@ struct config17 : nnet::batchnorm_config {
     static const unsigned n_filt = -1;
     static const unsigned n_scale_bias = (n_filt == -1) ? n_in : n_filt;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned multiplier_limit = ((n_in + reuse_factor - 1) / reuse_factor);
     static const bool store_weights_in_bram = false;
     typedef bn_dense_0_bias_t bias_t;
@@ -65651,7 +65651,7 @@ struct relu_config18 : nnet::activ_config {
     static const unsigned n_in = 42;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     typedef dense_act_0_table_t table_t;
 };
 
@@ -65661,7 +65661,7 @@ struct config19 : nnet::dense_config {
     static const unsigned n_out = 64;
     static const unsigned io_type = nnet::io_stream;
     static const unsigned strategy = nnet::latency;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned n_zeros = 1533;
     static const unsigned n_nonzeros = 1155;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -65680,7 +65680,7 @@ struct config21 : nnet::batchnorm_config {
     static const unsigned n_filt = -1;
     static const unsigned n_scale_bias = (n_filt == -1) ? n_in : n_filt;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned multiplier_limit = ((n_in + reuse_factor - 1) / reuse_factor);
     static const bool store_weights_in_bram = false;
     typedef bn_dense_1_bias_t bias_t;
@@ -65694,7 +65694,7 @@ struct relu_config22 : nnet::activ_config {
     static const unsigned n_in = 64;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     typedef dense_act_1_table_t table_t;
 };
 
@@ -65704,7 +65704,7 @@ struct config23 : nnet::dense_config {
     static const unsigned n_out = 10;
     static const unsigned io_type = nnet::io_stream;
     static const unsigned strategy = nnet::latency;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned n_zeros = 0;
     static const unsigned n_nonzeros = 640;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -65722,7 +65722,7 @@ struct softmax_config25 : nnet::activ_config {
     static const unsigned n_in = 10;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 128;
     static const unsigned axis = -1;
     static const nnet::softmax_implementation implementation = nnet::softmax_implementation::stable;
     typedef output_softmax_exp_table_t exp_table_t;

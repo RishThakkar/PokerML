@@ -6,7 +6,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity myproject_axi_mul_16s_14ns_26_2_1_MulnS_6 is
+entity myproject_axi_mul_16s_14ns_26_2_1_MulnS_5 is
 port (
     clk: in std_logic;
     ce: in std_logic;
@@ -15,7 +15,7 @@ port (
     p: out std_logic_vector(26 - 1 downto 0));
 end entity;
 
-architecture behav of myproject_axi_mul_16s_14ns_26_2_1_MulnS_6 is
+architecture behav of myproject_axi_mul_16s_14ns_26_2_1_MulnS_5 is
     signal tmp_product : std_logic_vector(26 - 1 downto 0);
     signal a_i : std_logic_vector(16 - 1 downto 0);
     signal b_i : std_logic_vector(14 - 1 downto 0);
@@ -57,7 +57,7 @@ entity myproject_axi_mul_16s_14ns_26_2_1 is
 end entity;
 
 architecture arch of myproject_axi_mul_16s_14ns_26_2_1 is
-    component myproject_axi_mul_16s_14ns_26_2_1_MulnS_6 is
+    component myproject_axi_mul_16s_14ns_26_2_1_MulnS_5 is
         port (
             clk : IN STD_LOGIC;
             ce : IN STD_LOGIC;
@@ -69,7 +69,7 @@ architecture arch of myproject_axi_mul_16s_14ns_26_2_1 is
 
 
 begin
-    myproject_axi_mul_16s_14ns_26_2_1_MulnS_6_U :  component myproject_axi_mul_16s_14ns_26_2_1_MulnS_6
+    myproject_axi_mul_16s_14ns_26_2_1_MulnS_5_U :  component myproject_axi_mul_16s_14ns_26_2_1_MulnS_5
     port map (
         clk => clk,
         ce => ce,

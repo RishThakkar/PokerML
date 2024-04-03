@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 2354
-set name myproject_axi_mux_104_18_1_0
+set id 1964
+set name myproject_axi_mux_104_18_1_1
 set corename simcore_mux
 set op mux
 set stage_num 1
@@ -131,7 +131,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2359 \
+    id 1969 \
     name x_0_V \
     type other \
     dir I \
@@ -146,7 +146,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2360 \
+    id 1970 \
     name x_1_V \
     type other \
     dir I \
@@ -161,7 +161,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2361 \
+    id 1971 \
     name x_2_V \
     type other \
     dir I \
@@ -176,7 +176,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2362 \
+    id 1972 \
     name x_3_V \
     type other \
     dir I \
@@ -191,7 +191,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2363 \
+    id 1973 \
     name x_4_V \
     type other \
     dir I \
@@ -206,7 +206,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2364 \
+    id 1974 \
     name x_5_V \
     type other \
     dir I \
@@ -221,7 +221,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2365 \
+    id 1975 \
     name x_6_V \
     type other \
     dir I \
@@ -236,7 +236,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2366 \
+    id 1976 \
     name x_7_V \
     type other \
     dir I \
@@ -251,7 +251,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2367 \
+    id 1977 \
     name x_8_V \
     type other \
     dir I \
@@ -266,7 +266,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2368 \
+    id 1978 \
     name x_9_V \
     type other \
     dir I \
@@ -281,7 +281,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2369 \
+    id 1979 \
     name x_V_offset \
     type other \
     dir I \
@@ -297,6 +297,20 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id -1 \
+    name ap_ctrl \
+    type ap_ctrl \
+    reset_level 1 \
+    sync_rst true \
+    corename ap_ctrl \
+    op interface \
+    ports { ap_start { I 1 bit } ap_ready { O 1 bit } ap_done { O 1 bit } ap_idle { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id -2 \
     name ap_return \
     type ap_return \
     reset_level 1 \
@@ -314,7 +328,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -2 \
+    id -3 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -334,7 +348,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -3 \
+    id -4 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -354,7 +368,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_ce] == "cg_default_interface_gen_ce"} {
 eval "cg_default_interface_gen_ce { \
-    id -4 \
+    id -5 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \

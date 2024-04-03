@@ -1318,6 +1318,8 @@ struct myproject : public sc_module {
     sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_ap_continue;
     sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_ap_idle;
     sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_ap_ready;
+    sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_out;
+    sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_write;
     sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_data_V_data_0_V_read;
     sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_data_V_data_1_V_read;
     sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_data_V_data_2_V_read;
@@ -1444,8 +1446,6 @@ struct myproject : public sc_module {
     sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_res_V_data_40_V_write;
     sc_signal< sc_lv<16> > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_res_V_data_41_V_din;
     sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_res_V_data_41_V_write;
-    sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_out;
-    sc_signal< sc_logic > normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_write;
     sc_signal< sc_logic > relu_array_ap_fixed_42u_array_ap_ufixed_6_0_4_0_0_42u_relu_config18_U0_ap_start;
     sc_signal< sc_logic > relu_array_ap_fixed_42u_array_ap_ufixed_6_0_4_0_0_42u_relu_config18_U0_ap_done;
     sc_signal< sc_logic > relu_array_ap_fixed_42u_array_ap_ufixed_6_0_4_0_0_42u_relu_config18_U0_ap_continue;
@@ -1761,6 +1761,8 @@ struct myproject : public sc_module {
     sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_ap_continue;
     sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_ap_idle;
     sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_ap_ready;
+    sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_out;
+    sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_write;
     sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_data_V_data_0_V_read;
     sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_data_V_data_1_V_read;
     sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_data_V_data_2_V_read;
@@ -1953,8 +1955,6 @@ struct myproject : public sc_module {
     sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_res_V_data_62_V_write;
     sc_signal< sc_lv<16> > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_res_V_data_63_V_din;
     sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_res_V_data_63_V_write;
-    sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_out;
-    sc_signal< sc_logic > normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_write;
     sc_signal< sc_logic > relu_array_ap_fixed_64u_array_ap_ufixed_6_0_4_0_0_64u_relu_config22_U0_ap_start;
     sc_signal< sc_logic > relu_array_ap_fixed_64u_array_ap_ufixed_6_0_4_0_0_64u_relu_config22_U0_ap_done;
     sc_signal< sc_logic > relu_array_ap_fixed_64u_array_ap_ufixed_6_0_4_0_0_64u_relu_config22_U0_ap_continue;

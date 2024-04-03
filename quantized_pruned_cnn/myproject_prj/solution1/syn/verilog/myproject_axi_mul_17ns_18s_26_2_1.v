@@ -5,7 +5,7 @@
 
 `timescale 1 ns / 1 ps
 
-module myproject_axi_mul_17ns_18s_26_2_1_MulnS_11(clk, ce, a, b, p);
+module myproject_axi_mul_17ns_18s_26_2_1_MulnS_8(clk, ce, a, b, p);
 input clk;
 input ce;
 input [17 - 1 : 0] a;
@@ -44,7 +44,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-myproject_axi_mul_17ns_18s_26_2_1_MulnS_11 myproject_axi_mul_17ns_18s_26_2_1_MulnS_11_U(
+myproject_axi_mul_17ns_18s_26_2_1_MulnS_8 myproject_axi_mul_17ns_18s_26_2_1_MulnS_8_U(
     .clk( clk ),
     .ce( ce ),
     .a( din0 ),

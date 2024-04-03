@@ -52,9 +52,9 @@ struct Loop_2_proc : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    myproject_axi_mux_104_16_1_1<1,1,16,16,16,16,16,16,16,16,16,16,4,16>* myproject_axi_mux_104_16_1_1_U2968;
-    myproject_axi_lshr_32ns_32ns_32_2_1<1,2,1,32,32,32>* myproject_axi_lshr_32ns_32ns_32_2_1_U2969;
-    myproject_axi_shl_64ns_32ns_64_2_1<1,2,0,64,32,64>* myproject_axi_shl_64ns_32ns_64_2_1_U2970;
+    myproject_axi_mux_104_16_1_1<1,1,16,16,16,16,16,16,16,16,16,16,4,16>* myproject_axi_mux_104_16_1_1_U2569;
+    myproject_axi_lshr_32ns_32ns_32_2_1<1,2,1,32,32,32>* myproject_axi_lshr_32ns_32ns_32_2_1_U2570;
+    myproject_axi_shl_64ns_32ns_64_2_1<1,2,0,64,32,64>* myproject_axi_shl_64ns_32ns_64_2_1_U2571;
     regslice_both<32>* regslice_both_out_data_U;
     regslice_both<1>* regslice_both_out_last_V_U;
     sc_signal< sc_logic > ap_done_reg;

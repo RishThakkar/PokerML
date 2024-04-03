@@ -194,7 +194,7 @@ myproject_axi_mux_104_16_1_1 #(
     .din9_WIDTH( 16 ),
     .din10_WIDTH( 4 ),
     .dout_WIDTH( 16 ))
-myproject_axi_mux_104_16_1_1_U2968(
+myproject_axi_mux_104_16_1_1_U2569(
     .din0(tmp_data_V_0),
     .din1(tmp_data_V_1),
     .din2(tmp_data_V_2),
@@ -216,7 +216,7 @@ myproject_axi_lshr_32ns_32ns_32_2_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-myproject_axi_lshr_32ns_32ns_32_2_1_U2969(
+myproject_axi_lshr_32ns_32ns_32_2_1_U2570(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_437_p0),
@@ -232,7 +232,7 @@ myproject_axi_shl_64ns_32ns_64_2_1 #(
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-myproject_axi_shl_64ns_32ns_64_2_1_U2970(
+myproject_axi_shl_64ns_32ns_64_2_1_U2571(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_445_p0),

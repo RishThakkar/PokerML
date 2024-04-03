@@ -738,6 +738,8 @@ architecture behav of myproject is
     signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_ap_continue : STD_LOGIC;
     signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_ap_idle : STD_LOGIC;
     signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_ap_ready : STD_LOGIC;
+    signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_out : STD_LOGIC;
+    signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_write : STD_LOGIC;
     signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_data_V_data_0_V_read : STD_LOGIC;
     signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_data_V_data_1_V_read : STD_LOGIC;
     signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_data_V_data_2_V_read : STD_LOGIC;
@@ -864,8 +866,6 @@ architecture behav of myproject is
     signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_res_V_data_40_V_write : STD_LOGIC;
     signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_res_V_data_41_V_din : STD_LOGIC_VECTOR (15 downto 0);
     signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_res_V_data_41_V_write : STD_LOGIC;
-    signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_out : STD_LOGIC;
-    signal normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_write : STD_LOGIC;
     signal relu_array_ap_fixed_42u_array_ap_ufixed_6_0_4_0_0_42u_relu_config18_U0_ap_start : STD_LOGIC;
     signal relu_array_ap_fixed_42u_array_ap_ufixed_6_0_4_0_0_42u_relu_config18_U0_ap_done : STD_LOGIC;
     signal relu_array_ap_fixed_42u_array_ap_ufixed_6_0_4_0_0_42u_relu_config18_U0_ap_continue : STD_LOGIC;
@@ -1181,6 +1181,8 @@ architecture behav of myproject is
     signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_ap_continue : STD_LOGIC;
     signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_ap_idle : STD_LOGIC;
     signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_ap_ready : STD_LOGIC;
+    signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_out : STD_LOGIC;
+    signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_write : STD_LOGIC;
     signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_data_V_data_0_V_read : STD_LOGIC;
     signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_data_V_data_1_V_read : STD_LOGIC;
     signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_data_V_data_2_V_read : STD_LOGIC;
@@ -1373,8 +1375,6 @@ architecture behav of myproject is
     signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_res_V_data_62_V_write : STD_LOGIC;
     signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_res_V_data_63_V_din : STD_LOGIC_VECTOR (15 downto 0);
     signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_res_V_data_63_V_write : STD_LOGIC;
-    signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_out : STD_LOGIC;
-    signal normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_write : STD_LOGIC;
     signal relu_array_ap_fixed_64u_array_ap_ufixed_6_0_4_0_0_64u_relu_config22_U0_ap_start : STD_LOGIC;
     signal relu_array_ap_fixed_64u_array_ap_ufixed_6_0_4_0_0_64u_relu_config22_U0_ap_done : STD_LOGIC;
     signal relu_array_ap_fixed_64u_array_ap_ufixed_6_0_4_0_0_64u_relu_config22_U0_ap_continue : STD_LOGIC;
@@ -4561,6 +4561,8 @@ architecture behav of myproject is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
+        start_out : OUT STD_LOGIC;
+        start_write : OUT STD_LOGIC;
         data_V_data_0_V_dout : IN STD_LOGIC_VECTOR (15 downto 0);
         data_V_data_0_V_empty_n : IN STD_LOGIC;
         data_V_data_0_V_read : OUT STD_LOGIC;
@@ -4812,9 +4814,7 @@ architecture behav of myproject is
         res_V_data_40_V_write : OUT STD_LOGIC;
         res_V_data_41_V_din : OUT STD_LOGIC_VECTOR (15 downto 0);
         res_V_data_41_V_full_n : IN STD_LOGIC;
-        res_V_data_41_V_write : OUT STD_LOGIC;
-        start_out : OUT STD_LOGIC;
-        start_write : OUT STD_LOGIC );
+        res_V_data_41_V_write : OUT STD_LOGIC );
     end component;
 
 
@@ -5428,6 +5428,8 @@ architecture behav of myproject is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
+        start_out : OUT STD_LOGIC;
+        start_write : OUT STD_LOGIC;
         data_V_data_0_V_dout : IN STD_LOGIC_VECTOR (15 downto 0);
         data_V_data_0_V_empty_n : IN STD_LOGIC;
         data_V_data_0_V_read : OUT STD_LOGIC;
@@ -5811,9 +5813,7 @@ architecture behav of myproject is
         res_V_data_62_V_write : OUT STD_LOGIC;
         res_V_data_63_V_din : OUT STD_LOGIC_VECTOR (15 downto 0);
         res_V_data_63_V_full_n : IN STD_LOGIC;
-        res_V_data_63_V_write : OUT STD_LOGIC;
-        start_out : OUT STD_LOGIC;
-        start_write : OUT STD_LOGIC );
+        res_V_data_63_V_write : OUT STD_LOGIC );
     end component;
 
 
@@ -8215,6 +8215,8 @@ begin
         ap_continue => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_ap_continue,
         ap_idle => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_ap_idle,
         ap_ready => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_ap_ready,
+        start_out => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_out,
+        start_write => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_write,
         data_V_data_0_V_dout => layer15_out_V_data_0_V_dout,
         data_V_data_0_V_empty_n => layer15_out_V_data_0_V_empty_n,
         data_V_data_0_V_read => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_data_V_data_0_V_read,
@@ -8466,9 +8468,7 @@ begin
         res_V_data_40_V_write => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_res_V_data_40_V_write,
         res_V_data_41_V_din => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_res_V_data_41_V_din,
         res_V_data_41_V_full_n => layer17_out_V_data_41_V_full_n,
-        res_V_data_41_V_write => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_res_V_data_41_V_write,
-        start_out => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_out,
-        start_write => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_start_write);
+        res_V_data_41_V_write => normalize_array_ap_fixed_42u_array_ap_fixed_16_6_5_3_0_42u_config17_U0_res_V_data_41_V_write);
 
     relu_array_ap_fixed_42u_array_ap_ufixed_6_0_4_0_0_42u_relu_config18_U0 : component relu_array_ap_fixed_42u_array_ap_ufixed_6_0_4_0_0_42u_relu_config18_s
     port map (
@@ -9076,6 +9076,8 @@ begin
         ap_continue => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_ap_continue,
         ap_idle => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_ap_idle,
         ap_ready => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_ap_ready,
+        start_out => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_out,
+        start_write => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_write,
         data_V_data_0_V_dout => layer19_out_V_data_0_V_dout,
         data_V_data_0_V_empty_n => layer19_out_V_data_0_V_empty_n,
         data_V_data_0_V_read => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_data_V_data_0_V_read,
@@ -9459,9 +9461,7 @@ begin
         res_V_data_62_V_write => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_res_V_data_62_V_write,
         res_V_data_63_V_din => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_res_V_data_63_V_din,
         res_V_data_63_V_full_n => layer21_out_V_data_63_V_full_n,
-        res_V_data_63_V_write => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_res_V_data_63_V_write,
-        start_out => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_out,
-        start_write => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_start_write);
+        res_V_data_63_V_write => normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_U0_res_V_data_63_V_write);
 
     relu_array_ap_fixed_64u_array_ap_ufixed_6_0_4_0_0_64u_relu_config22_U0 : component relu_array_ap_fixed_64u_array_ap_ufixed_6_0_4_0_0_64u_relu_config22_s
     port map (

@@ -11,35 +11,35 @@
 <TopModelName>normalize_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_config21_s</TopModelName>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
+<TargetInitiationInterval>64</TargetInitiationInterval>
 </UserAssignments>
 
 <PerformanceEstimates>
 <PipelineType>function</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.349</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.550</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>4</Best-caseLatency>
-<Average-caseLatency>4</Average-caseLatency>
-<Worst-caseLatency>4</Worst-caseLatency>
-<Best-caseRealTimeLatency>20.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>20.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>20.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>5</PipelineDepth>
-<Interval-min>1</Interval-min>
-<Interval-max>1</Interval-max>
+<Best-caseLatency>67</Best-caseLatency>
+<Average-caseLatency>67</Average-caseLatency>
+<Worst-caseLatency>67</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.335 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.335 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.335 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>64</PipelineInitiationInterval>
+<PipelineDepth>68</PipelineDepth>
+<Interval-min>64</Interval-min>
+<Interval-max>64</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<DSP48E>64</DSP48E>
-<FF>8007</FF>
-<LUT>3420</LUT>
+<DSP48E>1</DSP48E>
+<FF>2209</FF>
+<LUT>4136</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>

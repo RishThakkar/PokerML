@@ -11,14 +11,18 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "myproject_axi_mux_104_18_1_0.h"
+#include "myproject_axi_mux_104_18_1_1.h"
 
 namespace ap_rtl {
 
 struct reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s : public sc_module {
-    // Port declarations 15
+    // Port declarations 19
     sc_in_clk ap_clk;
     sc_in< sc_logic > ap_rst;
+    sc_in< sc_logic > ap_start;
+    sc_out< sc_logic > ap_done;
+    sc_out< sc_logic > ap_idle;
+    sc_out< sc_logic > ap_ready;
     sc_in< sc_lv<17> > x_0_V;
     sc_in< sc_lv<17> > x_1_V;
     sc_in< sc_lv<17> > x_2_V;
@@ -42,16 +46,14 @@ struct reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s : public sc_mod
 
     sc_trace_file* mVcdFile;
 
-    myproject_axi_mux_104_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_104_18_1_0_U2354;
-    myproject_axi_mux_104_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_104_18_1_0_U2355;
-    myproject_axi_mux_104_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_104_18_1_0_U2356;
-    myproject_axi_mux_104_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_104_18_1_0_U2357;
+    myproject_axi_mux_104_18_1_1<1,1,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_104_18_1_1_U1964;
+    myproject_axi_mux_104_18_1_1<1,1,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_104_18_1_1_U1965;
+    myproject_axi_mux_104_18_1_1<1,1,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_104_18_1_1_U1966;
+    myproject_axi_mux_104_18_1_1<1,1,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_104_18_1_1_U1967;
+    sc_signal< sc_lv<3> > ap_CS_fsm;
+    sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<18> > p_Val2_s_fu_162_p12;
     sc_signal< sc_lv<18> > p_Val2_s_reg_554;
-    sc_signal< bool > ap_block_state1_pp0_stage0_iter0;
-    sc_signal< bool > ap_block_state2_pp0_stage0_iter1;
-    sc_signal< bool > ap_block_state3_pp0_stage0_iter2;
-    sc_signal< bool > ap_block_pp0_stage0_11001;
     sc_signal< sc_lv<18> > p_Val2_32_fu_198_p12;
     sc_signal< sc_lv<18> > p_Val2_32_reg_560;
     sc_signal< sc_lv<18> > p_Val2_35_fu_234_p12;
@@ -60,9 +62,9 @@ struct reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s : public sc_mod
     sc_signal< sc_lv<18> > p_Val2_2_reg_572;
     sc_signal< sc_lv<18> > p_Val2_38_fu_374_p3;
     sc_signal< sc_lv<18> > p_Val2_38_reg_578;
+    sc_signal< sc_logic > ap_CS_fsm_state2;
     sc_signal< sc_lv<18> > p_Val2_39_fu_460_p3;
     sc_signal< sc_lv<18> > p_Val2_39_reg_584;
-    sc_signal< bool > ap_block_pp0_stage0;
     sc_signal< sc_lv<18> > zext_ln43_fu_122_p1;
     sc_signal< sc_lv<18> > zext_ln43_2_fu_126_p1;
     sc_signal< sc_lv<18> > zext_ln43_3_fu_130_p1;
@@ -107,6 +109,7 @@ struct reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s : public sc_mod
     sc_signal< sc_lv<1> > or_ln340_13_fu_438_p2;
     sc_signal< sc_lv<18> > select_ln340_130_fu_444_p3;
     sc_signal< sc_lv<18> > select_ln388_13_fu_452_p3;
+    sc_signal< sc_logic > ap_CS_fsm_state3;
     sc_signal< sc_lv<19> > lhs_V_fu_468_p1;
     sc_signal< sc_lv<19> > rhs_V_fu_471_p1;
     sc_signal< sc_lv<19> > ret_V_3_fu_474_p2;
@@ -120,24 +123,14 @@ struct reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s : public sc_mod
     sc_signal< sc_lv<1> > or_ln340_fu_524_p2;
     sc_signal< sc_lv<18> > select_ln340_fu_530_p3;
     sc_signal< sc_lv<18> > select_ln388_fu_538_p3;
-    sc_signal< sc_lv<18> > select_ln340_132_fu_546_p3;
-    sc_signal< sc_logic > ap_ce_reg;
-    sc_signal< sc_lv<17> > x_0_V_int_reg;
-    sc_signal< sc_lv<17> > x_1_V_int_reg;
-    sc_signal< sc_lv<17> > x_2_V_int_reg;
-    sc_signal< sc_lv<17> > x_3_V_int_reg;
-    sc_signal< sc_lv<17> > x_4_V_int_reg;
-    sc_signal< sc_lv<17> > x_5_V_int_reg;
-    sc_signal< sc_lv<17> > x_6_V_int_reg;
-    sc_signal< sc_lv<17> > x_7_V_int_reg;
-    sc_signal< sc_lv<17> > x_8_V_int_reg;
-    sc_signal< sc_lv<17> > x_9_V_int_reg;
-    sc_signal< sc_lv<5> > x_V_offset_int_reg;
-    sc_signal< sc_lv<18> > ap_return_int_reg;
+    sc_signal< sc_lv<3> > ap_NS_fsm;
     static const sc_logic ap_const_logic_1;
     static const sc_logic ap_const_logic_0;
-    static const bool ap_const_boolean_1;
-    static const bool ap_const_boolean_0;
+    static const sc_lv<3> ap_ST_fsm_state1;
+    static const sc_lv<3> ap_ST_fsm_state2;
+    static const sc_lv<3> ap_ST_fsm_state3;
+    static const sc_lv<32> ap_const_lv32_0;
+    static const sc_lv<32> ap_const_lv32_1;
     static const sc_lv<3> ap_const_lv3_1;
     static const sc_lv<3> ap_const_lv3_2;
     static const sc_lv<3> ap_const_lv3_3;
@@ -146,16 +139,19 @@ struct reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s : public sc_mod
     static const sc_lv<1> ap_const_lv1_1;
     static const sc_lv<18> ap_const_lv18_1FFFF;
     static const sc_lv<18> ap_const_lv18_20000;
+    static const sc_lv<32> ap_const_lv32_2;
+    static const bool ap_const_boolean_1;
     // Thread declarations
     void thread_ap_clk_no_reset_();
     void thread_add_ln43_1_fu_260_p2();
     void thread_add_ln43_fu_188_p2();
     void thread_add_ln45_fu_224_p2();
-    void thread_ap_block_pp0_stage0();
-    void thread_ap_block_pp0_stage0_11001();
-    void thread_ap_block_state1_pp0_stage0_iter0();
-    void thread_ap_block_state2_pp0_stage0_iter1();
-    void thread_ap_block_state3_pp0_stage0_iter2();
+    void thread_ap_CS_fsm_state1();
+    void thread_ap_CS_fsm_state2();
+    void thread_ap_CS_fsm_state3();
+    void thread_ap_done();
+    void thread_ap_idle();
+    void thread_ap_ready();
     void thread_ap_return();
     void thread_empty_fu_114_p1();
     void thread_lhs_V_2_fu_296_p1();
@@ -187,7 +183,6 @@ struct reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s : public sc_mod
     void thread_rhs_V_fu_471_p1();
     void thread_select_ln340_128_fu_358_p3();
     void thread_select_ln340_130_fu_444_p3();
-    void thread_select_ln340_132_fu_546_p3();
     void thread_select_ln340_fu_530_p3();
     void thread_select_ln388_12_fu_366_p3();
     void thread_select_ln388_13_fu_452_p3();
@@ -214,6 +209,7 @@ struct reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s : public sc_mod
     void thread_zext_ln43_8_fu_150_p1();
     void thread_zext_ln43_9_fu_154_p1();
     void thread_zext_ln43_fu_122_p1();
+    void thread_ap_NS_fsm();
 };
 
 }

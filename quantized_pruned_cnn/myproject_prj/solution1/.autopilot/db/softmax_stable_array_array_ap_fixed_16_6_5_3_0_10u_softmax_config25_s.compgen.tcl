@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 2370
+set id 1980
 set name myproject_axi_mul_17ns_18s_26_2_1
 set corename simcore_mul
 set op mul
@@ -86,11 +86,11 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, che
 
 
 # Memory (RAM/ROM)  definition:
-set ID 2381
+set ID 1982
 set hasByteEnable 0
 set MemName softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_exp_tabcdu
 set CoreName ap_simcore_mem
-set PortList { 1 1 }
+set PortList { 1 }
 set DataWd 17
 set AddrRange 1024
 set AddrWd 10
@@ -116,7 +116,7 @@ if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
     sync_rst true \
     stage_num ${NumOfStage}  \
     registered_input ${RegisteredInput} \
-    port_num 2 \
+    port_num 1 \
     port_list \{${PortList}\} \
     data_wd ${DataWd} \
     addr_wd ${AddrWd} \
@@ -151,7 +151,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
     sync_rst true \
     stage_num ${NumOfStage}  \
     registered_input ${RegisteredInput} \
-    port_num 2 \
+    port_num 1 \
     port_list \{${PortList}\} \
     data_wd ${DataWd} \
     addr_wd ${AddrWd} \
@@ -169,7 +169,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 2382
+set ID 1983
 set hasByteEnable 0
 set MemName softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_invert_ceu
 set CoreName ap_simcore_mem
@@ -261,7 +261,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2383 \
+    id 1984 \
     name data_V_data_0_V \
     type fifo \
     dir I \
@@ -276,7 +276,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2384 \
+    id 1985 \
     name data_V_data_1_V \
     type fifo \
     dir I \
@@ -291,7 +291,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2385 \
+    id 1986 \
     name data_V_data_2_V \
     type fifo \
     dir I \
@@ -306,7 +306,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2386 \
+    id 1987 \
     name data_V_data_3_V \
     type fifo \
     dir I \
@@ -321,7 +321,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2387 \
+    id 1988 \
     name data_V_data_4_V \
     type fifo \
     dir I \
@@ -336,7 +336,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2388 \
+    id 1989 \
     name data_V_data_5_V \
     type fifo \
     dir I \
@@ -351,7 +351,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2389 \
+    id 1990 \
     name data_V_data_6_V \
     type fifo \
     dir I \
@@ -366,7 +366,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2390 \
+    id 1991 \
     name data_V_data_7_V \
     type fifo \
     dir I \
@@ -381,7 +381,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2391 \
+    id 1992 \
     name data_V_data_8_V \
     type fifo \
     dir I \
@@ -396,7 +396,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2392 \
+    id 1993 \
     name data_V_data_9_V \
     type fifo \
     dir I \
@@ -411,7 +411,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2393 \
+    id 1994 \
     name res_V_data_0_V \
     type fifo \
     dir O \
@@ -426,7 +426,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2394 \
+    id 1995 \
     name res_V_data_1_V \
     type fifo \
     dir O \
@@ -441,7 +441,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2395 \
+    id 1996 \
     name res_V_data_2_V \
     type fifo \
     dir O \
@@ -456,7 +456,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2396 \
+    id 1997 \
     name res_V_data_3_V \
     type fifo \
     dir O \
@@ -471,7 +471,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2397 \
+    id 1998 \
     name res_V_data_4_V \
     type fifo \
     dir O \
@@ -486,7 +486,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2398 \
+    id 1999 \
     name res_V_data_5_V \
     type fifo \
     dir O \
@@ -501,7 +501,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2399 \
+    id 2000 \
     name res_V_data_6_V \
     type fifo \
     dir O \
@@ -516,7 +516,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2400 \
+    id 2001 \
     name res_V_data_7_V \
     type fifo \
     dir O \
@@ -531,7 +531,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2401 \
+    id 2002 \
     name res_V_data_8_V \
     type fifo \
     dir O \
@@ -546,7 +546,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2402 \
+    id 2003 \
     name res_V_data_9_V \
     type fifo \
     dir O \

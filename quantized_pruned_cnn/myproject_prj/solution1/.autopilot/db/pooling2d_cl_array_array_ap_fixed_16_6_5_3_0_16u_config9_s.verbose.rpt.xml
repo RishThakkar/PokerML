@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config9_s'" level="0">
-<item name = "Date">Wed Apr  3 17:38:40 2024
+<item name = "Date">Wed Apr  3 21:45:44 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -62,22 +62,22 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="myproject_axi_mux_42_16_1_1_U655">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U656">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U657">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U658">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U659">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U660">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U661">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U662">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U663">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U664">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U665">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U666">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U667">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U668">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U669">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
-<column name="myproject_axi_mux_42_16_1_1_U670">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U546">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U547">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U548">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U549">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U550">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U551">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U552">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U553">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U554">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U555">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U556">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U557">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U558">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U559">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U560">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
+<column name="myproject_axi_mux_42_16_1_1_U561">myproject_axi_mux_42_16_1_1, 0, 0, 0, 55, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

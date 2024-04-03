@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_2d_cl_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_16u_config6_s'" level="0">
-<item name = "Date">Wed Apr  3 17:18:09 2024
+<item name = "Date">Wed Apr  3 21:28:12 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">237, 237, 1.285 us, 1.285 us, 237, 237, none</column>
+<column name="">4502, 4502, 24.408 us, 24.408 us, 4502, 4502, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ReadInputHeight_ReadInputWidth">235, 235, 12, 1, 1, 225, yes</column>
+<column name="- ReadInputHeight_ReadInputWidth">4500, 4500, 20, 20, 128, 225, yes</column>
 </table>
 </item>
 </section>
