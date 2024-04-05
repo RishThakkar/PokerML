@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1'" level="0">
-<item name = "Date">Wed Apr  3 21:24:50 2024
+<item name = "Date">Thu Apr  4 19:35:45 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg400-1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5ev-sfvc784-2LV-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.535 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 3.920 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">10, 10, 50.000 ns, 50.000 ns, 11, 11, function</column>
+<column name="">11, 11, 55.000 ns, 55.000 ns, 12, 12, function</column>
 </table>
 </item>
 <item name = "Detail">

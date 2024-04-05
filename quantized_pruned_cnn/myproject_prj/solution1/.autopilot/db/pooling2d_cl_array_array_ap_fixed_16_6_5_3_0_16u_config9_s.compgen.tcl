@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 562
+set ID 547
 set hasByteEnable 0
 set MemName pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config9_s_line_buffer_Array_3i2
 set CoreName ShiftReg
@@ -17,7 +17,7 @@ set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 1
 set MaxLatency -1
-set DelayBudget 1.617
+set DelayBudget 0.717
 set ClkPeriod 5
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
@@ -96,7 +96,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 563 \
+    id 548 \
     name data_V_data_0_V \
     type fifo \
     dir I \
@@ -111,7 +111,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 564 \
+    id 549 \
     name data_V_data_1_V \
     type fifo \
     dir I \
@@ -126,7 +126,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 565 \
+    id 550 \
     name data_V_data_2_V \
     type fifo \
     dir I \
@@ -141,7 +141,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 566 \
+    id 551 \
     name data_V_data_3_V \
     type fifo \
     dir I \
@@ -156,7 +156,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 567 \
+    id 552 \
     name data_V_data_4_V \
     type fifo \
     dir I \
@@ -171,7 +171,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 568 \
+    id 553 \
     name data_V_data_5_V \
     type fifo \
     dir I \
@@ -186,7 +186,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 569 \
+    id 554 \
     name data_V_data_6_V \
     type fifo \
     dir I \
@@ -201,7 +201,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 570 \
+    id 555 \
     name data_V_data_7_V \
     type fifo \
     dir I \
@@ -216,7 +216,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 571 \
+    id 556 \
     name data_V_data_8_V \
     type fifo \
     dir I \
@@ -231,7 +231,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 572 \
+    id 557 \
     name data_V_data_9_V \
     type fifo \
     dir I \
@@ -246,7 +246,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 573 \
+    id 558 \
     name data_V_data_10_V \
     type fifo \
     dir I \
@@ -261,7 +261,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 574 \
+    id 559 \
     name data_V_data_11_V \
     type fifo \
     dir I \
@@ -276,7 +276,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 575 \
+    id 560 \
     name data_V_data_12_V \
     type fifo \
     dir I \
@@ -291,7 +291,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 576 \
+    id 561 \
     name data_V_data_13_V \
     type fifo \
     dir I \
@@ -306,7 +306,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 577 \
+    id 562 \
     name data_V_data_14_V \
     type fifo \
     dir I \
@@ -321,7 +321,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 578 \
+    id 563 \
     name data_V_data_15_V \
     type fifo \
     dir I \
@@ -336,7 +336,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 579 \
+    id 564 \
     name res_V_data_0_V \
     type fifo \
     dir O \
@@ -351,7 +351,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 580 \
+    id 565 \
     name res_V_data_1_V \
     type fifo \
     dir O \
@@ -366,7 +366,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 581 \
+    id 566 \
     name res_V_data_2_V \
     type fifo \
     dir O \
@@ -381,7 +381,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 582 \
+    id 567 \
     name res_V_data_3_V \
     type fifo \
     dir O \
@@ -396,7 +396,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 583 \
+    id 568 \
     name res_V_data_4_V \
     type fifo \
     dir O \
@@ -411,7 +411,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 584 \
+    id 569 \
     name res_V_data_5_V \
     type fifo \
     dir O \
@@ -426,7 +426,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 585 \
+    id 570 \
     name res_V_data_6_V \
     type fifo \
     dir O \
@@ -441,7 +441,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 586 \
+    id 571 \
     name res_V_data_7_V \
     type fifo \
     dir O \
@@ -456,7 +456,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 587 \
+    id 572 \
     name res_V_data_8_V \
     type fifo \
     dir O \
@@ -471,7 +471,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 588 \
+    id 573 \
     name res_V_data_9_V \
     type fifo \
     dir O \
@@ -486,7 +486,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 589 \
+    id 574 \
     name res_V_data_10_V \
     type fifo \
     dir O \
@@ -501,7 +501,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 590 \
+    id 575 \
     name res_V_data_11_V \
     type fifo \
     dir O \
@@ -516,7 +516,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 591 \
+    id 576 \
     name res_V_data_12_V \
     type fifo \
     dir O \
@@ -531,7 +531,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 592 \
+    id 577 \
     name res_V_data_13_V \
     type fifo \
     dir O \
@@ -546,7 +546,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 593 \
+    id 578 \
     name res_V_data_14_V \
     type fifo \
     dir O \
@@ -561,7 +561,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 594 \
+    id 579 \
     name res_V_data_15_V \
     type fifo \
     dir O \

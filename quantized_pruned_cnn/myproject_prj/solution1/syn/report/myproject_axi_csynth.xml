@@ -6,8 +6,8 @@
 
 <UserAssignments>
 <unit>ns</unit>
-<ProductFamily>zynq</ProductFamily>
-<Part>xc7z020-clg400-1</Part>
+<ProductFamily>zynquplus</ProductFamily>
+<Part>xczu5ev-sfvc784-2LV-e</Part>
 <TopModelName>myproject_axi</TopModelName>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
@@ -17,36 +17,36 @@
 <PipelineType>dataflow</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>5.554</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.375</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>29697</Best-caseLatency>
-<Average-caseLatency>29697</Average-caseLatency>
-<Worst-caseLatency>29697</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.165 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.165 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.165 ms</Worst-caseRealTimeLatency>
-<DataflowPipelineThroughput>29698</DataflowPipelineThroughput>
-<Interval-min>29698</Interval-min>
-<Interval-max>29698</Interval-max>
+<Best-caseLatency>15409</Best-caseLatency>
+<Average-caseLatency>15409</Average-caseLatency>
+<Worst-caseLatency>15409</Worst-caseLatency>
+<Best-caseRealTimeLatency>77.045 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>77.045 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>77.045 us</Worst-caseRealTimeLatency>
+<DataflowPipelineThroughput>15363</DataflowPipelineThroughput>
+<Interval-min>15363</Interval-min>
+<Interval-max>15363</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>101</BRAM_18K>
-<DSP48E>50</DSP48E>
-<FF>140500</FF>
-<LUT>221793</LUT>
+<DSP48E>22</DSP48E>
+<FF>63828</FF>
+<LUT>259959</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
-<BRAM_18K>280</BRAM_18K>
-<DSP48E>220</DSP48E>
-<FF>106400</FF>
-<LUT>53200</LUT>
-<URAM>0</URAM>
+<BRAM_18K>288</BRAM_18K>
+<DSP48E>1248</DSP48E>
+<FF>234240</FF>
+<LUT>117120</LUT>
+<URAM>64</URAM>
 </AvailableResources>
 </AreaEstimates>
 

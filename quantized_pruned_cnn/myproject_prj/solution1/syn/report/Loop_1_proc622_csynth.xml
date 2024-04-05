@@ -6,8 +6,8 @@
 
 <UserAssignments>
 <unit>ns</unit>
-<ProductFamily>zynq</ProductFamily>
-<Part>xc7z020-clg400-1</Part>
+<ProductFamily>zynquplus</ProductFamily>
+<Part>xczu5ev-sfvc784-2LV-e</Part>
 <TopModelName>Loop_1_proc622</TopModelName>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
@@ -17,28 +17,28 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.234</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.349</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>29697</Best-caseLatency>
-<Average-caseLatency>29697</Average-caseLatency>
-<Worst-caseLatency>29697</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.148 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.148 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.148 ms</Worst-caseRealTimeLatency>
-<Interval-min>29697</Interval-min>
-<Interval-max>29697</Interval-max>
+<Best-caseLatency>14337</Best-caseLatency>
+<Average-caseLatency>14337</Average-caseLatency>
+<Worst-caseLatency>14337</Worst-caseLatency>
+<Best-caseRealTimeLatency>71.685 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>71.685 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>71.685 us</Worst-caseRealTimeLatency>
+<Interval-min>14337</Interval-min>
+<Interval-max>14337</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <TripCount>1024</TripCount>
-<Latency>29696</Latency>
-<IterationLatency>29</IterationLatency>
+<Latency>14336</Latency>
+<IterationLatency>14</IterationLatency>
 <Loop1.1>
 <TripCount>3</TripCount>
-<Latency>27</Latency>
-<IterationLatency>9</IterationLatency>
+<Latency>12</Latency>
+<IterationLatency>4</IterationLatency>
 </Loop1.1>
 </Loop1>
 </SummaryOfLoopLatency>
@@ -47,17 +47,17 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>0</DSP48E>
-<FF>805</FF>
-<LUT>1714</LUT>
+<FF>297</FF>
+<LUT>1703</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
-<BRAM_18K>280</BRAM_18K>
-<DSP48E>220</DSP48E>
-<FF>106400</FF>
-<LUT>53200</LUT>
-<URAM>0</URAM>
+<BRAM_18K>288</BRAM_18K>
+<DSP48E>1248</DSP48E>
+<FF>234240</FF>
+<LUT>117120</LUT>
+<URAM>64</URAM>
 </AvailableResources>
 </AreaEstimates>
 

@@ -2194,7 +2194,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.18</m_delay>
+				<m_delay>1.83</m_delay>
 				<m_topoIndex>1</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5378,7 +5378,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>4.37</m_delay>
+				<m_delay>4.19</m_delay>
 				<m_topoIndex>66</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5926,7 +5926,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.18</m_delay>
+				<m_delay>1.83</m_delay>
 				<m_topoIndex>77</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -7695,8 +7695,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>115</mMinLatency>
-			<mMaxLatency>115</mMaxLatency>
+			<mMinLatency>186</mMinLatency>
+			<mMaxLatency>186</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -8165,90 +8165,90 @@
 			<first>215</first>
 			<second>
 				<first>1</first>
-				<second>113</second>
+				<second>185</second>
 			</second>
 		</item>
 		<item>
 			<first>216</first>
 			<second>
-				<first>114</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>217</first>
 			<second>
-				<first>114</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>218</first>
 			<second>
-				<first>114</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>219</first>
 			<second>
-				<first>114</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>220</first>
 			<second>
-				<first>114</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>221</first>
 			<second>
-				<first>114</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>222</first>
 			<second>
-				<first>114</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>223</first>
 			<second>
-				<first>114</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>224</first>
 			<second>
-				<first>114</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>225</first>
 			<second>
-				<first>114</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>227</first>
 			<second>
-				<first>115</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>228</first>
 			<second>
-				<first>115</first>
+				<first>186</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -8260,7 +8260,7 @@
 			<first>229</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
-				<second>115</second>
+				<second>186</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

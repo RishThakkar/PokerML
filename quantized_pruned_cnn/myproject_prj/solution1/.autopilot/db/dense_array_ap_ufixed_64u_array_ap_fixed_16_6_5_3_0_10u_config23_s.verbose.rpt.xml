@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'dense_array_ap_ufixed_64u_array_ap_fixed_16_6_5_3_0_10u_config23_s'" level="0">
-<item name = "Date">Wed Apr  3 21:53:47 2024
+<item name = "Date">Thu Apr  4 20:08:55 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg400-1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5ev-sfvc784-2LV-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 5.527 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.266 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">115, 115, 0.636 us, 0.636 us, 115, 115, none</column>
+<column name="">186, 186, 0.930 us, 0.930 us, 186, 186, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s_fu_338">dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s, 113, 113, 0.625 us, 0.625 us, 114, 114, function</column>
+<column name="grp_dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s_fu_1224">dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s, 185, 185, 0.925 us, 0.925 us, 186, 186, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,19 +50,19 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 6, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 10, 7966, 15149, -</column>
+<column name="Instance">-, 3, 6980, 18812, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 1196, -</column>
-<column name="Register">-, -, 663, -, -</column>
-<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 4, 8, 30, 0</specialColumn>
+<column name="Multiplexer">-, -, -, 1501, -</column>
+<column name="Register">-, -, 574, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, 3, 17, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s_fu_338">dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s, 0, 10, 7966, 15149, 0</column>
+<column name="grp_dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s_fu_1224">dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s, 0, 3, 6980, 18812, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -79,14 +79,14 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="io_acc_block_signal_op117">and, 0, 0, 2, 1, 1</column>
-<column name="io_acc_block_signal_op382">and, 0, 0, 2, 1, 1</column>
+<column name="io_acc_block_signal_op188">and, 0, 0, 2, 1, 1</column>
+<column name="io_acc_block_signal_op525">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">512, 117, 1, 117</column>
+<column name="ap_NS_fsm">817, 188, 1, 188</column>
 <column name="ap_done">9, 2, 1, 2</column>
 <column name="data_stream_V_data_0_V_blk_n">9, 2, 1, 2</column>
 <column name="data_stream_V_data_10_V_blk_n">9, 2, 1, 2</column>
@@ -167,84 +167,74 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">116, 0, 116, 0</column>
+<column name="ap_CS_fsm">187, 0, 187, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="data_0_V_reg_702">6, 0, 6, 0</column>
-<column name="data_10_V_reg_752">6, 0, 6, 0</column>
-<column name="data_11_V_reg_757">6, 0, 6, 0</column>
-<column name="data_12_V_reg_762">6, 0, 6, 0</column>
-<column name="data_13_V_reg_767">6, 0, 6, 0</column>
-<column name="data_14_V_reg_772">6, 0, 6, 0</column>
-<column name="data_15_V_reg_777">6, 0, 6, 0</column>
-<column name="data_16_V_reg_782">6, 0, 6, 0</column>
-<column name="data_17_V_reg_787">6, 0, 6, 0</column>
-<column name="data_18_V_reg_792">6, 0, 6, 0</column>
-<column name="data_19_V_reg_797">6, 0, 6, 0</column>
-<column name="data_1_V_reg_707">6, 0, 6, 0</column>
-<column name="data_20_V_reg_802">6, 0, 6, 0</column>
-<column name="data_21_V_reg_807">6, 0, 6, 0</column>
-<column name="data_22_V_reg_812">6, 0, 6, 0</column>
-<column name="data_23_V_reg_817">6, 0, 6, 0</column>
-<column name="data_24_V_reg_822">6, 0, 6, 0</column>
-<column name="data_25_V_reg_827">6, 0, 6, 0</column>
-<column name="data_26_V_reg_832">6, 0, 6, 0</column>
-<column name="data_27_V_reg_837">6, 0, 6, 0</column>
-<column name="data_28_V_reg_842">6, 0, 6, 0</column>
-<column name="data_29_V_reg_847">6, 0, 6, 0</column>
-<column name="data_2_V_reg_712">6, 0, 6, 0</column>
-<column name="data_30_V_reg_852">6, 0, 6, 0</column>
-<column name="data_31_V_reg_857">6, 0, 6, 0</column>
-<column name="data_32_V_reg_862">6, 0, 6, 0</column>
-<column name="data_33_V_reg_867">6, 0, 6, 0</column>
-<column name="data_34_V_reg_872">6, 0, 6, 0</column>
-<column name="data_35_V_reg_877">6, 0, 6, 0</column>
-<column name="data_36_V_reg_882">6, 0, 6, 0</column>
-<column name="data_37_V_reg_887">6, 0, 6, 0</column>
-<column name="data_38_V_reg_892">6, 0, 6, 0</column>
-<column name="data_39_V_reg_897">6, 0, 6, 0</column>
-<column name="data_3_V_reg_717">6, 0, 6, 0</column>
-<column name="data_40_V_reg_902">6, 0, 6, 0</column>
-<column name="data_41_V_reg_907">6, 0, 6, 0</column>
-<column name="data_42_V_reg_912">6, 0, 6, 0</column>
-<column name="data_43_V_reg_917">6, 0, 6, 0</column>
-<column name="data_44_V_reg_922">6, 0, 6, 0</column>
-<column name="data_45_V_reg_927">6, 0, 6, 0</column>
-<column name="data_46_V_reg_932">6, 0, 6, 0</column>
-<column name="data_47_V_reg_937">6, 0, 6, 0</column>
-<column name="data_48_V_reg_942">6, 0, 6, 0</column>
-<column name="data_49_V_reg_947">6, 0, 6, 0</column>
-<column name="data_4_V_reg_722">6, 0, 6, 0</column>
-<column name="data_50_V_reg_952">6, 0, 6, 0</column>
-<column name="data_51_V_reg_957">6, 0, 6, 0</column>
-<column name="data_52_V_reg_962">6, 0, 6, 0</column>
-<column name="data_53_V_reg_967">6, 0, 6, 0</column>
-<column name="data_54_V_reg_972">6, 0, 6, 0</column>
-<column name="data_55_V_reg_977">6, 0, 6, 0</column>
-<column name="data_56_V_reg_982">6, 0, 6, 0</column>
-<column name="data_57_V_reg_987">6, 0, 6, 0</column>
-<column name="data_58_V_reg_992">6, 0, 6, 0</column>
-<column name="data_59_V_reg_997">6, 0, 6, 0</column>
-<column name="data_5_V_reg_727">6, 0, 6, 0</column>
-<column name="data_60_V_reg_1002">6, 0, 6, 0</column>
-<column name="data_61_V_reg_1007">6, 0, 6, 0</column>
-<column name="data_62_V_reg_1012">6, 0, 6, 0</column>
-<column name="data_63_V_reg_1017">6, 0, 6, 0</column>
-<column name="data_6_V_reg_732">6, 0, 6, 0</column>
-<column name="data_7_V_reg_737">6, 0, 6, 0</column>
-<column name="data_8_V_reg_742">6, 0, 6, 0</column>
-<column name="data_9_V_reg_747">6, 0, 6, 0</column>
-<column name="grp_dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s_fu_338_ap_start_reg">1, 0, 1, 0</column>
+<column name="data_0_V_reg_1598">6, 0, 6, 0</column>
+<column name="data_10_V_reg_1648">6, 0, 6, 0</column>
+<column name="data_11_V_reg_1653">6, 0, 6, 0</column>
+<column name="data_12_V_reg_1658">6, 0, 6, 0</column>
+<column name="data_13_V_reg_1663">6, 0, 6, 0</column>
+<column name="data_14_V_reg_1668">6, 0, 6, 0</column>
+<column name="data_15_V_reg_1673">6, 0, 6, 0</column>
+<column name="data_16_V_reg_1678">6, 0, 6, 0</column>
+<column name="data_17_V_reg_1683">6, 0, 6, 0</column>
+<column name="data_18_V_reg_1688">6, 0, 6, 0</column>
+<column name="data_19_V_reg_1693">6, 0, 6, 0</column>
+<column name="data_1_V_reg_1603">6, 0, 6, 0</column>
+<column name="data_20_V_reg_1698">6, 0, 6, 0</column>
+<column name="data_21_V_reg_1703">6, 0, 6, 0</column>
+<column name="data_22_V_reg_1708">6, 0, 6, 0</column>
+<column name="data_23_V_reg_1713">6, 0, 6, 0</column>
+<column name="data_24_V_reg_1718">6, 0, 6, 0</column>
+<column name="data_25_V_reg_1723">6, 0, 6, 0</column>
+<column name="data_26_V_reg_1728">6, 0, 6, 0</column>
+<column name="data_27_V_reg_1733">6, 0, 6, 0</column>
+<column name="data_28_V_reg_1738">6, 0, 6, 0</column>
+<column name="data_29_V_reg_1743">6, 0, 6, 0</column>
+<column name="data_2_V_reg_1608">6, 0, 6, 0</column>
+<column name="data_30_V_reg_1748">6, 0, 6, 0</column>
+<column name="data_31_V_reg_1753">6, 0, 6, 0</column>
+<column name="data_32_V_reg_1758">6, 0, 6, 0</column>
+<column name="data_33_V_reg_1763">6, 0, 6, 0</column>
+<column name="data_34_V_reg_1768">6, 0, 6, 0</column>
+<column name="data_35_V_reg_1773">6, 0, 6, 0</column>
+<column name="data_36_V_reg_1778">6, 0, 6, 0</column>
+<column name="data_37_V_reg_1783">6, 0, 6, 0</column>
+<column name="data_38_V_reg_1788">6, 0, 6, 0</column>
+<column name="data_39_V_reg_1793">6, 0, 6, 0</column>
+<column name="data_3_V_reg_1613">6, 0, 6, 0</column>
+<column name="data_40_V_reg_1798">6, 0, 6, 0</column>
+<column name="data_41_V_reg_1803">6, 0, 6, 0</column>
+<column name="data_42_V_reg_1808">6, 0, 6, 0</column>
+<column name="data_43_V_reg_1813">6, 0, 6, 0</column>
+<column name="data_44_V_reg_1818">6, 0, 6, 0</column>
+<column name="data_45_V_reg_1823">6, 0, 6, 0</column>
+<column name="data_46_V_reg_1828">6, 0, 6, 0</column>
+<column name="data_47_V_reg_1833">6, 0, 6, 0</column>
+<column name="data_48_V_reg_1838">6, 0, 6, 0</column>
+<column name="data_49_V_reg_1843">6, 0, 6, 0</column>
+<column name="data_4_V_reg_1618">6, 0, 6, 0</column>
+<column name="data_50_V_reg_1848">6, 0, 6, 0</column>
+<column name="data_51_V_reg_1853">6, 0, 6, 0</column>
+<column name="data_52_V_reg_1858">6, 0, 6, 0</column>
+<column name="data_53_V_reg_1863">6, 0, 6, 0</column>
+<column name="data_54_V_reg_1868">6, 0, 6, 0</column>
+<column name="data_55_V_reg_1873">6, 0, 6, 0</column>
+<column name="data_56_V_reg_1878">6, 0, 6, 0</column>
+<column name="data_57_V_reg_1883">6, 0, 6, 0</column>
+<column name="data_58_V_reg_1888">6, 0, 6, 0</column>
+<column name="data_59_V_reg_1893">6, 0, 6, 0</column>
+<column name="data_5_V_reg_1623">6, 0, 6, 0</column>
+<column name="data_60_V_reg_1898">6, 0, 6, 0</column>
+<column name="data_61_V_reg_1903">6, 0, 6, 0</column>
+<column name="data_62_V_reg_1908">6, 0, 6, 0</column>
+<column name="data_63_V_reg_1913">6, 0, 6, 0</column>
+<column name="data_6_V_reg_1628">6, 0, 6, 0</column>
+<column name="data_7_V_reg_1633">6, 0, 6, 0</column>
+<column name="data_8_V_reg_1638">6, 0, 6, 0</column>
+<column name="data_9_V_reg_1643">6, 0, 6, 0</column>
+<column name="grp_dense_wrapper_ap_ufixed_6_0_4_0_0_ap_fixed_16_6_5_3_0_config23_s_fu_1224_ap_start_reg">1, 0, 1, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>
-<column name="tmp_data_0_V_reg_1022">16, 0, 16, 0</column>
-<column name="tmp_data_1_V_reg_1027">16, 0, 16, 0</column>
-<column name="tmp_data_2_V_reg_1032">16, 0, 16, 0</column>
-<column name="tmp_data_3_V_reg_1037">16, 0, 16, 0</column>
-<column name="tmp_data_4_V_reg_1042">16, 0, 16, 0</column>
-<column name="tmp_data_5_V_reg_1047">16, 0, 16, 0</column>
-<column name="tmp_data_6_V_reg_1052">16, 0, 16, 0</column>
-<column name="tmp_data_7_V_reg_1057">16, 0, 16, 0</column>
-<column name="tmp_data_8_V_reg_1062">16, 0, 16, 0</column>
-<column name="tmp_data_9_V_reg_1067">16, 0, 16, 0</column>
 </table>
 </item>
 </section>

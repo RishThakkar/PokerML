@@ -1,92 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 1980
-set name myproject_axi_mul_17ns_18s_26_2_1
-set corename simcore_mul
-set op mul
-set stage_num 2
-set max_latency -1
-set registered_input 1
-set clk_width 1
-set clk_signed 0
-set reset_width 1
-set reset_signed 0
-set in0_width 17
-set in0_signed 0
-set in1_width 18
-set in1_signed 1
-set ce_width 1
-set ce_signed 0
-set out_width 26
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
-eval "ap_gen_simcore_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mul
-set corename MulnS
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul] == "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_multicycle_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    clk_width ${clk_width} \
-    clk_signed ${clk_signed} \
-    reset_width ${reset_width} \
-    reset_signed ${reset_signed} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    ce_width ${ce_width} \
-    ce_signed ${ce_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_multicycle_mul, check your platform lib"
-}
-}
-
-
 # Memory (RAM/ROM)  definition:
-set ID 1982
+set ID 1926
 set hasByteEnable 0
 set MemName softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_exp_tabcdu
 set CoreName ap_simcore_mem
@@ -101,7 +16,7 @@ set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 3.254
+set DelayBudget 1.237
 set ClkPeriod 5
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
@@ -169,7 +84,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 1983
+set ID 1927
 set hasByteEnable 0
 set MemName softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s_invert_ceu
 set CoreName ap_simcore_mem
@@ -184,7 +99,7 @@ set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 3.254
+set DelayBudget 1.237
 set ClkPeriod 5
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
@@ -261,7 +176,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1984 \
+    id 1928 \
     name data_V_data_0_V \
     type fifo \
     dir I \
@@ -276,7 +191,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1985 \
+    id 1929 \
     name data_V_data_1_V \
     type fifo \
     dir I \
@@ -291,7 +206,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1986 \
+    id 1930 \
     name data_V_data_2_V \
     type fifo \
     dir I \
@@ -306,7 +221,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1987 \
+    id 1931 \
     name data_V_data_3_V \
     type fifo \
     dir I \
@@ -321,7 +236,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1988 \
+    id 1932 \
     name data_V_data_4_V \
     type fifo \
     dir I \
@@ -336,7 +251,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1989 \
+    id 1933 \
     name data_V_data_5_V \
     type fifo \
     dir I \
@@ -351,7 +266,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1990 \
+    id 1934 \
     name data_V_data_6_V \
     type fifo \
     dir I \
@@ -366,7 +281,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1991 \
+    id 1935 \
     name data_V_data_7_V \
     type fifo \
     dir I \
@@ -381,7 +296,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1992 \
+    id 1936 \
     name data_V_data_8_V \
     type fifo \
     dir I \
@@ -396,7 +311,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1993 \
+    id 1937 \
     name data_V_data_9_V \
     type fifo \
     dir I \
@@ -411,7 +326,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1994 \
+    id 1938 \
     name res_V_data_0_V \
     type fifo \
     dir O \
@@ -426,7 +341,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1995 \
+    id 1939 \
     name res_V_data_1_V \
     type fifo \
     dir O \
@@ -441,7 +356,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1996 \
+    id 1940 \
     name res_V_data_2_V \
     type fifo \
     dir O \
@@ -456,7 +371,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1997 \
+    id 1941 \
     name res_V_data_3_V \
     type fifo \
     dir O \
@@ -471,7 +386,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1998 \
+    id 1942 \
     name res_V_data_4_V \
     type fifo \
     dir O \
@@ -486,7 +401,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1999 \
+    id 1943 \
     name res_V_data_5_V \
     type fifo \
     dir O \
@@ -501,7 +416,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2000 \
+    id 1944 \
     name res_V_data_6_V \
     type fifo \
     dir O \
@@ -516,7 +431,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2001 \
+    id 1945 \
     name res_V_data_7_V \
     type fifo \
     dir O \
@@ -531,7 +446,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2002 \
+    id 1946 \
     name res_V_data_8_V \
     type fifo \
     dir O \
@@ -546,7 +461,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 2003 \
+    id 1947 \
     name res_V_data_9_V \
     type fifo \
     dir O \

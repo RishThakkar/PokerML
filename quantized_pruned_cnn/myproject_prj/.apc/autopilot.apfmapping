@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="myproject.cpp" path="/home/esp2024/rht2122/PokerML/PokerML/quantized_pruned_cnn/firmware/myproject.cpp"/>
+    <originFiles name="myproject_axi.cpp" path="/home/esp2024/rht2122/PokerML/PokerML/quantized_pruned_cnn/firmware/myproject_axi.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_data" path="/home/esp2024/rht2122/PokerML/PokerML/quantized_pruned_cnn/tb_data"/>
+    <originFiles name="weights" path="/home/esp2024/rht2122/PokerML/PokerML/quantized_pruned_cnn/firmware/weights"/>
+    <originFiles name="myproject_test.cpp" path="/home/esp2024/rht2122/PokerML/PokerML/quantized_pruned_cnn/myproject_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

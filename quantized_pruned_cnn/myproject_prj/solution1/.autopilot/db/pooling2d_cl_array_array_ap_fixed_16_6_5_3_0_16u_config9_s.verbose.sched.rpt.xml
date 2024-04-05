@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pooling2d_cl_array_array_ap_fixed_16_6_5_3_0_16u_config9_s'" level="0">
-<item name = "Date">Wed Apr  3 21:28:27 2024
+<item name = "Date">Thu Apr  4 19:39:50 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg400-1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5ev-sfvc784-2LV-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.429 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.233 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">342, 342, 1.710 us, 1.710 us, 342, 342, none</column>
+<column name="">172, 172, 0.860 us, 0.860 us, 172, 172, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ReadInputHeight_ReadInputWidth">340, 340, 5, 2, 1, 169, yes</column>
+<column name="- ReadInputHeight_ReadInputWidth">170, 170, 3, 1, 1, 169, yes</column>
 </table>
 </item>
 </section>

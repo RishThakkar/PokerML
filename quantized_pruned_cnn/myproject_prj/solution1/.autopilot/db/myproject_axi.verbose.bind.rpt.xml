@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myproject_axi'" level="0">
-<item name = "Date">Wed Apr  3 21:43:16 2024
+<item name = "Date">Thu Apr  4 19:57:10 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg400-1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5ev-sfvc784-2LV-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 5.554 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.375 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">29697, 29697, 0.165 ms, 0.165 ms, 29698, 29698, dataflow</column>
+<column name="">15409, 15409, 77.045 us, 77.045 us, 15363, 15363, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_myproject_fu_1120">myproject, 14674, 14674, 81.502 us, 81.502 us, 14339, 14339, dataflow</column>
-<column name="grp_Loop_1_proc622_fu_2085">Loop_1_proc622, 29697, 29697, 0.165 ms, 0.165 ms, 29697, 29697, none</column>
-<column name="grp_Loop_2_proc_fu_2096">Loop_2_proc, 111, 111, 0.617 us, 0.617 us, 111, 111, none</column>
-<column name="call_ln0_Block_myproject_axi_exit50_proc_fu_2115">Block_myproject_axi_exit50_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_myproject_fu_1300">myproject, 15408, 15408, 77.040 us, 77.040 us, 15363, 15363, dataflow</column>
+<column name="grp_Loop_1_proc622_fu_2265">Loop_1_proc622, 14337, 14337, 71.685 us, 71.685 us, 14337, 14337, none</column>
+<column name="grp_Loop_2_proc_fu_2276">Loop_2_proc, 41, 41, 0.205 us, 0.205 us, 41, 41, none</column>
+<column name="call_ln0_Block_myproject_axi_exit50_proc_fu_2295">Block_myproject_axi_exit50_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

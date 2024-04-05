@@ -129,7 +129,7 @@ HLSConfig:
   Model:
     BramFactor: 1000000000
     Precision: ap_fixed<16,6>
-    ReuseFactor: 128
+    ReuseFactor: 256
     Strategy: Latency
     TraceOutput: false
 IOType: io_stream
@@ -137,6 +137,6 @@ KerasModel: !keras_model 'quantized_pruned_cnn//keras_model.h5'
 OutputDir: quantized_pruned_cnn/
 Part: xc7z020clg400-1
 ProjectName: myproject
-Stamp: 292e5dAC
+Stamp: 6f49a79A
 Version: 1.0.0
 XilinxPart: xczu5ev-sfvc784-2LV-e

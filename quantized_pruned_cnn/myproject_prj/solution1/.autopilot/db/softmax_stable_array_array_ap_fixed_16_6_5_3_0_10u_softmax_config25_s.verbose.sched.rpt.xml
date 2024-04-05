@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_10u_softmax_config25_s'" level="0">
-<item name = "Date">Wed Apr  3 21:40:54 2024
+<item name = "Date">Thu Apr  4 19:54:35 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg400-1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5ev-sfvc784-2LV-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">38, 38, 0.190 us, 0.190 us, 10, 10, function</column>
+<column name="">28, 28, 0.140 us, 0.140 us, 10, 10, function</column>
 </table>
 </item>
 <item name = "Detail">

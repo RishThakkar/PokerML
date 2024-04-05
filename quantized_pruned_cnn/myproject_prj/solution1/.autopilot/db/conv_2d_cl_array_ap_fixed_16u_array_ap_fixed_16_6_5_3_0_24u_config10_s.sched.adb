@@ -1185,7 +1185,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.76</m_delay>
+				<m_delay>0.65</m_delay>
 				<m_topoIndex>1</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1299,7 +1299,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.42</m_delay>
+				<m_delay>0.78</m_delay>
 				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1355,7 +1355,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.82</m_delay>
+				<m_delay>0.78</m_delay>
 				<m_topoIndex>4</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1480,10 +1480,10 @@
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>1</m_isOnCriticalPath>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>1</m_isStartOfPath>
-				<m_delay>2.18</m_delay>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>1.83</m_delay>
 				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1810,7 +1810,7 @@
 				</oprand_edges>
 				<opcode>extractvalue</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>1</m_isOnCriticalPath>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
@@ -2587,10 +2587,10 @@
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>1</m_isOnCriticalPath>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.23</m_delay>
+				<m_delay>1.43</m_delay>
 				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -4419,28 +4419,28 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_292">
-				<id>1196</id>
+				<id>1435</id>
 				<edge_type>2</edge_type>
 				<source_obj>217</source_obj>
 				<sink_obj>222</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_293">
-				<id>1197</id>
+				<id>1436</id>
 				<edge_type>2</edge_type>
 				<source_obj>222</source_obj>
 				<sink_obj>250</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_294">
-				<id>1198</id>
+				<id>1437</id>
 				<edge_type>2</edge_type>
 				<source_obj>222</source_obj>
 				<sink_obj>248</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_295">
-				<id>1199</id>
+				<id>1438</id>
 				<edge_type>2</edge_type>
 				<source_obj>248</source_obj>
 				<sink_obj>222</sink_obj>
@@ -4470,8 +4470,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>398</mMinLatency>
-			<mMaxLatency>398</mMaxLatency>
+			<mMinLatency>254</mMinLatency>
+			<mMaxLatency>254</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4511,12 +4511,12 @@
 				<item>222</item>
 				<item>248</item>
 			</basic_blocks>
-			<mII>11</mII>
-			<mDepth>11</mDepth>
+			<mII>7</mII>
+			<mDepth>7</mDepth>
 			<mMinTripCount>36</mMinTripCount>
 			<mMaxTripCount>36</mMaxTripCount>
-			<mMinLatency>396</mMinLatency>
-			<mMaxLatency>396</mMaxLatency>
+			<mMinLatency>252</mMinLatency>
+			<mMaxLatency>252</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4706,20 +4706,20 @@
 			<first>246</first>
 			<second>
 				<first>2</first>
-				<second>9</second>
+				<second>5</second>
 			</second>
 		</item>
 		<item>
 			<first>247</first>
 			<second>
-				<first>11</first>
+				<first>7</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>249</first>
 			<second>
-				<first>12</first>
+				<first>8</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -4745,7 +4745,7 @@
 			<first>248</first>
 			<second>
 				<first>2</first>
-				<second>11</second>
+				<second>7</second>
 			</second>
 		</item>
 		<item>
@@ -4773,8 +4773,8 @@
 			</nodes>
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
-			<interval>11</interval>
-			<pipe_depth>11</pipe_depth>
+			<interval>7</interval>
+			<pipe_depth>7</pipe_depth>
 		</item>
 	</regions>
 	<dp_fu_nodes class_id="34" tracking_level="0" version="0">

@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_16u_config2_s'" level="0">
-<item name = "Date">Wed Apr  3 21:25:04 2024
+<item name = "Date">Thu Apr  4 19:36:01 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg400-1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5ev-sfvc784-2LV-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 5.444 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 3.920 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">14338, 14338, 78.049 us, 78.049 us, 14338, 14338, none</column>
+<column name="">15362, 15362, 76.810 us, 76.810 us, 15362, 15362, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config2_s_fu_161">compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config2_s, 12, 12, 65.322 ns, 65.322 ns, 13, 13, function</column>
+<column name="grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config2_s_fu_387">compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config2_s, 13, 13, 65.000 ns, 65.000 ns, 14, 14, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ReadInputHeight_ReadInputWidth">14336, 14336, 14, 14, 128, 1024, yes</column>
+<column name="- ReadInputHeight_ReadInputWidth">15360, 15360, 15, 15, 256, 1024, yes</column>
 </table>
 </item>
 </section>

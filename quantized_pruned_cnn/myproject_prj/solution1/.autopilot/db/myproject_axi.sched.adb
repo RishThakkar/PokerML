@@ -1612,8 +1612,8 @@
 					<item>1108</item>
 					<item>1109</item>
 					<item>1110</item>
-					<item>1567</item>
-					<item>1568</item>
+					<item>1657</item>
+					<item>1658</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1668,8 +1668,8 @@
 					<item>619</item>
 					<item>620</item>
 					<item>621</item>
-					<item>1566</item>
-					<item>1569</item>
+					<item>1656</item>
+					<item>1659</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -1717,15 +1717,15 @@
 					<item>634</item>
 					<item>635</item>
 					<item>636</item>
-					<item>1565</item>
-					<item>1570</item>
+					<item>1655</item>
+					<item>1660</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>2.63</m_delay>
+				<m_delay>3.09</m_delay>
 				<m_topoIndex>27</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -5818,42 +5818,42 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_591">
-				<id>1565</id>
+				<id>1655</id>
 				<edge_type>4</edge_type>
 				<source_obj>550</source_obj>
 				<sink_obj>551</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_592">
-				<id>1566</id>
+				<id>1656</id>
 				<edge_type>4</edge_type>
 				<source_obj>549</source_obj>
 				<sink_obj>550</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_593">
-				<id>1567</id>
+				<id>1657</id>
 				<edge_type>4</edge_type>
 				<source_obj>548</source_obj>
 				<sink_obj>549</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_594">
-				<id>1568</id>
+				<id>1658</id>
 				<edge_type>4</edge_type>
 				<source_obj>548</source_obj>
 				<sink_obj>549</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_595">
-				<id>1569</id>
+				<id>1659</id>
 				<edge_type>4</edge_type>
 				<source_obj>549</source_obj>
 				<sink_obj>550</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_596">
-				<id>1570</id>
+				<id>1660</id>
 				<edge_type>4</edge_type>
 				<source_obj>550</source_obj>
 				<sink_obj>551</sink_obj>
@@ -5881,8 +5881,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>29697</mMinLatency>
-			<mMaxLatency>29697</mMaxLatency>
+			<mMinLatency>15409</mMinLatency>
+			<mMaxLatency>15409</mMaxLatency>
 			<mIsDfPipe>1</mIsDfPipe>
 			<mDfPipe class_id="23" tracking_level="1" version="0" object_id="_598">
 				<port_list class_id="24" tracking_level="0" version="0">

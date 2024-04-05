@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Loop_1_proc622'" level="0">
-<item name = "Date">Wed Apr  3 21:24:37 2024
+<item name = "Date">Thu Apr  4 19:35:31 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg400-1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5ev-sfvc784-2LV-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.234 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.349 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">29697, 29697, 0.148 ms, 0.148 ms, 29697, 29697, none</column>
+<column name="">14337, 14337, 71.685 us, 71.685 us, 14337, 14337, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,8 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">29696, 29696, 29, -, -, 1024, no</column>
-<column name=" + Loop 1.1">27, 27, 9, -, -, 3, no</column>
+<column name="- Loop 1">14336, 14336, 14, -, -, 1024, no</column>
+<column name=" + Loop 1.1">12, 12, 4, -, -, 3, no</column>
 </table>
 </item>
 </section>

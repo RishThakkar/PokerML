@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_16u_config6_s'" level="0">
-<item name = "Date">Wed Apr  3 21:27:58 2024
+<item name = "Date">Thu Apr  4 19:39:15 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg400-1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5ev-sfvc784-2LV-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.465 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.155 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">18, 18, 90.000 ns, 90.000 ns, 19, 19, function</column>
+<column name="">25, 25, 0.125 us, 0.125 us, 26, 26, function</column>
 </table>
 </item>
 <item name = "Detail">
