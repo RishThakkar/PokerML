@@ -68,12 +68,12 @@ HLSConfig:
     BramFactor: 1000000000
     Precision: ap_fixed<16,6>
     ReuseFactor: 256
-    Strategy: Latency
+    Strategy: Resource
     TraceOutput: false
 IOType: io_stream
 KerasModel: !keras_model 'projects/qat_hls4ml_prj_rank/keras_model.h5'
 OutputDir: projects/qat_hls4ml_prj_rank
 Part: xc7z020clg400-1
 ProjectName: myproject
-Stamp: BcdACE81
+Stamp: 0aB84bA1
 Version: 1.0.0
