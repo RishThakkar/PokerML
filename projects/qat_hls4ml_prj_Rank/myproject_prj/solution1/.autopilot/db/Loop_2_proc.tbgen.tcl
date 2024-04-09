@@ -105,13 +105,13 @@ set NewPortList {[
  	{ "name": "tmp_data_V_12", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "tmp_data_V_12", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"],
 		"CDFG" : "Loop_2_proc",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "144", "EstimateLatencyMax" : "144",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "53", "EstimateLatencyMax" : "53",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -137,17 +137,15 @@ set RtlHierarchyInfo {[
 			{"Name" : "tmp_data_V_10", "Type" : "None", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0"},
 			{"Name" : "tmp_data_V_11", "Type" : "None", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0"},
 			{"Name" : "tmp_data_V_12", "Type" : "None", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_134_16_1_1_U1193", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_lshr_32ns_32ns_32_2_1_U1194", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_shl_64ns_32ns_64_2_1_U1195", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_data_U", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_last_V_U", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_134_16_1_1_U1187", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_data_U", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_last_V_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	Loop_2_proc {
-		out_data {Type O LastRead -1 FirstWrite 10}
-		out_last_V {Type O LastRead -1 FirstWrite 10}
+		out_data {Type O LastRead -1 FirstWrite 3}
+		out_last_V {Type O LastRead -1 FirstWrite 3}
 		p_read {Type I LastRead 0 FirstWrite -1}
 		tmp_data_V_0 {Type I LastRead 1 FirstWrite -1}
 		tmp_data_V_1 {Type I LastRead 1 FirstWrite -1}
@@ -166,8 +164,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "144", "Max" : "144"}
-	, {"Name" : "Interval", "Min" : "144", "Max" : "144"}
+	{"Name" : "Latency", "Min" : "53", "Max" : "53"}
+	, {"Name" : "Interval", "Min" : "53", "Max" : "53"}
 ]}
 
 set PipelineEnableSignalInfo {[

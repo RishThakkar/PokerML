@@ -1,0 +1,25 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /opt/xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'rht2122' on host 'socp06-ubuntu.c.psyched-span-141520.internal' (Linux_x86_64 version 5.4.0-1106-gcp) on Tue Apr 09 23:41:12 UTC 2024
+INFO: [HLS 200-10] On os Ubuntu 18.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/esp2024/rht2122/PokerML/PokerML'
+Sourcing Tcl script 'projects/qat_hls4ml_prj_Rank/myproject_prj'
+couldn't read file "projects/qat_hls4ml_prj_Rank/myproject_prj": illegal operation on a directory
+    while executing
+"source projects/qat_hls4ml_prj_Rank/myproject_prj"
+    invoked from within
+"hls::main projects/qat_hls4ml_prj_Rank/myproject_prj"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"
+INFO: [Common 17-206] Exiting vivado_hls at Tue Apr  9 23:41:12 2024...

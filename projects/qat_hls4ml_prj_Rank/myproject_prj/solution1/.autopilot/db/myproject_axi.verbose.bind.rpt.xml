@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myproject_axi'" level="0">
-<item name = "Date">Tue Apr  9 23:31:49 2024
+<item name = "Date">Tue Apr  9 23:50:26 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg400-1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5ev-sfvc784-2LV-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 6.279 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.375 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">488122, 488123, 3.065 ms, 3.065 ms, 118786, 487426, dataflow</column>
+<column name="">463538, 463539, 2.318 ms, 2.318 ms, 57346, 462850, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_myproject_fu_450">myproject, 488120, 488121, 3.065 ms, 3.065 ms, 20482, 487426, dataflow</column>
-<column name="grp_Loop_1_proc346_fu_718">Loop_1_proc346, 118785, 118785, 0.746 ms, 0.746 ms, 118785, 118785, none</column>
-<column name="grp_Loop_2_proc_fu_729">Loop_2_proc, 144, 144, 0.904 us, 0.904 us, 144, 144, none</column>
-<column name="call_ln0_Block_myproject_axi_exit54_proc_fu_751">Block_myproject_axi_exit54_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="grp_myproject_fu_672">myproject, 463536, 463537, 2.318 ms, 2.318 ms, 12290, 462850, dataflow</column>
+<column name="grp_Loop_1_proc346_fu_940">Loop_1_proc346, 57345, 57345, 0.287 ms, 0.287 ms, 57345, 57345, none</column>
+<column name="grp_Loop_2_proc_fu_951">Loop_2_proc, 53, 53, 0.265 us, 0.265 us, 53, 53, none</column>
+<column name="call_ln0_Block_myproject_axi_exit54_proc_fu_973">Block_myproject_axi_exit54_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

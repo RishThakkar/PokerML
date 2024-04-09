@@ -6,8 +6,8 @@
 
 <UserAssignments>
 <unit>ns</unit>
-<ProductFamily>zynq</ProductFamily>
-<Part>xc7z020-clg400-1</Part>
+<ProductFamily>zynquplus</ProductFamily>
+<Part>xczu5ev-sfvc784-2LV-e</Part>
 <TopModelName>Loop_2_proc</TopModelName>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
@@ -17,42 +17,42 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.367</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.297</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>144</Best-caseLatency>
-<Average-caseLatency>144</Average-caseLatency>
-<Worst-caseLatency>144</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.720 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.720 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.720 us</Worst-caseRealTimeLatency>
-<Interval-min>144</Interval-min>
-<Interval-max>144</Interval-max>
+<Best-caseLatency>53</Best-caseLatency>
+<Average-caseLatency>53</Average-caseLatency>
+<Worst-caseLatency>53</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.265 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.265 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.265 us</Worst-caseRealTimeLatency>
+<Interval-min>53</Interval-min>
+<Interval-max>53</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <TripCount>13</TripCount>
-<Latency>143</Latency>
-<IterationLatency>11</IterationLatency>
+<Latency>52</Latency>
+<IterationLatency>4</IterationLatency>
 </Loop1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>776</FF>
-<LUT>1015</LUT>
+<FF>147</FF>
+<LUT>1041</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
-<BRAM_18K>280</BRAM_18K>
-<DSP48E>220</DSP48E>
-<FF>106400</FF>
-<LUT>53200</LUT>
-<URAM>0</URAM>
+<BRAM_18K>288</BRAM_18K>
+<DSP48E>1248</DSP48E>
+<FF>234240</FF>
+<LUT>117120</LUT>
+<URAM>64</URAM>
 </AvailableResources>
 </AreaEstimates>
 

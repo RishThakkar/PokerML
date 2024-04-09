@@ -2,13 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Tue Apr  9 22:40:34 2024
-# Process ID: 11017
+# Start of session at: Tue Apr  9 23:37:23 2024
+# Process ID: 28661
 # Current directory: /home/esp2024/rht2122/PokerML/PokerML
 # Command line: vivado
 # Log file: /home/esp2024/rht2122/PokerML/PokerML/vivado.log
 # Journal file: /home/esp2024/rht2122/PokerML/PokerML/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project /home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_rank/myproject_vivado_accelerator/project_1.xpr
-set_property part xczu5ev-sfvc784-2LV-e [current_project]

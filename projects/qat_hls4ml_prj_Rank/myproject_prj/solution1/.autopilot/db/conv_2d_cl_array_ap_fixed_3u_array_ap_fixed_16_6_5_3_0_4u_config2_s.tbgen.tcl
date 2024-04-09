@@ -105,7 +105,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "20481", "EstimateLatencyMax" : "487425",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "12289", "EstimateLatencyMax" : "462849",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -113,7 +113,7 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "1",
 		"HasNonBlockingOperation" : "0",
 		"WaitState" : [
-			{"State" : "ap_ST_fsm_state4", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145"}],
+			{"State" : "ap_ST_fsm_state3", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227"}],
 		"Port" : [
 			{"Name" : "data_V_data_0_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0",
 				"BlockSignal" : [
@@ -126,140 +126,140 @@ set RtlHierarchyInfo {[
 					{"Name" : "data_V_data_2_V_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "res_V_data_0_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "0", "DependentChan" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "res_stream_V_data_0_V"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "res_stream_V_data_0_V"}]},
 			{"Name" : "res_V_data_1_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "0", "DependentChan" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "res_stream_V_data_1_V"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "res_stream_V_data_1_V"}]},
 			{"Name" : "res_V_data_2_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "0", "DependentChan" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "res_stream_V_data_2_V"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "res_stream_V_data_2_V"}]},
 			{"Name" : "res_V_data_3_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "0", "DependentChan" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "res_stream_V_data_3_V"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "res_stream_V_data_3_V"}]},
 			{"Name" : "kernel_data_V_3287", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_3287"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_3287"}]},
 			{"Name" : "kernel_data_V_4", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_4"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_4"}]},
 			{"Name" : "kernel_data_V_5", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_5"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_5"}]},
 			{"Name" : "kernel_data_V_6", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_6"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_6"}]},
 			{"Name" : "kernel_data_V_7", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_7"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_7"}]},
 			{"Name" : "kernel_data_V_8", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_8"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_8"}]},
 			{"Name" : "kernel_data_V_12", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_12"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_12"}]},
 			{"Name" : "kernel_data_V_13", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_13"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_13"}]},
 			{"Name" : "kernel_data_V_14", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_14"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_14"}]},
 			{"Name" : "kernel_data_V_15", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_15"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_15"}]},
 			{"Name" : "kernel_data_V_16", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_16"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_16"}]},
 			{"Name" : "kernel_data_V_17", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_17"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_17"}]},
 			{"Name" : "kernel_data_V_21", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_21"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_21"}]},
 			{"Name" : "kernel_data_V_22", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_22"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_22"}]},
 			{"Name" : "kernel_data_V_23", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_23"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_23"}]},
 			{"Name" : "kernel_data_V_24", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_24"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_24"}]},
 			{"Name" : "kernel_data_V_25", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_25"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_25"}]},
 			{"Name" : "kernel_data_V_26", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_26"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_26"}]},
 			{"Name" : "line_buffer_Array_V_0_0", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "line_buffer_Array_V_0_0"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "line_buffer_Array_V_0_0"}]},
 			{"Name" : "line_buffer_Array_V_1284_0", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "line_buffer_Array_V_1284_0"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "line_buffer_Array_V_1284_0"}]},
 			{"Name" : "line_buffer_Array_V_0_1", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "line_buffer_Array_V_0_1"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "line_buffer_Array_V_0_1"}]},
 			{"Name" : "line_buffer_Array_V_1284_1", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "line_buffer_Array_V_1284_1"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "line_buffer_Array_V_1284_1"}]},
 			{"Name" : "line_buffer_Array_V_0_2", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "line_buffer_Array_V_0_2"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "line_buffer_Array_V_0_2"}]},
 			{"Name" : "line_buffer_Array_V_1284_2", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "line_buffer_Array_V_1284_2"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "line_buffer_Array_V_1284_2"}]},
 			{"Name" : "kernel_data_V_0", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_0"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_0"}]},
 			{"Name" : "kernel_data_V_1285", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_1285"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_1285"}]},
 			{"Name" : "kernel_data_V_2286", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_2286"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_2286"}]},
 			{"Name" : "kernel_data_V_9", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_9"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_9"}]},
 			{"Name" : "kernel_data_V_10", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_10"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_10"}]},
 			{"Name" : "kernel_data_V_11", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_11"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_11"}]},
 			{"Name" : "kernel_data_V_18", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_18"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_18"}]},
 			{"Name" : "kernel_data_V_19", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_19"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_19"}]},
 			{"Name" : "kernel_data_V_20", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "kernel_data_V_20"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "kernel_data_V_20"}]},
 			{"Name" : "sX_3", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "sX_3"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "sX_3"}]},
 			{"Name" : "sY_3", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "sY_3"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "sY_3"}]},
 			{"Name" : "pY_3", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "pY_3"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "pY_3"}]},
 			{"Name" : "pX_3", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "pX_3"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "pX_3"}]},
 			{"Name" : "outidx3", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "outidx3"}]},
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "outidx3"}]},
 			{"Name" : "w2_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Port" : "w2_V"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145", "Parent" : "0", "Child" : ["2", "7"],
+					{"ID" : "1", "SubInstance" : "grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Port" : "w2_V"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227", "Parent" : "0", "Child" : ["2", "7"],
 		"CDFG" : "compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2", "EstimateLatencyMax" : "116",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1", "EstimateLatencyMax" : "111",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -267,7 +267,7 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"WaitState" : [
-			{"State" : "ap_ST_fsm_state2", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167"}],
+			{"State" : "ap_ST_fsm_state2", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212"}],
 		"Port" : [
 			{"Name" : "in_elem_data_0_V_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "in_elem_data_1_V_read", "Type" : "None", "Direction" : "I"},
@@ -286,120 +286,120 @@ set RtlHierarchyInfo {[
 					{"Name" : "res_stream_V_data_3_V_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "kernel_data_V_3287", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_3287"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_3287"}]},
 			{"Name" : "kernel_data_V_4", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_4"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_4"}]},
 			{"Name" : "kernel_data_V_5", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_5"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_5"}]},
 			{"Name" : "kernel_data_V_6", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_6"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_6"}]},
 			{"Name" : "kernel_data_V_7", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_7"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_7"}]},
 			{"Name" : "kernel_data_V_8", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_8"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_8"}]},
 			{"Name" : "kernel_data_V_12", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_12"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_12"}]},
 			{"Name" : "kernel_data_V_13", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_13"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_13"}]},
 			{"Name" : "kernel_data_V_14", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_14"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_14"}]},
 			{"Name" : "kernel_data_V_15", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_15"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_15"}]},
 			{"Name" : "kernel_data_V_16", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_16"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_16"}]},
 			{"Name" : "kernel_data_V_17", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_17"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_17"}]},
 			{"Name" : "kernel_data_V_21", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_21"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_21"}]},
 			{"Name" : "kernel_data_V_22", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_22"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_22"}]},
 			{"Name" : "kernel_data_V_23", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_23"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_23"}]},
 			{"Name" : "kernel_data_V_24", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_24"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_24"}]},
 			{"Name" : "kernel_data_V_25", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_25"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_25"}]},
 			{"Name" : "kernel_data_V_26", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_26"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_26"}]},
 			{"Name" : "line_buffer_Array_V_0_0", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229", "Port" : "line_buffer_Array_V_0_0"}]},
+					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274", "Port" : "line_buffer_Array_V_0_0"}]},
 			{"Name" : "line_buffer_Array_V_1284_0", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229", "Port" : "line_buffer_Array_V_1284_0"}]},
+					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274", "Port" : "line_buffer_Array_V_1284_0"}]},
 			{"Name" : "line_buffer_Array_V_0_1", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229", "Port" : "line_buffer_Array_V_0_1"}]},
+					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274", "Port" : "line_buffer_Array_V_0_1"}]},
 			{"Name" : "line_buffer_Array_V_1284_1", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229", "Port" : "line_buffer_Array_V_1284_1"}]},
+					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274", "Port" : "line_buffer_Array_V_1284_1"}]},
 			{"Name" : "line_buffer_Array_V_0_2", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229", "Port" : "line_buffer_Array_V_0_2"}]},
+					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274", "Port" : "line_buffer_Array_V_0_2"}]},
 			{"Name" : "line_buffer_Array_V_1284_2", "Type" : "Memory", "Direction" : "X",
 				"SubConnect" : [
-					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229", "Port" : "line_buffer_Array_V_1284_2"}]},
+					{"ID" : "7", "SubInstance" : "call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274", "Port" : "line_buffer_Array_V_1284_2"}]},
 			{"Name" : "kernel_data_V_0", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_0"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_0"}]},
 			{"Name" : "kernel_data_V_1285", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_1285"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_1285"}]},
 			{"Name" : "kernel_data_V_2286", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_2286"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_2286"}]},
 			{"Name" : "kernel_data_V_9", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_9"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_9"}]},
 			{"Name" : "kernel_data_V_10", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_10"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_10"}]},
 			{"Name" : "kernel_data_V_11", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_11"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_11"}]},
 			{"Name" : "kernel_data_V_18", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_18"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_18"}]},
 			{"Name" : "kernel_data_V_19", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_19"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_19"}]},
 			{"Name" : "kernel_data_V_20", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "kernel_data_V_20"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "kernel_data_V_20"}]},
 			{"Name" : "sX_3", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "sY_3", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "pY_3", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "pX_3", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "outidx3", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "outidx3"}]},
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "outidx3"}]},
 			{"Name" : "w2_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Port" : "w2_V"}]}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167", "Parent" : "1", "Child" : ["3", "4", "5", "6"],
+					{"ID" : "2", "SubInstance" : "grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Port" : "w2_V"}]}]},
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212", "Parent" : "1", "Child" : ["3", "4", "5", "6"],
 		"CDFG" : "dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "Rewind", "UnalignedPipeline" : "0", "RewindPipeline" : "1", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "112", "EstimateLatencyMax" : "113",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "109", "EstimateLatencyMax" : "110",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -436,11 +436,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "kernel_data_V_25", "Type" : "None", "Direction" : "I"},
 			{"Name" : "kernel_data_V_26", "Type" : "None", "Direction" : "I"},
 			{"Name" : "w2_V", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "3", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167.outidx3_U", "Parent" : "2"},
-	{"ID" : "4", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167.w2_V_U", "Parent" : "2"},
-	{"ID" : "5", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167.myproject_axi_mux_42_32_1_1_U33", "Parent" : "2"},
-	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_167.myproject_axi_mul_mul_6s_16s_20_3_1_U34", "Parent" : "2"},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229", "Parent" : "1", "Child" : ["8", "9", "10", "11", "12", "13"],
+	{"ID" : "3", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212.outidx3_U", "Parent" : "2"},
+	{"ID" : "4", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212.w2_V_U", "Parent" : "2"},
+	{"ID" : "5", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212.myproject_axi_mux_42_32_1_1_U31", "Parent" : "2"},
+	{"ID" : "6", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212.myproject_axi_mul_mul_6s_16s_20_1_1_U32", "Parent" : "2"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274", "Parent" : "1", "Child" : ["8", "9", "10", "11", "12", "13"],
 		"CDFG" : "shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -481,12 +481,12 @@ set RtlHierarchyInfo {[
 			{"Name" : "line_buffer_Array_V_1284_1", "Type" : "Memory", "Direction" : "X"},
 			{"Name" : "line_buffer_Array_V_0_2", "Type" : "Memory", "Direction" : "X"},
 			{"Name" : "line_buffer_Array_V_1284_2", "Type" : "Memory", "Direction" : "X"}]},
-	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229.line_buffer_Array_V_0_0_U", "Parent" : "7"},
-	{"ID" : "9", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229.line_buffer_Array_V_1284_0_U", "Parent" : "7"},
-	{"ID" : "10", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229.line_buffer_Array_V_0_1_U", "Parent" : "7"},
-	{"ID" : "11", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229.line_buffer_Array_V_1284_1_U", "Parent" : "7"},
-	{"ID" : "12", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229.line_buffer_Array_V_0_2_U", "Parent" : "7"},
-	{"ID" : "13", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_145.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_229.line_buffer_Array_V_1284_2_U", "Parent" : "7"}]}
+	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274.line_buffer_Array_V_0_0_U", "Parent" : "7"},
+	{"ID" : "9", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274.line_buffer_Array_V_1284_0_U", "Parent" : "7"},
+	{"ID" : "10", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274.line_buffer_Array_V_0_1_U", "Parent" : "7"},
+	{"ID" : "11", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274.line_buffer_Array_V_1284_1_U", "Parent" : "7"},
+	{"ID" : "12", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274.line_buffer_Array_V_0_2_U", "Parent" : "7"},
+	{"ID" : "13", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227.call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274.line_buffer_Array_V_1284_2_U", "Parent" : "7"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -494,10 +494,10 @@ set ArgLastReadFirstWriteLatency {
 		data_V_data_0_V {Type I LastRead 1 FirstWrite -1}
 		data_V_data_1_V {Type I LastRead 1 FirstWrite -1}
 		data_V_data_2_V {Type I LastRead 1 FirstWrite -1}
-		res_V_data_0_V {Type O LastRead -1 FirstWrite 2}
-		res_V_data_1_V {Type O LastRead -1 FirstWrite 2}
-		res_V_data_2_V {Type O LastRead -1 FirstWrite 2}
-		res_V_data_3_V {Type O LastRead -1 FirstWrite 2}
+		res_V_data_0_V {Type O LastRead -1 FirstWrite 1}
+		res_V_data_1_V {Type O LastRead -1 FirstWrite 1}
+		res_V_data_2_V {Type O LastRead -1 FirstWrite 1}
+		res_V_data_3_V {Type O LastRead -1 FirstWrite 1}
 		kernel_data_V_3287 {Type IO LastRead -1 FirstWrite -1}
 		kernel_data_V_4 {Type IO LastRead -1 FirstWrite -1}
 		kernel_data_V_5 {Type IO LastRead -1 FirstWrite -1}
@@ -541,10 +541,10 @@ set ArgLastReadFirstWriteLatency {
 		in_elem_data_0_V_read {Type I LastRead 0 FirstWrite -1}
 		in_elem_data_1_V_read {Type I LastRead 0 FirstWrite -1}
 		in_elem_data_2_V_read {Type I LastRead 0 FirstWrite -1}
-		res_stream_V_data_0_V {Type O LastRead -1 FirstWrite 2}
-		res_stream_V_data_1_V {Type O LastRead -1 FirstWrite 2}
-		res_stream_V_data_2_V {Type O LastRead -1 FirstWrite 2}
-		res_stream_V_data_3_V {Type O LastRead -1 FirstWrite 2}
+		res_stream_V_data_0_V {Type O LastRead -1 FirstWrite 1}
+		res_stream_V_data_1_V {Type O LastRead -1 FirstWrite 1}
+		res_stream_V_data_2_V {Type O LastRead -1 FirstWrite 1}
+		res_stream_V_data_3_V {Type O LastRead -1 FirstWrite 1}
 		kernel_data_V_3287 {Type IO LastRead -1 FirstWrite -1}
 		kernel_data_V_4 {Type IO LastRead -1 FirstWrite -1}
 		kernel_data_V_5 {Type IO LastRead -1 FirstWrite -1}
@@ -586,33 +586,33 @@ set ArgLastReadFirstWriteLatency {
 		w2_V {Type I LastRead -1 FirstWrite -1}}
 	dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s {
 		outidx3 {Type I LastRead -1 FirstWrite -1}
-		kernel_data_V_0 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1285 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_2286 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_3287 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_4 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_5 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_6 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_7 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_8 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_9 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_10 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_11 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_12 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_13 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_14 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_15 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_16 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_17 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_18 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_19 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_20 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_21 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_22 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_23 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_24 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_25 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_26 {Type I LastRead 2 FirstWrite -1}
+		kernel_data_V_0 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1285 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_2286 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_3287 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_4 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_5 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_6 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_7 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_8 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_9 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_10 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_11 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_12 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_13 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_14 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_15 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_16 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_17 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_18 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_19 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_20 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_21 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_22 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_23 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_24 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_25 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_26 {Type I LastRead 1 FirstWrite -1}
 		w2_V {Type I LastRead -1 FirstWrite -1}}
 	shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s {
 		in_elem_data_0_V_read {Type I LastRead 0 FirstWrite -1}
@@ -646,8 +646,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "20481", "Max" : "487425"}
-	, {"Name" : "Interval", "Min" : "20481", "Max" : "487425"}
+	{"Name" : "Latency", "Min" : "12289", "Max" : "462849"}
+	, {"Name" : "Interval", "Min" : "12289", "Max" : "462849"}
 ]}
 
 set PipelineEnableSignalInfo {[

@@ -39,11 +39,11 @@ set ExportMCPathFlag 0
 set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
-set TargetInfo xc7z020:-clg400:-1
-set SourceFiles {sc {} c {../../firmware/myproject.cpp ../../firmware/myproject_axi.cpp}}
+set TargetInfo xczu5ev:-sfvc784:-2LV-e
+set SourceFiles {sc {} c {../../firmware/myproject_axi.cpp ../../firmware/myproject.cpp}}
 set SourceFlags {sc {} c {-std=c++0x -std=c++0x}}
 set DirectiveFile /home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/myproject_prj/solution1/solution1.directive
-set TBFiles {verilog {../../tb_data ../../firmware/weights ../../myproject_test.cpp} bc {../../tb_data ../../firmware/weights ../../myproject_test.cpp} vhdl {../../tb_data ../../firmware/weights ../../myproject_test.cpp} sc {../../tb_data ../../firmware/weights ../../myproject_test.cpp} cas {../../tb_data ../../firmware/weights ../../myproject_test.cpp} c {}}
+set TBFiles {verilog {../../myproject_test.cpp ../../firmware/weights ../../tb_data} bc {../../myproject_test.cpp ../../firmware/weights ../../tb_data} vhdl {../../myproject_test.cpp ../../firmware/weights ../../tb_data} sc {../../myproject_test.cpp ../../firmware/weights ../../tb_data} cas {../../myproject_test.cpp ../../firmware/weights ../../tb_data} c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
@@ -59,5 +59,5 @@ set DefaultPlatform DefaultPlatform
 set multiClockList {}
 set SCPortClockMap {}
 set intNbAccess 0
-set PlatformFiles {{DefaultPlatform {xilinx/zynq/zynq xilinx/zynq/zynq_fpv6}}}
+set PlatformFiles {{DefaultPlatform {xilinx/zynquplus/zynquplus xilinx/zynquplus/zynquplus_fpv7}}}
 set HPFPO 0

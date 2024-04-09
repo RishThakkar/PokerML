@@ -194,7 +194,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "Rewind", "UnalignedPipeline" : "0", "RewindPipeline" : "1", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "148", "EstimateLatencyMax" : "149",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "145", "EstimateLatencyMax" : "146",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -242,55 +242,55 @@ set RtlHierarchyInfo {[
 			{"Name" : "w6_V", "Type" : "Memory", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.outidx_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.w6_V_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_42_32_1_1_U130", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mul_mul_6s_16s_21_3_1_U131", "Parent" : "0"}]}
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_42_32_1_1_U128", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mul_mul_6s_16s_21_1_1_U129", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s {
 		outidx {Type I LastRead -1 FirstWrite -1}
-		kernel_data_V_1_0 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_1 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_2 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_3 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_4 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_5 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_6 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_7 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_8 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_9 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_10 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_11 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_12 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_13 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_14 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_15 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_16 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_17 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_18 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_19 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_20 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_21 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_22 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_23 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_24 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_25 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_26 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_27 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_28 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_29 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_30 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_31 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_32 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_33 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_34 {Type I LastRead 2 FirstWrite -1}
-		kernel_data_V_1_35 {Type I LastRead 2 FirstWrite -1}
+		kernel_data_V_1_0 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_1 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_2 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_3 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_4 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_5 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_6 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_7 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_8 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_9 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_10 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_11 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_12 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_13 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_14 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_15 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_16 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_17 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_18 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_19 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_20 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_21 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_22 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_23 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_24 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_25 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_26 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_27 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_28 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_29 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_30 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_31 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_32 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_33 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_34 {Type I LastRead 1 FirstWrite -1}
+		kernel_data_V_1_35 {Type I LastRead 1 FirstWrite -1}
 		w6_V {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "148", "Max" : "149"}
+	{"Name" : "Latency", "Min" : "145", "Max" : "146"}
 	, {"Name" : "Interval", "Min" : "144", "Max" : "144"}
 ]}
 

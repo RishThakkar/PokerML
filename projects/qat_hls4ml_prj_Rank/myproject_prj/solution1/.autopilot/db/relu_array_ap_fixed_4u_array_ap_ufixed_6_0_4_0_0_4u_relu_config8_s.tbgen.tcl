@@ -113,7 +113,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "845", "EstimateLatencyMax" : "845",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "844", "EstimateLatencyMax" : "844",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -153,16 +153,16 @@ set ArgLastReadFirstWriteLatency {
 		data_V_data_1_V {Type I LastRead 2 FirstWrite -1}
 		data_V_data_2_V {Type I LastRead 2 FirstWrite -1}
 		data_V_data_3_V {Type I LastRead 2 FirstWrite -1}
-		res_V_data_0_V {Type O LastRead -1 FirstWrite 4}
-		res_V_data_1_V {Type O LastRead -1 FirstWrite 4}
-		res_V_data_2_V {Type O LastRead -1 FirstWrite 4}
-		res_V_data_3_V {Type O LastRead -1 FirstWrite 4}}}
+		res_V_data_0_V {Type O LastRead -1 FirstWrite 3}
+		res_V_data_1_V {Type O LastRead -1 FirstWrite 3}
+		res_V_data_2_V {Type O LastRead -1 FirstWrite 3}
+		res_V_data_3_V {Type O LastRead -1 FirstWrite 3}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "845", "Max" : "845"}
-	, {"Name" : "Interval", "Min" : "845", "Max" : "845"}
+	{"Name" : "Latency", "Min" : "844", "Max" : "844"}
+	, {"Name" : "Interval", "Min" : "844", "Max" : "844"}
 ]}
 
 set PipelineEnableSignalInfo {[

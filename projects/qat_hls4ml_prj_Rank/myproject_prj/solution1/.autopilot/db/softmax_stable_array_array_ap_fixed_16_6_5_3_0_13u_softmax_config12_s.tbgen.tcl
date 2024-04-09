@@ -295,13 +295,13 @@ set NewPortList {[
  	{ "name": "res_V_data_12_V_blk_n", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "res_V_data_12_V_blk_n", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "8", "9"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "8"],
 		"CDFG" : "softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "13",
-		"VariableLatency" : "0", "ExactLatency" : "43", "EstimateLatencyMin" : "43", "EstimateLatencyMax" : "43",
+		"VariableLatency" : "0", "ExactLatency" : "32", "EstimateLatencyMin" : "32", "EstimateLatencyMax" : "32",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -391,13 +391,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "invert_table2", "Type" : "Memory", "Direction" : "I"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.exp_table1_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.invert_table2_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_436", "Parent" : "0", "Child" : ["4", "5", "6", "7"],
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_746", "Parent" : "0", "Child" : ["4", "5", "6", "7"],
 		"CDFG" : "reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "0", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
 		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "1",
-		"VariableLatency" : "0", "ExactLatency" : "2", "EstimateLatencyMin" : "2", "EstimateLatencyMax" : "2",
+		"VariableLatency" : "0", "ExactLatency" : "1", "EstimateLatencyMin" : "1", "EstimateLatencyMax" : "1",
 		"Combinational" : "0",
 		"Datapath" : "1",
 		"ClockEnable" : "1",
@@ -419,17 +419,17 @@ set RtlHierarchyInfo {[
 			{"Name" : "x_11_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "x_12_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "x_V_offset", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_436.myproject_axi_mux_134_18_1_0_U1027", "Parent" : "3"},
-	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_436.myproject_axi_mux_134_18_1_0_U1028", "Parent" : "3"},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_436.myproject_axi_mux_134_18_1_0_U1029", "Parent" : "3"},
-	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_436.myproject_axi_mux_134_18_1_0_U1030", "Parent" : "3"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_5_Op_add_ap_fixed_18_8_0_0_0_s_fu_456", "Parent" : "0",
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_746.myproject_axi_mux_134_18_1_0_U1023", "Parent" : "3"},
+	{"ID" : "5", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_746.myproject_axi_mux_134_18_1_0_U1024", "Parent" : "3"},
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_746.myproject_axi_mux_134_18_1_0_U1025", "Parent" : "3"},
+	{"ID" : "7", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s_fu_746.myproject_axi_mux_134_18_1_0_U1026", "Parent" : "3"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_reduce_ap_fixed_18_8_0_0_0_5_Op_add_ap_fixed_18_8_0_0_0_s_fu_766", "Parent" : "0",
 		"CDFG" : "reduce_ap_fixed_18_8_0_0_0_5_Op_add_ap_fixed_18_8_0_0_0_s",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "3",
-		"VariableLatency" : "0", "ExactLatency" : "2", "EstimateLatencyMin" : "2", "EstimateLatencyMax" : "2",
+		"II" : "2",
+		"VariableLatency" : "0", "ExactLatency" : "1", "EstimateLatencyMin" : "1", "EstimateLatencyMax" : "1",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "1",
@@ -441,8 +441,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "x_9_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "x_10_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "x_11_V", "Type" : "None", "Direction" : "I"},
-			{"Name" : "x_12_V", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "9", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mul_17ns_18s_26_2_1_U1051", "Parent" : "0"}]}
+			{"Name" : "x_12_V", "Type" : "None", "Direction" : "I"}]}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -460,19 +459,19 @@ set ArgLastReadFirstWriteLatency {
 		data_V_data_10_V {Type I LastRead 0 FirstWrite -1}
 		data_V_data_11_V {Type I LastRead 0 FirstWrite -1}
 		data_V_data_12_V {Type I LastRead 0 FirstWrite -1}
-		res_V_data_0_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_1_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_2_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_3_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_4_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_5_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_6_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_7_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_8_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_9_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_10_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_11_V {Type O LastRead -1 FirstWrite 43}
-		res_V_data_12_V {Type O LastRead -1 FirstWrite 43}
+		res_V_data_0_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_1_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_2_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_3_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_4_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_5_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_6_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_7_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_8_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_9_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_10_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_11_V {Type O LastRead -1 FirstWrite 32}
+		res_V_data_12_V {Type O LastRead -1 FirstWrite 32}
 		exp_table1 {Type I LastRead -1 FirstWrite -1}
 		invert_table2 {Type I LastRead -1 FirstWrite -1}}
 	reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s {
@@ -495,12 +494,12 @@ set ArgLastReadFirstWriteLatency {
 		x_9_V {Type I LastRead 0 FirstWrite -1}
 		x_10_V {Type I LastRead 0 FirstWrite -1}
 		x_11_V {Type I LastRead 0 FirstWrite -1}
-		x_12_V {Type I LastRead 2 FirstWrite -1}}}
+		x_12_V {Type I LastRead 1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "43", "Max" : "43"}
+	{"Name" : "Latency", "Min" : "32", "Max" : "32"}
 	, {"Name" : "Interval", "Min" : "13", "Max" : "13"}
 ]}
 

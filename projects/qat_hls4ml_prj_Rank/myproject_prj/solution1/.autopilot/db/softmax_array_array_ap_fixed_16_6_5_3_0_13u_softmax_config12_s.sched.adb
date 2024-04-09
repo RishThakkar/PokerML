@@ -1149,8 +1149,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>43</mMinLatency>
-			<mMaxLatency>43</mMaxLatency>
+			<mMinLatency>32</mMinLatency>
+			<mMaxLatency>32</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1164,13 +1164,13 @@
 			<first>57</first>
 			<second class_id="28" tracking_level="0" version="0">
 				<first>0</first>
-				<second>43</second>
+				<second>32</second>
 			</second>
 		</item>
 		<item>
 			<first>58</first>
 			<second>
-				<first>43</first>
+				<first>32</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1182,7 +1182,7 @@
 			<first>59</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
-				<second>43</second>
+				<second>32</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

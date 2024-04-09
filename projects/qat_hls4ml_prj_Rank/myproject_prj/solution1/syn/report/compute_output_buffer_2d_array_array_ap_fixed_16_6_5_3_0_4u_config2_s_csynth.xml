@@ -6,8 +6,8 @@
 
 <UserAssignments>
 <unit>ns</unit>
-<ProductFamily>zynq</ProductFamily>
-<Part>xc7z020-clg400-1</Part>
+<ProductFamily>zynquplus</ProductFamily>
+<Part>xczu5ev-sfvc784-2LV-e</Part>
 <TopModelName>compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s</TopModelName>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
@@ -17,18 +17,18 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>6.279</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.967</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>2</Best-caseLatency>
-<Average-caseLatency>59</Average-caseLatency>
-<Worst-caseLatency>116</Worst-caseLatency>
-<Best-caseRealTimeLatency>12.558 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.370 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.728 us</Worst-caseRealTimeLatency>
-<Interval-min>2</Interval-min>
-<Interval-max>116</Interval-max>
+<Best-caseLatency>1</Best-caseLatency>
+<Average-caseLatency>56</Average-caseLatency>
+<Worst-caseLatency>111</Worst-caseLatency>
+<Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.280 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.555 us</Worst-caseRealTimeLatency>
+<Interval-min>1</Interval-min>
+<Interval-max>111</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
@@ -36,16 +36,16 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>1</DSP48E>
-<FF>1846</FF>
-<LUT>1578</LUT>
+<FF>1529</FF>
+<LUT>1515</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
-<BRAM_18K>280</BRAM_18K>
-<DSP48E>220</DSP48E>
-<FF>106400</FF>
-<LUT>53200</LUT>
-<URAM>0</URAM>
+<BRAM_18K>288</BRAM_18K>
+<DSP48E>1248</DSP48E>
+<FF>234240</FF>
+<LUT>117120</LUT>
+<URAM>64</URAM>
 </AvailableResources>
 </AreaEstimates>
 

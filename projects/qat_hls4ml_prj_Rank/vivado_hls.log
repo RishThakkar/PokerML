@@ -1,32 +1,44 @@
-
-****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
-  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
-  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-
-source /opt/xilinx/Vivado/2019.2/scripts/vivado_hls/hls.tcl -notrace
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running '/opt/xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'rht2122' on host 'socp06-ubuntu.c.psyched-span-141520.internal' (Linux_x86_64 version 5.4.0-1106-gcp) on Tue Apr 09 23:28:11 UTC 2024
+INFO: [HLS 200-10] For user 'rht2122' on host 'socp06-ubuntu.c.psyched-span-141520.internal' (Linux_x86_64 version 5.4.0-1106-gcp) on Tue Apr 09 23:46:45 UTC 2024
 INFO: [HLS 200-10] On os Ubuntu 18.04.6 LTS
 INFO: [HLS 200-10] In directory '/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank'
-Sourcing Tcl script 'build_prj.tcl'
+Sourcing Tcl script '/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/myproject_prj/solution1/csynth.tcl'
 INFO: [HLS 200-10] Opening project '/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/myproject_prj'.
-INFO: [HLS 200-10] Adding design file 'firmware/myproject_axi.cpp' to the project
 INFO: [HLS 200-10] Adding design file 'firmware/myproject.cpp' to the project
-INFO: [HLS 200-10] Adding test bench file 'myproject_test.cpp' to the project
-INFO: [HLS 200-10] Adding test bench file 'firmware/weights' to the project
+INFO: [HLS 200-10] Adding design file 'firmware/myproject_axi.cpp' to the project
 INFO: [HLS 200-10] Adding test bench file 'tb_data' to the project
+INFO: [HLS 200-10] Adding test bench file 'firmware/weights' to the project
+INFO: [HLS 200-10] Adding test bench file 'myproject_test.cpp' to the project
 INFO: [HLS 200-10] Opening solution '/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/myproject_prj/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
 INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
-INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-10] Setting target device to 'xczu5ev-sfvc784-2LV-e'
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_compile -name_max_length=20
+INFO: [XFORM 203-1161] The maximum of name length is set into 20.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_schedule -enable_dsp_full_reg=0
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [XFORM 203-1161] The maximum of name length is set into 80.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1172] Optimizing floating point zeros and discarding its signedness.
+INFO: [XFORM 203-1173] Reordering floating point operations aggressively.
+INFO: [XFORM 203-1176] Optimizing floating point comparison without checking NaN.
+INFO: [XFORM 203-102] Do not partition external global variables.
+INFO: [XFORM 203-102] Do not partition I/O variables.
 INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
+INFO: [XFORM 203-102] Enabled automatic array partitioning for throughput optimization.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_compile -name_max_length=20
+INFO: [XFORM 203-1161] The maximum of name length is set into 20.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
 INFO: [XFORM 203-1161] The maximum of name length is set into 80.
 INFO: [XFORM 203-101] Allowed max sub elements number after partition is 4096.
-INFO: [XFORM 203-1161] The maximum of name length is set into 80.
-***** C/RTL SYNTHESIS *****
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'firmware/myproject_axi.cpp' ... 
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/myproject_axi.cpp:17:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/myproject_axi.cpp:29:5
+WARNING: [HLS 200-471] Dataflow form checks found 2 issue(s) in file firmware/myproject_axi.cpp
 INFO: [HLS 200-10] Analyzing design file 'firmware/myproject.cpp' ... 
 WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:37:72
 WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:37:76
@@ -35,19 +47,15 @@ WARNING: [HLS 214-113] Either use an argument of the function or declare the var
 WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:62:71
 WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body: firmware/myproject.cpp:62:76
 WARNING: [HLS 200-471] Dataflow form checks found 6 issue(s) in file firmware/myproject.cpp
-INFO: [HLS 200-10] Analyzing design file 'firmware/myproject_axi.cpp' ... 
-WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/myproject_axi.cpp:17:2
-WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: firmware/myproject_axi.cpp:29:5
-WARNING: [HLS 200-471] Dataflow form checks found 2 issue(s) in file firmware/myproject_axi.cpp
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 965.348 ; gain = 532.145 ; free physical = 14764 ; free virtual = 34153
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 965.348 ; gain = 532.145 ; free physical = 14764 ; free virtual = 34153
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 965.352 ; gain = 532.145 ; free physical = 14699 ; free virtual = 34266
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 965.352 ; gain = 532.145 ; free physical = 14699 ; free virtual = 34266
 INFO: [HLS 200-10] Starting code transformations ...
 INFO: [HLS 200-489] Unrolling loop 'LineBufferShift' (firmware/nnet_utils/nnet_conv_stream.h:244) in function 'void nnet::shift_line_buffer<nnet::array<ap_ufixed<6, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, 4u>, config9>(FORWARD_REFERENCE const&, ap_shift_reg<FORWARD_REFERENCE::value_type, FORWARD_REFERENCE::in_width> (*) [FORWARD_REFERENCE::n_chan], FORWARD_REFERENCE::value_type*)' completely with a factor of 1.
 INFO: [HLS 200-489] Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:136) in function 'void nnet::dense_resource_rf_gt_nin_rem0<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config6_mult>(FORWARD_REFERENCE*, FORWARD_REFERENCE*, FORWARD_REFERENCE::weight_t*, FORWARD_REFERENCE::bias_t*)' completely with a factor of 1.
 INFO: [HLS 200-489] Unrolling loop 'LineBufferShift' (firmware/nnet_utils/nnet_conv_stream.h:244) in function 'void nnet::shift_line_buffer<nnet::array<ap_ufixed<6, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, 4u>, config5>(FORWARD_REFERENCE const&, ap_shift_reg<FORWARD_REFERENCE::value_type, FORWARD_REFERENCE::in_width> (*) [FORWARD_REFERENCE::n_chan], FORWARD_REFERENCE::value_type*)' completely with a factor of 1.
 INFO: [HLS 200-489] Unrolling loop 'MultLoop' (firmware/nnet_utils/nnet_dense_resource.h:136) in function 'void nnet::dense_resource_rf_gt_nin_rem0<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2_mult>(FORWARD_REFERENCE*, FORWARD_REFERENCE*, FORWARD_REFERENCE::weight_t*, FORWARD_REFERENCE::bias_t*)' completely with a factor of 1.
-INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 3u>::operator[].1' into 'myproject_axi' (firmware/myproject_axi.cpp:21).
-INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 3u>::operator[]' into 'nnet::shift_line_buffer<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 3u>, config2>' (firmware/nnet_utils/nnet_conv_stream.h:237).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 3u>::operator[]' into 'myproject_axi' (firmware/myproject_axi.cpp:21).
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 3u>::operator[].1' into 'nnet::shift_line_buffer<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 3u>, config2>' (firmware/nnet_utils/nnet_conv_stream.h:237).
 INFO: [XFORM 203-603] Inlining function 'nnet::kernel_shift_2d<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 3u>, config2>' into 'nnet::shift_line_buffer<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 3u>, config2>' (firmware/nnet_utils/nnet_conv_stream.h:252).
 INFO: [XFORM 203-603] Inlining function 'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<6, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >::product' into 'nnet::dense_resource_rf_gt_nin_rem0<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config2_mult>' (firmware/nnet_utils/nnet_dense_resource.h:139).
 INFO: [XFORM 203-603] Inlining function 'nnet::product::mult<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<6, 1, (ap_q_mode)5, (ap_o_mode)3, 0> >::product' into 'nnet::dense_resource_rf_gt_nin_rem0<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config6_mult>' (firmware/nnet_utils/nnet_dense_resource.h:139).
@@ -100,11 +108,11 @@ INFO: [XFORM 203-603] Inlining function 'nnet::Op_max<ap_fixed<32, 16, (ap_q_mod
 INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource_rf_leq_nin<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' (firmware/nnet_utils/nnet_dense_resource.h:253).
 INFO: [XFORM 203-603] Inlining function 'nnet::cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' into 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' (firmware/nnet_utils/nnet_dense_resource.h:79->firmware/nnet_utils/nnet_dense_resource.h:253).
 INFO: [XFORM 203-603] Inlining function 'nnet::dense_resource<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' into 'nnet::dense_wrapper<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, config11>' (firmware/nnet_utils/nnet_dense_stream.h:21).
-INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>::operator[]' into 'myproject_axi' (firmware/myproject_axi.cpp:33).
 INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>::operator[]' into 'nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>, softmax_config12>' (firmware/nnet_utils/nnet_activation_stream.h:244).
 INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>::operator[]' into 'nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>, softmax_config12>' (firmware/nnet_utils/nnet_activation_stream.h:203).
 INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>::operator[]' into 'nnet::dense<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>, config11>' (firmware/nnet_utils/nnet_dense_stream.h:60).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 965.348 ; gain = 532.145 ; free physical = 14684 ; free virtual = 34073
+INFO: [XFORM 203-603] Inlining function 'nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>::operator[]' into 'myproject_axi' (firmware/myproject_axi.cpp:33).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 967.516 ; gain = 534.309 ; free physical = 14605 ; free virtual = 34181
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO: [XFORM 203-602] Inlining function 'nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()' into 'nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 2, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >' (firmware/nnet_utils/nnet_common.h:43) automatically.
 INFO: [XFORM 203-602] Inlining function 'nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 2, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >' into 'nnet::reduce<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, nnet::Op_max<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0> > >' (firmware/nnet_utils/nnet_common.h:45) automatically.
@@ -126,7 +134,7 @@ INFO: [XFORM 203-602] Inlining function 'nnet::softmax_idx_from_real_val<ap_fixe
 INFO: [XFORM 203-602] Inlining function 'nnet::softmax_idx_from_real_val<ap_fixed<18, 8, (ap_q_mode)0, (ap_o_mode)0, 0>, softmax_config12>' into 'nnet::softmax_stable<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 13u>, softmax_config12>' (firmware/nnet_utils/nnet_activation_stream.h:235) automatically.
 WARNING: [SYNCHK 200-23] firmware/myproject_axi.cpp:33: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 965.348 ; gain = 532.145 ; free physical = 14681 ; free virtual = 34070
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 967.516 ; gain = 534.309 ; free physical = 14590 ; free virtual = 34168
 WARNING: [XFORM 203-803] Cannot specify interface mode 'axis' on argument 'res.V.data.V' . This interface directive will be discarded. Please apply it on an argument of top module.
 WARNING: [XFORM 203-803] Cannot specify interface mode 'axis' on argument 'res.V.data.V' . This interface directive will be discarded. Please apply it on an argument of top module.
 WARNING: [XFORM 203-803] Cannot specify interface mode 'axis' on argument 'data.V.data.V' . This interface directive will be discarded. Please apply it on an argument of top module.
@@ -332,7 +340,7 @@ INFO: [XFORM 203-11] Balancing expressions in function 'nnet::pooling2d_cl<nnet:
 INFO: [XFORM 203-11] Balancing expressions in function 'nnet::pooling2d_cl<nnet::array<ap_ufixed<6, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, 4u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4u>, config5>' (firmware/nnet_utils/nnet_pooling_stream.h:65:5)...3 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'nnet::compute_output_buffer_2d<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4u>, config6>' (firmware/nnet_utils/nnet_conv_stream.h:286:5)...3 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'nnet::compute_output_buffer_2d<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 3u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4u>, config2>' (firmware/nnet_utils/nnet_conv_stream.h:286:5)...3 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:55 ; elapsed = 00:01:59 . Memory (MB): peak = 1093.348 ; gain = 660.145 ; free physical = 14578 ; free virtual = 33972
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 1093.352 ; gain = 660.145 ; free physical = 14939 ; free virtual = 34525
 INFO: [XFORM 203-541] Flattening a loop nest 'ReadInputHeight' (firmware/nnet_utils/nnet_pooling_stream.h:241:66) in function 'nnet::pooling2d_cl<nnet::array<ap_ufixed<6, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, 4u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4u>, config9>'.
 INFO: [XFORM 203-541] Flattening a loop nest 'ReadInputHeight' (firmware/nnet_utils/nnet_pooling_stream.h:241:66) in function 'nnet::pooling2d_cl<nnet::array<ap_ufixed<6, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, 4u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4u>, config5>'.
 INFO: [XFORM 203-541] Flattening a loop nest 'ReadInputHeight' (firmware/nnet_utils/nnet_conv2d_stream.h:79:66) in function 'nnet::conv_2d_cl<nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4u>, nnet::array<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, 4u>, config6>'.
@@ -361,7 +369,7 @@ INFO: [XFORM 203-531] Rewinding loop 'ReuseLoop' (firmware/nnet_utils/nnet_dense
 WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'ReuseLoop' in function 'dense_wrapper<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config11>'.
 WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'ReuseLoop' in function 'dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>'.
 WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'ReuseLoop' in function 'dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2_mult>'.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:27 ; elapsed = 00:02:32 . Memory (MB): peak = 1349.348 ; gain = 916.145 ; free physical = 14331 ; free virtual = 33727
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:28 ; elapsed = 00:02:33 . Memory (MB): peak = 1349.352 ; gain = 916.145 ; free physical = 14421 ; free virtual = 34009
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'myproject_axi' ...
 WARNING: [SYN 201-103] Legalizing function name 'shift_line_buffer<array<ap_fixed<16, 6, 5, 3, 0>, 3u>, config2>' to 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s'.
@@ -388,13 +396,13 @@ INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc346'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 153.33 seconds; current allocated memory: 538.018 MB.
+INFO: [HLS 200-111]  Elapsed time: 154.08 seconds; current allocated memory: 542.464 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 538.542 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 542.911 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -402,95 +410,79 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'shift_line_buffer<array<ap_fixed<16, 6, 5, 3, 0>, 3u>, config2>'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 538.779 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 543.179 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 539.017 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 543.414 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'ReuseLoop'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
-WARNING: [SCHED 204-21] Estimated clock period (6.279ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
-WARNING: [SCHED 204-21] The critical path in module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s' consists of the following:
-	'phi' operation ('acc_0_V_020', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) with incoming values : ('acc[0].V', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) [42]  (0 ns)
-	'mux' operation ('tmp', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) [149]  (1.96 ns)
-	'add' operation ('acc[0].V', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) [150]  (2.55 ns)
-	multiplexor before 'phi' operation ('acc[0].V') with incoming values : ('acc[0].V', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) [166]  (1.77 ns)
-	'phi' operation ('acc[0].V') with incoming values : ('acc[0].V', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) [166]  (0 ns)
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 539.607 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 543.933 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 540.470 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 544.772 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (6.279ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
-WARNING: [SCHED 204-21] The critical path in module 'compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s' consists of the following:
-	'call' operation ('tmp', firmware/nnet_utils/nnet_conv_stream.h:297) to 'dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config2_mult>' [147]  (6.28 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 540.882 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 545.219 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 541.395 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 545.739 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 541.521 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 545.813 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 541.756 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 546.075 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'ReLUActLoop'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 542.122 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 546.438 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 542.647 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 546.926 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'ReadInputHeight_ReadInputWidth'.
-WARNING: [SCHED 204-68] The II Violation in module 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s' (Loop: ReadInputHeight_ReadInputWidth): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
-   between 'store' operation ('sX_1_write_ln227', firmware/nnet_utils/nnet_pooling_stream.h:227->firmware/nnet_utils/nnet_pooling_stream.h:247->firmware/nnet_utils/nnet_pooling_stream.h:257) of variable 'select_ln227', firmware/nnet_utils/nnet_pooling_stream.h:227->firmware/nnet_utils/nnet_pooling_stream.h:247->firmware/nnet_utils/nnet_pooling_stream.h:257 on static variable 'sX_1' and 'load' operation ('sX_1_load', firmware/nnet_utils/nnet_pooling_stream.h:191->firmware/nnet_utils/nnet_pooling_stream.h:247->firmware/nnet_utils/nnet_pooling_stream.h:257) on static variable 'sX_1'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 5.
-WARNING: [SCHED 204-21] Estimated clock period (4.429ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
-WARNING: [SCHED 204-21] The critical path in module 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s' consists of the following:
-	'icmp' operation ('icmp_ln212', firmware/nnet_utils/nnet_pooling_stream.h:212->firmware/nnet_utils/nnet_pooling_stream.h:247->firmware/nnet_utils/nnet_pooling_stream.h:257) [156]  (2.47 ns)
-	blocking operation 1.96 ns on control path)
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 543.301 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 547.671 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 544.021 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 548.372 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -498,109 +490,93 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'shift_line_buffer<array<ap_fixed<16, 6, 5, 3, 0>, 4u>, config6>'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 544.345 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 548.680 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 544.646 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 548.976 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'ReuseLoop'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
-WARNING: [SCHED 204-21] Estimated clock period (6.279ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
-WARNING: [SCHED 204-21] The critical path in module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s' consists of the following:
-	'phi' operation ('acc_0_V_020', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) with incoming values : ('acc[0].V', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) [51]  (0 ns)
-	'mux' operation ('tmp', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) [185]  (1.96 ns)
-	'add' operation ('acc[0].V', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) [186]  (2.55 ns)
-	multiplexor before 'phi' operation ('acc[3].V') with incoming values : ('acc[0].V', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) [195]  (1.77 ns)
-	'phi' operation ('acc[3].V') with incoming values : ('acc[0].V', firmware/nnet_utils/nnet_dense_resource.h:139->firmware/nnet_utils/nnet_dense_resource.h:255) [195]  (0 ns)
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 545.162 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 549.466 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 546.076 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 550.350 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config6_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-WARNING: [SCHED 204-21] Estimated clock period (6.279ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
-WARNING: [SCHED 204-21] The critical path in module 'compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config6_s' consists of the following:
-	'call' operation ('tmp', firmware/nnet_utils/nnet_conv_stream.h:297) to 'dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>' [184]  (6.28 ns)
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 546.509 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.45 seconds; current allocated memory: 550.784 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 547.115 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 551.393 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 547.256 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 551.558 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 547.523 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 551.860 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config8_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'ReLUActLoop'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 547.863 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 552.220 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 548.389 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 552.710 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'ReadInputHeight_ReadInputWidth'.
-WARNING: [SCHED 204-68] The II Violation in module 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s' (Loop: ReadInputHeight_ReadInputWidth): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
-   between 'store' operation ('sX_write_ln227', firmware/nnet_utils/nnet_pooling_stream.h:227->firmware/nnet_utils/nnet_pooling_stream.h:247->firmware/nnet_utils/nnet_pooling_stream.h:257) of variable 'select_ln227', firmware/nnet_utils/nnet_pooling_stream.h:227->firmware/nnet_utils/nnet_pooling_stream.h:247->firmware/nnet_utils/nnet_pooling_stream.h:257 on static variable 'sX' and 'load' operation ('sX_load', firmware/nnet_utils/nnet_pooling_stream.h:191->firmware/nnet_utils/nnet_pooling_stream.h:247->firmware/nnet_utils/nnet_pooling_stream.h:257) on static variable 'sX'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 5.
-WARNING: [SCHED 204-21] Estimated clock period (4.429ns) exceeds the target (target clock period: 5ns, clock uncertainty: 0.625ns, effective delay budget: 4.375ns).
-WARNING: [SCHED 204-21] The critical path in module 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s' consists of the following:
-	'icmp' operation ('icmp_ln212', firmware/nnet_utils/nnet_pooling_stream.h:212->firmware/nnet_utils/nnet_pooling_stream.h:247->firmware/nnet_utils/nnet_pooling_stream.h:257) [156]  (2.47 ns)
-	blocking operation 1.96 ns on control path)
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 549.036 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 553.340 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 549.750 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.41 seconds; current allocated memory: 554.072 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'ReuseLoop'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 7.09 seconds; current allocated memory: 557.534 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.86 seconds; current allocated memory: 561.821 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 5.68 seconds; current allocated memory: 573.907 MB.
+INFO: [HLS 200-111]  Elapsed time: 5.63 seconds; current allocated memory: 578.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_13u_config11_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -608,123 +584,122 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'DataPrepare'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 15.86 seconds; current allocated memory: 583.176 MB.
+INFO: [HLS 200-111]  Elapsed time: 17.38 seconds; current allocated memory: 587.267 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 8.08 seconds; current allocated memory: 586.450 MB.
+INFO: [HLS 200-111]  Elapsed time: 8.76 seconds; current allocated memory: 590.620 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'reduce<ap_fixed<18, 8, 0, 0, 0>, 4, Op_add<ap_fixed<18, 8, 0, 0, 0> > >'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 7.34 seconds; current allocated memory: 586.781 MB.
+INFO: [HLS 200-111]  Elapsed time: 7.58 seconds; current allocated memory: 590.948 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 587.118 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 591.277 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reduce_ap_fixed_18_8_0_0_0_5_Op_add_ap_fixed_18_8_0_0_0_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'reduce<ap_fixed<18, 8, 0, 0, 0>, 5, Op_add<ap_fixed<18, 8, 0, 0, 0> > >'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 13, Final II = 3, Depth = 3.
+INFO: [SCHED 204-61] Pipelining result : Target II = 13, Final II = 2, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 587.345 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 591.529 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 587.525 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 591.708 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'softmax_stable<array,array<ap_fixed<16,6,5,3,0>,13u>,softmax_config12>'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 13, Final II = 13, Depth = 44.
+INFO: [SCHED 204-61] Pipelining result : Target II = 13, Final II = 13, Depth = 33.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.76 seconds; current allocated memory: 589.161 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.51 seconds; current allocated memory: 593.011 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Starting global binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.31 seconds; current allocated memory: 591.099 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.27 seconds; current allocated memory: 594.982 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'softmax_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.33 seconds; current allocated memory: 591.569 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.32 seconds; current allocated memory: 595.384 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 592.209 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 596.092 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'myproject' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.51 seconds; current allocated memory: 592.783 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 596.678 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 3.22 seconds; current allocated memory: 594.895 MB.
+INFO: [HLS 200-111]  Elapsed time: 3.27 seconds; current allocated memory: 599.105 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Block_myproject_axi_exit54_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.94 seconds; current allocated memory: 595.547 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.04 seconds; current allocated memory: 599.768 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 595.764 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 600.042 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Loop_2_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 595.995 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 600.271 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 596.386 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 600.661 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'myproject_axi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 596.629 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 600.873 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.94 seconds; current allocated memory: 597.922 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.03 seconds; current allocated memory: 602.290 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc346' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'myproject_axi_ashr_54ns_32ns_54_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'myproject_axi_fpext_32ns_64_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_fpext_32ns_64_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc346'.
-INFO: [HLS 200-111]  Elapsed time: 2.09 seconds; current allocated memory: 599.445 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.03 seconds; current allocated memory: 603.723 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -735,14 +710,14 @@ INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16_6_5
 INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_line_buffer_Array_V_0_2' to 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_line_buffer_Array_V_fYi' due to the length limit 80
 INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_line_buffer_Array_V_1284_2' to 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_line_buffer_Array_V_g8j' due to the length limit 80
 INFO: [RTGEN 206-100] Finished creating RTL model for 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 603.616 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.66 seconds; current allocated memory: 607.875 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mul_mul_6s_16s_20_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mul_mul_6s_16s_20_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 605.332 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 609.615 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -778,17 +753,17 @@ WARNING: [RTGEN 206-101] Register 'sY_3' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'pY_3' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'pX_3' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.75 seconds; current allocated memory: 609.590 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.77 seconds; current allocated memory: 613.774 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 611.991 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.52 seconds; current allocated memory: 616.261 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 613.352 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 617.564 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -810,7 +785,7 @@ INFO: [SYN 201-210] Renamed object name 'pooling2d_cl_array_ap_ufixed_4u_array_a
 INFO: [SYN 201-210] Renamed object name 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s_line_buffer_Array_V_2_0_3' to 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s_line_bkbM' due to the length limit 80
 INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mux_42_32_1_1': 4 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.72 seconds; current allocated memory: 616.386 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.78 seconds; current allocated memory: 620.577 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -823,14 +798,14 @@ INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16_6_5
 INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s_line_buffer_Array_V_1_0_3' to 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s_line_buffer_Array_V_rcU' due to the length limit 80
 INFO: [SYN 201-210] Renamed object name 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s_line_buffer_Array_V_1_1_3' to 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s_line_buffer_Array_V_sc4' due to the length limit 80
 INFO: [RTGEN 206-100] Finished creating RTL model for 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.92 seconds; current allocated memory: 622.831 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.9 seconds; current allocated memory: 627.004 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mul_mul_6s_16s_21_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mul_mul_6s_16s_21_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mux_42_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 624.943 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 629.140 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config6_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -875,17 +850,17 @@ WARNING: [RTGEN 206-101] Register 'sY_2' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'pY_2' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'pX_2' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config6_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.94 seconds; current allocated memory: 630.452 MB.
+INFO: [HLS 200-111]  Elapsed time: 1 seconds; current allocated memory: 634.571 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 633.310 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 637.438 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config8_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config8_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 634.718 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 638.787 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -907,65 +882,61 @@ INFO: [SYN 201-210] Renamed object name 'pooling2d_cl_array_ap_ufixed_4u_array_a
 INFO: [SYN 201-210] Renamed object name 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s_line_buffer_Array_V_3_0_3' to 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s_line_bwdI' due to the length limit 80
 INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mux_42_32_1_1': 4 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.87 seconds; current allocated memory: 637.790 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 641.834 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-104] Estimated max fanout for 'dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s' is 12555 from HDL expression: ((icmp_ln43_reg_30249 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))
-INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mul_5s_16s_21_2_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mul_mul_6s_16s_22_3_1': 12 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mux_78410_16_2_1': 1 instance(s).
+INFO: [RTGEN 206-104] Estimated max fanout for 'dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s' is 25088 from HDL expression: (do_init_reg_6403 == 1'd0)
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mul_mul_6s_16s_22_1_1': 12 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mux_78410_16_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s'.
-INFO: [HLS 200-111]  Elapsed time: 1.74 seconds; current allocated memory: 657.562 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.74 seconds; current allocated memory: 662.356 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_13u_config11_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_13u_config11_s'.
-INFO: [HLS 200-111]  Elapsed time: 11.06 seconds; current allocated memory: 723.590 MB.
+INFO: [HLS 200-111]  Elapsed time: 12.32 seconds; current allocated memory: 736.544 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mux_134_18_1_0': 4 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s'.
-INFO: [HLS 200-111]  Elapsed time: 8.88 seconds; current allocated memory: 767.345 MB.
+INFO: [HLS 200-111]  Elapsed time: 8.7 seconds; current allocated memory: 780.359 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reduce_ap_fixed_18_8_0_0_0_5_Op_add_ap_fixed_18_8_0_0_0_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reduce_ap_fixed_18_8_0_0_0_5_Op_add_ap_fixed_18_8_0_0_0_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 769.144 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 782.123 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s_exp_table1' to 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s_exp_tabxdS' due to the length limit 80
 INFO: [SYN 201-210] Renamed object name 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s_invert_table2' to 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s_invert_yd2' due to the length limit 80
-INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mul_17ns_18s_26_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.61 seconds; current allocated memory: 773.162 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.62 seconds; current allocated memory: 785.983 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'softmax_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'softmax_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s'.
-INFO: [HLS 200-111]  Elapsed time: 2.19 seconds; current allocated memory: 780.784 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.23 seconds; current allocated memory: 793.459 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'myproject' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SYN 201-210] Renamed object name 'start_for_pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_U0' to 'start_for_pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_configzec' due to the length limit 80
 INFO: [SYN 201-210] Renamed object name 'start_for_pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_U0' to 'start_for_pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_configAem' due to the length limit 80
 INFO: [RTGEN 206-100] Finished creating RTL model for 'myproject'.
-INFO: [HLS 200-111]  Elapsed time: 0.93 seconds; current allocated memory: 783.875 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.9 seconds; current allocated memory: 796.574 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Block_myproject_axi_exit54_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_myproject_axi_exit54_proc'.
-INFO: [HLS 200-111]  Elapsed time: 2.63 seconds; current allocated memory: 786.812 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.67 seconds; current allocated memory: 799.541 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Loop_2_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'myproject_axi_lshr_32ns_32ns_32_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'myproject_axi_mux_134_16_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'myproject_axi_shl_64ns_32ns_64_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_2_proc'.
-INFO: [HLS 200-111]  Elapsed time: 0.55 seconds; current allocated memory: 788.197 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 800.861 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'myproject_axi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -977,18 +948,14 @@ INFO: [RTGEN 206-500] Setting interface mode on function 'myproject_axi' to 'ap_
 WARNING: [RTGEN 206-101] RTL name 'fifo_w16_d1_A' is changed to 'fifo_w16_d1_A_x' due to conflict.
 WARNING: [HLS 200-631] Ignoring ap_ctrl_none interface for myproject_axi due to Block_myproject_axi_.exit54_proc with non-FIFO I/O
 INFO: [RTGEN 206-100] Finished creating RTL model for 'myproject_axi'.
-INFO: [HLS 200-111]  Elapsed time: 0.8 seconds; current allocated memory: 790.967 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.79 seconds; current allocated memory: 803.604 MB.
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
-INFO: [HLS 200-789] **** Estimated Fmax: 159.26 MHz
-INFO: [RTMG 210-286] Generating pipelined shifter : 'myproject_axi_ashr_54ns_32ns_54_2_1'
+INFO: [HLS 200-789] **** Estimated Fmax: 228.57 MHz
 INFO: [RTMG 210-279] Implementing memory 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_outidx3_rom' using distributed ROMs.
 INFO: [RTMG 210-279] Implementing memory 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_w2_V_rom' using distributed ROMs.
 INFO: [RTMG 210-279] Implementing memory 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s_outidx_rom' using distributed ROMs.
 INFO: [RTMG 210-279] Implementing memory 'dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s_w6_V_rom' using distributed ROMs.
-INFO: [RTMG 210-288] Generating pipelined multiplexer : 'myproject_axi_mux_78410_16_2_1'
-INFO: [RTMG 210-282] Generating pipelined core: 'myproject_axi_mul_5s_16s_21_2_1_MulnS_0'
 INFO: [RTMG 210-279] Implementing memory 'dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s_w11_V_rom' using auto ROMs.
-INFO: [RTMG 210-282] Generating pipelined core: 'myproject_axi_mul_17ns_18s_26_2_1_MulnS_1'
 INFO: [RTMG 210-279] Implementing memory 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s_exp_tabxdS_rom' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s_invert_yd2_rom' using auto ROMs.
 INFO: [RTMG 210-285] Implementing FIFO 'layer2_out_V_data_0_V_U(fifo_w16_d3844_A)' using Block RAMs.
@@ -1022,8 +989,6 @@ INFO: [RTMG 210-285] Implementing FIFO 'start_for_relu_array_ap_fixed_4u_array_a
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_configAem_U(start_for_pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_configAem)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_13u_config11_U0_U(start_for_dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_13u_config11_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_softmax_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_U0_U(start_for_softmax_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_U0)' using Shift Registers.
-INFO: [RTMG 210-286] Generating pipelined shifter : 'myproject_axi_lshr_32ns_32ns_32_2_1'
-INFO: [RTMG 210-286] Generating pipelined shifter : 'myproject_axi_shl_64ns_32ns_64_2_1'
 INFO: [RTMG 210-285] Implementing FIFO 'in_local_V_data_0_V_U(fifo_w16_d4096_A)' using Block RAMs.
 INFO: [RTMG 210-285] Implementing FIFO 'in_local_V_data_1_V_U(fifo_w16_d4096_A)' using Block RAMs.
 INFO: [RTMG 210-285] Implementing FIFO 'in_local_V_data_2_V_U(fifo_w16_d4096_A)' using Block RAMs.
@@ -1043,9 +1008,7 @@ INFO: [RTMG 210-285] Implementing FIFO 'tmp_data_V_11_U(fifo_w16_d2_A)' using Sh
 INFO: [RTMG 210-285] Implementing FIFO 'tmp_data_V_12_U(fifo_w16_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_myproject_U0_U(start_for_myproject_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_Block_myproject_axi_exit54_proc_U0_U(start_for_Block_myproject_axi_exit54_proc_U0)' using Shift Registers.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:04:13 ; elapsed = 00:04:29 . Memory (MB): peak = 1621.352 ; gain = 1188.148 ; free physical = 13887 ; free virtual = 33430
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:04:19 ; elapsed = 00:04:34 . Memory (MB): peak = 1642.402 ; gain = 1209.195 ; free physical = 14038 ; free virtual = 33772
 INFO: [VHDL 208-304] Generating VHDL RTL for myproject_axi.
 INFO: [VLOG 209-307] Generating Verilog RTL for myproject_axi.
-***** C/RTL SYNTHESIS COMPLETED IN 0h4m26s *****
-INFO: [HLS 200-112] Total elapsed time: 269.65 seconds; peak allocated memory: 790.967 MB.
-INFO: [Common 17-206] Exiting vivado_hls at Tue Apr  9 23:32:40 2024...
+INFO: [HLS 200-112] Total elapsed time: 274.8 seconds; peak allocated memory: 803.604 MB.

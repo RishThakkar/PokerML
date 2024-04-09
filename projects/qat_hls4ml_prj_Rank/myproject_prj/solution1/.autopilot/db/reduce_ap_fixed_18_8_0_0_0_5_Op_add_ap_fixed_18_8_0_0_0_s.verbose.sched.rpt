@@ -3,13 +3,13 @@
 ================================================================
 == Vivado HLS Report for 'reduce_ap_fixed_18_8_0_0_0_5_Op_add_ap_fixed_18_8_0_0_0_s'
 ================================================================
-* Date:           Tue Apr  9 23:31:37 2024
+* Date:           Tue Apr  9 23:50:14 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
 * Solution:       solution1
-* Product family: zynq
-* Target device:  xc7z020-clg400-1
+* Product family: zynquplus
+* Target device:  xczu5ev-sfvc784-2LV-e
 
 
 ================================================================
@@ -20,17 +20,17 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 5.00 ns | 4.092 ns |   0.62 ns  |
+    |ap_clk  | 5.00 ns | 2.817 ns |   0.62 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+-----+-----+----------+
-    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
-    |   min   |   max   |    min    |    max    | min | max |   Type   |
-    +---------+---------+-----------+-----------+-----+-----+----------+
-    |        2|        2| 10.000 ns | 10.000 ns |    3|    3| function |
-    +---------+---------+-----------+-----------+-----+-----+----------+
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        1|        1| 5.000 ns | 5.000 ns |    2|    2| function |
+    +---------+---------+----------+----------+-----+-----+----------+
 
     + Detail: 
         * Instance: 
@@ -62,74 +62,71 @@ HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 3, depth = 3
+  * Pipeline-0: initiation interval (II) = 2, depth = 2
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 3
+* Number of FSM states : 2
 * Pipeline : 1
-  Pipeline-0 : II = 3, D = 3, States = { 1 2 3 }
+  Pipeline-0 : II = 2, D = 2, States = { 1 2 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 2 
-2 --> 3 
-3 --> 
+2 --> 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 2.86>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%x_8_V_read = call i17 @_ssdm_op_Read.ap_auto.i17P(i17* %x_8_V)" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 4 'read' 'x_8_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%p_Val2_s = zext i17 %x_8_V_read to i18" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 5 'zext' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%x_9_V_read = call i17 @_ssdm_op_Read.ap_auto.i17P(i17* %x_9_V)" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 6 'read' 'x_9_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%p_Val2_29 = zext i17 %x_9_V_read to i18" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 7 'zext' 'p_Val2_29' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (2.10ns)   --->   "%p_Val2_33 = add i18 %p_Val2_29, %p_Val2_s" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 8 'add' 'p_Val2_33' <Predicate = true> <Delay = 2.10> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.13> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i18.i32(i18 %p_Val2_33, i32 17)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 9 'bitselect' 'p_Result_s' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.75ns)   --->   "%p_Val2_38 = select i1 %p_Result_s, i18 131071, i18 %p_Val2_33" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 10 'select' 'p_Val2_38' <Predicate = true> <Delay = 0.75> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%x_10_V_read = call i17 @_ssdm_op_Read.ap_auto.i17P(i17* %x_10_V)" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 11 'read' 'x_10_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%p_Val2_35 = zext i17 %x_10_V_read to i18" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 12 'zext' 'p_Val2_35' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%x_11_V_read = call i17 @_ssdm_op_Read.ap_auto.i17P(i17* %x_11_V)" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 13 'read' 'x_11_V_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%p_Val2_36 = zext i17 %x_11_V_read to i18" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 14 'zext' 'p_Val2_36' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (2.10ns)   --->   "%p_Val2_37 = add i18 %p_Val2_36, %p_Val2_35" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 15 'add' 'p_Val2_37' <Predicate = true> <Delay = 2.10> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.13> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%p_Result_23 = call i1 @_ssdm_op_BitSelect.i1.i18.i32(i18 %p_Val2_37, i32 17)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 16 'bitselect' 'p_Result_23' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.75ns)   --->   "%p_Val2_39 = select i1 %p_Result_23, i18 131071, i18 %p_Val2_37" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 17 'select' 'p_Val2_39' <Predicate = true> <Delay = 0.75> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+State 1 <SV = 0> <Delay = 2.81>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%x_8_V_read = call i17 @_ssdm_op_Read.ap_auto.i17P(i17* %x_8_V)" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 3 'read' 'x_8_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%p_Val2_s = zext i17 %x_8_V_read to i18" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 4 'zext' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%x_9_V_read = call i17 @_ssdm_op_Read.ap_auto.i17P(i17* %x_9_V)" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 5 'read' 'x_9_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%p_Val2_29 = zext i17 %x_9_V_read to i18" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 6 'zext' 'p_Val2_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.86ns)   --->   "%p_Val2_33 = add i18 %p_Val2_29, %p_Val2_s" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 7 'add' 'p_Val2_33' <Predicate = true> <Delay = 0.86> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_Result_s = call i1 @_ssdm_op_BitSelect.i1.i18.i32(i18 %p_Val2_33, i32 17)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 8 'bitselect' 'p_Result_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.36ns)   --->   "%p_Val2_38 = select i1 %p_Result_s, i18 131071, i18 %p_Val2_33" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 9 'select' 'p_Val2_38' <Predicate = true> <Delay = 0.36> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%x_10_V_read = call i17 @_ssdm_op_Read.ap_auto.i17P(i17* %x_10_V)" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 10 'read' 'x_10_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%p_Val2_35 = zext i17 %x_10_V_read to i18" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 11 'zext' 'p_Val2_35' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%x_11_V_read = call i17 @_ssdm_op_Read.ap_auto.i17P(i17* %x_11_V)" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 12 'read' 'x_11_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%p_Val2_36 = zext i17 %x_11_V_read to i18" [firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 13 'zext' 'p_Val2_36' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.86ns)   --->   "%p_Val2_37 = add i18 %p_Val2_36, %p_Val2_35" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 14 'add' 'p_Val2_37' <Predicate = true> <Delay = 0.86> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_Result_23 = call i1 @_ssdm_op_BitSelect.i1.i18.i32(i18 %p_Val2_37, i32 17)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 15 'bitselect' 'p_Result_23' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.36ns)   --->   "%p_Val2_39 = select i1 %p_Result_23, i18 131071, i18 %p_Val2_37" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 16 'select' 'p_Val2_39' <Predicate = true> <Delay = 0.36> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%lhs_V = sext i18 %p_Val2_38 to i19" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 17 'sext' 'lhs_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%rhs_V = sext i18 %p_Val2_39 to i19" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 18 'sext' 'rhs_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.87ns)   --->   "%ret_V = add nsw i19 %lhs_V, %rhs_V" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 19 'add' 'ret_V' <Predicate = true> <Delay = 0.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%p_Result_24 = call i1 @_ssdm_op_BitSelect.i1.i19.i32(i19 %ret_V, i32 18)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 20 'bitselect' 'p_Result_24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.87ns)   --->   "%p_Val2_41 = add i18 %p_Val2_39, %p_Val2_38" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 21 'add' 'p_Val2_41' <Predicate = true> <Delay = 0.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_Result_25 = call i1 @_ssdm_op_BitSelect.i1.i18.i32(i18 %p_Val2_41, i32 17)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 22 'bitselect' 'p_Result_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node select_ln388)   --->   "%xor_ln786 = xor i1 %p_Result_25, true" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 23 'xor' 'xor_ln786' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node select_ln388)   --->   "%underflow = and i1 %p_Result_24, %xor_ln786" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 24 'and' 'underflow' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_42)   --->   "%xor_ln340_30 = xor i1 %p_Result_24, %p_Result_25" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 25 'xor' 'xor_ln340_30' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_42)   --->   "%xor_ln340 = xor i1 %p_Result_24, true" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 26 'xor' 'xor_ln340' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_42)   --->   "%or_ln340 = or i1 %p_Result_25, %xor_ln340" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 27 'or' 'or_ln340' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_42)   --->   "%select_ln340 = select i1 %xor_ln340_30, i18 131071, i18 %p_Val2_41" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 28 'select' 'select_ln340' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.36ns) (out node of the LUT)   --->   "%select_ln388 = select i1 %underflow, i18 -131072, i18 %p_Val2_41" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 29 'select' 'select_ln388' <Predicate = true> <Delay = 0.36> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (0.36ns) (out node of the LUT)   --->   "%p_Val2_42 = select i1 %or_ln340, i18 %select_ln340, i18 %select_ln388" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 30 'select' 'p_Val2_42' <Predicate = true> <Delay = 0.36> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
-State 2 <SV = 1> <Delay = 4.09>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%lhs_V = sext i18 %p_Val2_38 to i19" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 18 'sext' 'lhs_V' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%rhs_V = sext i18 %p_Val2_39 to i19" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 19 'sext' 'rhs_V' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (2.13ns)   --->   "%ret_V = add nsw i19 %lhs_V, %rhs_V" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 20 'add' 'ret_V' <Predicate = true> <Delay = 2.13> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.13> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%p_Result_24 = call i1 @_ssdm_op_BitSelect.i1.i19.i32(i19 %ret_V, i32 18)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 21 'bitselect' 'p_Result_24' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (2.13ns)   --->   "%p_Val2_41 = add i18 %p_Val2_39, %p_Val2_38" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 22 'add' 'p_Val2_41' <Predicate = true> <Delay = 2.13> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.13> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%p_Result_25 = call i1 @_ssdm_op_BitSelect.i1.i18.i32(i18 %p_Val2_41, i32 17)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 23 'bitselect' 'p_Result_25' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node select_ln388)   --->   "%xor_ln786 = xor i1 %p_Result_25, true" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 24 'xor' 'xor_ln786' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 25 [1/1] (0.00ns) (grouped into LUT with out node select_ln388)   --->   "%underflow = and i1 %p_Result_24, %xor_ln786" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 25 'and' 'underflow' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 26 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_42)   --->   "%xor_ln340_30 = xor i1 %p_Result_24, %p_Result_25" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 26 'xor' 'xor_ln340_30' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 27 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_42)   --->   "%xor_ln340 = xor i1 %p_Result_24, true" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 27 'xor' 'xor_ln340' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_42)   --->   "%or_ln340 = or i1 %p_Result_25, %xor_ln340" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 28 'or' 'or_ln340' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node p_Val2_42)   --->   "%select_ln340 = select i1 %xor_ln340_30, i18 131071, i18 %p_Val2_41" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 29 'select' 'select_ln340' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 30 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln388 = select i1 %underflow, i18 -131072, i18 %p_Val2_41" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 30 'select' 'select_ln388' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 31 [1/1] (0.97ns) (out node of the LUT)   --->   "%p_Val2_42 = select i1 %or_ln340, i18 %select_ln340, i18 %select_ln388" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 31 'select' 'p_Val2_42' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-
-State 3 <SV = 2> <Delay = 4.09>
-ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%x_12_V_read = call i17 @_ssdm_op_Read.ap_auto.i17P(i17* %x_12_V)" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 32 'read' 'x_12_V_read' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%p_Val2_43 = zext i17 %x_12_V_read to i18" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 33 'zext' 'p_Val2_43' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%lhs_V_2 = sext i18 %p_Val2_42 to i19" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 34 'sext' 'lhs_V_2' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%rhs_V_2 = zext i17 %x_12_V_read to i19" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 35 'zext' 'rhs_V_2' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 36 [1/1] (2.13ns)   --->   "%ret_V_2 = add nsw i19 %rhs_V_2, %lhs_V_2" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 36 'add' 'ret_V_2' <Predicate = true> <Delay = 2.13> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.13> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%p_Result_26 = call i1 @_ssdm_op_BitSelect.i1.i19.i32(i19 %ret_V_2, i32 18)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 37 'bitselect' 'p_Result_26' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 38 [1/1] (2.13ns)   --->   "%p_Val2_45 = add i18 %p_Val2_42, %p_Val2_43" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 38 'add' 'p_Val2_45' <Predicate = true> <Delay = 2.13> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.13> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%p_Result_27 = call i1 @_ssdm_op_BitSelect.i1.i18.i32(i18 %p_Val2_45, i32 17)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 39 'bitselect' 'p_Result_27' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node select_ln388_13)   --->   "%xor_ln786_13 = xor i1 %p_Result_27, true" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 40 'xor' 'xor_ln786_13' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node select_ln388_13)   --->   "%underflow_2 = and i1 %p_Result_26, %xor_ln786_13" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 41 'and' 'underflow_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_33)   --->   "%xor_ln340_31 = xor i1 %p_Result_26, %p_Result_27" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 42 'xor' 'xor_ln340_31' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_33)   --->   "%xor_ln340_13 = xor i1 %p_Result_26, true" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 43 'xor' 'xor_ln340_13' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 44 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_33)   --->   "%or_ln340_15 = or i1 %p_Result_27, %xor_ln340_13" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 44 'or' 'or_ln340_15' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 45 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_33)   --->   "%select_ln340_13 = select i1 %xor_ln340_31, i18 131071, i18 %p_Val2_45" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 45 'select' 'select_ln340_13' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 46 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln388_13 = select i1 %underflow_2, i18 -131072, i18 %p_Val2_45" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 46 'select' 'select_ln388_13' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 47 [1/1] (0.97ns) (out node of the LUT)   --->   "%select_ln340_33 = select i1 %or_ln340_15, i18 %select_ln340_13, i18 %select_ln388_13" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 47 'select' 'select_ln340_33' <Predicate = true> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.75> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 48 [1/1] (0.00ns)   --->   "ret i18 %select_ln340_33" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 48 'ret' <Predicate = true> <Delay = 0.00>
+State 2 <SV = 1> <Delay = 1.59>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%x_12_V_read = call i17 @_ssdm_op_Read.ap_auto.i17P(i17* %x_12_V)" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 31 'read' 'x_12_V_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%p_Val2_43 = zext i17 %x_12_V_read to i18" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 32 'zext' 'p_Val2_43' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%lhs_V_2 = sext i18 %p_Val2_42 to i19" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 33 'sext' 'lhs_V_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%rhs_V_2 = zext i17 %x_12_V_read to i19" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 34 'zext' 'rhs_V_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.87ns)   --->   "%ret_V_2 = add nsw i19 %rhs_V_2, %lhs_V_2" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 35 'add' 'ret_V_2' <Predicate = true> <Delay = 0.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%p_Result_26 = call i1 @_ssdm_op_BitSelect.i1.i19.i32(i19 %ret_V_2, i32 18)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 36 'bitselect' 'p_Result_26' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.87ns)   --->   "%p_Val2_45 = add i18 %p_Val2_42, %p_Val2_43" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 37 'add' 'p_Val2_45' <Predicate = true> <Delay = 0.87> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%p_Result_27 = call i1 @_ssdm_op_BitSelect.i1.i18.i32(i18 %p_Val2_45, i32 17)" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 38 'bitselect' 'p_Result_27' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node select_ln388_13)   --->   "%xor_ln786_13 = xor i1 %p_Result_27, true" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 39 'xor' 'xor_ln786_13' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node select_ln388_13)   --->   "%underflow_2 = and i1 %p_Result_26, %xor_ln786_13" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 40 'and' 'underflow_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_33)   --->   "%xor_ln340_31 = xor i1 %p_Result_26, %p_Result_27" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 41 'xor' 'xor_ln340_31' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 42 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_33)   --->   "%xor_ln340_13 = xor i1 %p_Result_26, true" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 42 'xor' 'xor_ln340_13' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 43 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_33)   --->   "%or_ln340_15 = or i1 %p_Result_27, %xor_ln340_13" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 43 'or' 'or_ln340_15' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 44 [1/1] (0.00ns) (grouped into LUT with out node select_ln340_33)   --->   "%select_ln340_13 = select i1 %xor_ln340_31, i18 131071, i18 %p_Val2_45" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 44 'select' 'select_ln340_13' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 45 [1/1] (0.36ns) (out node of the LUT)   --->   "%select_ln388_13 = select i1 %underflow_2, i18 -131072, i18 %p_Val2_45" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 45 'select' 'select_ln388_13' <Predicate = true> <Delay = 0.36> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 46 [1/1] (0.36ns) (out node of the LUT)   --->   "%select_ln340_33 = select i1 %or_ln340_15, i18 %select_ln340_13, i18 %select_ln388_13" [firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45]   --->   Operation 46 'select' 'select_ln340_33' <Predicate = true> <Delay = 0.36> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "ret i18 %select_ln340_33" [firmware/nnet_utils/nnet_common.h:45]   --->   Operation 47 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -137,26 +134,22 @@ ST_3 : Operation 48 [1/1] (0.00ns)   --->   "ret i18 %select_ln340_33" [firmware
 ============================================================
 Target clock period: 5ns, clock uncertainty: 0.625ns.
 
- <State 1>: 2.86ns
+ <State 1>: 2.82ns
 The critical path consists of the following:
 	wire read on port 'x_8_V' (firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [6]  (0 ns)
-	'add' operation ('__Val2__', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [10]  (2.11 ns)
-	'select' operation ('__Val2__', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [12]  (0.756 ns)
+	'add' operation ('__Val2__', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [10]  (0.863 ns)
+	'select' operation ('__Val2__', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:43->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [12]  (0.36 ns)
+	'add' operation ('__Val2__', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [24]  (0.873 ns)
+	'select' operation ('select_ln388', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [32]  (0.36 ns)
+	'select' operation ('__Val2__', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [33]  (0.36 ns)
 
- <State 2>: 4.09ns
-The critical path consists of the following:
-	'add' operation ('ret.V', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [22]  (2.14 ns)
-	'and' operation ('underflow', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [27]  (0 ns)
-	'select' operation ('select_ln388', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [32]  (0.978 ns)
-	'select' operation ('__Val2__', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_common.h:45) [33]  (0.978 ns)
-
- <State 3>: 4.09ns
+ <State 2>: 1.59ns
 The critical path consists of the following:
 	wire read on port 'x_12_V' (firmware/nnet_utils/nnet_common.h:45) [34]  (0 ns)
-	'add' operation ('ret.V', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45) [38]  (2.14 ns)
+	'add' operation ('ret.V', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45) [38]  (0.873 ns)
 	'and' operation ('underflow', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45) [43]  (0 ns)
-	'select' operation ('select_ln388_13', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45) [48]  (0.978 ns)
-	'select' operation ('select_ln340_33', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45) [49]  (0.978 ns)
+	'select' operation ('select_ln388_13', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45) [48]  (0.36 ns)
+	'select' operation ('select_ln340_33', firmware/nnet_utils/nnet_common.h:50->firmware/nnet_utils/nnet_common.h:45) [49]  (0.36 ns)
 
 
 ============================================================
@@ -169,7 +162,6 @@ N/A
   - Chain level:
 	State 1
 	State 2
-	State 3
 
 
 ============================================================

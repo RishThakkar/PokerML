@@ -113,7 +113,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "7692", "EstimateLatencyMax" : "7692",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3847", "EstimateLatencyMax" : "3847",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -165,10 +165,10 @@ set RtlHierarchyInfo {[
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.line_buffer_Array_V_2_0_1_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.line_buffer_Array_V_2_0_2_U", "Parent" : "0"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.line_buffer_Array_V_2_0_3_U", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_42_32_1_1_U88", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_42_32_1_1_U89", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_42_32_1_1_U90", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_42_32_1_1_U91", "Parent" : "0"}]}
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_42_32_1_1_U86", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_42_32_1_1_U87", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_42_32_1_1_U88", "Parent" : "0"},
+	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_42_32_1_1_U89", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -177,10 +177,10 @@ set ArgLastReadFirstWriteLatency {
 		data_V_data_1_V {Type I LastRead 2 FirstWrite -1}
 		data_V_data_2_V {Type I LastRead 2 FirstWrite -1}
 		data_V_data_3_V {Type I LastRead 2 FirstWrite -1}
-		res_V_data_0_V {Type O LastRead -1 FirstWrite 5}
-		res_V_data_1_V {Type O LastRead -1 FirstWrite 5}
-		res_V_data_2_V {Type O LastRead -1 FirstWrite 5}
-		res_V_data_3_V {Type O LastRead -1 FirstWrite 5}
+		res_V_data_0_V {Type O LastRead -1 FirstWrite 3}
+		res_V_data_1_V {Type O LastRead -1 FirstWrite 3}
+		res_V_data_2_V {Type O LastRead -1 FirstWrite 3}
+		res_V_data_3_V {Type O LastRead -1 FirstWrite 3}
 		pX_1 {Type IO LastRead -1 FirstWrite -1}
 		sX_1 {Type IO LastRead -1 FirstWrite -1}
 		pY_1 {Type IO LastRead -1 FirstWrite -1}
@@ -201,8 +201,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "7692", "Max" : "7692"}
-	, {"Name" : "Interval", "Min" : "7692", "Max" : "7692"}
+	{"Name" : "Latency", "Min" : "3847", "Max" : "3847"}
+	, {"Name" : "Interval", "Min" : "3847", "Max" : "3847"}
 ]}
 
 set PipelineEnableSignalInfo {[

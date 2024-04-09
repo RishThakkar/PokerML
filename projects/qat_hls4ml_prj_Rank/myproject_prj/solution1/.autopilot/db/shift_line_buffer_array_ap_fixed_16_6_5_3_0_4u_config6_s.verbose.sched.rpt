@@ -3,13 +3,13 @@
 ================================================================
 == Vivado HLS Report for 'shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s'
 ================================================================
-* Date:           Tue Apr  9 23:30:48 2024
+* Date:           Tue Apr  9 23:49:23 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
 * Solution:       solution1
-* Product family: zynq
-* Target device:  xc7z020-clg400-1
+* Product family: zynquplus
+* Target device:  xczu5ev-sfvc784-2LV-e
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  | 5.00 ns | 3.256 ns |   0.62 ns  |
+    |ap_clk  | 5.00 ns | 1.434 ns |   0.62 ns  |
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -78,7 +78,7 @@ IsGatedGlobalClock: 0
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 3.25>
+State 1 <SV = 0> <Delay = 1.43>
 ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%kernel_window_35_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %kernel_window_35_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:221]   --->   Operation 2 'read' 'kernel_window_35_V_read_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%kernel_window_34_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %kernel_window_34_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:221]   --->   Operation 3 'read' 'kernel_window_34_V_read_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%kernel_window_33_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %kernel_window_33_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:221]   --->   Operation 4 'read' 'kernel_window_33_V_read_1' <Predicate = true> <Delay = 0.00>
@@ -108,14 +108,14 @@ ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%in_elem_data_2_V_read_1 = call i16
 ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%in_elem_data_1_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %in_elem_data_1_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:221]   --->   Operation 28 'read' 'in_elem_data_1_V_read_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%in_elem_data_0_V_read_1 = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %in_elem_data_0_V_read)" [firmware/nnet_utils/nnet_conv_stream.h:221]   --->   Operation 29 'read' 'in_elem_data_0_V_read_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str10) nounwind" [firmware/nnet_utils/nnet_conv_stream.h:226]   --->   Operation 30 'specpipeline' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 31 [1/1] (1.62ns)   --->   "%DataOut_V_8 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_0_0, i64 0, i64 30), i16 %in_elem_data_0_V_read_1, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 31 'memshiftread' 'DataOut_V_8' <Predicate = true> <Delay = 1.62> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 1.62> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
-ST_1 : Operation 32 [1/1] (1.62ns)   --->   "%DataOut_V_9 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_1_0, i64 0, i64 30), i16 %DataOut_V_8, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 32 'memshiftread' 'DataOut_V_9' <Predicate = true> <Delay = 1.62> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 1.62> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
-ST_1 : Operation 33 [1/1] (1.62ns)   --->   "%DataOut_V_10 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_0_1, i64 0, i64 30), i16 %in_elem_data_1_V_read_1, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 33 'memshiftread' 'DataOut_V_10' <Predicate = true> <Delay = 1.62> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 1.62> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
-ST_1 : Operation 34 [1/1] (1.62ns)   --->   "%DataOut_V_11 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_1_1, i64 0, i64 30), i16 %DataOut_V_10, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 34 'memshiftread' 'DataOut_V_11' <Predicate = true> <Delay = 1.62> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 1.62> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
-ST_1 : Operation 35 [1/1] (1.62ns)   --->   "%DataOut_V_12 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_0_2, i64 0, i64 30), i16 %in_elem_data_2_V_read_1, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 35 'memshiftread' 'DataOut_V_12' <Predicate = true> <Delay = 1.62> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 1.62> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
-ST_1 : Operation 36 [1/1] (1.62ns)   --->   "%DataOut_V_13 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_1_2, i64 0, i64 30), i16 %DataOut_V_12, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 36 'memshiftread' 'DataOut_V_13' <Predicate = true> <Delay = 1.62> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 1.62> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
-ST_1 : Operation 37 [1/1] (1.62ns)   --->   "%DataOut_V_14 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_0_3, i64 0, i64 30), i16 %in_elem_data_3_V_read_1, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 37 'memshiftread' 'DataOut_V_14' <Predicate = true> <Delay = 1.62> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 1.62> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
-ST_1 : Operation 38 [1/1] (1.62ns)   --->   "%DataOut_V = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_1_3, i64 0, i64 30), i16 %DataOut_V_14, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 38 'memshiftread' 'DataOut_V' <Predicate = true> <Delay = 1.62> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 1.62> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
+ST_1 : Operation 31 [1/1] (0.71ns)   --->   "%DataOut_V_8 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_0_0, i64 0, i64 30), i16 %in_elem_data_0_V_read_1, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 31 'memshiftread' 'DataOut_V_8' <Predicate = true> <Delay = 0.71> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
+ST_1 : Operation 32 [1/1] (0.71ns)   --->   "%DataOut_V_9 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_1_0, i64 0, i64 30), i16 %DataOut_V_8, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 32 'memshiftread' 'DataOut_V_9' <Predicate = true> <Delay = 0.71> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
+ST_1 : Operation 33 [1/1] (0.71ns)   --->   "%DataOut_V_10 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_0_1, i64 0, i64 30), i16 %in_elem_data_1_V_read_1, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 33 'memshiftread' 'DataOut_V_10' <Predicate = true> <Delay = 0.71> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
+ST_1 : Operation 34 [1/1] (0.71ns)   --->   "%DataOut_V_11 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_1_1, i64 0, i64 30), i16 %DataOut_V_10, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 34 'memshiftread' 'DataOut_V_11' <Predicate = true> <Delay = 0.71> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
+ST_1 : Operation 35 [1/1] (0.71ns)   --->   "%DataOut_V_12 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_0_2, i64 0, i64 30), i16 %in_elem_data_2_V_read_1, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 35 'memshiftread' 'DataOut_V_12' <Predicate = true> <Delay = 0.71> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
+ST_1 : Operation 36 [1/1] (0.71ns)   --->   "%DataOut_V_13 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_1_2, i64 0, i64 30), i16 %DataOut_V_12, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 36 'memshiftread' 'DataOut_V_13' <Predicate = true> <Delay = 0.71> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
+ST_1 : Operation 37 [1/1] (0.71ns)   --->   "%DataOut_V_14 = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_0_3, i64 0, i64 30), i16 %in_elem_data_3_V_read_1, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 37 'memshiftread' 'DataOut_V_14' <Predicate = true> <Delay = 0.71> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
+ST_1 : Operation 38 [1/1] (0.71ns)   --->   "%DataOut_V = call i16 @"_ssdm_op_MemShiftRead.[31 x i16]P"(i16* getelementptr inbounds ([31 x i16]* @line_buffer_Array_V_1_1_3, i64 0, i64 30), i16 %DataOut_V_14, i1 true)" [firmware/nnet_utils/nnet_conv_stream.h:246]   --->   Operation 38 'memshiftread' 'DataOut_V' <Predicate = true> <Delay = 0.71> <Core = "ShiftReg">   --->   Core 33 'ShiftReg' <Latency = 0> <II = 1> <Delay = 0.71> <Storage> <Opcode : 'memshiftread' 'load'> <Ports = 1> <Width = 16> <Depth = 31> <ShiftMem>
 ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%mrv_s = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } undef, i16 %kernel_window_4_V_read_1, 0" [firmware/nnet_utils/nnet_conv_stream.h:253]   --->   Operation 39 'insertvalue' 'mrv_s' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_s, i16 %kernel_window_5_V_read_1, 1" [firmware/nnet_utils/nnet_conv_stream.h:253]   --->   Operation 40 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_1, i16 %kernel_window_6_V_read_1, 2" [firmware/nnet_utils/nnet_conv_stream.h:253]   --->   Operation 41 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
@@ -160,11 +160,11 @@ ST_1 : Operation 75 [1/1] (0.00ns)   --->   "ret { i16, i16, i16, i16, i16, i16,
 ============================================================
 Target clock period: 5ns, clock uncertainty: 0.625ns.
 
- <State 1>: 3.26ns
+ <State 1>: 1.43ns
 The critical path consists of the following:
 	wire read on port 'in_elem_data_3_V_read' (firmware/nnet_utils/nnet_conv_stream.h:221) [53]  (0 ns)
-	'memshiftread' operation ('DataOut.V', firmware/nnet_utils/nnet_conv_stream.h:246) [64]  (1.63 ns)
-	'memshiftread' operation ('DataOut.V', firmware/nnet_utils/nnet_conv_stream.h:246) [65]  (1.63 ns)
+	'memshiftread' operation ('DataOut.V', firmware/nnet_utils/nnet_conv_stream.h:246) [64]  (0.717 ns)
+	'memshiftread' operation ('DataOut.V', firmware/nnet_utils/nnet_conv_stream.h:246) [65]  (0.717 ns)
 
 
 ============================================================

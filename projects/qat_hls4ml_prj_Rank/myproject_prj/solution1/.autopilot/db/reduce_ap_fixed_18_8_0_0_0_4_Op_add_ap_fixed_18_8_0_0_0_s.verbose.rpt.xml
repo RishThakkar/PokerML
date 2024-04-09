@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s'" level="0">
-<item name = "Date">Tue Apr  9 23:32:20 2024
+<item name = "Date">Tue Apr  9 23:50:58 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
 <item name = "Solution">solution1</item>
-<item name = "Product family">zynq</item>
-<item name = "Target device">xc7z020-clg400-1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5ev-sfvc784-2LV-e</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.252 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 3.804 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2, 2, 10.000 ns, 10.000 ns, 1, 1, function</column>
+<column name="">1, 1, 5.000 ns, 5.000 ns, 1, 1, function</column>
 </table>
 </item>
 <item name = "Detail">
@@ -47,24 +47,24 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 384, -</column>
+<column name="Expression">-, -, 0, 387, -</column>
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, 0, 260, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 9, -</column>
-<column name="Register">-, -, 353, -, -</column>
-<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
+<column name="Register">-, -, 39, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="myproject_axi_mux_134_18_1_0_U1027">myproject_axi_mux_134_18_1_0, 0, 0, 0, 65, 0</column>
-<column name="myproject_axi_mux_134_18_1_0_U1028">myproject_axi_mux_134_18_1_0, 0, 0, 0, 65, 0</column>
-<column name="myproject_axi_mux_134_18_1_0_U1029">myproject_axi_mux_134_18_1_0, 0, 0, 0, 65, 0</column>
-<column name="myproject_axi_mux_134_18_1_0_U1030">myproject_axi_mux_134_18_1_0, 0, 0, 0, 65, 0</column>
+<column name="myproject_axi_mux_134_18_1_0_U1023">myproject_axi_mux_134_18_1_0, 0, 0, 0, 65, 0</column>
+<column name="myproject_axi_mux_134_18_1_0_U1024">myproject_axi_mux_134_18_1_0, 0, 0, 0, 65, 0</column>
+<column name="myproject_axi_mux_134_18_1_0_U1025">myproject_axi_mux_134_18_1_0, 0, 0, 0, 65, 0</column>
+<column name="myproject_axi_mux_134_18_1_0_U1026">myproject_axi_mux_134_18_1_0, 0, 0, 0, 65, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -81,39 +81,39 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln43_1_fu_314_p2">+, 0, 0, 12, 2, 3</column>
-<column name="add_ln43_fu_230_p2">+, 0, 0, 12, 1, 3</column>
-<column name="add_ln45_fu_272_p2">+, 0, 0, 12, 2, 3</column>
-<column name="p_Val2_48_fu_376_p2">+, 0, 0, 25, 18, 18</column>
-<column name="p_Val2_51_fu_462_p2">+, 0, 0, 25, 18, 18</column>
-<column name="p_Val2_55_fu_548_p2">+, 0, 0, 25, 18, 18</column>
-<column name="ret_V_3_fu_448_p2">+, 0, 0, 26, 19, 19</column>
-<column name="ret_V_4_fu_534_p2">+, 0, 0, 26, 19, 19</column>
-<column name="ret_V_fu_362_p2">+, 0, 0, 26, 19, 19</column>
-<column name="underflow_3_fu_480_p2">and, 0, 0, 2, 1, 1</column>
-<column name="underflow_4_fu_566_p2">and, 0, 0, 2, 1, 1</column>
-<column name="underflow_fu_394_p2">and, 0, 0, 2, 1, 1</column>
-<column name="or_ln340_16_fu_412_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln340_17_fu_498_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln340_fu_584_p2">or, 0, 0, 2, 1, 1</column>
-<column name="p_Val2_52_fu_434_p3">select, 0, 0, 18, 1, 18</column>
-<column name="p_Val2_53_fu_520_p3">select, 0, 0, 18, 1, 18</column>
-<column name="select_ln340_34_fu_418_p3">select, 0, 0, 18, 1, 17</column>
-<column name="select_ln340_36_fu_504_p3">select, 0, 0, 18, 1, 17</column>
-<column name="select_ln340_38_fu_606_p3">select, 0, 0, 18, 1, 18</column>
-<column name="select_ln340_fu_590_p3">select, 0, 0, 18, 1, 17</column>
-<column name="select_ln388_15_fu_426_p3">select, 0, 0, 19, 1, 19</column>
-<column name="select_ln388_16_fu_512_p3">select, 0, 0, 19, 1, 19</column>
-<column name="select_ln388_fu_598_p3">select, 0, 0, 19, 1, 19</column>
-<column name="xor_ln340_32_fu_400_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln340_33_fu_406_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln340_34_fu_486_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln340_35_fu_492_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln340_36_fu_572_p2">xor, 0, 0, 2, 1, 1</column>
-<column name="xor_ln340_fu_578_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln786_15_fu_388_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln786_16_fu_474_p2">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln786_fu_560_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="add_ln43_1_fu_404_p2">+, 0, 0, 11, 2, 3</column>
+<column name="add_ln43_fu_230_p2">+, 0, 0, 11, 1, 3</column>
+<column name="add_ln45_fu_362_p2">+, 0, 0, 11, 2, 3</column>
+<column name="p_Val2_48_fu_294_p2">+, 0, 0, 25, 18, 18</column>
+<column name="p_Val2_51_fu_468_p2">+, 0, 0, 25, 18, 18</column>
+<column name="p_Val2_55_fu_558_p2">+, 0, 0, 25, 18, 18</column>
+<column name="ret_V_3_fu_454_p2">+, 0, 0, 26, 19, 19</column>
+<column name="ret_V_4_fu_544_p2">+, 0, 0, 26, 19, 19</column>
+<column name="ret_V_fu_280_p2">+, 0, 0, 26, 19, 19</column>
+<column name="underflow_3_fu_488_p2">and, 0, 0, 2, 1, 1</column>
+<column name="underflow_4_fu_577_p2">and, 0, 0, 2, 1, 1</column>
+<column name="underflow_fu_314_p2">and, 0, 0, 2, 1, 1</column>
+<column name="or_ln340_16_fu_332_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln340_17_fu_506_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln340_fu_591_p2">or, 0, 0, 2, 1, 1</column>
+<column name="p_Val2_52_fu_354_p3">select, 0, 0, 19, 1, 18</column>
+<column name="p_Val2_53_fu_528_p3">select, 0, 0, 19, 1, 18</column>
+<column name="select_ln340_34_fu_338_p3">select, 0, 0, 19, 1, 17</column>
+<column name="select_ln340_36_fu_512_p3">select, 0, 0, 19, 1, 17</column>
+<column name="select_ln340_38_fu_610_p3">select, 0, 0, 19, 1, 18</column>
+<column name="select_ln340_fu_596_p3">select, 0, 0, 19, 1, 17</column>
+<column name="select_ln388_15_fu_346_p3">select, 0, 0, 19, 1, 19</column>
+<column name="select_ln388_16_fu_520_p3">select, 0, 0, 19, 1, 19</column>
+<column name="select_ln388_fu_603_p3">select, 0, 0, 19, 1, 19</column>
+<column name="xor_ln340_32_fu_320_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln340_33_fu_326_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln340_34_fu_494_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln340_35_fu_500_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln340_36_fu_582_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln340_fu_586_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln786_15_fu_308_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln786_16_fu_482_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln786_fu_572_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -125,26 +125,9 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_ce_reg">1, 0, 1, 0</column>
 <column name="ap_return_int_reg">18, 0, 18, 0</column>
-<column name="p_Val2_2_reg_632">18, 0, 18, 0</column>
-<column name="p_Val2_46_reg_620">18, 0, 18, 0</column>
-<column name="p_Val2_49_reg_626">18, 0, 18, 0</column>
-<column name="p_Val2_52_reg_638">18, 0, 18, 0</column>
-<column name="p_Val2_53_reg_644">18, 0, 18, 0</column>
-<column name="p_Val2_s_reg_614">18, 0, 18, 0</column>
-<column name="x_0_V_int_reg">17, 0, 17, 0</column>
-<column name="x_10_V_int_reg">17, 0, 17, 0</column>
-<column name="x_11_V_int_reg">17, 0, 17, 0</column>
-<column name="x_12_V_int_reg">17, 0, 17, 0</column>
-<column name="x_1_V_int_reg">17, 0, 17, 0</column>
-<column name="x_2_V_int_reg">17, 0, 17, 0</column>
-<column name="x_3_V_int_reg">17, 0, 17, 0</column>
-<column name="x_4_V_int_reg">17, 0, 17, 0</column>
-<column name="x_5_V_int_reg">17, 0, 17, 0</column>
-<column name="x_6_V_int_reg">17, 0, 17, 0</column>
-<column name="x_7_V_int_reg">17, 0, 17, 0</column>
-<column name="x_8_V_int_reg">17, 0, 17, 0</column>
-<column name="x_9_V_int_reg">17, 0, 17, 0</column>
-<column name="x_V_offset_int_reg">5, 0, 5, 0</column>
+<column name="p_Result_31_reg_618">1, 0, 1, 0</column>
+<column name="p_Result_32_reg_631">1, 0, 1, 0</column>
+<column name="p_Val2_55_reg_625">18, 0, 18, 0</column>
 </table>
 </item>
 </section>
