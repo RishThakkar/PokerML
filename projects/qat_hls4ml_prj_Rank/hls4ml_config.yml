@@ -14,19 +14,19 @@ HLSConfig:
         bias: fixed<6,1>
         result: fixed<16,6>
         weight: fixed<6,1>
-      ReuseFactor: 256
+      ReuseFactor: 784
       Strategy: Resource
       Trace: true
     conv1_input:
       Precision:
         result: fixed<16,6>
-      ReuseFactor: 256
+      ReuseFactor: 784
       Strategy: Resource
       Trace: true
     conv1_linear:
       Precision:
         result: fixed<16,6>
-      ReuseFactor: 256
+      ReuseFactor: 784
       Strategy: Resource
       Trace: true
     conv2:
@@ -34,31 +34,31 @@ HLSConfig:
         bias: fixed<6,1>
         result: fixed<16,6>
         weight: fixed<6,1>
-      ReuseFactor: 256
+      ReuseFactor: 784
       Strategy: Resource
       Trace: true
     conv2_linear:
       Precision:
         result: fixed<16,6>
-      ReuseFactor: 256
+      ReuseFactor: 784
       Strategy: Resource
       Trace: true
     flatten:
       Precision:
         result: fixed<16,6>
-      ReuseFactor: 256
+      ReuseFactor: 784
       Strategy: Resource
       Trace: true
     maxpool1:
       Precision:
         result: fixed<16,6>
-      ReuseFactor: 256
+      ReuseFactor: 784
       Strategy: Resource
       Trace: true
     maxpool2:
       Precision:
         result: fixed<16,6>
-      ReuseFactor: 256
+      ReuseFactor: 784
       Strategy: Resource
       Trace: true
     output:
@@ -66,25 +66,25 @@ HLSConfig:
         bias: fixed<6,1>
         result: fixed<16,6>
         weight: fixed<6,1>
-      ReuseFactor: 256
-      Strategy: Stable
+      ReuseFactor: 784
+      Strategy: Resource
       Trace: true
     output_softmax:
       Precision:
         result: fixed<16,6>
-      ReuseFactor: 256
+      ReuseFactor: 784
       Strategy: Resource
       Trace: true
     relu1:
       Precision:
         result: ufixed<6,0,RND_CONV,SAT>
-      ReuseFactor: 256
+      ReuseFactor: 784
       Strategy: Resource
       Trace: true
     relu2:
       Precision:
         result: ufixed<6,0,RND_CONV,SAT>
-      ReuseFactor: 256
+      ReuseFactor: 784
       Strategy: Resource
       Trace: true
   Model:
@@ -98,5 +98,5 @@ KerasModel: !keras_model 'projects/qat_hls4ml_prj_Rank/keras_model.h5'
 OutputDir: projects/qat_hls4ml_prj_Rank
 Part: xc7z020clg400-1
 ProjectName: myproject
-Stamp: D1FCb2AB
+Stamp: 65f2dDB7
 Version: 1.0.0
