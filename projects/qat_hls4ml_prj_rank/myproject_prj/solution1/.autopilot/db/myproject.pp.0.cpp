@@ -65078,7 +65078,7 @@ struct relu_config4 : nnet::activ_config {
     static const unsigned n_in = 15376;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 256;
+    static const unsigned reuse_factor = 512;
     typedef relu1_table_t table_t;
 };
 
@@ -65105,7 +65105,7 @@ struct config5 : nnet::pooling2d_config {
     static const bool count_pad = false;
     static const nnet::Pool_Op pool_op = nnet::Max;
     static const nnet::conv_implementation implementation = nnet::conv_implementation::linebuffer;
-    static const unsigned reuse_factor = 256;
+    static const unsigned reuse_factor = 512;
     typedef model_default_t accum_t;
 };
 
@@ -65170,7 +65170,7 @@ struct relu_config8 : nnet::activ_config {
     static const unsigned n_in = 3364;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 256;
+    static const unsigned reuse_factor = 512;
     typedef relu2_table_t table_t;
 };
 
@@ -65197,7 +65197,7 @@ struct config9 : nnet::pooling2d_config {
     static const bool count_pad = false;
     static const nnet::Pool_Op pool_op = nnet::Max;
     static const nnet::conv_implementation implementation = nnet::conv_implementation::linebuffer;
-    static const unsigned reuse_factor = 256;
+    static const unsigned reuse_factor = 512;
     typedef model_default_t accum_t;
 };
 
@@ -65207,7 +65207,7 @@ struct config11 : nnet::dense_config {
     static const unsigned n_out = 13;
     static const unsigned io_type = nnet::io_stream;
     static const unsigned strategy = nnet::latency;
-    static const unsigned reuse_factor = 256;
+    static const unsigned reuse_factor = 512;
     static const unsigned n_zeros = 3645;
     static const unsigned n_nonzeros = 6547;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -65225,7 +65225,7 @@ struct softmax_config12 : nnet::activ_config {
     static const unsigned n_in = 13;
     static const unsigned table_size = 1024;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned reuse_factor = 256;
+    static const unsigned reuse_factor = 512;
     static const unsigned axis = -1;
     static const nnet::softmax_implementation implementation = nnet::softmax_implementation::stable;
     typedef output_softmax_exp_table_t exp_table_t;
