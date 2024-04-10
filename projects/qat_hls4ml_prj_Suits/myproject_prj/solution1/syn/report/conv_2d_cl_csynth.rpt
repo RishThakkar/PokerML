@@ -1,0 +1,190 @@
+
+
+================================================================
+== Vivado HLS Report for 'conv_2d_cl'
+================================================================
+* Date:           Wed Apr 10 00:28:11 2024
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu5ev-sfvc784-2LV-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 3.967 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |    Interval   | Pipeline|
+    |   min   |   max   |    min    |    max   |  min |   max  |   Type  |
+    +---------+---------+-----------+----------+------+--------+---------+
+    |     2884|   143190| 14.420 us | 0.716 ms |  2884|  143190|   none  |
+    +---------+---------+-----------+----------+------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                 |                      |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |             Instance            |        Module        |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_compute_output_buffe_fu_265  |compute_output_buffe  |        1|      147| 5.000 ns | 0.735 us |    1|  147|   none  |
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name            |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- ReadInputHeight_ReadInputWidth  |     2883|   143189|  3 ~ 149 |          -|          -|   961|    no    |
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|      36|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        0|      1|    1804|    1379|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|     120|    -|
+|Register         |        -|      -|      90|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      1|    1894|    1535|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |      288|   1248|  234240|  117120|   64|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|   ~0  |   ~0   |       1|    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------+----------------------+---------+-------+------+------+-----+
+    |             Instance            |        Module        | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
+    +---------------------------------+----------------------+---------+-------+------+------+-----+
+    |grp_compute_output_buffe_fu_265  |compute_output_buffe  |        0|      1|  1804|  1379|    0|
+    +---------------------------------+----------------------+---------+-------+------+------+-----+
+    |Total                            |                      |        0|      1|  1804|  1379|    0|
+    +---------------------------------+----------------------+---------+-------+------+------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |add_ln79_fu_387_p2        |     +    |      0|  0|  17|          10|           1|
+    |ap_block_state2           |    and   |      0|  0|   2|           1|           1|
+    |io_acc_block_signal_op17  |    and   |      0|  0|   2|           1|           1|
+    |icmp_ln79_fu_381_p2       |   icmp   |      0|  0|  13|          10|           7|
+    |ap_block_state1           |    or    |      0|  0|   2|           1|           1|
+    +--------------------------+----------+-------+---+----+------------+------------+
+    |Total                     |          |      0|  0|  36|          23|          11|
+    +--------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------+----+-----------+-----+-----------+
+    |          Name          | LUT| Input Size| Bits| Total Bits|
+    +------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm               |  21|          4|    1|          4|
+    |ap_done                 |   9|          2|    1|          2|
+    |data_V_data_0_V_blk_n   |   9|          2|    1|          2|
+    |data_V_data_1_V_blk_n   |   9|          2|    1|          2|
+    |data_V_data_2_V_blk_n   |   9|          2|    1|          2|
+    |data_V_data_3_V_blk_n   |   9|          2|    1|          2|
+    |indvar_flatten_reg_254  |   9|          2|   10|         20|
+    |real_start              |   9|          2|    1|          2|
+    |res_V_data_0_V_write    |   9|          2|    1|          2|
+    |res_V_data_1_V_write    |   9|          2|    1|          2|
+    |res_V_data_2_V_write    |   9|          2|    1|          2|
+    |res_V_data_3_V_write    |   9|          2|    1|          2|
+    +------------------------+----+-----------+-----+-----------+
+    |Total                   | 120|         26|   21|         44|
+    +------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------+----+----+-----+-----------+
+    |                     Name                     | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------+----+----+-----+-----------+
+    |add_ln79_reg_416                              |  10|   0|   10|          0|
+    |ap_CS_fsm                                     |   3|   0|    3|          0|
+    |ap_done_reg                                   |   1|   0|    1|          0|
+    |grp_compute_output_buffe_fu_265_ap_start_reg  |   1|   0|    1|          0|
+    |indvar_flatten_reg_254                        |  10|   0|   10|          0|
+    |start_once_reg                                |   1|   0|    1|          0|
+    |tmp_data_0_V_reg_421                          |  16|   0|   16|          0|
+    |tmp_data_1_V_reg_426                          |  16|   0|   16|          0|
+    |tmp_data_2_V_reg_431                          |  16|   0|   16|          0|
+    |tmp_data_3_V_reg_436                          |  16|   0|   16|          0|
+    +----------------------------------------------+----+----+-----+-----------+
+    |Total                                         |  90|   0|   90|          0|
+    +----------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+-----------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
++-------------------------+-----+-----+------------+-----------------+--------------+
+|ap_clk                   |  in |    1| ap_ctrl_hs |    conv_2d_cl   | return value |
+|ap_rst                   |  in |    1| ap_ctrl_hs |    conv_2d_cl   | return value |
+|ap_start                 |  in |    1| ap_ctrl_hs |    conv_2d_cl   | return value |
+|start_full_n             |  in |    1| ap_ctrl_hs |    conv_2d_cl   | return value |
+|ap_done                  | out |    1| ap_ctrl_hs |    conv_2d_cl   | return value |
+|ap_continue              |  in |    1| ap_ctrl_hs |    conv_2d_cl   | return value |
+|ap_idle                  | out |    1| ap_ctrl_hs |    conv_2d_cl   | return value |
+|ap_ready                 | out |    1| ap_ctrl_hs |    conv_2d_cl   | return value |
+|start_out                | out |    1| ap_ctrl_hs |    conv_2d_cl   | return value |
+|start_write              | out |    1| ap_ctrl_hs |    conv_2d_cl   | return value |
+|data_V_data_0_V_dout     |  in |   16|   ap_fifo  | data_V_data_0_V |    pointer   |
+|data_V_data_0_V_empty_n  |  in |    1|   ap_fifo  | data_V_data_0_V |    pointer   |
+|data_V_data_0_V_read     | out |    1|   ap_fifo  | data_V_data_0_V |    pointer   |
+|data_V_data_1_V_dout     |  in |   16|   ap_fifo  | data_V_data_1_V |    pointer   |
+|data_V_data_1_V_empty_n  |  in |    1|   ap_fifo  | data_V_data_1_V |    pointer   |
+|data_V_data_1_V_read     | out |    1|   ap_fifo  | data_V_data_1_V |    pointer   |
+|data_V_data_2_V_dout     |  in |   16|   ap_fifo  | data_V_data_2_V |    pointer   |
+|data_V_data_2_V_empty_n  |  in |    1|   ap_fifo  | data_V_data_2_V |    pointer   |
+|data_V_data_2_V_read     | out |    1|   ap_fifo  | data_V_data_2_V |    pointer   |
+|data_V_data_3_V_dout     |  in |   16|   ap_fifo  | data_V_data_3_V |    pointer   |
+|data_V_data_3_V_empty_n  |  in |    1|   ap_fifo  | data_V_data_3_V |    pointer   |
+|data_V_data_3_V_read     | out |    1|   ap_fifo  | data_V_data_3_V |    pointer   |
+|res_V_data_0_V_din       | out |   16|   ap_fifo  |  res_V_data_0_V |    pointer   |
+|res_V_data_0_V_full_n    |  in |    1|   ap_fifo  |  res_V_data_0_V |    pointer   |
+|res_V_data_0_V_write     | out |    1|   ap_fifo  |  res_V_data_0_V |    pointer   |
+|res_V_data_1_V_din       | out |   16|   ap_fifo  |  res_V_data_1_V |    pointer   |
+|res_V_data_1_V_full_n    |  in |    1|   ap_fifo  |  res_V_data_1_V |    pointer   |
+|res_V_data_1_V_write     | out |    1|   ap_fifo  |  res_V_data_1_V |    pointer   |
+|res_V_data_2_V_din       | out |   16|   ap_fifo  |  res_V_data_2_V |    pointer   |
+|res_V_data_2_V_full_n    |  in |    1|   ap_fifo  |  res_V_data_2_V |    pointer   |
+|res_V_data_2_V_write     | out |    1|   ap_fifo  |  res_V_data_2_V |    pointer   |
+|res_V_data_3_V_din       | out |   16|   ap_fifo  |  res_V_data_3_V |    pointer   |
+|res_V_data_3_V_full_n    |  in |    1|   ap_fifo  |  res_V_data_3_V |    pointer   |
+|res_V_data_3_V_write     | out |    1|   ap_fifo  |  res_V_data_3_V |    pointer   |
++-------------------------+-----+-----+------------+-----------------+--------------+
+

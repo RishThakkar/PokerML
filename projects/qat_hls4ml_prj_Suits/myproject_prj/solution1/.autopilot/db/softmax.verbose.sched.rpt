@@ -1,0 +1,193 @@
+
+
+================================================================
+== Vivado HLS Report for 'softmax'
+================================================================
+* Date:           Wed Apr 10 00:27:47 2024
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu5ev-sfvc784-2LV-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 4.355 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       10|       10| 50.000 ns | 50.000 ns |   10|   10|   none  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 11
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 12 [11/11] (0.00ns)   --->   "call fastcc void @softmax_stable(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 12 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 13 [10/11] (0.00ns)   --->   "call fastcc void @softmax_stable(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 13 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 14 [9/11] (0.00ns)   --->   "call fastcc void @softmax_stable(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 14 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 15 [8/11] (0.00ns)   --->   "call fastcc void @softmax_stable(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 15 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 16 [7/11] (0.00ns)   --->   "call fastcc void @softmax_stable(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 16 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 17 [6/11] (0.00ns)   --->   "call fastcc void @softmax_stable(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 17 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 18 [5/11] (0.00ns)   --->   "call fastcc void @softmax_stable(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 18 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 19 [4/11] (0.00ns)   --->   "call fastcc void @softmax_stable(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 19 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 20 [3/11] (0.00ns)   --->   "call fastcc void @softmax_stable(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 20 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 21 [2/11] (0.00ns)   --->   "call fastcc void @softmax_stable(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 21 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str530, i32 0, i32 0, [1 x i8]* @p_str531, [1 x i8]* @p_str532, [1 x i8]* @p_str533, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str534, [1 x i8]* @p_str535)"   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str523, i32 0, i32 0, [1 x i8]* @p_str524, [1 x i8]* @p_str525, [1 x i8]* @p_str526, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str527, [1 x i8]* @p_str528)"   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str516, i32 0, i32 0, [1 x i8]* @p_str517, [1 x i8]* @p_str518, [1 x i8]* @p_str519, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str520, [1 x i8]* @p_str521)"   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %data_V_data_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str509, i32 0, i32 0, [1 x i8]* @p_str510, [1 x i8]* @p_str511, [1 x i8]* @p_str512, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str513, [1 x i8]* @p_str514)"   --->   Operation 25 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_0_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str313, i32 0, i32 0, [1 x i8]* @p_str314, [1 x i8]* @p_str315, [1 x i8]* @p_str316, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str317, [1 x i8]* @p_str318)"   --->   Operation 26 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_1_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str320, i32 0, i32 0, [1 x i8]* @p_str321, [1 x i8]* @p_str322, [1 x i8]* @p_str323, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str324, [1 x i8]* @p_str325)"   --->   Operation 27 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_2_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str327, i32 0, i32 0, [1 x i8]* @p_str328, [1 x i8]* @p_str329, [1 x i8]* @p_str330, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str331, [1 x i8]* @p_str332)"   --->   Operation 28 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %res_V_data_3_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str334, i32 0, i32 0, [1 x i8]* @p_str335, [1 x i8]* @p_str336, [1 x i8]* @p_str337, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str338, [1 x i8]* @p_str339)"   --->   Operation 29 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 30 [1/11] (0.00ns)   --->   "call fastcc void @softmax_stable(i16* %data_V_data_0_V, i16* %data_V_data_1_V, i16* %data_V_data_2_V, i16* %data_V_data_3_V, i16* %res_V_data_0_V, i16* %res_V_data_1_V, i16* %res_V_data_2_V, i16* %res_V_data_3_V)" [firmware/nnet_utils/nnet_activation_stream.h:362]   --->   Operation 30 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 31 [1/1] (0.00ns)   --->   "ret void" [firmware/nnet_utils/nnet_activation_stream.h:371]   --->   Operation 31 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

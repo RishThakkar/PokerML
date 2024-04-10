@@ -1,0 +1,102 @@
+AcceleratorConfig:
+  Board: pynq-z2
+  Driver: python
+  Interface: axi_stream
+  Precision:
+    Input: float
+    Output: float
+Backend: VivadoAccelerator
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    conv1:
+      Precision:
+        bias: fixed<6,1>
+        result: fixed<16,6>
+        weight: fixed<6,1>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+    conv1_input:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+    conv1_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+    conv2:
+      Precision:
+        bias: fixed<6,1>
+        result: fixed<16,6>
+        weight: fixed<6,1>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+    conv2_linear:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+    flatten:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+    maxpool1:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+    maxpool2:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+    output:
+      Precision:
+        bias: fixed<6,1>
+        result: fixed<16,6>
+        weight: fixed<6,1>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+    output_softmax:
+      Precision:
+        result: fixed<16,6>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+    relu1:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+    relu2:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+      ReuseFactor: 512
+      Strategy: Resource
+      Trace: true
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<32,16>
+    ReuseFactor: 256
+    Strategy: Resource
+    TraceOutput: false
+IOType: io_stream
+KerasModel: !keras_model 'projects/qat_hls4ml_prj_Suits/keras_model.h5'
+OutputDir: projects/qat_hls4ml_prj_Suits
+Part: xc7z020clg400-1
+ProjectName: myproject
+Stamp: 7c9dD04E
+Version: 1.0.0

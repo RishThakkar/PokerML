@@ -1,0 +1,205 @@
+
+
+================================================================
+== Vivado HLS Report for 'myproject'
+================================================================
+* Date:           Wed Apr 10 00:29:33 2024
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu5ev-sfvc784-2LV-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 4.355 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+--------+----------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval    | Pipeline |
+    |   min   |   max   |    min   |    max   |  min  |   max  |   Type   |
+    +---------+---------+----------+----------+-------+--------+----------+
+    |   463159|   463160| 2.316 ms | 2.316 ms |  12290|  462850| dataflow |
+    +---------+---------+----------+----------+-------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------+----------------+---------+---------+-----------+-----------+-------+--------+---------+
+        |                   |                |  Latency (cycles) |   Latency (absolute)  |    Interval    | Pipeline|
+        |      Instance     |     Module     |   min   |   max   |    min    |    max    |  min  |   max  |   Type  |
+        +-------------------+----------------+---------+---------+-----------+-----------+-------+--------+---------+
+        |dense_U0           |dense           |      608|      609|  3.040 us |  3.045 us |    608|     609|   none  |
+        |conv_2d_cl_U0      |conv_2d_cl      |     2884|   143190| 14.420 us |  0.716 ms |   2884|  143190|   none  |
+        |conv_2d_cl_1_U0    |conv_2d_cl_1    |    12289|   462849| 61.445 us |  2.314 ms |  12289|  462849|   none  |
+        |pooling2d_cl_1_U0  |pooling2d_cl_1  |     3847|     3847| 19.235 us | 19.235 us |   3847|    3847|   none  |
+        |pooling2d_cl_U0    |pooling2d_cl    |      844|      844|  4.220 us |  4.220 us |    844|     844|   none  |
+        |softmax_U0         |softmax         |       10|       10| 50.000 ns | 50.000 ns |     10|      10|   none  |
+        |relu_1_U0          |relu_1          |     3847|     3847| 19.235 us | 19.235 us |   3847|    3847|   none  |
+        |relu_U0            |relu            |      844|      844|  4.220 us |  4.220 us |    844|     844|   none  |
+        +-------------------+----------------+---------+---------+-----------+-----------+-------+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|       2|    -|
+|FIFO             |       40|      -|    1392|    2860|    -|
+|Instance         |        4|     11|   86329|   84395|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|       9|    -|
+|Register         |        -|      -|       1|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |       44|     11|   87722|   87266|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |      288|   1248|  234240|  117120|   64|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |       15|   ~0  |      37|      74|    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------+----------------+---------+-------+-------+-------+-----+
+    |      Instance     |     Module     | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
+    +-------------------+----------------+---------+-------+-------+-------+-----+
+    |conv_2d_cl_U0      |conv_2d_cl      |        0|      1|   1894|   1535|    0|
+    |conv_2d_cl_1_U0    |conv_2d_cl_1    |        0|      1|   1610|   1617|    0|
+    |dense_U0           |dense           |        2|      8|  81136|  76974|    0|
+    |pooling2d_cl_U0    |pooling2d_cl    |        0|      0|    621|   1089|    0|
+    |pooling2d_cl_1_U0  |pooling2d_cl_1  |        0|      0|    623|   1219|    0|
+    |relu_U0            |relu            |        0|      0|     44|    508|    0|
+    |relu_1_U0          |relu_1          |        0|      0|     46|    510|    0|
+    |softmax_U0         |softmax         |        2|      1|    355|    943|    0|
+    +-------------------+----------------+---------+-------+-------+-------+-----+
+    |Total              |                |        4|     11|  86329|  84395|    0|
+    +-------------------+----------------+---------+-------+-------+-------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +------------------------+---------+----+----+-----+------+-----+---------+
+    |          Name          | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +------------------------+---------+----+----+-----+------+-----+---------+
+    |layer11_out_V_data_0_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_1_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_2_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer11_out_V_data_3_U  |        0|   5|   0|    -|     1|   16|       16|
+    |layer2_out_V_data_0_U   |        4|  88|   0|    -|  3844|   16|    61504|
+    |layer2_out_V_data_1_U   |        4|  88|   0|    -|  3844|   16|    61504|
+    |layer2_out_V_data_2_U   |        4|  88|   0|    -|  3844|   16|    61504|
+    |layer2_out_V_data_3_U   |        4|  88|   0|    -|  3844|   16|    61504|
+    |layer4_out_V_data_0_U   |        2|  78|   0|    -|  3844|    6|    23064|
+    |layer4_out_V_data_1_U   |        2|  78|   0|    -|  3844|    6|    23064|
+    |layer4_out_V_data_2_U   |        2|  78|   0|    -|  3844|    6|    23064|
+    |layer4_out_V_data_3_U   |        2|  78|   0|    -|  3844|    6|    23064|
+    |layer5_out_V_data_0_U   |        1|  50|   0|    -|   961|   16|    15376|
+    |layer5_out_V_data_1_U   |        1|  50|   0|    -|   961|   16|    15376|
+    |layer5_out_V_data_2_U   |        1|  50|   0|    -|   961|   16|    15376|
+    |layer5_out_V_data_3_U   |        1|  50|   0|    -|   961|   16|    15376|
+    |layer6_out_V_data_0_U   |        1|  49|   0|    -|   841|   16|    13456|
+    |layer6_out_V_data_1_U   |        1|  49|   0|    -|   841|   16|    13456|
+    |layer6_out_V_data_2_U   |        1|  49|   0|    -|   841|   16|    13456|
+    |layer6_out_V_data_3_U   |        1|  49|   0|    -|   841|   16|    13456|
+    |layer8_out_V_data_0_U   |        1|  39|   0|    -|   841|    6|     5046|
+    |layer8_out_V_data_1_U   |        1|  39|   0|    -|   841|    6|     5046|
+    |layer8_out_V_data_2_U   |        1|  39|   0|    -|   841|    6|     5046|
+    |layer8_out_V_data_3_U   |        1|  39|   0|    -|   841|    6|     5046|
+    |layer9_out_V_data_0_U   |        1|  39|   0|    -|   196|   16|     3136|
+    |layer9_out_V_data_1_U   |        1|  39|   0|    -|   196|   16|     3136|
+    |layer9_out_V_data_2_U   |        1|  39|   0|    -|   196|   16|     3136|
+    |layer9_out_V_data_3_U   |        1|  39|   0|    -|   196|   16|     3136|
+    +------------------------+---------+----+----+-----+------+-----+---------+
+    |Total                   |       40|1392|   0|    0| 42112|  368|   486392|
+    +------------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+-------+---+----+------------+------------+
+    | Variable Name| Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |ap_idle       |    and   |      0|  0|   2|           1|           1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |Total         |          |      0|  0|   2|           1|           1|
+    +--------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------+----+-----------+-----+-----------+
+    |    Name    | LUT| Input Size| Bits| Total Bits|
+    +------------+----+-----------+-----+-----------+
+    |real_start  |   9|          2|    1|          2|
+    +------------+----+-----------+-----+-----------+
+    |Total       |   9|          2|    1|          2|
+    +------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++--------------------------------+-----+-----+------------+------------------------+--------------+
+|ap_start                        |  in |    1| ap_ctrl_hs |        myproject       | return value |
+|start_full_n                    |  in |    1| ap_ctrl_hs |        myproject       | return value |
+|start_out                       | out |    1| ap_ctrl_hs |        myproject       | return value |
+|start_write                     | out |    1| ap_ctrl_hs |        myproject       | return value |
+|ap_clk                          |  in |    1| ap_ctrl_hs |        myproject       | return value |
+|ap_rst                          |  in |    1| ap_ctrl_hs |        myproject       | return value |
+|ap_done                         | out |    1| ap_ctrl_hs |        myproject       | return value |
+|ap_ready                        | out |    1| ap_ctrl_hs |        myproject       | return value |
+|ap_idle                         | out |    1| ap_ctrl_hs |        myproject       | return value |
+|ap_continue                     |  in |    1| ap_ctrl_hs |        myproject       | return value |
+|conv1_input_V_data_0_V_dout     |  in |   16|   ap_fifo  | conv1_input_V_data_0_V |    pointer   |
+|conv1_input_V_data_0_V_empty_n  |  in |    1|   ap_fifo  | conv1_input_V_data_0_V |    pointer   |
+|conv1_input_V_data_0_V_read     | out |    1|   ap_fifo  | conv1_input_V_data_0_V |    pointer   |
+|conv1_input_V_data_1_V_dout     |  in |   16|   ap_fifo  | conv1_input_V_data_1_V |    pointer   |
+|conv1_input_V_data_1_V_empty_n  |  in |    1|   ap_fifo  | conv1_input_V_data_1_V |    pointer   |
+|conv1_input_V_data_1_V_read     | out |    1|   ap_fifo  | conv1_input_V_data_1_V |    pointer   |
+|conv1_input_V_data_2_V_dout     |  in |   16|   ap_fifo  | conv1_input_V_data_2_V |    pointer   |
+|conv1_input_V_data_2_V_empty_n  |  in |    1|   ap_fifo  | conv1_input_V_data_2_V |    pointer   |
+|conv1_input_V_data_2_V_read     | out |    1|   ap_fifo  | conv1_input_V_data_2_V |    pointer   |
+|layer12_out_V_data_0_V_din      | out |   16|   ap_fifo  | layer12_out_V_data_0_V |    pointer   |
+|layer12_out_V_data_0_V_full_n   |  in |    1|   ap_fifo  | layer12_out_V_data_0_V |    pointer   |
+|layer12_out_V_data_0_V_write    | out |    1|   ap_fifo  | layer12_out_V_data_0_V |    pointer   |
+|layer12_out_V_data_1_V_din      | out |   16|   ap_fifo  | layer12_out_V_data_1_V |    pointer   |
+|layer12_out_V_data_1_V_full_n   |  in |    1|   ap_fifo  | layer12_out_V_data_1_V |    pointer   |
+|layer12_out_V_data_1_V_write    | out |    1|   ap_fifo  | layer12_out_V_data_1_V |    pointer   |
+|layer12_out_V_data_2_V_din      | out |   16|   ap_fifo  | layer12_out_V_data_2_V |    pointer   |
+|layer12_out_V_data_2_V_full_n   |  in |    1|   ap_fifo  | layer12_out_V_data_2_V |    pointer   |
+|layer12_out_V_data_2_V_write    | out |    1|   ap_fifo  | layer12_out_V_data_2_V |    pointer   |
+|layer12_out_V_data_3_V_din      | out |   16|   ap_fifo  | layer12_out_V_data_3_V |    pointer   |
+|layer12_out_V_data_3_V_full_n   |  in |    1|   ap_fifo  | layer12_out_V_data_3_V |    pointer   |
+|layer12_out_V_data_3_V_write    | out |    1|   ap_fifo  | layer12_out_V_data_3_V |    pointer   |
++--------------------------------+-----+-----+------------+------------------------+--------------+
+
