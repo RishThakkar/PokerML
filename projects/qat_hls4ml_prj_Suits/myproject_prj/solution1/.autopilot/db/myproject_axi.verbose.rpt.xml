@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myproject_axi'" level="0">
-<item name = "Date">Wed Apr 10 00:29:47 2024
+<item name = "Date">Wed Apr 10 15:59:03 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">463161, 463162, 2.316 ms, 2.316 ms, 57346, 462850, dataflow</column>
+<column name="">462949, 462950, 2.315 ms, 2.315 ms, 57346, 462850, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="myproject_U0">myproject, 463159, 463160, 2.316 ms, 2.316 ms, 12290, 462850, dataflow</column>
+<column name="myproject_U0">myproject, 462947, 462948, 2.315 ms, 2.315 ms, 12290, 462850, dataflow</column>
 <column name="Loop_1_proc290_U0">Loop_1_proc290, 57345, 57345, 0.287 ms, 0.287 ms, 57345, 57345, none</column>
 <column name="Loop_2_proc_U0">Loop_2_proc, 17, 17, 85.000 ns, 85.000 ns, 17, 17, none</column>
-<column name="Block_myproject_axi_U0">Block_myproject_axi_s, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+<column name="Block_myproject_axi_exit44_proc_U0">Block_myproject_axi_exit44_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -53,22 +53,22 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 20, -</column>
 <column name="FIFO">12, -, 318, 933, -</column>
-<column name="Instance">44, 11, 88234, 90048, -</column>
+<column name="Instance">45, 19, 45403, 59956, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 36, -</column>
 <column name="Register">-, -, 4, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
-<specialColumn name="Utilization (%)">19, ~0, 37, 77, 0</specialColumn>
+<specialColumn name="Utilization (%)">19, 1, 19, 52, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="Block_myproject_axi_U0">Block_myproject_axi_s, 0, 0, 66, 85, 0</column>
+<column name="Block_myproject_axi_exit44_proc_U0">Block_myproject_axi_exit44_proc, 0, 0, 66, 85, 0</column>
 <column name="Loop_1_proc290_U0">Loop_1_proc290, 0, 0, 301, 1705, 0</column>
 <column name="Loop_2_proc_U0">Loop_2_proc, 0, 0, 145, 992, 0</column>
-<column name="myproject_U0">myproject, 44, 11, 87722, 87266, 0</column>
+<column name="myproject_U0">myproject, 45, 19, 44891, 57174, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -84,11 +84,11 @@
 <column name="in_local_V_data_0_V_U">4, 91, 0, -, 4096, 16, 65536</column>
 <column name="in_local_V_data_1_V_U">4, 91, 0, -, 4096, 16, 65536</column>
 <column name="in_local_V_data_2_V_U">4, 91, 0, -, 4096, 16, 65536</column>
-<column name="is_last_0_i_loc_chan_U">0, 5, 0, -, 2, 1, 2</column>
-<column name="out_local_V_data_0_s_U">0, 5, 0, -, 1, 16, 16</column>
-<column name="out_local_V_data_1_s_U">0, 5, 0, -, 1, 16, 16</column>
-<column name="out_local_V_data_2_s_U">0, 5, 0, -, 1, 16, 16</column>
-<column name="out_local_V_data_3_s_U">0, 5, 0, -, 1, 16, 16</column>
+<column name="is_last_0_i_loc_channel_U">0, 5, 0, -, 2, 1, 2</column>
+<column name="out_local_V_data_0_V_U">0, 5, 0, -, 1, 16, 16</column>
+<column name="out_local_V_data_1_V_U">0, 5, 0, -, 1, 16, 16</column>
+<column name="out_local_V_data_2_V_U">0, 5, 0, -, 1, 16, 16</column>
+<column name="out_local_V_data_3_V_U">0, 5, 0, -, 1, 16, 16</column>
 <column name="tmp_data_V_0_U">0, 5, 0, -, 2, 16, 32</column>
 <column name="tmp_data_V_1_U">0, 5, 0, -, 2, 16, 32</column>
 <column name="tmp_data_V_2_U">0, 5, 0, -, 2, 16, 32</column>
@@ -97,7 +97,7 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="Block_myproject_axi_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Block_myproject_axi_exit44_proc_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
 <column name="Loop_2_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
 <column name="ap_channel_done_tmp_data_V_0">and, 0, 0, 2, 1, 1</column>
 <column name="ap_channel_done_tmp_data_V_1">and, 0, 0, 2, 1, 1</column>

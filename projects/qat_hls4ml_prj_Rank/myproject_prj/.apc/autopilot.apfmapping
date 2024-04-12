@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="myproject.cpp" path="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/firmware/myproject.cpp"/>
     <originFiles name="myproject_axi.cpp" path="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/firmware/myproject_axi.cpp"/>
+    <originFiles name="myproject.cpp" path="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/firmware/myproject.cpp"/>
   </source>
   <testbench>
-    <originFiles name="tb_data" path="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/tb_data"/>
-    <originFiles name="weights" path="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/firmware/weights"/>
     <originFiles name="myproject_test.cpp" path="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/myproject_test.cpp"/>
+    <originFiles name="weights" path="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/firmware/weights"/>
+    <originFiles name="tb_data" path="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/tb_data"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

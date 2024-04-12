@@ -143,7 +143,7 @@ myproject_axi_mux_134_18_1_0 #(
     .din12_WIDTH( 18 ),
     .din13_WIDTH( 4 ),
     .dout_WIDTH( 18 ))
-myproject_axi_mux_134_18_1_0_U1023(
+myproject_axi_mux_134_18_1_0_U1021(
     .din0(zext_ln43_fu_146_p1),
     .din1(zext_ln43_3_fu_150_p1),
     .din2(zext_ln43_4_fu_154_p1),
@@ -179,7 +179,7 @@ myproject_axi_mux_134_18_1_0 #(
     .din12_WIDTH( 18 ),
     .din13_WIDTH( 4 ),
     .dout_WIDTH( 18 ))
-myproject_axi_mux_134_18_1_0_U1024(
+myproject_axi_mux_134_18_1_0_U1022(
     .din0(zext_ln43_fu_146_p1),
     .din1(zext_ln43_3_fu_150_p1),
     .din2(zext_ln43_4_fu_154_p1),
@@ -215,7 +215,7 @@ myproject_axi_mux_134_18_1_0 #(
     .din12_WIDTH( 18 ),
     .din13_WIDTH( 4 ),
     .dout_WIDTH( 18 ))
-myproject_axi_mux_134_18_1_0_U1025(
+myproject_axi_mux_134_18_1_0_U1023(
     .din0(zext_ln43_fu_146_p1),
     .din1(zext_ln43_3_fu_150_p1),
     .din2(zext_ln43_4_fu_154_p1),
@@ -251,7 +251,7 @@ myproject_axi_mux_134_18_1_0 #(
     .din12_WIDTH( 18 ),
     .din13_WIDTH( 4 ),
     .dout_WIDTH( 18 ))
-myproject_axi_mux_134_18_1_0_U1026(
+myproject_axi_mux_134_18_1_0_U1024(
     .din0(zext_ln43_fu_146_p1),
     .din1(zext_ln43_3_fu_150_p1),
     .din2(zext_ln43_4_fu_154_p1),

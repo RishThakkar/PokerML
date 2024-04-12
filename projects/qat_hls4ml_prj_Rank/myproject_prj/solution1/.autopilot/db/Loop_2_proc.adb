@@ -1480,7 +1480,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>tmp.V</originalName>
-              <rtlName>myproject_axi_mux_134_16_1_1_U1187</rtlName>
+              <rtlName>myproject_axi_mux_134_16_1_1_U1185</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -6508,7 +6508,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>myproject_axi_mux_134_16_1_1_U1187 (myproject_axi_mux_134_16_1_1)</first>
+          <first>myproject_axi_mux_134_16_1_1_U1185 (myproject_axi_mux_134_16_1_1)</first>
           <second class_id="39" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -7648,7 +7648,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>myproject_axi_mux_134_16_1_1_U1187</first>
+          <first>myproject_axi_mux_134_16_1_1_U1185</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -7673,7 +7673,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>myproject_axi_mux_134_16_1_1_U1187 (myproject_axi_mux_134_16_1_1)</first>
+          <first>myproject_axi_mux_134_16_1_1_U1185 (myproject_axi_mux_134_16_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

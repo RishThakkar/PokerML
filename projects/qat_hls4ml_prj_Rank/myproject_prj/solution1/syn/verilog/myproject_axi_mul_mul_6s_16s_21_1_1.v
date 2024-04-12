@@ -1,7 +1,7 @@
 
 `timescale 1 ns / 1 ps
 
-  module myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_1(a, b, p);
+  module myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_0(a, b, p);
 input signed [6 - 1 : 0] a;
 input signed [16 - 1 : 0] b;
 output signed [21 - 1 : 0] p;
@@ -26,7 +26,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_1 myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_1_U(
+myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_0 myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_0_U(
     .a( din0 ),
     .b( din1 ),
     .p( dout ));

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_13u_config11_s'
 ================================================================
-* Date:           Tue Apr  9 23:49:57 2024
+* Date:           Wed Apr 10 16:33:01 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
@@ -4093,7 +4093,7 @@ The critical path consists of the following:
  <State 3>: 1.84ns
 The critical path consists of the following:
 	fifo read on port 'data_stream_V_data_0_V' (firmware/nnet_utils/nnet_dense_stream.h:40) [833]  (1.84 ns)
-	'store' operation ('store_ln44', firmware/nnet_utils/nnet_dense_stream.h:44) of variable 'tmp.data[1].V', firmware/nnet_utils/nnet_dense_stream.h:40 on local variable 'tmp.data[1].V' [2000]  (0 ns)
+	'store' operation ('store_ln44', firmware/nnet_utils/nnet_dense_stream.h:44) of variable 'tmp.data[1].V', firmware/nnet_utils/nnet_dense_stream.h:40 on local variable 'tmp.data[1].V' [1559]  (0 ns)
 
  <State 4>: 0.656ns
 The critical path consists of the following:

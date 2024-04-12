@@ -92,7 +92,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "tmp_data_V_1", "Type" : "None", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0"},
 			{"Name" : "tmp_data_V_2", "Type" : "None", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0"},
 			{"Name" : "tmp_data_V_3", "Type" : "None", "Direction" : "I", "DependentProc" : "0", "DependentChan" : "0"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_muxKfY_U1075", "Parent" : "0"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_mux_42_16_1_1_U1085", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_data_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_out_last_V_U", "Parent" : "0"}]}
 

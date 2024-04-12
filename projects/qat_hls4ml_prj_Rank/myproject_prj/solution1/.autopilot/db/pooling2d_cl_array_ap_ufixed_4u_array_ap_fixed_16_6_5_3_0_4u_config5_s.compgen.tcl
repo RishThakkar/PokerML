@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 90
+set ID 88
 set hasByteEnable 0
 set MemName pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s_line_bhbi
 set CoreName ShiftReg
@@ -96,7 +96,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 91 \
+    id 89 \
     name data_V_data_0_V \
     type fifo \
     dir I \
@@ -111,7 +111,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 92 \
+    id 90 \
     name data_V_data_1_V \
     type fifo \
     dir I \
@@ -126,7 +126,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 93 \
+    id 91 \
     name data_V_data_2_V \
     type fifo \
     dir I \
@@ -141,7 +141,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 94 \
+    id 92 \
     name data_V_data_3_V \
     type fifo \
     dir I \
@@ -156,7 +156,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 95 \
+    id 93 \
     name res_V_data_0_V \
     type fifo \
     dir O \
@@ -171,7 +171,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 96 \
+    id 94 \
     name res_V_data_1_V \
     type fifo \
     dir O \
@@ -186,7 +186,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 97 \
+    id 95 \
     name res_V_data_2_V \
     type fifo \
     dir O \
@@ -201,7 +201,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 98 \
+    id 96 \
     name res_V_data_3_V \
     type fifo \
     dir O \

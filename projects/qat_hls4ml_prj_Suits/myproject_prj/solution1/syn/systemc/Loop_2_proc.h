@@ -11,7 +11,7 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "myproject_axi_muxKfY.h"
+#include "myproject_axi_mux_42_16_1_1.h"
 
 namespace ap_rtl {
 
@@ -43,7 +43,7 @@ struct Loop_2_proc : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    myproject_axi_muxKfY<1,1,16,16,16,16,2,16>* myproject_axi_muxKfY_U1075;
+    myproject_axi_mux_42_16_1_1<1,1,16,16,16,16,2,16>* myproject_axi_mux_42_16_1_1_U1085;
     regslice_both<32>* regslice_both_out_data_U;
     regslice_both<1>* regslice_both_out_last_V_U;
     sc_signal< sc_logic > ap_done_reg;
@@ -118,7 +118,7 @@ struct Loop_2_proc : public sc_module {
     sc_signal< sc_lv<8> > select_ln964_fu_451_p3;
     sc_signal< sc_lv<8> > add_ln964_fu_464_p2;
     sc_signal< sc_lv<64> > m_6_fu_439_p1;
-    sc_signal< sc_lv<9> > tmp_62_i_fu_470_p3;
+    sc_signal< sc_lv<9> > tmp_70_i_fu_470_p3;
     sc_signal< sc_lv<64> > p_Result_20_fu_477_p5;
     sc_signal< sc_lv<32> > trunc_ln738_fu_489_p1;
     sc_signal< sc_lv<32> > bitcast_ln739_fu_493_p1;
@@ -219,7 +219,7 @@ struct Loop_2_proc : public sc_module {
     void thread_sub_ln964_fu_459_p2();
     void thread_tmp_57_fu_324_p3();
     void thread_tmp_58_fu_443_p3();
-    void thread_tmp_62_i_fu_470_p3();
+    void thread_tmp_70_i_fu_470_p3();
     void thread_tmp_V_3_fu_184_p5();
     void thread_tmp_V_4_fu_218_p3();
     void thread_tmp_V_fu_212_p2();

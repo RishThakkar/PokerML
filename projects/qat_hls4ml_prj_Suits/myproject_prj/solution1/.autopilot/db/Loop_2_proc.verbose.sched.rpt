@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Loop_2_proc'
 ================================================================
-* Date:           Wed Apr 10 00:27:57 2024
+* Date:           Wed Apr 10 15:58:13 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
@@ -152,8 +152,8 @@ ST_4 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_58 = call i1 @_ssdm_op_BitSele
 ST_4 : Operation 65 [1/1] (0.39ns)   --->   "%select_ln964 = select i1 %tmp_58, i8 127, i8 126" [firmware/myproject_axi.cpp:33]   --->   Operation 65 'select' 'select_ln964' <Predicate = (!icmp_ln935)> <Delay = 0.39> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_4 : Operation 66 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln964 = sub i8 6, %trunc_ln943" [firmware/myproject_axi.cpp:33]   --->   Operation 66 'sub' 'sub_ln964' <Predicate = (!icmp_ln935)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.52> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_4 : Operation 67 [1/1] (1.05ns) (root node of TernaryAdder)   --->   "%add_ln964 = add i8 %sub_ln964, %select_ln964" [firmware/myproject_axi.cpp:33]   --->   Operation 67 'add' 'add_ln964' <Predicate = (!icmp_ln935)> <Delay = 1.05> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.52> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%tmp_62_i = call i9 @_ssdm_op_BitConcatenate.i9.i1.i8(i1 %p_Result_18, i8 %add_ln964)" [firmware/myproject_axi.cpp:33]   --->   Operation 68 'bitconcatenate' 'tmp_62_i' <Predicate = (!icmp_ln935)> <Delay = 0.00>
-ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%p_Result_20 = call i64 @_ssdm_op_PartSet.i64.i64.i9.i32.i32(i64 %m_6, i9 %tmp_62_i, i32 23, i32 31)" [firmware/myproject_axi.cpp:33]   --->   Operation 69 'partset' 'p_Result_20' <Predicate = (!icmp_ln935)> <Delay = 0.00>
+ST_4 : Operation 68 [1/1] (0.00ns)   --->   "%tmp_70_i = call i9 @_ssdm_op_BitConcatenate.i9.i1.i8(i1 %p_Result_18, i8 %add_ln964)" [firmware/myproject_axi.cpp:33]   --->   Operation 68 'bitconcatenate' 'tmp_70_i' <Predicate = (!icmp_ln935)> <Delay = 0.00>
+ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%p_Result_20 = call i64 @_ssdm_op_PartSet.i64.i64.i9.i32.i32(i64 %m_6, i9 %tmp_70_i, i32 23, i32 31)" [firmware/myproject_axi.cpp:33]   --->   Operation 69 'partset' 'p_Result_20' <Predicate = (!icmp_ln935)> <Delay = 0.00>
 ST_4 : Operation 70 [1/1] (0.00ns)   --->   "%trunc_ln738 = trunc i64 %p_Result_20 to i32" [firmware/myproject_axi.cpp:33]   --->   Operation 70 'trunc' 'trunc_ln738' <Predicate = (!icmp_ln935)> <Delay = 0.00>
 ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%bitcast_ln739 = bitcast i32 %trunc_ln738 to float" [firmware/myproject_axi.cpp:33]   --->   Operation 71 'bitcast' 'bitcast_ln739' <Predicate = (!icmp_ln935)> <Delay = 0.00>
 ST_4 : Operation 72 [1/1] (0.44ns)   --->   "%select_ln935 = select i1 %icmp_ln935, float 0.000000e+00, float %bitcast_ln739" [firmware/myproject_axi.cpp:33]   --->   Operation 72 'select' 'select_ln935' <Predicate = true> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>

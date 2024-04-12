@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 1
-set name myproject_axi_fpebkb
+set name myproject_axi_fpext_32ns_64_2_1
 set corename simcore_fpext
 set op fpext
 set stage_num 2

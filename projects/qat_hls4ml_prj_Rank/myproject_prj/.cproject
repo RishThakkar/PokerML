@@ -59,6 +59,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.2/include/etc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.2/include/ap_sysc"/>
                                     								
                                 </option>
@@ -92,6 +94,8 @@
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.2/lnx64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.2/include/ap_sysc"/>
                                     								
@@ -317,6 +321,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.2/include/etc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.2/include/ap_sysc"/>
                                     								
                                 </option>
@@ -340,6 +346,8 @@
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.2/lnx64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.2/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/xilinx/Vivado/2019.2/include/ap_sysc"/>
                                     								

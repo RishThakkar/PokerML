@@ -13,14 +13,14 @@
 
 #include "Loop_1_proc290.h"
 #include "myproject.h"
-#include "Block_myproject_axi_s.h"
+#include "Block_myproject_axi_exit44_proc.h"
 #include "Loop_2_proc.h"
 #include "fifo_w16_d4096_A.h"
 #include "fifo_w1_d2_A.h"
 #include "fifo_w16_d1_A_x.h"
 #include "fifo_w16_d2_A.h"
-#include "start_for_myprojeLf8.h"
-#include "start_for_Block_mMgi.h"
+#include "start_for_myproject_U0.h"
+#include "start_for_Block_myproject_axi_exit44_proc_U0.h"
 
 namespace ap_rtl {
 
@@ -51,22 +51,22 @@ struct myproject_axi : public sc_module {
     ofstream mHdltvoutHandle;
     Loop_1_proc290* Loop_1_proc290_U0;
     myproject* myproject_U0;
-    Block_myproject_axi_s* Block_myproject_axi_U0;
+    Block_myproject_axi_exit44_proc* Block_myproject_axi_exit44_proc_U0;
     Loop_2_proc* Loop_2_proc_U0;
     fifo_w16_d4096_A* in_local_V_data_0_V_U;
     fifo_w16_d4096_A* in_local_V_data_1_V_U;
     fifo_w16_d4096_A* in_local_V_data_2_V_U;
-    fifo_w1_d2_A* is_last_0_i_loc_chan_U;
-    fifo_w16_d1_A_x* out_local_V_data_0_s_U;
-    fifo_w16_d1_A_x* out_local_V_data_1_s_U;
-    fifo_w16_d1_A_x* out_local_V_data_2_s_U;
-    fifo_w16_d1_A_x* out_local_V_data_3_s_U;
+    fifo_w1_d2_A* is_last_0_i_loc_channel_U;
+    fifo_w16_d1_A_x* out_local_V_data_0_V_U;
+    fifo_w16_d1_A_x* out_local_V_data_1_V_U;
+    fifo_w16_d1_A_x* out_local_V_data_2_V_U;
+    fifo_w16_d1_A_x* out_local_V_data_3_V_U;
     fifo_w16_d2_A* tmp_data_V_0_U;
     fifo_w16_d2_A* tmp_data_V_1_U;
     fifo_w16_d2_A* tmp_data_V_2_U;
     fifo_w16_d2_A* tmp_data_V_3_U;
-    start_for_myprojeLf8* start_for_myprojeLf8_U;
-    start_for_Block_mMgi* start_for_Block_mMgi_U;
+    start_for_myproject_U0* start_for_myproject_U0_U;
+    start_for_Block_myproject_axi_exit44_proc_U0* start_for_Block_myproject_axi_exit44_proc_U0_U;
     sc_signal< sc_logic > ap_rst_n_inv;
     sc_signal< sc_logic > Loop_1_proc290_U0_ap_start;
     sc_signal< sc_logic > Loop_1_proc290_U0_ap_done;
@@ -83,8 +83,8 @@ struct myproject_axi : public sc_module {
     sc_signal< sc_logic > Loop_1_proc290_U0_in_local_V_data_2_V_write;
     sc_signal< sc_logic > Loop_1_proc290_U0_in_r_TREADY;
     sc_signal< sc_lv<1> > Loop_1_proc290_U0_ap_return;
-    sc_signal< sc_logic > ap_channel_done_is_last_0_i_loc_chan;
-    sc_signal< sc_logic > is_last_0_i_loc_chan_full_n;
+    sc_signal< sc_logic > ap_channel_done_is_last_0_i_loc_channel;
+    sc_signal< sc_logic > is_last_0_i_loc_channel_full_n;
     sc_signal< sc_logic > myproject_U0_ap_start;
     sc_signal< sc_logic > myproject_U0_start_out;
     sc_signal< sc_logic > myproject_U0_start_write;
@@ -103,23 +103,23 @@ struct myproject_axi : public sc_module {
     sc_signal< sc_logic > myproject_U0_ap_ready;
     sc_signal< sc_logic > myproject_U0_ap_idle;
     sc_signal< sc_logic > myproject_U0_ap_continue;
-    sc_signal< sc_logic > Block_myproject_axi_U0_ap_start;
-    sc_signal< sc_logic > Block_myproject_axi_U0_ap_done;
-    sc_signal< sc_logic > Block_myproject_axi_U0_ap_continue;
-    sc_signal< sc_logic > Block_myproject_axi_U0_ap_idle;
-    sc_signal< sc_logic > Block_myproject_axi_U0_ap_ready;
-    sc_signal< sc_logic > Block_myproject_axi_U0_out_local_V_data_0_V_read;
-    sc_signal< sc_logic > Block_myproject_axi_U0_out_local_V_data_1_V_read;
-    sc_signal< sc_logic > Block_myproject_axi_U0_out_local_V_data_2_V_read;
-    sc_signal< sc_logic > Block_myproject_axi_U0_out_local_V_data_3_V_read;
-    sc_signal< sc_lv<16> > Block_myproject_axi_U0_tmp_data_V_0;
-    sc_signal< sc_logic > Block_myproject_axi_U0_tmp_data_V_0_ap_vld;
-    sc_signal< sc_lv<16> > Block_myproject_axi_U0_tmp_data_V_1;
-    sc_signal< sc_logic > Block_myproject_axi_U0_tmp_data_V_1_ap_vld;
-    sc_signal< sc_lv<16> > Block_myproject_axi_U0_tmp_data_V_2;
-    sc_signal< sc_logic > Block_myproject_axi_U0_tmp_data_V_2_ap_vld;
-    sc_signal< sc_lv<16> > Block_myproject_axi_U0_tmp_data_V_3;
-    sc_signal< sc_logic > Block_myproject_axi_U0_tmp_data_V_3_ap_vld;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_ap_start;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_ap_done;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_ap_continue;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_ap_idle;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_ap_ready;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_out_local_V_data_0_V_read;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_out_local_V_data_1_V_read;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_out_local_V_data_2_V_read;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_out_local_V_data_3_V_read;
+    sc_signal< sc_lv<16> > Block_myproject_axi_exit44_proc_U0_tmp_data_V_0;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_tmp_data_V_0_ap_vld;
+    sc_signal< sc_lv<16> > Block_myproject_axi_exit44_proc_U0_tmp_data_V_1;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_tmp_data_V_1_ap_vld;
+    sc_signal< sc_lv<16> > Block_myproject_axi_exit44_proc_U0_tmp_data_V_2;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_tmp_data_V_2_ap_vld;
+    sc_signal< sc_lv<16> > Block_myproject_axi_exit44_proc_U0_tmp_data_V_3;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_tmp_data_V_3_ap_vld;
     sc_signal< sc_logic > ap_channel_done_tmp_data_V_3;
     sc_signal< sc_logic > tmp_data_V_3_full_n;
     sc_signal< sc_logic > ap_sync_reg_channel_write_tmp_data_V_3;
@@ -154,20 +154,20 @@ struct myproject_axi : public sc_module {
     sc_signal< sc_logic > in_local_V_data_2_V_full_n;
     sc_signal< sc_lv<16> > in_local_V_data_2_V_dout;
     sc_signal< sc_logic > in_local_V_data_2_V_empty_n;
-    sc_signal< sc_lv<1> > is_last_0_i_loc_chan_dout;
-    sc_signal< sc_logic > is_last_0_i_loc_chan_empty_n;
-    sc_signal< sc_logic > out_local_V_data_0_s_full_n;
-    sc_signal< sc_lv<16> > out_local_V_data_0_s_dout;
-    sc_signal< sc_logic > out_local_V_data_0_s_empty_n;
-    sc_signal< sc_logic > out_local_V_data_1_s_full_n;
-    sc_signal< sc_lv<16> > out_local_V_data_1_s_dout;
-    sc_signal< sc_logic > out_local_V_data_1_s_empty_n;
-    sc_signal< sc_logic > out_local_V_data_2_s_full_n;
-    sc_signal< sc_lv<16> > out_local_V_data_2_s_dout;
-    sc_signal< sc_logic > out_local_V_data_2_s_empty_n;
-    sc_signal< sc_logic > out_local_V_data_3_s_full_n;
-    sc_signal< sc_lv<16> > out_local_V_data_3_s_dout;
-    sc_signal< sc_logic > out_local_V_data_3_s_empty_n;
+    sc_signal< sc_lv<1> > is_last_0_i_loc_channel_dout;
+    sc_signal< sc_logic > is_last_0_i_loc_channel_empty_n;
+    sc_signal< sc_logic > out_local_V_data_0_V_full_n;
+    sc_signal< sc_lv<16> > out_local_V_data_0_V_dout;
+    sc_signal< sc_logic > out_local_V_data_0_V_empty_n;
+    sc_signal< sc_logic > out_local_V_data_1_V_full_n;
+    sc_signal< sc_lv<16> > out_local_V_data_1_V_dout;
+    sc_signal< sc_logic > out_local_V_data_1_V_empty_n;
+    sc_signal< sc_logic > out_local_V_data_2_V_full_n;
+    sc_signal< sc_lv<16> > out_local_V_data_2_V_dout;
+    sc_signal< sc_logic > out_local_V_data_2_V_empty_n;
+    sc_signal< sc_logic > out_local_V_data_3_V_full_n;
+    sc_signal< sc_lv<16> > out_local_V_data_3_V_dout;
+    sc_signal< sc_logic > out_local_V_data_3_V_empty_n;
     sc_signal< sc_lv<16> > tmp_data_V_0_dout;
     sc_signal< sc_logic > tmp_data_V_0_empty_n;
     sc_signal< sc_lv<16> > tmp_data_V_1_dout;
@@ -180,12 +180,12 @@ struct myproject_axi : public sc_module {
     sc_signal< sc_logic > start_for_myproject_U0_full_n;
     sc_signal< sc_lv<1> > start_for_myproject_U0_dout;
     sc_signal< sc_logic > start_for_myproject_U0_empty_n;
-    sc_signal< sc_lv<1> > start_for_Block_myproject_axi_U0_din;
-    sc_signal< sc_logic > start_for_Block_myproject_axi_U0_full_n;
-    sc_signal< sc_lv<1> > start_for_Block_myproject_axi_U0_dout;
-    sc_signal< sc_logic > start_for_Block_myproject_axi_U0_empty_n;
-    sc_signal< sc_logic > Block_myproject_axi_U0_start_full_n;
-    sc_signal< sc_logic > Block_myproject_axi_U0_start_write;
+    sc_signal< sc_lv<1> > start_for_Block_myproject_axi_exit44_proc_U0_din;
+    sc_signal< sc_logic > start_for_Block_myproject_axi_exit44_proc_U0_full_n;
+    sc_signal< sc_lv<1> > start_for_Block_myproject_axi_exit44_proc_U0_dout;
+    sc_signal< sc_logic > start_for_Block_myproject_axi_exit44_proc_U0_empty_n;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_start_full_n;
+    sc_signal< sc_logic > Block_myproject_axi_exit44_proc_U0_start_write;
     sc_signal< sc_logic > Loop_2_proc_U0_start_full_n;
     sc_signal< sc_logic > Loop_2_proc_U0_start_write;
     static const sc_lv<32> ap_const_lv32_0;
@@ -196,17 +196,17 @@ struct myproject_axi : public sc_module {
     // Thread declarations
     void thread_ap_var_for_const0();
     void thread_ap_clk_no_reset_();
-    void thread_Block_myproject_axi_U0_ap_continue();
-    void thread_Block_myproject_axi_U0_ap_start();
-    void thread_Block_myproject_axi_U0_start_full_n();
-    void thread_Block_myproject_axi_U0_start_write();
+    void thread_Block_myproject_axi_exit44_proc_U0_ap_continue();
+    void thread_Block_myproject_axi_exit44_proc_U0_ap_start();
+    void thread_Block_myproject_axi_exit44_proc_U0_start_full_n();
+    void thread_Block_myproject_axi_exit44_proc_U0_start_write();
     void thread_Loop_1_proc290_U0_ap_continue();
     void thread_Loop_1_proc290_U0_ap_start();
     void thread_Loop_2_proc_U0_ap_continue();
     void thread_Loop_2_proc_U0_ap_start();
     void thread_Loop_2_proc_U0_start_full_n();
     void thread_Loop_2_proc_U0_start_write();
-    void thread_ap_channel_done_is_last_0_i_loc_chan();
+    void thread_ap_channel_done_is_last_0_i_loc_channel();
     void thread_ap_channel_done_tmp_data_V_0();
     void thread_ap_channel_done_tmp_data_V_1();
     void thread_ap_channel_done_tmp_data_V_2();
@@ -223,7 +223,7 @@ struct myproject_axi : public sc_module {
     void thread_out_r_TDATA();
     void thread_out_r_TLAST();
     void thread_out_r_TVALID();
-    void thread_start_for_Block_myproject_axi_U0_din();
+    void thread_start_for_Block_myproject_axi_exit44_proc_U0_din();
     void thread_start_for_myproject_U0_din();
     void thread_hdltv_gen();
 };

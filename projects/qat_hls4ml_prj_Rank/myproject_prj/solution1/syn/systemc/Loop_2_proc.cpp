@@ -49,22 +49,22 @@ const sc_lv<32> Loop_2_proc::ap_const_lv32_17 = "10111";
 const bool Loop_2_proc::ap_const_boolean_1 = true;
 
 Loop_2_proc::Loop_2_proc(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    myproject_axi_mux_134_16_1_1_U1187 = new myproject_axi_mux_134_16_1_1<1,1,16,16,16,16,16,16,16,16,16,16,16,16,16,4,16>("myproject_axi_mux_134_16_1_1_U1187");
-    myproject_axi_mux_134_16_1_1_U1187->din0(tmp_data_V_0);
-    myproject_axi_mux_134_16_1_1_U1187->din1(tmp_data_V_1);
-    myproject_axi_mux_134_16_1_1_U1187->din2(tmp_data_V_2);
-    myproject_axi_mux_134_16_1_1_U1187->din3(tmp_data_V_3);
-    myproject_axi_mux_134_16_1_1_U1187->din4(tmp_data_V_4);
-    myproject_axi_mux_134_16_1_1_U1187->din5(tmp_data_V_5);
-    myproject_axi_mux_134_16_1_1_U1187->din6(tmp_data_V_6);
-    myproject_axi_mux_134_16_1_1_U1187->din7(tmp_data_V_727);
-    myproject_axi_mux_134_16_1_1_U1187->din8(tmp_data_V_8);
-    myproject_axi_mux_134_16_1_1_U1187->din9(tmp_data_V_9);
-    myproject_axi_mux_134_16_1_1_U1187->din10(tmp_data_V_10);
-    myproject_axi_mux_134_16_1_1_U1187->din11(tmp_data_V_11);
-    myproject_axi_mux_134_16_1_1_U1187->din12(tmp_data_V_12);
-    myproject_axi_mux_134_16_1_1_U1187->din13(j3_0_i_reg_218);
-    myproject_axi_mux_134_16_1_1_U1187->dout(tmp_V_3_fu_252_p15);
+    myproject_axi_mux_134_16_1_1_U1185 = new myproject_axi_mux_134_16_1_1<1,1,16,16,16,16,16,16,16,16,16,16,16,16,16,4,16>("myproject_axi_mux_134_16_1_1_U1185");
+    myproject_axi_mux_134_16_1_1_U1185->din0(tmp_data_V_0);
+    myproject_axi_mux_134_16_1_1_U1185->din1(tmp_data_V_1);
+    myproject_axi_mux_134_16_1_1_U1185->din2(tmp_data_V_2);
+    myproject_axi_mux_134_16_1_1_U1185->din3(tmp_data_V_3);
+    myproject_axi_mux_134_16_1_1_U1185->din4(tmp_data_V_4);
+    myproject_axi_mux_134_16_1_1_U1185->din5(tmp_data_V_5);
+    myproject_axi_mux_134_16_1_1_U1185->din6(tmp_data_V_6);
+    myproject_axi_mux_134_16_1_1_U1185->din7(tmp_data_V_727);
+    myproject_axi_mux_134_16_1_1_U1185->din8(tmp_data_V_8);
+    myproject_axi_mux_134_16_1_1_U1185->din9(tmp_data_V_9);
+    myproject_axi_mux_134_16_1_1_U1185->din10(tmp_data_V_10);
+    myproject_axi_mux_134_16_1_1_U1185->din11(tmp_data_V_11);
+    myproject_axi_mux_134_16_1_1_U1185->din12(tmp_data_V_12);
+    myproject_axi_mux_134_16_1_1_U1185->din13(j3_0_i_reg_218);
+    myproject_axi_mux_134_16_1_1_U1185->dout(tmp_V_3_fu_252_p15);
     regslice_both_out_data_U = new regslice_both<32>("regslice_both_out_data_U");
     regslice_both_out_data_U->ap_clk(ap_clk);
     regslice_both_out_data_U->ap_rst(ap_rst);
@@ -471,7 +471,7 @@ Loop_2_proc::~Loop_2_proc() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete myproject_axi_mux_134_16_1_1_U1187;
+    delete myproject_axi_mux_134_16_1_1_U1185;
     delete regslice_both_out_data_U;
     delete regslice_both_out_last_V_U;
 }

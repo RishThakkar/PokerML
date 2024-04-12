@@ -6,7 +6,7 @@
 (* rom_style = "distributed" *) module dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_w2_V_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 6;
+parameter DWIDTH = 5;
 parameter AWIDTH = 7;
 parameter MEM_SIZE = 108;
 
@@ -43,7 +43,7 @@ module dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_w2_
     ce0,
     q0);
 
-parameter DataWidth = 32'd6;
+parameter DataWidth = 32'd5;
 parameter AddressRange = 32'd108;
 parameter AddressWidth = 32'd7;
 input reset;

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myproject_axi'" level="0">
-<item name = "Date">Tue Apr  9 23:51:07 2024
+<item name = "Date">Wed Apr 10 16:34:13 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">463538, 463539, 2.318 ms, 2.318 ms, 57346, 462850, dataflow</column>
+<column name="">467634, 467635, 2.338 ms, 2.338 ms, 57346, 466946, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="myproject_U0">myproject, 463536, 463537, 2.318 ms, 2.318 ms, 12290, 462850, dataflow</column>
+<column name="myproject_U0">myproject, 467632, 467633, 2.338 ms, 2.338 ms, 12290, 466946, dataflow</column>
 <column name="Loop_1_proc346_U0">Loop_1_proc346, 57345, 57345, 0.287 ms, 0.287 ms, 57345, 57345, none</column>
 <column name="Loop_2_proc_U0">Loop_2_proc, 53, 53, 0.265 us, 0.265 us, 53, 53, none</column>
 <column name="Block_myproject_axi_exit54_proc_U0">Block_myproject_axi_exit54_proc, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
@@ -53,7 +53,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 56, -</column>
 <column name="FIFO">12, -, 408, 1437, -</column>
-<column name="Instance">47, 16, 59490, 46382, -</column>
+<column name="Instance">47, 16, 59555, 46389, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 117, -</column>
 <column name="Register">-, -, 13, -, -</column>
@@ -68,7 +68,7 @@
 <column name="Block_myproject_axi_exit54_proc_U0">Block_myproject_axi_exit54_proc, 0, 0, 210, 247, 0</column>
 <column name="Loop_1_proc346_U0">Loop_1_proc346, 0, 0, 301, 1705, 0</column>
 <column name="Loop_2_proc_U0">Loop_2_proc, 0, 0, 147, 1041, 0</column>
-<column name="myproject_U0">myproject, 47, 16, 58832, 43389, 0</column>
+<column name="myproject_U0">myproject, 47, 16, 58897, 43396, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

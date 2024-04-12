@@ -2037,7 +2037,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>__Val2__</originalName>
-              <rtlName>myproject_axi_mux_134_18_1_0_U1023</rtlName>
+              <rtlName>myproject_axi_mux_134_18_1_0_U1021</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>18</bitwidth>
@@ -2217,7 +2217,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>__Val2__</originalName>
-              <rtlName>myproject_axi_mux_134_18_1_0_U1024</rtlName>
+              <rtlName>myproject_axi_mux_134_18_1_0_U1022</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>18</bitwidth>
@@ -3275,7 +3275,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>__Val2__</originalName>
-              <rtlName>myproject_axi_mux_134_18_1_0_U1025</rtlName>
+              <rtlName>myproject_axi_mux_134_18_1_0_U1023</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>18</bitwidth>
@@ -3455,7 +3455,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>__Val2__</originalName>
-              <rtlName>myproject_axi_mux_134_18_1_0_U1026</rtlName>
+              <rtlName>myproject_axi_mux_134_18_1_0_U1024</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>18</bitwidth>
@@ -7264,7 +7264,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>myproject_axi_mux_134_18_1_0_U1023 (myproject_axi_mux_134_18_1_0)</first>
+          <first>myproject_axi_mux_134_18_1_0_U1021 (myproject_axi_mux_134_18_1_0)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -7279,37 +7279,37 @@
           </second>
         </item>
         <item>
+          <first>myproject_axi_mux_134_18_1_0_U1022 (myproject_axi_mux_134_18_1_0)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>65</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>myproject_axi_mux_134_18_1_0_U1023 (myproject_axi_mux_134_18_1_0)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>65</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>myproject_axi_mux_134_18_1_0_U1024 (myproject_axi_mux_134_18_1_0)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>65</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>myproject_axi_mux_134_18_1_0_U1025 (myproject_axi_mux_134_18_1_0)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>65</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>myproject_axi_mux_134_18_1_0_U1026 (myproject_axi_mux_134_18_1_0)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -8261,6 +8261,20 @@
         <count>4</count>
         <item_version>0</item_version>
         <item>
+          <first>myproject_axi_mux_134_18_1_0_U1021</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>myproject_axi_mux_134_18_1_0_U1022</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
           <first>myproject_axi_mux_134_18_1_0_U1023</first>
           <second>
             <count>0</count>
@@ -8274,26 +8288,12 @@
             <item_version>0</item_version>
           </second>
         </item>
-        <item>
-          <first>myproject_axi_mux_134_18_1_0_U1025</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>myproject_axi_mux_134_18_1_0_U1026</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
       </dp_dsp_resource>
       <dp_component_map class_id="39" tracking_level="0" version="0">
         <count>4</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>myproject_axi_mux_134_18_1_0_U1023 (myproject_axi_mux_134_18_1_0)</first>
+          <first>myproject_axi_mux_134_18_1_0_U1021 (myproject_axi_mux_134_18_1_0)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8301,7 +8301,7 @@
           </second>
         </item>
         <item>
-          <first>myproject_axi_mux_134_18_1_0_U1024 (myproject_axi_mux_134_18_1_0)</first>
+          <first>myproject_axi_mux_134_18_1_0_U1022 (myproject_axi_mux_134_18_1_0)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8309,7 +8309,7 @@
           </second>
         </item>
         <item>
-          <first>myproject_axi_mux_134_18_1_0_U1025 (myproject_axi_mux_134_18_1_0)</first>
+          <first>myproject_axi_mux_134_18_1_0_U1023 (myproject_axi_mux_134_18_1_0)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8317,7 +8317,7 @@
           </second>
         </item>
         <item>
-          <first>myproject_axi_mux_134_18_1_0_U1026 (myproject_axi_mux_134_18_1_0)</first>
+          <first>myproject_axi_mux_134_18_1_0_U1024 (myproject_axi_mux_134_18_1_0)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

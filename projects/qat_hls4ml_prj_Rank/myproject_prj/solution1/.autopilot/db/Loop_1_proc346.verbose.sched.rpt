@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Loop_1_proc346'
 ================================================================
-* Date:           Tue Apr  9 23:49:18 2024
+* Date:           Wed Apr 10 16:32:21 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
@@ -250,8 +250,7 @@ The critical path consists of the following:
 	'sub' operation ('sub_ln203_1', firmware/myproject_axi.cpp:21) [92]  (0.781 ns)
 	'lshr' operation ('lshr_ln203', firmware/myproject_axi.cpp:21) [100]  (0 ns)
 	'and' operation ('and_ln203', firmware/myproject_axi.cpp:21) [101]  (0.736 ns)
-	'xor' operation ('xor_ln203', firmware/myproject_axi.cpp:21) [102]  (0 ns)
-	'and' operation ('and_ln203_1', firmware/myproject_axi.cpp:21) [103]  (0 ns)
+	'and' operation ('and_ln203_2', firmware/myproject_axi.cpp:21) [104]  (0 ns)
 	'or' operation ('ctype.data.V', firmware/myproject_axi.cpp:21) [105]  (0.529 ns)
 
 

@@ -26,6 +26,38 @@ const sc_lv<3> reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s::ap_con
 const sc_lv<3> reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s::ap_const_lv3_3 = "11";
 
 reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s::reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s(sc_module_name name) : sc_module(name), mVcdFile(0) {
+    myproject_axi_mux_134_18_1_0_U1021 = new myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>("myproject_axi_mux_134_18_1_0_U1021");
+    myproject_axi_mux_134_18_1_0_U1021->din0(zext_ln43_fu_146_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din1(zext_ln43_3_fu_150_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din2(zext_ln43_4_fu_154_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din3(zext_ln43_5_fu_158_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din4(zext_ln43_6_fu_162_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din5(zext_ln43_7_fu_166_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din6(zext_ln43_8_fu_170_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din7(zext_ln43_9_fu_174_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din8(zext_ln43_10_fu_178_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din9(zext_ln43_11_fu_182_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din10(zext_ln43_12_fu_186_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din11(zext_ln43_13_fu_190_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din12(zext_ln43_14_fu_194_p1);
+    myproject_axi_mux_134_18_1_0_U1021->din13(p_Val2_s_fu_198_p14);
+    myproject_axi_mux_134_18_1_0_U1021->dout(p_Val2_s_fu_198_p15);
+    myproject_axi_mux_134_18_1_0_U1022 = new myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>("myproject_axi_mux_134_18_1_0_U1022");
+    myproject_axi_mux_134_18_1_0_U1022->din0(zext_ln43_fu_146_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din1(zext_ln43_3_fu_150_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din2(zext_ln43_4_fu_154_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din3(zext_ln43_5_fu_158_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din4(zext_ln43_6_fu_162_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din5(zext_ln43_7_fu_166_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din6(zext_ln43_8_fu_170_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din7(zext_ln43_9_fu_174_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din8(zext_ln43_10_fu_178_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din9(zext_ln43_11_fu_182_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din10(zext_ln43_12_fu_186_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din11(zext_ln43_13_fu_190_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din12(zext_ln43_14_fu_194_p1);
+    myproject_axi_mux_134_18_1_0_U1022->din13(p_Val2_46_fu_240_p14);
+    myproject_axi_mux_134_18_1_0_U1022->dout(p_Val2_46_fu_240_p15);
     myproject_axi_mux_134_18_1_0_U1023 = new myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>("myproject_axi_mux_134_18_1_0_U1023");
     myproject_axi_mux_134_18_1_0_U1023->din0(zext_ln43_fu_146_p1);
     myproject_axi_mux_134_18_1_0_U1023->din1(zext_ln43_3_fu_150_p1);
@@ -40,8 +72,8 @@ reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s::reduce_ap_fixed_18_8_
     myproject_axi_mux_134_18_1_0_U1023->din10(zext_ln43_12_fu_186_p1);
     myproject_axi_mux_134_18_1_0_U1023->din11(zext_ln43_13_fu_190_p1);
     myproject_axi_mux_134_18_1_0_U1023->din12(zext_ln43_14_fu_194_p1);
-    myproject_axi_mux_134_18_1_0_U1023->din13(p_Val2_s_fu_198_p14);
-    myproject_axi_mux_134_18_1_0_U1023->dout(p_Val2_s_fu_198_p15);
+    myproject_axi_mux_134_18_1_0_U1023->din13(p_Val2_49_fu_372_p14);
+    myproject_axi_mux_134_18_1_0_U1023->dout(p_Val2_49_fu_372_p15);
     myproject_axi_mux_134_18_1_0_U1024 = new myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>("myproject_axi_mux_134_18_1_0_U1024");
     myproject_axi_mux_134_18_1_0_U1024->din0(zext_ln43_fu_146_p1);
     myproject_axi_mux_134_18_1_0_U1024->din1(zext_ln43_3_fu_150_p1);
@@ -56,40 +88,8 @@ reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s::reduce_ap_fixed_18_8_
     myproject_axi_mux_134_18_1_0_U1024->din10(zext_ln43_12_fu_186_p1);
     myproject_axi_mux_134_18_1_0_U1024->din11(zext_ln43_13_fu_190_p1);
     myproject_axi_mux_134_18_1_0_U1024->din12(zext_ln43_14_fu_194_p1);
-    myproject_axi_mux_134_18_1_0_U1024->din13(p_Val2_46_fu_240_p14);
-    myproject_axi_mux_134_18_1_0_U1024->dout(p_Val2_46_fu_240_p15);
-    myproject_axi_mux_134_18_1_0_U1025 = new myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>("myproject_axi_mux_134_18_1_0_U1025");
-    myproject_axi_mux_134_18_1_0_U1025->din0(zext_ln43_fu_146_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din1(zext_ln43_3_fu_150_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din2(zext_ln43_4_fu_154_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din3(zext_ln43_5_fu_158_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din4(zext_ln43_6_fu_162_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din5(zext_ln43_7_fu_166_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din6(zext_ln43_8_fu_170_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din7(zext_ln43_9_fu_174_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din8(zext_ln43_10_fu_178_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din9(zext_ln43_11_fu_182_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din10(zext_ln43_12_fu_186_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din11(zext_ln43_13_fu_190_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din12(zext_ln43_14_fu_194_p1);
-    myproject_axi_mux_134_18_1_0_U1025->din13(p_Val2_49_fu_372_p14);
-    myproject_axi_mux_134_18_1_0_U1025->dout(p_Val2_49_fu_372_p15);
-    myproject_axi_mux_134_18_1_0_U1026 = new myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>("myproject_axi_mux_134_18_1_0_U1026");
-    myproject_axi_mux_134_18_1_0_U1026->din0(zext_ln43_fu_146_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din1(zext_ln43_3_fu_150_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din2(zext_ln43_4_fu_154_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din3(zext_ln43_5_fu_158_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din4(zext_ln43_6_fu_162_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din5(zext_ln43_7_fu_166_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din6(zext_ln43_8_fu_170_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din7(zext_ln43_9_fu_174_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din8(zext_ln43_10_fu_178_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din9(zext_ln43_11_fu_182_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din10(zext_ln43_12_fu_186_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din11(zext_ln43_13_fu_190_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din12(zext_ln43_14_fu_194_p1);
-    myproject_axi_mux_134_18_1_0_U1026->din13(p_Val2_2_fu_414_p14);
-    myproject_axi_mux_134_18_1_0_U1026->dout(p_Val2_2_fu_414_p15);
+    myproject_axi_mux_134_18_1_0_U1024->din13(p_Val2_2_fu_414_p14);
+    myproject_axi_mux_134_18_1_0_U1024->dout(p_Val2_2_fu_414_p15);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -433,10 +433,10 @@ reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s::~reduce_ap_fixed_18_8
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
+    delete myproject_axi_mux_134_18_1_0_U1021;
+    delete myproject_axi_mux_134_18_1_0_U1022;
     delete myproject_axi_mux_134_18_1_0_U1023;
     delete myproject_axi_mux_134_18_1_0_U1024;
-    delete myproject_axi_mux_134_18_1_0_U1025;
-    delete myproject_axi_mux_134_18_1_0_U1026;
 }
 
 void reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s::thread_ap_clk_no_reset_() {

@@ -98,5 +98,5 @@ KerasModel: !keras_model 'projects/qat_hls4ml_prj_Rank/keras_model.h5'
 OutputDir: projects/qat_hls4ml_prj_Rank
 Part: xc7z020clg400-1
 ProjectName: myproject
-Stamp: 65f2dDB7
+Stamp: cf5F9A91
 Version: 1.0.0

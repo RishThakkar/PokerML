@@ -125,7 +125,7 @@ wire   [7:0] sub_ln964_fu_459_p2;
 wire   [7:0] select_ln964_fu_451_p3;
 wire   [7:0] add_ln964_fu_464_p2;
 wire   [63:0] m_6_fu_439_p1;
-wire   [8:0] tmp_62_i_fu_470_p3;
+wire   [8:0] tmp_70_i_fu_470_p3;
 wire   [63:0] p_Result_20_fu_477_p5;
 wire   [31:0] trunc_ln738_fu_489_p1;
 wire   [31:0] bitcast_ln739_fu_493_p1;
@@ -144,7 +144,7 @@ initial begin
 #0 ap_CS_fsm = 5'd1;
 end
 
-myproject_axi_muxKfY #(
+myproject_axi_mux_42_16_1_1 #(
     .ID( 1 ),
     .NUM_STAGE( 1 ),
     .din0_WIDTH( 16 ),
@@ -153,7 +153,7 @@ myproject_axi_muxKfY #(
     .din3_WIDTH( 16 ),
     .din4_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
-myproject_axi_muxKfY_U1075(
+myproject_axi_mux_42_16_1_1_U1085(
     .din0(tmp_data_V_0),
     .din1(tmp_data_V_1),
     .din2(tmp_data_V_2),
@@ -469,7 +469,7 @@ assign p_Result_18_fu_204_p3 = tmp_V_3_fu_184_p6[32'd15];
 
 assign p_Result_19_fu_236_p3 = {{16'd65535}, {p_Result_s_fu_226_p4}};
 
-assign p_Result_20_fu_477_p5 = {{m_6_fu_439_p1[63:32]}, {tmp_62_i_fu_470_p3}, {m_6_fu_439_p1[22:0]}};
+assign p_Result_20_fu_477_p5 = {{m_6_fu_439_p1[63:32]}, {tmp_70_i_fu_470_p3}, {m_6_fu_439_p1[22:0]}};
 
 integer ap_tvar_int_0;
 
@@ -499,7 +499,7 @@ assign tmp_57_fu_324_p3 = lsb_index_fu_265_p2[32'd31];
 
 assign tmp_58_fu_443_p3 = m_2_fu_423_p2[32'd25];
 
-assign tmp_62_i_fu_470_p3 = {{p_Result_18_reg_528}, {add_ln964_fu_464_p2}};
+assign tmp_70_i_fu_470_p3 = {{p_Result_18_reg_528}, {add_ln964_fu_464_p2}};
 
 assign tmp_V_3_fu_184_p5 = j3_0_i_reg_146[1:0];
 

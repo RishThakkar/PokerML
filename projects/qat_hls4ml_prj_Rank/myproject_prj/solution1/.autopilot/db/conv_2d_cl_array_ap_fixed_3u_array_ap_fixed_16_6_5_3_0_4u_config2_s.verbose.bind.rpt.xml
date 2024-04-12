@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s'" level="0">
-<item name = "Date">Tue Apr  9 23:49:21 2024
+<item name = "Date">Wed Apr 10 16:32:24 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.967 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.117 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,19 +24,19 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">12289, 462849, 61.445 us, 2.314 ms, 12289, 462849, none</column>
+<column name="">12289, 466945, 61.445 us, 2.335 ms, 12289, 466945, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227">compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s, 1, 111, 5.000 ns, 0.555 us, 1, 111, none</column>
+<column name="grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227">compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s, 1, 112, 5.000 ns, 0.560 us, 1, 112, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- ReadInputHeight_ReadInputWidth">12288, 462848, 3 ~ 113, -, -, 4096, no</column>
+<column name="- ReadInputHeight_ReadInputWidth">12288, 466944, 3 ~ 114, -, -, 4096, no</column>
 </table>
 </item>
 </section>

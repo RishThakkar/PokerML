@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Loop_1_proc290'" level="0">
-<item name = "Date">Wed Apr 10 00:28:05 2024
+<item name = "Date">Wed Apr 10 15:58:19 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -63,7 +63,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="myproject_axi_fpebkb_U1">myproject_axi_fpebkb, 0, 0, 100, 138, 0</column>
+<column name="myproject_axi_fpext_32ns_64_2_1_U1">myproject_axi_fpext_32ns_64_2_1, 0, 0, 100, 138, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -110,7 +110,7 @@
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state3">or, 0, 0, 2, 1, 1</column>
 <column name="ctype_data_V_1_fu_707_p2">or, 0, 0, 48, 48, 48</column>
-<column name="empty_162_fu_584_p2">or, 0, 0, 6, 6, 4</column>
+<column name="empty_164_fu_584_p2">or, 0, 0, 6, 6, 4</column>
 <column name="is_last_fu_253_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln581_fu_508_p2">or, 0, 0, 2, 1, 1</column>
 <column name="or_ln582_fu_473_p2">or, 0, 0, 2, 1, 1</column>

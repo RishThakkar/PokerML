@@ -853,7 +853,7 @@
             <Obj>
               <type>0</type>
               <id>32</id>
-              <name>empty_161</name>
+              <name>empty_163</name>
               <fileName>firmware/myproject_axi.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>22</lineNumber>
@@ -1023,7 +1023,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>d</originalName>
-              <rtlName>myproject_axi_fpebkb_U1</rtlName>
+              <rtlName>myproject_axi_fpext_32ns_64_2_1_U1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -3452,7 +3452,7 @@
             <Obj>
               <type>0</type>
               <id>85</id>
-              <name>empty_162</name>
+              <name>empty_164</name>
               <fileName>firmware/myproject_axi.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>21</lineNumber>
@@ -3476,7 +3476,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>empty_162_fu_584_p2</rtlName>
+              <rtlName>empty_164_fu_584_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -8424,7 +8424,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>myproject_axi_fpebkb_U1 (myproject_axi_fpebkb)</first>
+          <first>myproject_axi_fpext_32ns_64_2_1_U1 (myproject_axi_fpext_32ns_64_2_1)</first>
           <second class_id="39" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -8783,7 +8783,7 @@
           </second>
         </item>
         <item>
-          <first>empty_162_fu_584_p2 ( or ) </first>
+          <first>empty_164_fu_584_p2 ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -10328,7 +10328,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>myproject_axi_fpebkb_U1</first>
+          <first>myproject_axi_fpext_32ns_64_2_1_U1</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -10353,7 +10353,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>myproject_axi_fpebkb_U1 (myproject_axi_fpebkb)</first>
+          <first>myproject_axi_fpext_32ns_64_2_1_U1 (myproject_axi_fpext_32ns_64_2_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10461,7 +10461,7 @@
           </second>
         </item>
         <item>
-          <first>empty_162_fu_584_p2 ( or ) </first>
+          <first>empty_164_fu_584_p2 ( or ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -12425,7 +12425,7 @@
         </second>
       </item>
       <item>
-        <first>empty_162_fu_584</first>
+        <first>empty_164_fu_584</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13002,7 +13002,7 @@
       <count>7</count>
       <item_version>0</item_version>
       <item>
-        <first>empty_161_read_fu_162</first>
+        <first>empty_163_read_fu_162</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -215,7 +215,7 @@
 					<Obj>
 						<type>0</type>
 						<id>154</id>
-						<name>layer2_out_V_data_0</name>
+						<name>layer2_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -263,7 +263,7 @@
 					<Obj>
 						<type>0</type>
 						<id>157</id>
-						<name>layer2_out_V_data_1</name>
+						<name>layer2_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -311,7 +311,7 @@
 					<Obj>
 						<type>0</type>
 						<id>160</id>
-						<name>layer2_out_V_data_2</name>
+						<name>layer2_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -359,7 +359,7 @@
 					<Obj>
 						<type>0</type>
 						<id>163</id>
-						<name>layer2_out_V_data_3</name>
+						<name>layer2_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>35</lineNumber>
@@ -407,7 +407,7 @@
 					<Obj>
 						<type>0</type>
 						<id>166</id>
-						<name>layer4_out_V_data_0</name>
+						<name>layer4_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>39</lineNumber>
@@ -455,7 +455,7 @@
 					<Obj>
 						<type>0</type>
 						<id>169</id>
-						<name>layer4_out_V_data_1</name>
+						<name>layer4_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>39</lineNumber>
@@ -503,7 +503,7 @@
 					<Obj>
 						<type>0</type>
 						<id>172</id>
-						<name>layer4_out_V_data_2</name>
+						<name>layer4_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>39</lineNumber>
@@ -551,7 +551,7 @@
 					<Obj>
 						<type>0</type>
 						<id>175</id>
-						<name>layer4_out_V_data_3</name>
+						<name>layer4_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>39</lineNumber>
@@ -599,7 +599,7 @@
 					<Obj>
 						<type>0</type>
 						<id>178</id>
-						<name>layer5_out_V_data_0</name>
+						<name>layer5_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>43</lineNumber>
@@ -647,7 +647,7 @@
 					<Obj>
 						<type>0</type>
 						<id>181</id>
-						<name>layer5_out_V_data_1</name>
+						<name>layer5_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>43</lineNumber>
@@ -695,7 +695,7 @@
 					<Obj>
 						<type>0</type>
 						<id>184</id>
-						<name>layer5_out_V_data_2</name>
+						<name>layer5_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>43</lineNumber>
@@ -743,7 +743,7 @@
 					<Obj>
 						<type>0</type>
 						<id>187</id>
-						<name>layer5_out_V_data_3</name>
+						<name>layer5_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>43</lineNumber>
@@ -791,7 +791,7 @@
 					<Obj>
 						<type>0</type>
 						<id>190</id>
-						<name>layer6_out_V_data_0</name>
+						<name>layer6_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>47</lineNumber>
@@ -839,7 +839,7 @@
 					<Obj>
 						<type>0</type>
 						<id>193</id>
-						<name>layer6_out_V_data_1</name>
+						<name>layer6_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>47</lineNumber>
@@ -887,7 +887,7 @@
 					<Obj>
 						<type>0</type>
 						<id>196</id>
-						<name>layer6_out_V_data_2</name>
+						<name>layer6_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>47</lineNumber>
@@ -935,7 +935,7 @@
 					<Obj>
 						<type>0</type>
 						<id>199</id>
-						<name>layer6_out_V_data_3</name>
+						<name>layer6_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>47</lineNumber>
@@ -983,7 +983,7 @@
 					<Obj>
 						<type>0</type>
 						<id>202</id>
-						<name>layer8_out_V_data_0</name>
+						<name>layer8_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -1031,7 +1031,7 @@
 					<Obj>
 						<type>0</type>
 						<id>205</id>
-						<name>layer8_out_V_data_1</name>
+						<name>layer8_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -1079,7 +1079,7 @@
 					<Obj>
 						<type>0</type>
 						<id>208</id>
-						<name>layer8_out_V_data_2</name>
+						<name>layer8_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -1127,7 +1127,7 @@
 					<Obj>
 						<type>0</type>
 						<id>211</id>
-						<name>layer8_out_V_data_3</name>
+						<name>layer8_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>51</lineNumber>
@@ -1175,7 +1175,7 @@
 					<Obj>
 						<type>0</type>
 						<id>214</id>
-						<name>layer9_out_V_data_0</name>
+						<name>layer9_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>55</lineNumber>
@@ -1223,7 +1223,7 @@
 					<Obj>
 						<type>0</type>
 						<id>217</id>
-						<name>layer9_out_V_data_1</name>
+						<name>layer9_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>55</lineNumber>
@@ -1271,7 +1271,7 @@
 					<Obj>
 						<type>0</type>
 						<id>220</id>
-						<name>layer9_out_V_data_2</name>
+						<name>layer9_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>55</lineNumber>
@@ -1319,7 +1319,7 @@
 					<Obj>
 						<type>0</type>
 						<id>223</id>
-						<name>layer9_out_V_data_3</name>
+						<name>layer9_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>55</lineNumber>
@@ -1367,7 +1367,7 @@
 					<Obj>
 						<type>0</type>
 						<id>226</id>
-						<name>layer11_out_V_data_0</name>
+						<name>layer11_out_V_data_0_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>60</lineNumber>
@@ -1415,7 +1415,7 @@
 					<Obj>
 						<type>0</type>
 						<id>229</id>
-						<name>layer11_out_V_data_1</name>
+						<name>layer11_out_V_data_1_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>60</lineNumber>
@@ -1463,7 +1463,7 @@
 					<Obj>
 						<type>0</type>
 						<id>232</id>
-						<name>layer11_out_V_data_2</name>
+						<name>layer11_out_V_data_2_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>60</lineNumber>
@@ -1511,7 +1511,7 @@
 					<Obj>
 						<type>0</type>
 						<id>235</id>
-						<name>layer11_out_V_data_3</name>
+						<name>layer11_out_V_data_3_V</name>
 						<fileName>firmware/myproject.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>60</lineNumber>
@@ -2221,7 +2221,7 @@
 					<Obj>
 						<type>2</type>
 						<id>277</id>
-						<name>conv_2d_cl_1</name>
+						<name>conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2237,14 +2237,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:conv_2d_cl.1&gt;</content>
+				<content>&lt;constant:conv_2d_cl&lt;array&lt;ap_fixed,3u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_47">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>286</id>
-						<name>relu_1</name>
+						<name>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2260,14 +2260,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:relu.1&gt;</content>
+				<content>&lt;constant:relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config4&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_48">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>296</id>
-						<name>pooling2d_cl_1</name>
+						<name>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2283,14 +2283,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:pooling2d_cl.1&gt;</content>
+				<content>&lt;constant:pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config5&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_49">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>306</id>
-						<name>conv_2d_cl</name>
+						<name>conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2306,14 +2306,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:conv_2d_cl&gt;</content>
+				<content>&lt;constant:conv_2d_cl&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_50">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>316</id>
-						<name>relu</name>
+						<name>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config8_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2329,14 +2329,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:relu&gt;</content>
+				<content>&lt;constant:relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config8&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_51">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>326</id>
-						<name>pooling2d_cl</name>
+						<name>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2352,14 +2352,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:pooling2d_cl&gt;</content>
+				<content>&lt;constant:pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config9&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_52">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>336</id>
-						<name>dense</name>
+						<name>dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config11_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2375,14 +2375,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:dense&gt;</content>
+				<content>&lt;constant:dense&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config11&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_53">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>346</id>
-						<name>softmax</name>
+						<name>softmax_array_array_ap_fixed_16_6_5_3_0_4u_softmax_config12_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2398,7 +2398,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:softmax&gt;</content>
+				<content>&lt;constant:softmax&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -4169,8 +4169,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>463159</mMinLatency>
-			<mMaxLatency>463160</mMaxLatency>
+			<mMinLatency>462947</mMinLatency>
+			<mMaxLatency>462948</mMaxLatency>
 			<mIsDfPipe>1</mIsDfPipe>
 			<mDfPipe class_id="23" tracking_level="1" version="0" object_id="_296">
 				<port_list class_id="24" tracking_level="0" version="0">
@@ -4182,7 +4182,7 @@
 					<item_version>0</item_version>
 					<item class_id="26" tracking_level="1" version="0" object_id="_297">
 						<type>0</type>
-						<name>conv_2d_cl_1_U0</name>
+						<name>conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_U0</name>
 						<ssdmobj_id>238</ssdmobj_id>
 						<pins class_id="27" tracking_level="0" version="0">
 							<count>46</count>
@@ -4195,7 +4195,7 @@
 								</port>
 								<inst class_id="30" tracking_level="1" version="0" object_id="_300">
 									<type>0</type>
-									<name>conv_2d_cl_1_U0</name>
+									<name>conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_U0</name>
 									<ssdmobj_id>238</ssdmobj_id>
 								</inst>
 							</item>
@@ -4393,7 +4393,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_349">
 								<port class_id_reference="29" object_id="_350">
-									<name>line_buffer_Array_V_21</name>
+									<name>line_buffer_Array_V_0_0</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -4401,7 +4401,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_351">
 								<port class_id_reference="29" object_id="_352">
-									<name>line_buffer_Array_V_10</name>
+									<name>line_buffer_Array_V_1236_0</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -4409,7 +4409,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_353">
 								<port class_id_reference="29" object_id="_354">
-									<name>line_buffer_Array_V_20</name>
+									<name>line_buffer_Array_V_0_1</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -4417,7 +4417,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_355">
 								<port class_id_reference="29" object_id="_356">
-									<name>line_buffer_Array_V_9</name>
+									<name>line_buffer_Array_V_1236_1</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -4425,7 +4425,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_357">
 								<port class_id_reference="29" object_id="_358">
-									<name>line_buffer_Array_V_19</name>
+									<name>line_buffer_Array_V_0_2</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -4433,7 +4433,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_359">
 								<port class_id_reference="29" object_id="_360">
-									<name>line_buffer_Array_V_8</name>
+									<name>line_buffer_Array_V_1236_2</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -4563,7 +4563,7 @@
 					</item>
 					<item class_id_reference="26" object_id="_391">
 						<type>0</type>
-						<name>relu_1_U0</name>
+						<name>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_U0</name>
 						<ssdmobj_id>239</ssdmobj_id>
 						<pins>
 							<count>8</count>
@@ -4576,7 +4576,7 @@
 								</port>
 								<inst class_id_reference="30" object_id="_394">
 									<type>0</type>
-									<name>relu_1_U0</name>
+									<name>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_U0</name>
 									<ssdmobj_id>239</ssdmobj_id>
 								</inst>
 							</item>
@@ -4640,7 +4640,7 @@
 					</item>
 					<item class_id_reference="26" object_id="_409">
 						<type>0</type>
-						<name>pooling2d_cl_1_U0</name>
+						<name>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_U0</name>
 						<ssdmobj_id>240</ssdmobj_id>
 						<pins>
 							<count>24</count>
@@ -4653,7 +4653,7 @@
 								</port>
 								<inst class_id_reference="30" object_id="_412">
 									<type>0</type>
-									<name>pooling2d_cl_1_U0</name>
+									<name>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_U0</name>
 									<ssdmobj_id>240</ssdmobj_id>
 								</inst>
 							</item>
@@ -4811,7 +4811,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_451">
 								<port class_id_reference="29" object_id="_452">
-									<name>line_buffer_Array_V_7</name>
+									<name>line_buffer_Array_V_2_0_0</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -4819,7 +4819,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_453">
 								<port class_id_reference="29" object_id="_454">
-									<name>line_buffer_Array_V_6</name>
+									<name>line_buffer_Array_V_2_0_1</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -4827,7 +4827,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_455">
 								<port class_id_reference="29" object_id="_456">
-									<name>line_buffer_Array_V_5</name>
+									<name>line_buffer_Array_V_2_0_2</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -4835,7 +4835,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_457">
 								<port class_id_reference="29" object_id="_458">
-									<name>line_buffer_Array_V_4</name>
+									<name>line_buffer_Array_V_2_0_3</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -4845,7 +4845,7 @@
 					</item>
 					<item class_id_reference="26" object_id="_459">
 						<type>0</type>
-						<name>conv_2d_cl_U0</name>
+						<name>conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_U0</name>
 						<ssdmobj_id>241</ssdmobj_id>
 						<pins>
 							<count>58</count>
@@ -4858,7 +4858,7 @@
 								</port>
 								<inst class_id_reference="30" object_id="_462">
 									<type>0</type>
-									<name>conv_2d_cl_U0</name>
+									<name>conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_U0</name>
 									<ssdmobj_id>241</ssdmobj_id>
 								</inst>
 							</item>
@@ -5112,7 +5112,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_525">
 								<port class_id_reference="29" object_id="_526">
-									<name>line_buffer_Array_V_18</name>
+									<name>line_buffer_Array_V_1_0_0</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5120,7 +5120,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_527">
 								<port class_id_reference="29" object_id="_528">
-									<name>line_buffer_Array_V_14</name>
+									<name>line_buffer_Array_V_1_1_0</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5128,7 +5128,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_529">
 								<port class_id_reference="29" object_id="_530">
-									<name>line_buffer_Array_V_17</name>
+									<name>line_buffer_Array_V_1_0_1</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5136,7 +5136,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_531">
 								<port class_id_reference="29" object_id="_532">
-									<name>line_buffer_Array_V_13</name>
+									<name>line_buffer_Array_V_1_1_1</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5144,7 +5144,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_533">
 								<port class_id_reference="29" object_id="_534">
-									<name>line_buffer_Array_V_16</name>
+									<name>line_buffer_Array_V_1_0_2</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5152,7 +5152,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_535">
 								<port class_id_reference="29" object_id="_536">
-									<name>line_buffer_Array_V_12</name>
+									<name>line_buffer_Array_V_1_1_2</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5160,7 +5160,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_537">
 								<port class_id_reference="29" object_id="_538">
-									<name>line_buffer_Array_V_15</name>
+									<name>line_buffer_Array_V_1_0_3</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5168,7 +5168,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_539">
 								<port class_id_reference="29" object_id="_540">
-									<name>line_buffer_Array_V_11</name>
+									<name>line_buffer_Array_V_1_1_3</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5322,7 +5322,7 @@
 					</item>
 					<item class_id_reference="26" object_id="_577">
 						<type>0</type>
-						<name>relu_U0</name>
+						<name>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config8_U0</name>
 						<ssdmobj_id>242</ssdmobj_id>
 						<pins>
 							<count>8</count>
@@ -5335,7 +5335,7 @@
 								</port>
 								<inst class_id_reference="30" object_id="_580">
 									<type>0</type>
-									<name>relu_U0</name>
+									<name>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config8_U0</name>
 									<ssdmobj_id>242</ssdmobj_id>
 								</inst>
 							</item>
@@ -5399,7 +5399,7 @@
 					</item>
 					<item class_id_reference="26" object_id="_595">
 						<type>0</type>
-						<name>pooling2d_cl_U0</name>
+						<name>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_U0</name>
 						<ssdmobj_id>243</ssdmobj_id>
 						<pins>
 							<count>24</count>
@@ -5412,7 +5412,7 @@
 								</port>
 								<inst class_id_reference="30" object_id="_598">
 									<type>0</type>
-									<name>pooling2d_cl_U0</name>
+									<name>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_U0</name>
 									<ssdmobj_id>243</ssdmobj_id>
 								</inst>
 							</item>
@@ -5570,7 +5570,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_637">
 								<port class_id_reference="29" object_id="_638">
-									<name>line_buffer_Array_V_3</name>
+									<name>line_buffer_Array_V_3_0_0</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5578,7 +5578,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_639">
 								<port class_id_reference="29" object_id="_640">
-									<name>line_buffer_Array_V_2</name>
+									<name>line_buffer_Array_V_3_0_1</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5586,7 +5586,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_641">
 								<port class_id_reference="29" object_id="_642">
-									<name>line_buffer_Array_V_1</name>
+									<name>line_buffer_Array_V_3_0_2</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5594,7 +5594,7 @@
 							</item>
 							<item class_id_reference="28" object_id="_643">
 								<port class_id_reference="29" object_id="_644">
-									<name>line_buffer_Array_V_s</name>
+									<name>line_buffer_Array_V_3_0_3</name>
 									<dir>2</dir>
 									<type>3</type>
 								</port>
@@ -5604,7 +5604,7 @@
 					</item>
 					<item class_id_reference="26" object_id="_645">
 						<type>0</type>
-						<name>dense_U0</name>
+						<name>dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config11_U0</name>
 						<ssdmobj_id>244</ssdmobj_id>
 						<pins>
 							<count>9</count>
@@ -5617,7 +5617,7 @@
 								</port>
 								<inst class_id_reference="30" object_id="_648">
 									<type>0</type>
-									<name>dense_U0</name>
+									<name>dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config11_U0</name>
 									<ssdmobj_id>244</ssdmobj_id>
 								</inst>
 							</item>
@@ -5689,7 +5689,7 @@
 					</item>
 					<item class_id_reference="26" object_id="_665">
 						<type>0</type>
-						<name>softmax_U0</name>
+						<name>softmax_array_array_ap_fixed_16_6_5_3_0_4u_softmax_config12_U0</name>
 						<ssdmobj_id>245</ssdmobj_id>
 						<pins>
 							<count>10</count>
@@ -5702,7 +5702,7 @@
 								</port>
 								<inst class_id_reference="30" object_id="_668">
 									<type>0</type>
-									<name>softmax_U0</name>
+									<name>softmax_array_array_ap_fixed_16_6_5_3_0_4u_softmax_config12_U0</name>
 									<ssdmobj_id>245</ssdmobj_id>
 								</inst>
 							</item>
@@ -5786,7 +5786,7 @@
 					<item_version>0</item_version>
 					<item class_id="32" tracking_level="1" version="0" object_id="_687">
 						<type>1</type>
-						<name>layer2_out_V_data_0</name>
+						<name>layer2_out_V_data_0_V</name>
 						<ssdmobj_id>154</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>3844</depth>
@@ -5810,7 +5810,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_692">
 						<type>1</type>
-						<name>layer2_out_V_data_1</name>
+						<name>layer2_out_V_data_1_V</name>
 						<ssdmobj_id>157</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>3844</depth>
@@ -5834,7 +5834,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_697">
 						<type>1</type>
-						<name>layer2_out_V_data_2</name>
+						<name>layer2_out_V_data_2_V</name>
 						<ssdmobj_id>160</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>3844</depth>
@@ -5858,7 +5858,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_702">
 						<type>1</type>
-						<name>layer2_out_V_data_3</name>
+						<name>layer2_out_V_data_3_V</name>
 						<ssdmobj_id>163</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>3844</depth>
@@ -5882,7 +5882,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_707">
 						<type>1</type>
-						<name>layer4_out_V_data_0</name>
+						<name>layer4_out_V_data_0_V</name>
 						<ssdmobj_id>166</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>3844</depth>
@@ -5906,7 +5906,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_712">
 						<type>1</type>
-						<name>layer4_out_V_data_1</name>
+						<name>layer4_out_V_data_1_V</name>
 						<ssdmobj_id>169</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>3844</depth>
@@ -5930,7 +5930,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_717">
 						<type>1</type>
-						<name>layer4_out_V_data_2</name>
+						<name>layer4_out_V_data_2_V</name>
 						<ssdmobj_id>172</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>3844</depth>
@@ -5954,7 +5954,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_722">
 						<type>1</type>
-						<name>layer4_out_V_data_3</name>
+						<name>layer4_out_V_data_3_V</name>
 						<ssdmobj_id>175</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>3844</depth>
@@ -5978,7 +5978,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_727">
 						<type>1</type>
-						<name>layer5_out_V_data_0</name>
+						<name>layer5_out_V_data_0_V</name>
 						<ssdmobj_id>178</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>961</depth>
@@ -6002,7 +6002,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_732">
 						<type>1</type>
-						<name>layer5_out_V_data_1</name>
+						<name>layer5_out_V_data_1_V</name>
 						<ssdmobj_id>181</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>961</depth>
@@ -6026,7 +6026,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_737">
 						<type>1</type>
-						<name>layer5_out_V_data_2</name>
+						<name>layer5_out_V_data_2_V</name>
 						<ssdmobj_id>184</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>961</depth>
@@ -6050,7 +6050,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_742">
 						<type>1</type>
-						<name>layer5_out_V_data_3</name>
+						<name>layer5_out_V_data_3_V</name>
 						<ssdmobj_id>187</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>961</depth>
@@ -6074,7 +6074,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_747">
 						<type>1</type>
-						<name>layer6_out_V_data_0</name>
+						<name>layer6_out_V_data_0_V</name>
 						<ssdmobj_id>190</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>841</depth>
@@ -6098,7 +6098,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_752">
 						<type>1</type>
-						<name>layer6_out_V_data_1</name>
+						<name>layer6_out_V_data_1_V</name>
 						<ssdmobj_id>193</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>841</depth>
@@ -6122,7 +6122,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_757">
 						<type>1</type>
-						<name>layer6_out_V_data_2</name>
+						<name>layer6_out_V_data_2_V</name>
 						<ssdmobj_id>196</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>841</depth>
@@ -6146,7 +6146,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_762">
 						<type>1</type>
-						<name>layer6_out_V_data_3</name>
+						<name>layer6_out_V_data_3_V</name>
 						<ssdmobj_id>199</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>841</depth>
@@ -6170,7 +6170,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_767">
 						<type>1</type>
-						<name>layer8_out_V_data_0</name>
+						<name>layer8_out_V_data_0_V</name>
 						<ssdmobj_id>202</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>841</depth>
@@ -6194,7 +6194,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_772">
 						<type>1</type>
-						<name>layer8_out_V_data_1</name>
+						<name>layer8_out_V_data_1_V</name>
 						<ssdmobj_id>205</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>841</depth>
@@ -6218,7 +6218,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_777">
 						<type>1</type>
-						<name>layer8_out_V_data_2</name>
+						<name>layer8_out_V_data_2_V</name>
 						<ssdmobj_id>208</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>841</depth>
@@ -6242,7 +6242,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_782">
 						<type>1</type>
-						<name>layer8_out_V_data_3</name>
+						<name>layer8_out_V_data_3_V</name>
 						<ssdmobj_id>211</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>841</depth>
@@ -6266,7 +6266,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_787">
 						<type>1</type>
-						<name>layer9_out_V_data_0</name>
+						<name>layer9_out_V_data_0_V</name>
 						<ssdmobj_id>214</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
@@ -6290,7 +6290,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_792">
 						<type>1</type>
-						<name>layer9_out_V_data_1</name>
+						<name>layer9_out_V_data_1_V</name>
 						<ssdmobj_id>217</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
@@ -6314,7 +6314,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_797">
 						<type>1</type>
-						<name>layer9_out_V_data_2</name>
+						<name>layer9_out_V_data_2_V</name>
 						<ssdmobj_id>220</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
@@ -6338,7 +6338,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_802">
 						<type>1</type>
-						<name>layer9_out_V_data_3</name>
+						<name>layer9_out_V_data_3_V</name>
 						<ssdmobj_id>223</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>196</depth>
@@ -6362,7 +6362,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_807">
 						<type>1</type>
-						<name>layer11_out_V_data_0</name>
+						<name>layer11_out_V_data_0_V</name>
 						<ssdmobj_id>226</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>1</depth>
@@ -6386,7 +6386,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_812">
 						<type>1</type>
-						<name>layer11_out_V_data_1</name>
+						<name>layer11_out_V_data_1_V</name>
 						<ssdmobj_id>229</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>1</depth>
@@ -6410,7 +6410,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_817">
 						<type>1</type>
-						<name>layer11_out_V_data_2</name>
+						<name>layer11_out_V_data_2_V</name>
 						<ssdmobj_id>232</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>1</depth>
@@ -6434,7 +6434,7 @@
 					</item>
 					<item class_id_reference="32" object_id="_822">
 						<type>1</type>
-						<name>layer11_out_V_data_3</name>
+						<name>layer11_out_V_data_3_V</name>
 						<ssdmobj_id>235</ssdmobj_id>
 						<ctype>0</ctype>
 						<depth>1</depth>

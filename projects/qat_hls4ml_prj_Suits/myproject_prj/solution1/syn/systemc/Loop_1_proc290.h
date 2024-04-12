@@ -11,7 +11,7 @@
 #include "systemc.h"
 #include "AESL_pkg.h"
 
-#include "myproject_axi_fpebkb.h"
+#include "myproject_axi_fpext_32ns_64_2_1.h"
 
 namespace ap_rtl {
 
@@ -51,7 +51,7 @@ struct Loop_1_proc290 : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    myproject_axi_fpebkb<1,2,32,64>* myproject_axi_fpebkb_U1;
+    myproject_axi_fpext_32ns_64_2_1<1,2,32,64>* myproject_axi_fpext_32ns_64_2_1_U1;
     regslice_both<1>* regslice_both_in_last_V_U;
     regslice_both<32>* regslice_both_in_data_U;
     sc_signal< sc_logic > real_start;
@@ -139,7 +139,7 @@ struct Loop_1_proc290 : public sc_module {
     sc_signal< sc_lv<1> > or_ln603_2_fu_562_p2;
     sc_signal< sc_lv<16> > select_ln603_2_fu_554_p3;
     sc_signal< sc_lv<6> > shl_ln_fu_576_p3;
-    sc_signal< sc_lv<6> > empty_162_fu_584_p2;
+    sc_signal< sc_lv<6> > empty_164_fu_584_p2;
     sc_signal< sc_lv<1> > icmp_ln203_fu_590_p2;
     sc_signal< sc_lv<6> > sub_ln203_fu_599_p2;
     sc_signal< sc_lv<6> > select_ln203_fu_605_p3;
@@ -241,7 +241,7 @@ struct Loop_1_proc290 : public sc_module {
     void thread_ashr_ln586_fu_427_p2();
     void thread_bitcast_ln696_fu_437_p1();
     void thread_ctype_data_V_1_fu_707_p2();
-    void thread_empty_162_fu_584_p2();
+    void thread_empty_164_fu_584_p2();
     void thread_exp_tmp_V_fu_307_p4();
     void thread_grp_fu_206_ce();
     void thread_i_fu_226_p2();

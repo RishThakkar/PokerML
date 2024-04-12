@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="myproject_axi,hls_ip_2019_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu5ev-sfvc784-2LV-e,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=4.355000,HLS_SYN_LAT=463161,HLS_SYN_TPT=237570,HLS_SYN_MEM=56,HLS_SYN_DSP=11,HLS_SYN_FF=88556,HLS_SYN_LUT=91037,HLS_VERSION=2019_2}" *)
+(* CORE_GENERATION_INFO="myproject_axi,hls_ip_2019_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xczu5ev-sfvc784-2LV-e,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=4.355000,HLS_SYN_LAT=462949,HLS_SYN_TPT=237570,HLS_SYN_MEM=57,HLS_SYN_DSP=19,HLS_SYN_FF=45725,HLS_SYN_LUT=60945,HLS_VERSION=2019_2}" *)
 
 module myproject_axi (
         in_r_TDATA,
@@ -50,8 +50,8 @@ wire   [15:0] Loop_1_proc290_U0_in_local_V_data_2_V_din;
 wire    Loop_1_proc290_U0_in_local_V_data_2_V_write;
 wire    Loop_1_proc290_U0_in_r_TREADY;
 wire   [0:0] Loop_1_proc290_U0_ap_return;
-wire    ap_channel_done_is_last_0_i_loc_chan;
-wire    is_last_0_i_loc_chan_full_n;
+wire    ap_channel_done_is_last_0_i_loc_channel;
+wire    is_last_0_i_loc_channel_full_n;
 wire    myproject_U0_ap_start;
 wire    myproject_U0_start_out;
 wire    myproject_U0_start_write;
@@ -70,23 +70,23 @@ wire    myproject_U0_ap_done;
 wire    myproject_U0_ap_ready;
 wire    myproject_U0_ap_idle;
 wire    myproject_U0_ap_continue;
-wire    Block_myproject_axi_U0_ap_start;
-wire    Block_myproject_axi_U0_ap_done;
-wire    Block_myproject_axi_U0_ap_continue;
-wire    Block_myproject_axi_U0_ap_idle;
-wire    Block_myproject_axi_U0_ap_ready;
-wire    Block_myproject_axi_U0_out_local_V_data_0_V_read;
-wire    Block_myproject_axi_U0_out_local_V_data_1_V_read;
-wire    Block_myproject_axi_U0_out_local_V_data_2_V_read;
-wire    Block_myproject_axi_U0_out_local_V_data_3_V_read;
-wire   [15:0] Block_myproject_axi_U0_tmp_data_V_0;
-wire    Block_myproject_axi_U0_tmp_data_V_0_ap_vld;
-wire   [15:0] Block_myproject_axi_U0_tmp_data_V_1;
-wire    Block_myproject_axi_U0_tmp_data_V_1_ap_vld;
-wire   [15:0] Block_myproject_axi_U0_tmp_data_V_2;
-wire    Block_myproject_axi_U0_tmp_data_V_2_ap_vld;
-wire   [15:0] Block_myproject_axi_U0_tmp_data_V_3;
-wire    Block_myproject_axi_U0_tmp_data_V_3_ap_vld;
+wire    Block_myproject_axi_exit44_proc_U0_ap_start;
+wire    Block_myproject_axi_exit44_proc_U0_ap_done;
+wire    Block_myproject_axi_exit44_proc_U0_ap_continue;
+wire    Block_myproject_axi_exit44_proc_U0_ap_idle;
+wire    Block_myproject_axi_exit44_proc_U0_ap_ready;
+wire    Block_myproject_axi_exit44_proc_U0_out_local_V_data_0_V_read;
+wire    Block_myproject_axi_exit44_proc_U0_out_local_V_data_1_V_read;
+wire    Block_myproject_axi_exit44_proc_U0_out_local_V_data_2_V_read;
+wire    Block_myproject_axi_exit44_proc_U0_out_local_V_data_3_V_read;
+wire   [15:0] Block_myproject_axi_exit44_proc_U0_tmp_data_V_0;
+wire    Block_myproject_axi_exit44_proc_U0_tmp_data_V_0_ap_vld;
+wire   [15:0] Block_myproject_axi_exit44_proc_U0_tmp_data_V_1;
+wire    Block_myproject_axi_exit44_proc_U0_tmp_data_V_1_ap_vld;
+wire   [15:0] Block_myproject_axi_exit44_proc_U0_tmp_data_V_2;
+wire    Block_myproject_axi_exit44_proc_U0_tmp_data_V_2_ap_vld;
+wire   [15:0] Block_myproject_axi_exit44_proc_U0_tmp_data_V_3;
+wire    Block_myproject_axi_exit44_proc_U0_tmp_data_V_3_ap_vld;
 wire    ap_channel_done_tmp_data_V_3;
 wire    tmp_data_V_3_full_n;
 reg    ap_sync_reg_channel_write_tmp_data_V_3;
@@ -121,20 +121,20 @@ wire    in_local_V_data_1_V_empty_n;
 wire    in_local_V_data_2_V_full_n;
 wire   [15:0] in_local_V_data_2_V_dout;
 wire    in_local_V_data_2_V_empty_n;
-wire   [0:0] is_last_0_i_loc_chan_dout;
-wire    is_last_0_i_loc_chan_empty_n;
-wire    out_local_V_data_0_s_full_n;
-wire   [15:0] out_local_V_data_0_s_dout;
-wire    out_local_V_data_0_s_empty_n;
-wire    out_local_V_data_1_s_full_n;
-wire   [15:0] out_local_V_data_1_s_dout;
-wire    out_local_V_data_1_s_empty_n;
-wire    out_local_V_data_2_s_full_n;
-wire   [15:0] out_local_V_data_2_s_dout;
-wire    out_local_V_data_2_s_empty_n;
-wire    out_local_V_data_3_s_full_n;
-wire   [15:0] out_local_V_data_3_s_dout;
-wire    out_local_V_data_3_s_empty_n;
+wire   [0:0] is_last_0_i_loc_channel_dout;
+wire    is_last_0_i_loc_channel_empty_n;
+wire    out_local_V_data_0_V_full_n;
+wire   [15:0] out_local_V_data_0_V_dout;
+wire    out_local_V_data_0_V_empty_n;
+wire    out_local_V_data_1_V_full_n;
+wire   [15:0] out_local_V_data_1_V_dout;
+wire    out_local_V_data_1_V_empty_n;
+wire    out_local_V_data_2_V_full_n;
+wire   [15:0] out_local_V_data_2_V_dout;
+wire    out_local_V_data_2_V_empty_n;
+wire    out_local_V_data_3_V_full_n;
+wire   [15:0] out_local_V_data_3_V_dout;
+wire    out_local_V_data_3_V_empty_n;
 wire   [15:0] tmp_data_V_0_dout;
 wire    tmp_data_V_0_empty_n;
 wire   [15:0] tmp_data_V_1_dout;
@@ -147,12 +147,12 @@ wire   [0:0] start_for_myproject_U0_din;
 wire    start_for_myproject_U0_full_n;
 wire   [0:0] start_for_myproject_U0_dout;
 wire    start_for_myproject_U0_empty_n;
-wire   [0:0] start_for_Block_myproject_axi_U0_din;
-wire    start_for_Block_myproject_axi_U0_full_n;
-wire   [0:0] start_for_Block_myproject_axi_U0_dout;
-wire    start_for_Block_myproject_axi_U0_empty_n;
-wire    Block_myproject_axi_U0_start_full_n;
-wire    Block_myproject_axi_U0_start_write;
+wire   [0:0] start_for_Block_myproject_axi_exit44_proc_U0_din;
+wire    start_for_Block_myproject_axi_exit44_proc_U0_full_n;
+wire   [0:0] start_for_Block_myproject_axi_exit44_proc_U0_dout;
+wire    start_for_Block_myproject_axi_exit44_proc_U0_empty_n;
+wire    Block_myproject_axi_exit44_proc_U0_start_full_n;
+wire    Block_myproject_axi_exit44_proc_U0_start_write;
 wire    Loop_2_proc_U0_start_full_n;
 wire    Loop_2_proc_U0_start_write;
 
@@ -193,7 +193,7 @@ Loop_1_proc290 Loop_1_proc290_U0(
 
 myproject myproject_U0(
     .ap_start(myproject_U0_ap_start),
-    .start_full_n(start_for_Block_myproject_axi_U0_full_n),
+    .start_full_n(start_for_Block_myproject_axi_exit44_proc_U0_full_n),
     .start_out(myproject_U0_start_out),
     .start_write(myproject_U0_start_write),
     .conv1_input_V_data_0_V_dout(in_local_V_data_0_V_dout),
@@ -206,16 +206,16 @@ myproject myproject_U0(
     .conv1_input_V_data_2_V_empty_n(in_local_V_data_2_V_empty_n),
     .conv1_input_V_data_2_V_read(myproject_U0_conv1_input_V_data_2_V_read),
     .layer12_out_V_data_0_V_din(myproject_U0_layer12_out_V_data_0_V_din),
-    .layer12_out_V_data_0_V_full_n(out_local_V_data_0_s_full_n),
+    .layer12_out_V_data_0_V_full_n(out_local_V_data_0_V_full_n),
     .layer12_out_V_data_0_V_write(myproject_U0_layer12_out_V_data_0_V_write),
     .layer12_out_V_data_1_V_din(myproject_U0_layer12_out_V_data_1_V_din),
-    .layer12_out_V_data_1_V_full_n(out_local_V_data_1_s_full_n),
+    .layer12_out_V_data_1_V_full_n(out_local_V_data_1_V_full_n),
     .layer12_out_V_data_1_V_write(myproject_U0_layer12_out_V_data_1_V_write),
     .layer12_out_V_data_2_V_din(myproject_U0_layer12_out_V_data_2_V_din),
-    .layer12_out_V_data_2_V_full_n(out_local_V_data_2_s_full_n),
+    .layer12_out_V_data_2_V_full_n(out_local_V_data_2_V_full_n),
     .layer12_out_V_data_2_V_write(myproject_U0_layer12_out_V_data_2_V_write),
     .layer12_out_V_data_3_V_din(myproject_U0_layer12_out_V_data_3_V_din),
-    .layer12_out_V_data_3_V_full_n(out_local_V_data_3_s_full_n),
+    .layer12_out_V_data_3_V_full_n(out_local_V_data_3_V_full_n),
     .layer12_out_V_data_3_V_write(myproject_U0_layer12_out_V_data_3_V_write),
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
@@ -225,34 +225,34 @@ myproject myproject_U0(
     .ap_continue(myproject_U0_ap_continue)
 );
 
-Block_myproject_axi_s Block_myproject_axi_U0(
+Block_myproject_axi_exit44_proc Block_myproject_axi_exit44_proc_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(Block_myproject_axi_U0_ap_start),
-    .ap_done(Block_myproject_axi_U0_ap_done),
-    .ap_continue(Block_myproject_axi_U0_ap_continue),
-    .ap_idle(Block_myproject_axi_U0_ap_idle),
-    .ap_ready(Block_myproject_axi_U0_ap_ready),
-    .out_local_V_data_0_V_dout(out_local_V_data_0_s_dout),
-    .out_local_V_data_0_V_empty_n(out_local_V_data_0_s_empty_n),
-    .out_local_V_data_0_V_read(Block_myproject_axi_U0_out_local_V_data_0_V_read),
-    .out_local_V_data_1_V_dout(out_local_V_data_1_s_dout),
-    .out_local_V_data_1_V_empty_n(out_local_V_data_1_s_empty_n),
-    .out_local_V_data_1_V_read(Block_myproject_axi_U0_out_local_V_data_1_V_read),
-    .out_local_V_data_2_V_dout(out_local_V_data_2_s_dout),
-    .out_local_V_data_2_V_empty_n(out_local_V_data_2_s_empty_n),
-    .out_local_V_data_2_V_read(Block_myproject_axi_U0_out_local_V_data_2_V_read),
-    .out_local_V_data_3_V_dout(out_local_V_data_3_s_dout),
-    .out_local_V_data_3_V_empty_n(out_local_V_data_3_s_empty_n),
-    .out_local_V_data_3_V_read(Block_myproject_axi_U0_out_local_V_data_3_V_read),
-    .tmp_data_V_0(Block_myproject_axi_U0_tmp_data_V_0),
-    .tmp_data_V_0_ap_vld(Block_myproject_axi_U0_tmp_data_V_0_ap_vld),
-    .tmp_data_V_1(Block_myproject_axi_U0_tmp_data_V_1),
-    .tmp_data_V_1_ap_vld(Block_myproject_axi_U0_tmp_data_V_1_ap_vld),
-    .tmp_data_V_2(Block_myproject_axi_U0_tmp_data_V_2),
-    .tmp_data_V_2_ap_vld(Block_myproject_axi_U0_tmp_data_V_2_ap_vld),
-    .tmp_data_V_3(Block_myproject_axi_U0_tmp_data_V_3),
-    .tmp_data_V_3_ap_vld(Block_myproject_axi_U0_tmp_data_V_3_ap_vld)
+    .ap_start(Block_myproject_axi_exit44_proc_U0_ap_start),
+    .ap_done(Block_myproject_axi_exit44_proc_U0_ap_done),
+    .ap_continue(Block_myproject_axi_exit44_proc_U0_ap_continue),
+    .ap_idle(Block_myproject_axi_exit44_proc_U0_ap_idle),
+    .ap_ready(Block_myproject_axi_exit44_proc_U0_ap_ready),
+    .out_local_V_data_0_V_dout(out_local_V_data_0_V_dout),
+    .out_local_V_data_0_V_empty_n(out_local_V_data_0_V_empty_n),
+    .out_local_V_data_0_V_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_0_V_read),
+    .out_local_V_data_1_V_dout(out_local_V_data_1_V_dout),
+    .out_local_V_data_1_V_empty_n(out_local_V_data_1_V_empty_n),
+    .out_local_V_data_1_V_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_1_V_read),
+    .out_local_V_data_2_V_dout(out_local_V_data_2_V_dout),
+    .out_local_V_data_2_V_empty_n(out_local_V_data_2_V_empty_n),
+    .out_local_V_data_2_V_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_2_V_read),
+    .out_local_V_data_3_V_dout(out_local_V_data_3_V_dout),
+    .out_local_V_data_3_V_empty_n(out_local_V_data_3_V_empty_n),
+    .out_local_V_data_3_V_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_3_V_read),
+    .tmp_data_V_0(Block_myproject_axi_exit44_proc_U0_tmp_data_V_0),
+    .tmp_data_V_0_ap_vld(Block_myproject_axi_exit44_proc_U0_tmp_data_V_0_ap_vld),
+    .tmp_data_V_1(Block_myproject_axi_exit44_proc_U0_tmp_data_V_1),
+    .tmp_data_V_1_ap_vld(Block_myproject_axi_exit44_proc_U0_tmp_data_V_1_ap_vld),
+    .tmp_data_V_2(Block_myproject_axi_exit44_proc_U0_tmp_data_V_2),
+    .tmp_data_V_2_ap_vld(Block_myproject_axi_exit44_proc_U0_tmp_data_V_2_ap_vld),
+    .tmp_data_V_3(Block_myproject_axi_exit44_proc_U0_tmp_data_V_3),
+    .tmp_data_V_3_ap_vld(Block_myproject_axi_exit44_proc_U0_tmp_data_V_3_ap_vld)
 );
 
 Loop_2_proc Loop_2_proc_U0(
@@ -267,7 +267,7 @@ Loop_2_proc Loop_2_proc_U0(
     .out_r_TVALID(Loop_2_proc_U0_out_r_TVALID),
     .out_r_TREADY(out_r_TREADY),
     .out_r_TLAST(Loop_2_proc_U0_out_r_TLAST),
-    .p_read(is_last_0_i_loc_chan_dout),
+    .p_read(is_last_0_i_loc_channel_dout),
     .tmp_data_V_0(tmp_data_V_0_dout),
     .tmp_data_V_1(tmp_data_V_1_dout),
     .tmp_data_V_2(tmp_data_V_2_dout),
@@ -313,69 +313,69 @@ fifo_w16_d4096_A in_local_V_data_2_V_U(
     .if_read(myproject_U0_conv1_input_V_data_2_V_read)
 );
 
-fifo_w1_d2_A is_last_0_i_loc_chan_U(
+fifo_w1_d2_A is_last_0_i_loc_channel_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
     .if_din(Loop_1_proc290_U0_ap_return),
-    .if_full_n(is_last_0_i_loc_chan_full_n),
+    .if_full_n(is_last_0_i_loc_channel_full_n),
     .if_write(Loop_1_proc290_U0_ap_done),
-    .if_dout(is_last_0_i_loc_chan_dout),
-    .if_empty_n(is_last_0_i_loc_chan_empty_n),
+    .if_dout(is_last_0_i_loc_channel_dout),
+    .if_empty_n(is_last_0_i_loc_channel_empty_n),
     .if_read(Loop_2_proc_U0_ap_ready)
 );
 
-fifo_w16_d1_A_x out_local_V_data_0_s_U(
+fifo_w16_d1_A_x out_local_V_data_0_V_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
     .if_din(myproject_U0_layer12_out_V_data_0_V_din),
-    .if_full_n(out_local_V_data_0_s_full_n),
+    .if_full_n(out_local_V_data_0_V_full_n),
     .if_write(myproject_U0_layer12_out_V_data_0_V_write),
-    .if_dout(out_local_V_data_0_s_dout),
-    .if_empty_n(out_local_V_data_0_s_empty_n),
-    .if_read(Block_myproject_axi_U0_out_local_V_data_0_V_read)
+    .if_dout(out_local_V_data_0_V_dout),
+    .if_empty_n(out_local_V_data_0_V_empty_n),
+    .if_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_0_V_read)
 );
 
-fifo_w16_d1_A_x out_local_V_data_1_s_U(
+fifo_w16_d1_A_x out_local_V_data_1_V_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
     .if_din(myproject_U0_layer12_out_V_data_1_V_din),
-    .if_full_n(out_local_V_data_1_s_full_n),
+    .if_full_n(out_local_V_data_1_V_full_n),
     .if_write(myproject_U0_layer12_out_V_data_1_V_write),
-    .if_dout(out_local_V_data_1_s_dout),
-    .if_empty_n(out_local_V_data_1_s_empty_n),
-    .if_read(Block_myproject_axi_U0_out_local_V_data_1_V_read)
+    .if_dout(out_local_V_data_1_V_dout),
+    .if_empty_n(out_local_V_data_1_V_empty_n),
+    .if_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_1_V_read)
 );
 
-fifo_w16_d1_A_x out_local_V_data_2_s_U(
+fifo_w16_d1_A_x out_local_V_data_2_V_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
     .if_din(myproject_U0_layer12_out_V_data_2_V_din),
-    .if_full_n(out_local_V_data_2_s_full_n),
+    .if_full_n(out_local_V_data_2_V_full_n),
     .if_write(myproject_U0_layer12_out_V_data_2_V_write),
-    .if_dout(out_local_V_data_2_s_dout),
-    .if_empty_n(out_local_V_data_2_s_empty_n),
-    .if_read(Block_myproject_axi_U0_out_local_V_data_2_V_read)
+    .if_dout(out_local_V_data_2_V_dout),
+    .if_empty_n(out_local_V_data_2_V_empty_n),
+    .if_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_2_V_read)
 );
 
-fifo_w16_d1_A_x out_local_V_data_3_s_U(
+fifo_w16_d1_A_x out_local_V_data_3_V_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
     .if_din(myproject_U0_layer12_out_V_data_3_V_din),
-    .if_full_n(out_local_V_data_3_s_full_n),
+    .if_full_n(out_local_V_data_3_V_full_n),
     .if_write(myproject_U0_layer12_out_V_data_3_V_write),
-    .if_dout(out_local_V_data_3_s_dout),
-    .if_empty_n(out_local_V_data_3_s_empty_n),
-    .if_read(Block_myproject_axi_U0_out_local_V_data_3_V_read)
+    .if_dout(out_local_V_data_3_V_dout),
+    .if_empty_n(out_local_V_data_3_V_empty_n),
+    .if_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_3_V_read)
 );
 
 fifo_w16_d2_A tmp_data_V_0_U(
@@ -383,7 +383,7 @@ fifo_w16_d2_A tmp_data_V_0_U(
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(Block_myproject_axi_U0_tmp_data_V_0),
+    .if_din(Block_myproject_axi_exit44_proc_U0_tmp_data_V_0),
     .if_full_n(tmp_data_V_0_full_n),
     .if_write(ap_channel_done_tmp_data_V_0),
     .if_dout(tmp_data_V_0_dout),
@@ -396,7 +396,7 @@ fifo_w16_d2_A tmp_data_V_1_U(
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(Block_myproject_axi_U0_tmp_data_V_1),
+    .if_din(Block_myproject_axi_exit44_proc_U0_tmp_data_V_1),
     .if_full_n(tmp_data_V_1_full_n),
     .if_write(ap_channel_done_tmp_data_V_1),
     .if_dout(tmp_data_V_1_dout),
@@ -409,7 +409,7 @@ fifo_w16_d2_A tmp_data_V_2_U(
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(Block_myproject_axi_U0_tmp_data_V_2),
+    .if_din(Block_myproject_axi_exit44_proc_U0_tmp_data_V_2),
     .if_full_n(tmp_data_V_2_full_n),
     .if_write(ap_channel_done_tmp_data_V_2),
     .if_dout(tmp_data_V_2_dout),
@@ -422,7 +422,7 @@ fifo_w16_d2_A tmp_data_V_3_U(
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(Block_myproject_axi_U0_tmp_data_V_3),
+    .if_din(Block_myproject_axi_exit44_proc_U0_tmp_data_V_3),
     .if_full_n(tmp_data_V_3_full_n),
     .if_write(ap_channel_done_tmp_data_V_3),
     .if_dout(tmp_data_V_3_dout),
@@ -430,7 +430,7 @@ fifo_w16_d2_A tmp_data_V_3_U(
     .if_read(Loop_2_proc_U0_ap_ready)
 );
 
-start_for_myprojeLf8 start_for_myprojeLf8_U(
+start_for_myproject_U0 start_for_myproject_U0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -443,24 +443,24 @@ start_for_myprojeLf8 start_for_myprojeLf8_U(
     .if_read(myproject_U0_ap_ready)
 );
 
-start_for_Block_mMgi start_for_Block_mMgi_U(
+start_for_Block_myproject_axi_exit44_proc_U0 start_for_Block_myproject_axi_exit44_proc_U0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(start_for_Block_myproject_axi_U0_din),
-    .if_full_n(start_for_Block_myproject_axi_U0_full_n),
+    .if_din(start_for_Block_myproject_axi_exit44_proc_U0_din),
+    .if_full_n(start_for_Block_myproject_axi_exit44_proc_U0_full_n),
     .if_write(myproject_U0_start_write),
-    .if_dout(start_for_Block_myproject_axi_U0_dout),
-    .if_empty_n(start_for_Block_myproject_axi_U0_empty_n),
-    .if_read(Block_myproject_axi_U0_ap_ready)
+    .if_dout(start_for_Block_myproject_axi_exit44_proc_U0_dout),
+    .if_empty_n(start_for_Block_myproject_axi_exit44_proc_U0_empty_n),
+    .if_read(Block_myproject_axi_exit44_proc_U0_ap_ready)
 );
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
         ap_sync_reg_channel_write_tmp_data_V_0 <= 1'b0;
     end else begin
-        if (((Block_myproject_axi_U0_ap_done & Block_myproject_axi_U0_ap_continue) == 1'b1)) begin
+        if (((Block_myproject_axi_exit44_proc_U0_ap_done & Block_myproject_axi_exit44_proc_U0_ap_continue) == 1'b1)) begin
             ap_sync_reg_channel_write_tmp_data_V_0 <= 1'b0;
         end else begin
             ap_sync_reg_channel_write_tmp_data_V_0 <= ap_sync_channel_write_tmp_data_V_0;
@@ -472,7 +472,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
         ap_sync_reg_channel_write_tmp_data_V_1 <= 1'b0;
     end else begin
-        if (((Block_myproject_axi_U0_ap_done & Block_myproject_axi_U0_ap_continue) == 1'b1)) begin
+        if (((Block_myproject_axi_exit44_proc_U0_ap_done & Block_myproject_axi_exit44_proc_U0_ap_continue) == 1'b1)) begin
             ap_sync_reg_channel_write_tmp_data_V_1 <= 1'b0;
         end else begin
             ap_sync_reg_channel_write_tmp_data_V_1 <= ap_sync_channel_write_tmp_data_V_1;
@@ -484,7 +484,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
         ap_sync_reg_channel_write_tmp_data_V_2 <= 1'b0;
     end else begin
-        if (((Block_myproject_axi_U0_ap_done & Block_myproject_axi_U0_ap_continue) == 1'b1)) begin
+        if (((Block_myproject_axi_exit44_proc_U0_ap_done & Block_myproject_axi_exit44_proc_U0_ap_continue) == 1'b1)) begin
             ap_sync_reg_channel_write_tmp_data_V_2 <= 1'b0;
         end else begin
             ap_sync_reg_channel_write_tmp_data_V_2 <= ap_sync_channel_write_tmp_data_V_2;
@@ -496,7 +496,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
         ap_sync_reg_channel_write_tmp_data_V_3 <= 1'b0;
     end else begin
-        if (((Block_myproject_axi_U0_ap_done & Block_myproject_axi_U0_ap_continue) == 1'b1)) begin
+        if (((Block_myproject_axi_exit44_proc_U0_ap_done & Block_myproject_axi_exit44_proc_U0_ap_continue) == 1'b1)) begin
             ap_sync_reg_channel_write_tmp_data_V_3 <= 1'b0;
         end else begin
             ap_sync_reg_channel_write_tmp_data_V_3 <= ap_sync_channel_write_tmp_data_V_3;
@@ -504,35 +504,35 @@ always @ (posedge ap_clk) begin
     end
 end
 
-assign Block_myproject_axi_U0_ap_continue = (ap_sync_channel_write_tmp_data_V_3 & ap_sync_channel_write_tmp_data_V_2 & ap_sync_channel_write_tmp_data_V_1 & ap_sync_channel_write_tmp_data_V_0);
+assign Block_myproject_axi_exit44_proc_U0_ap_continue = (ap_sync_channel_write_tmp_data_V_3 & ap_sync_channel_write_tmp_data_V_2 & ap_sync_channel_write_tmp_data_V_1 & ap_sync_channel_write_tmp_data_V_0);
 
-assign Block_myproject_axi_U0_ap_start = start_for_Block_myproject_axi_U0_empty_n;
+assign Block_myproject_axi_exit44_proc_U0_ap_start = start_for_Block_myproject_axi_exit44_proc_U0_empty_n;
 
-assign Block_myproject_axi_U0_start_full_n = 1'b1;
+assign Block_myproject_axi_exit44_proc_U0_start_full_n = 1'b1;
 
-assign Block_myproject_axi_U0_start_write = 1'b0;
+assign Block_myproject_axi_exit44_proc_U0_start_write = 1'b0;
 
-assign Loop_1_proc290_U0_ap_continue = is_last_0_i_loc_chan_full_n;
+assign Loop_1_proc290_U0_ap_continue = is_last_0_i_loc_channel_full_n;
 
 assign Loop_1_proc290_U0_ap_start = 1'b1;
 
 assign Loop_2_proc_U0_ap_continue = 1'b1;
 
-assign Loop_2_proc_U0_ap_start = (tmp_data_V_3_empty_n & tmp_data_V_2_empty_n & tmp_data_V_1_empty_n & tmp_data_V_0_empty_n & is_last_0_i_loc_chan_empty_n);
+assign Loop_2_proc_U0_ap_start = (tmp_data_V_3_empty_n & tmp_data_V_2_empty_n & tmp_data_V_1_empty_n & tmp_data_V_0_empty_n & is_last_0_i_loc_channel_empty_n);
 
 assign Loop_2_proc_U0_start_full_n = 1'b1;
 
 assign Loop_2_proc_U0_start_write = 1'b0;
 
-assign ap_channel_done_is_last_0_i_loc_chan = Loop_1_proc290_U0_ap_done;
+assign ap_channel_done_is_last_0_i_loc_channel = Loop_1_proc290_U0_ap_done;
 
-assign ap_channel_done_tmp_data_V_0 = ((ap_sync_reg_channel_write_tmp_data_V_0 ^ 1'b1) & Block_myproject_axi_U0_ap_done);
+assign ap_channel_done_tmp_data_V_0 = ((ap_sync_reg_channel_write_tmp_data_V_0 ^ 1'b1) & Block_myproject_axi_exit44_proc_U0_ap_done);
 
-assign ap_channel_done_tmp_data_V_1 = ((ap_sync_reg_channel_write_tmp_data_V_1 ^ 1'b1) & Block_myproject_axi_U0_ap_done);
+assign ap_channel_done_tmp_data_V_1 = ((ap_sync_reg_channel_write_tmp_data_V_1 ^ 1'b1) & Block_myproject_axi_exit44_proc_U0_ap_done);
 
-assign ap_channel_done_tmp_data_V_2 = ((ap_sync_reg_channel_write_tmp_data_V_2 ^ 1'b1) & Block_myproject_axi_U0_ap_done);
+assign ap_channel_done_tmp_data_V_2 = ((ap_sync_reg_channel_write_tmp_data_V_2 ^ 1'b1) & Block_myproject_axi_exit44_proc_U0_ap_done);
 
-assign ap_channel_done_tmp_data_V_3 = ((ap_sync_reg_channel_write_tmp_data_V_3 ^ 1'b1) & Block_myproject_axi_U0_ap_done);
+assign ap_channel_done_tmp_data_V_3 = ((ap_sync_reg_channel_write_tmp_data_V_3 ^ 1'b1) & Block_myproject_axi_exit44_proc_U0_ap_done);
 
 always @ (*) begin
     ap_rst_n_inv = ~ap_rst_n;
@@ -560,7 +560,7 @@ assign out_r_TLAST = Loop_2_proc_U0_out_r_TLAST;
 
 assign out_r_TVALID = Loop_2_proc_U0_out_r_TVALID;
 
-assign start_for_Block_myproject_axi_U0_din = 1'b1;
+assign start_for_Block_myproject_axi_exit44_proc_U0_din = 1'b1;
 
 assign start_for_myproject_U0_din = 1'b1;
 

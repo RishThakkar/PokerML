@@ -4350,7 +4350,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>myproject_axi_mux_42_32_1_1_U86</rtlName>
+              <rtlName>myproject_axi_mux_42_32_1_1_U84</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5717,7 +5717,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>myproject_axi_mux_42_32_1_1_U87</rtlName>
+              <rtlName>myproject_axi_mux_42_32_1_1_U85</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -7084,7 +7084,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>myproject_axi_mux_42_32_1_1_U88</rtlName>
+              <rtlName>myproject_axi_mux_42_32_1_1_U86</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -8451,7 +8451,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>myproject_axi_mux_42_32_1_1_U89</rtlName>
+              <rtlName>myproject_axi_mux_42_32_1_1_U87</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -14151,7 +14151,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>myproject_axi_mux_42_32_1_1_U86 (myproject_axi_mux_42_32_1_1)</first>
+          <first>myproject_axi_mux_42_32_1_1_U84 (myproject_axi_mux_42_32_1_1)</first>
           <second class_id="39" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -14166,37 +14166,37 @@
           </second>
         </item>
         <item>
+          <first>myproject_axi_mux_42_32_1_1_U85 (myproject_axi_mux_42_32_1_1)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>65</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>myproject_axi_mux_42_32_1_1_U86 (myproject_axi_mux_42_32_1_1)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>65</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>myproject_axi_mux_42_32_1_1_U87 (myproject_axi_mux_42_32_1_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>65</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>myproject_axi_mux_42_32_1_1_U88 (myproject_axi_mux_42_32_1_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>65</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>myproject_axi_mux_42_32_1_1_U89 (myproject_axi_mux_42_32_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -17107,6 +17107,20 @@
         <count>4</count>
         <item_version>0</item_version>
         <item>
+          <first>myproject_axi_mux_42_32_1_1_U84</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>myproject_axi_mux_42_32_1_1_U85</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
           <first>myproject_axi_mux_42_32_1_1_U86</first>
           <second>
             <count>0</count>
@@ -17120,26 +17134,12 @@
             <item_version>0</item_version>
           </second>
         </item>
-        <item>
-          <first>myproject_axi_mux_42_32_1_1_U88</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>myproject_axi_mux_42_32_1_1_U89</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
       </dp_dsp_resource>
       <dp_component_map class_id="41" tracking_level="0" version="0">
         <count>4</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>myproject_axi_mux_42_32_1_1_U86 (myproject_axi_mux_42_32_1_1)</first>
+          <first>myproject_axi_mux_42_32_1_1_U84 (myproject_axi_mux_42_32_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -17147,7 +17147,7 @@
           </second>
         </item>
         <item>
-          <first>myproject_axi_mux_42_32_1_1_U87 (myproject_axi_mux_42_32_1_1)</first>
+          <first>myproject_axi_mux_42_32_1_1_U85 (myproject_axi_mux_42_32_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -17155,7 +17155,7 @@
           </second>
         </item>
         <item>
-          <first>myproject_axi_mux_42_32_1_1_U88 (myproject_axi_mux_42_32_1_1)</first>
+          <first>myproject_axi_mux_42_32_1_1_U86 (myproject_axi_mux_42_32_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -17163,7 +17163,7 @@
           </second>
         </item>
         <item>
-          <first>myproject_axi_mux_42_32_1_1_U89 (myproject_axi_mux_42_32_1_1)</first>
+          <first>myproject_axi_mux_42_32_1_1_U87 (myproject_axi_mux_42_32_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

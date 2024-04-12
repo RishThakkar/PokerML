@@ -85,84 +85,8 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your
 }
 
 
-set id 32
-set name myproject_axi_mul_mul_6s_16s_20_1_1
-set corename simcore_mul
-set op mul
-set stage_num 1
-set max_latency -1
-set registered_input 1
-set in0_width 6
-set in0_signed 1
-set in1_width 16
-set in1_signed 1
-set out_width 20
-set exp i0*i1
-set arg_lists {i0 {6 1 +} i1 {16 1 +} p {20 1 +} acc {0} }
-set TrueReset 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
-eval "ap_gen_simcore_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mul
-set corename DSP48
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_dsp48] == "::AESL_LIB_VIRTEX::xil_gen_dsp48"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    true_reset ${TrueReset} \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    out_width ${out_width} \
-    exp ${exp} \
-    arg_lists {${arg_lists}} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your platform lib"
-}
-}
-
-
 # Memory (RAM/ROM)  definition:
-set ID 35
+set ID 33
 set hasByteEnable 0
 set MemName dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_outidx3
 set CoreName ap_simcore_mem
@@ -245,17 +169,17 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 36
+set ID 34
 set hasByteEnable 0
 set MemName dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_w2_V
 set CoreName ap_simcore_mem
 set PortList { 1 }
-set DataWd 6
+set DataWd 5
 set AddrRange 108
 set AddrWd 7
 set TrueReset 0
 set IsROM 1
-set ROMData { "000000" "111000" "111110" "000010" "000111" "111101" "111111" "111010" "111101" "000010" "111101" "000100" "110101" "000010" "111111" "110110" "001110" "001100" "000001" "000111" "001010" "111111" "001100" "001111" "000100" "001101" "010000" "111000" "110110" "111001" "111001" "000001" "000000" "111010" "000010" "001011" "111100" "000010" "001010" "001100" "000011" "001011" "001000" "111011" "000110" "111110" "000000" "000000" "000011" "110110" "110101" "001000" "111100" "111100" "000010" "111101" "000111" "000100" "111101" "111100" "111000" "000101" "001101" "000100" "000011" "000110" "111000" "110110" "000100" "000001" "000111" "000111" "110001" "110100" "000101" "111000" "000001" "000110" "000101" "110100" "111111" "111101" "110001" "110010" "000101" "110011" "110110" "111011" "111000" "111010" "111010" "110101" "110111" "111001" "111101" "111011" "111111" "111111" "000011" "001010" "001101" "001011" "001110" "001010" "001010" "000010" "001011" "001110" }
+set ROMData { "11110" "00111" "11110" "11010" "11100" "10101" "00110" "11110" "10011" "01100" "01000" "11100" "11000" "11011" "11011" "01101" "00111" "10110" "00010" "11101" "00001" "00111" "00001" "10110" "00001" "01011" "11111" "00011" "01011" "00001" "00011" "01100" "01010" "11011" "00100" "00011" "10110" "01011" "01100" "01000" "00101" "00011" "11011" "11111" "00110" "11110" "00011" "11011" "00000" "10101" "10011" "11011" "10100" "11011" "11110" "01100" "00110" "01100" "11101" "00010" "11111" "11001" "00011" "11011" "00001" "00100" "01011" "11100" "00100" "10110" "11001" "11011" "00010" "00000" "01001" "00100" "11100" "01000" "10111" "10100" "10001" "11010" "11111" "00010" "10100" "00101" "00110" "11011" "00011" "01100" "11010" "11110" "00000" "11100" "01100" "01000" "01011" "01011" "01011" "11101" "00000" "00101" "10111" "01000" "11101" "01010" "01010" "00010" }
 set HasInitializer 1
 set Initializer $ROMData
 set NumOfStage 2
@@ -337,7 +261,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 37 \
+    id 35 \
     name kernel_data_V_0 \
     type other \
     dir I \
@@ -352,7 +276,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 38 \
+    id 36 \
     name kernel_data_V_1285 \
     type other \
     dir I \
@@ -367,7 +291,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 39 \
+    id 37 \
     name kernel_data_V_2286 \
     type other \
     dir I \
@@ -382,7 +306,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 40 \
+    id 38 \
     name kernel_data_V_3287 \
     type other \
     dir I \
@@ -397,7 +321,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 41 \
+    id 39 \
     name kernel_data_V_4 \
     type other \
     dir I \
@@ -412,7 +336,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 42 \
+    id 40 \
     name kernel_data_V_5 \
     type other \
     dir I \
@@ -427,7 +351,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 43 \
+    id 41 \
     name kernel_data_V_6 \
     type other \
     dir I \
@@ -442,7 +366,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 44 \
+    id 42 \
     name kernel_data_V_7 \
     type other \
     dir I \
@@ -457,7 +381,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 45 \
+    id 43 \
     name kernel_data_V_8 \
     type other \
     dir I \
@@ -472,7 +396,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 46 \
+    id 44 \
     name kernel_data_V_9 \
     type other \
     dir I \
@@ -487,7 +411,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 47 \
+    id 45 \
     name kernel_data_V_10 \
     type other \
     dir I \
@@ -502,7 +426,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 48 \
+    id 46 \
     name kernel_data_V_11 \
     type other \
     dir I \
@@ -517,7 +441,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 49 \
+    id 47 \
     name kernel_data_V_12 \
     type other \
     dir I \
@@ -532,7 +456,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 50 \
+    id 48 \
     name kernel_data_V_13 \
     type other \
     dir I \
@@ -547,7 +471,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 51 \
+    id 49 \
     name kernel_data_V_14 \
     type other \
     dir I \
@@ -562,7 +486,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 52 \
+    id 50 \
     name kernel_data_V_15 \
     type other \
     dir I \
@@ -577,7 +501,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 53 \
+    id 51 \
     name kernel_data_V_16 \
     type other \
     dir I \
@@ -592,7 +516,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 54 \
+    id 52 \
     name kernel_data_V_17 \
     type other \
     dir I \
@@ -607,7 +531,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 55 \
+    id 53 \
     name kernel_data_V_18 \
     type other \
     dir I \
@@ -622,7 +546,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 56 \
+    id 54 \
     name kernel_data_V_19 \
     type other \
     dir I \
@@ -637,7 +561,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 57 \
+    id 55 \
     name kernel_data_V_20 \
     type other \
     dir I \
@@ -652,7 +576,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 58 \
+    id 56 \
     name kernel_data_V_21 \
     type other \
     dir I \
@@ -667,7 +591,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 59 \
+    id 57 \
     name kernel_data_V_22 \
     type other \
     dir I \
@@ -682,7 +606,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 60 \
+    id 58 \
     name kernel_data_V_23 \
     type other \
     dir I \
@@ -697,7 +621,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 61 \
+    id 59 \
     name kernel_data_V_24 \
     type other \
     dir I \
@@ -712,7 +636,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 62 \
+    id 60 \
     name kernel_data_V_25 \
     type other \
     dir I \
@@ -727,7 +651,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 63 \
+    id 61 \
     name kernel_data_V_26 \
     type other \
     dir I \

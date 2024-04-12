@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="myproject_axi" xd:componentRef="myproject_axi" xd:initiationInterval="467636" xd:clockPeriod="5.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="in[].data" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_r" xd:busTypeRef="axis" xd:arraySize="12288" xd:dataWidth="32"/>
+  <xd:arg xd:name="in[].last" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_r" xd:busTypeRef="axis" xd:arraySize="12288" xd:dataWidth="1"/>
+  <xd:arg xd:name="out[].data" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_r" xd:busTypeRef="axis" xd:arraySize="13" xd:dataWidth="32"/>
+  <xd:arg xd:name="out[].last" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_r" xd:busTypeRef="axis" xd:arraySize="13" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="467634" xd:worst-case="467635" xd:average-case="467634"/>
+  <xd:resourceEstimates xd:LUT="47999" xd:FF="59976" xd:BRAM="59" xd:DSP="16"/>
+</xd:acceleratorMap>

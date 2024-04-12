@@ -161,7 +161,7 @@ architecture behav of reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s 
 
 
 begin
-    myproject_axi_mux_134_18_1_0_U1023 : component myproject_axi_mux_134_18_1_0
+    myproject_axi_mux_134_18_1_0_U1021 : component myproject_axi_mux_134_18_1_0
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -197,7 +197,7 @@ begin
         din13 => p_Val2_s_fu_198_p14,
         dout => p_Val2_s_fu_198_p15);
 
-    myproject_axi_mux_134_18_1_0_U1024 : component myproject_axi_mux_134_18_1_0
+    myproject_axi_mux_134_18_1_0_U1022 : component myproject_axi_mux_134_18_1_0
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -233,7 +233,7 @@ begin
         din13 => p_Val2_46_fu_240_p14,
         dout => p_Val2_46_fu_240_p15);
 
-    myproject_axi_mux_134_18_1_0_U1025 : component myproject_axi_mux_134_18_1_0
+    myproject_axi_mux_134_18_1_0_U1023 : component myproject_axi_mux_134_18_1_0
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -269,7 +269,7 @@ begin
         din13 => p_Val2_49_fu_372_p14,
         dout => p_Val2_49_fu_372_p15);
 
-    myproject_axi_mux_134_18_1_0_U1026 : component myproject_axi_mux_134_18_1_0
+    myproject_axi_mux_134_18_1_0_U1024 : component myproject_axi_mux_134_18_1_0
     generic map (
         ID => 1,
         NUM_STAGE => 1,

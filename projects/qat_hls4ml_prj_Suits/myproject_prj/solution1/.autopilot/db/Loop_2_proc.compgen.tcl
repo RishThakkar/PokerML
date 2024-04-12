@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 1075
-set name myproject_axi_muxKfY
+set id 1085
+set name myproject_axi_mux_42_16_1_1
 set corename simcore_mux
 set op mux
 set stage_num 1
@@ -96,7 +96,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 1077 \
+    id 1087 \
     name out_data \
     reset_level 1 \
     sync_rst true \
@@ -115,7 +115,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 1078 \
+    id 1088 \
     name out_last_V \
     reset_level 1 \
     sync_rst true \
@@ -133,7 +133,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1079 \
+    id 1089 \
     name p_read \
     type other \
     dir I \
@@ -148,7 +148,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1080 \
+    id 1090 \
     name tmp_data_V_0 \
     type other \
     dir I \
@@ -163,7 +163,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1081 \
+    id 1091 \
     name tmp_data_V_1 \
     type other \
     dir I \
@@ -178,7 +178,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1082 \
+    id 1092 \
     name tmp_data_V_2 \
     type other \
     dir I \
@@ -193,7 +193,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1083 \
+    id 1093 \
     name tmp_data_V_3 \
     type other \
     dir I \
@@ -270,7 +270,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 
 # RegSlice definition:
-set ID 1084
+set ID 1094
 set RegSliceName regslice_core
 set RegSliceInstName regslice_core_U
 set CoreName ap_simcore_regslice_core

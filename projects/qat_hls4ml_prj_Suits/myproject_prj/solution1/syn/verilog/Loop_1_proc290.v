@@ -159,7 +159,7 @@ wire   [0:0] or_ln603_1_fu_548_p2;
 wire   [0:0] or_ln603_2_fu_562_p2;
 wire   [15:0] select_ln603_2_fu_554_p3;
 wire   [5:0] shl_ln_fu_576_p3;
-wire   [5:0] empty_162_fu_584_p2;
+wire   [5:0] empty_164_fu_584_p2;
 wire   [0:0] icmp_ln203_fu_590_p2;
 wire   [5:0] sub_ln203_fu_599_p2;
 wire   [5:0] select_ln203_fu_605_p3;
@@ -198,12 +198,12 @@ initial begin
 #0 ap_CS_fsm = 6'd1;
 end
 
-myproject_axi_fpebkb #(
+myproject_axi_fpext_32ns_64_2_1 #(
     .ID( 1 ),
     .NUM_STAGE( 2 ),
     .din0_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-myproject_axi_fpebkb_U1(
+myproject_axi_fpext_32ns_64_2_1_U1(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(in_r_TDATA_int),
@@ -544,7 +544,7 @@ assign bitcast_ln696_fu_437_p1 = in_data_tmp_reg_747;
 
 assign ctype_data_V_1_fu_707_p2 = (and_ln203_2_fu_701_p2 | and_ln203_1_fu_695_p2);
 
-assign empty_162_fu_584_p2 = (shl_ln_fu_576_p3 | 6'd15);
+assign empty_164_fu_584_p2 = (shl_ln_fu_576_p3 | 6'd15);
 
 assign exp_tmp_V_fu_307_p4 = {{ireg_V_fu_291_p1[62:52]}};
 
@@ -552,7 +552,7 @@ assign i_fu_226_p2 = (i_0_i_reg_183 + 13'd1);
 
 assign icmp_ln17_fu_220_p2 = ((i_0_i_reg_183 == 13'd4096) ? 1'b1 : 1'b0);
 
-assign icmp_ln203_fu_590_p2 = ((shl_ln_fu_576_p3 > empty_162_fu_584_p2) ? 1'b1 : 1'b0);
+assign icmp_ln203_fu_590_p2 = ((shl_ln_fu_576_p3 > empty_164_fu_584_p2) ? 1'b1 : 1'b0);
 
 assign icmp_ln20_fu_232_p2 = ((j_0_i_reg_194 == 2'd3) ? 1'b1 : 1'b0);
 
@@ -598,13 +598,13 @@ assign or_ln603_fu_534_p2 = (and_ln603_fu_520_p2 | and_ln585_1_fu_502_p2);
 
 assign p_Result_21_fu_344_p1 = tmp_s_fu_337_p3;
 
-assign select_ln203_1_fu_613_p3 = ((icmp_ln203_fu_590_p2[0:0] === 1'b1) ? empty_162_fu_584_p2 : shl_ln_fu_576_p3);
+assign select_ln203_1_fu_613_p3 = ((icmp_ln203_fu_590_p2[0:0] === 1'b1) ? empty_164_fu_584_p2 : shl_ln_fu_576_p3);
 
 assign select_ln203_2_fu_621_p3 = ((icmp_ln203_fu_590_p2[0:0] === 1'b1) ? sub_ln203_fu_599_p2 : shl_ln_fu_576_p3);
 
 assign select_ln203_3_fu_663_p3 = ((icmp_ln203_fu_590_p2[0:0] === 1'b1) ? tmp_62_fu_653_p4 : shl_ln203_fu_647_p2);
 
-assign select_ln203_fu_605_p3 = ((icmp_ln203_fu_590_p2[0:0] === 1'b1) ? shl_ln_fu_576_p3 : empty_162_fu_584_p2);
+assign select_ln203_fu_605_p3 = ((icmp_ln203_fu_590_p2[0:0] === 1'b1) ? shl_ln_fu_576_p3 : empty_164_fu_584_p2);
 
 assign select_ln588_fu_448_p3 = ((tmp_61_fu_440_p3[0:0] === 1'b1) ? 16'd65535 : 16'd0);
 

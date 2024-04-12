@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s'" level="0">
-<item name = "Date">Tue Apr  9 23:50:35 2024
+<item name = "Date">Wed Apr 10 16:33:41 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -62,10 +62,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="myproject_axi_mux_42_32_1_1_U191">myproject_axi_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="myproject_axi_mux_42_32_1_1_U192">myproject_axi_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
 <column name="myproject_axi_mux_42_32_1_1_U193">myproject_axi_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
 <column name="myproject_axi_mux_42_32_1_1_U194">myproject_axi_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
-<column name="myproject_axi_mux_42_32_1_1_U195">myproject_axi_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
-<column name="myproject_axi_mux_42_32_1_1_U196">myproject_axi_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

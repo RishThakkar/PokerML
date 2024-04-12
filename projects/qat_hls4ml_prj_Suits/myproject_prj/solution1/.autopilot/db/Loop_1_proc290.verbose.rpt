@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Loop_1_proc290'
 ================================================================
-* Date:           Wed Apr 10 00:28:05 2024
+* Date:           Wed Apr 10 15:58:19 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
@@ -71,13 +71,13 @@
 
 + Detail: 
     * Instance: 
-    +-------------------------+----------------------+---------+-------+-----+-----+-----+
-    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF | LUT | URAM|
-    +-------------------------+----------------------+---------+-------+-----+-----+-----+
-    |myproject_axi_fpebkb_U1  |myproject_axi_fpebkb  |        0|      0|  100|  138|    0|
-    +-------------------------+----------------------+---------+-------+-----+-----+-----+
-    |Total                    |                      |        0|      0|  100|  138|    0|
-    +-------------------------+----------------------+---------+-------+-----+-----+-----+
+    +------------------------------------+---------------------------------+---------+-------+-----+-----+-----+
+    |              Instance              |              Module             | BRAM_18K| DSP48E|  FF | LUT | URAM|
+    +------------------------------------+---------------------------------+---------+-------+-----+-----+-----+
+    |myproject_axi_fpext_32ns_64_2_1_U1  |myproject_axi_fpext_32ns_64_2_1  |        0|      0|  100|  138|    0|
+    +------------------------------------+---------------------------------+---------+-------+-----+-----+-----+
+    |Total                               |                                 |        0|      0|  100|  138|    0|
+    +------------------------------------+---------------------------------+---------+-------+-----+-----+-----+
 
     * DSP48E: 
     N/A
@@ -122,7 +122,7 @@
     |ap_block_state1           |    or    |      0|  0|    2|           1|           1|
     |ap_block_state3           |    or    |      0|  0|    2|           1|           1|
     |ctype_data_V_1_fu_707_p2  |    or    |      0|  0|   48|          48|          48|
-    |empty_162_fu_584_p2       |    or    |      0|  0|    6|           6|           4|
+    |empty_164_fu_584_p2       |    or    |      0|  0|    6|           6|           4|
     |is_last_fu_253_p2         |    or    |      0|  0|    2|           1|           1|
     |or_ln581_fu_508_p2        |    or    |      0|  0|    2|           1|           1|
     |or_ln582_fu_473_p2        |    or    |      0|  0|    2|           1|           1|
@@ -292,13 +292,13 @@ ST_2 : Operation 23 [1/1] (0.00ns)   --->   "ret i1 %is_last_1_load"   --->   Op
 State 3 <SV = 2> <Delay = 2.30>
 ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%j_0_i = phi i2 [ 0, %hls_label_0_begin ], [ %j, %_ifconv ]"   --->   Operation 24 'phi' 'j_0_i' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (0.44ns)   --->   "%icmp_ln20 = icmp eq i2 %j_0_i, -1" [firmware/myproject_axi.cpp:20]   --->   Operation 25 'icmp' 'icmp_ln20' <Predicate = true> <Delay = 0.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%empty_160 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 26 'speclooptripcount' 'empty_160' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%empty_162 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 26 'speclooptripcount' 'empty_162' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 27 [1/1] (0.54ns)   --->   "%j = add i2 %j_0_i, 1" [firmware/myproject_axi.cpp:20]   --->   Operation 27 'add' 'j' <Predicate = true> <Delay = 0.54> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 28 [1/1] (0.00ns)   --->   "br i1 %icmp_ln20, label %hls_label_0_end, label %_ifconv" [firmware/myproject_axi.cpp:20]   --->   Operation 28 'br' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%is_last_1_load_1 = load i1* %is_last_1" [firmware/myproject_axi.cpp:22]   --->   Operation 29 'load' 'is_last_1_load_1' <Predicate = (!icmp_ln20)> <Delay = 0.00>
-ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%empty_161 = call { i1, float } @_ssdm_op_Read.axis.volatile.i1P.floatP(i1* %in_last_V, float* %in_data)" [firmware/myproject_axi.cpp:22]   --->   Operation 30 'read' 'empty_161' <Predicate = (!icmp_ln20)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_3 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node is_last)   --->   "%in_last_V_tmp = extractvalue { i1, float } %empty_161, 0" [firmware/myproject_axi.cpp:22]   --->   Operation 31 'extractvalue' 'in_last_V_tmp' <Predicate = (!icmp_ln20)> <Delay = 0.00>
-ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%in_data_tmp = extractvalue { i1, float } %empty_161, 1" [firmware/myproject_axi.cpp:22]   --->   Operation 32 'extractvalue' 'in_data_tmp' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%empty_163 = call { i1, float } @_ssdm_op_Read.axis.volatile.i1P.floatP(i1* %in_last_V, float* %in_data)" [firmware/myproject_axi.cpp:22]   --->   Operation 30 'read' 'empty_163' <Predicate = (!icmp_ln20)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node is_last)   --->   "%in_last_V_tmp = extractvalue { i1, float } %empty_163, 0" [firmware/myproject_axi.cpp:22]   --->   Operation 31 'extractvalue' 'in_last_V_tmp' <Predicate = (!icmp_ln20)> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%in_data_tmp = extractvalue { i1, float } %empty_163, 1" [firmware/myproject_axi.cpp:22]   --->   Operation 32 'extractvalue' 'in_data_tmp' <Predicate = (!icmp_ln20)> <Delay = 0.00>
 ST_3 : Operation 33 [2/2] (2.30ns)   --->   "%d_assign = fpext float %in_data_tmp to double" [firmware/myproject_axi.cpp:21]   --->   Operation 33 'fpext' 'd_assign' <Predicate = (!icmp_ln20)> <Delay = 2.30> <Core = "Float2Double">   --->   Core 114 'Float2Double' <Latency = 1> <II = 1> <Delay = 2.30> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
 ST_3 : Operation 34 [1/1] (0.28ns) (out node of the LUT)   --->   "%is_last = or i1 %in_last_V_tmp, %is_last_1_load_1" [firmware/myproject_axi.cpp:22]   --->   Operation 34 'or' 'is_last' <Predicate = (!icmp_ln20)> <Delay = 0.28> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 35 [1/1] (0.65ns)   --->   "store i1 %is_last, i1* %is_last_1" [firmware/myproject_axi.cpp:20]   --->   Operation 35 'store' <Predicate = (!icmp_ln20)> <Delay = 0.65>
@@ -307,7 +307,7 @@ ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%tmp_data_0_V = trunc i48 %ctype_da
 ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_data_1_V = call i16 @_ssdm_op_PartSelect.i16.i48.i32.i32(i48 %ctype_data_V_load, i32 16, i32 31)" [firmware/myproject_axi.cpp:24]   --->   Operation 38 'partselect' 'tmp_data_1_V' <Predicate = (icmp_ln20)> <Delay = 0.00>
 ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_data_2_V = call i16 @_ssdm_op_PartSelect.i16.i48.i32.i32(i48 %ctype_data_V_load, i32 32, i32 47)" [firmware/myproject_axi.cpp:24]   --->   Operation 39 'partselect' 'tmp_data_2_V' <Predicate = (icmp_ln20)> <Delay = 0.00>
 ST_3 : Operation 40 [1/1] (1.83ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i16P.i16P.i16P(i16* %in_local_V_data_0_V, i16* %in_local_V_data_1_V, i16* %in_local_V_data_2_V, i16 %tmp_data_0_V, i16 %tmp_data_1_V, i16 %tmp_data_2_V)" [firmware/myproject_axi.cpp:24]   --->   Operation 40 'write' <Predicate = (icmp_ln20)> <Delay = 1.83> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 1> <FIFO>
-ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%empty_159 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str6, i32 %tmp)" [firmware/myproject_axi.cpp:25]   --->   Operation 41 'specregionend' 'empty_159' <Predicate = (icmp_ln20)> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%empty_161 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str6, i32 %tmp)" [firmware/myproject_axi.cpp:25]   --->   Operation 41 'specregionend' 'empty_161' <Predicate = (icmp_ln20)> <Delay = 0.00>
 ST_3 : Operation 42 [1/1] (0.00ns)   --->   "br label %0" [firmware/myproject_axi.cpp:17]   --->   Operation 42 'br' <Predicate = (icmp_ln20)> <Delay = 0.00>
 
 State 4 <SV = 3> <Delay = 3.43>
@@ -366,12 +366,12 @@ ST_5 : Operation 91 [1/1] (0.35ns) (out node of the LUT)   --->   "%select_ln603
 State 6 <SV = 5> <Delay = 2.83>
 ST_6 : Operation 92 [1/1] (0.00ns)   --->   "%ctype_data_V_load_1 = load i48* %ctype_data_V" [firmware/myproject_axi.cpp:21]   --->   Operation 92 'load' 'ctype_data_V_load_1' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 93 [1/1] (0.00ns)   --->   "%shl_ln = call i6 @_ssdm_op_BitConcatenate.i6.i2.i4(i2 %j_0_i, i4 0)" [firmware/myproject_axi.cpp:21]   --->   Operation 93 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 94 [1/1] (0.00ns)   --->   "%empty_162 = or i6 %shl_ln, 15" [firmware/myproject_axi.cpp:21]   --->   Operation 94 'or' 'empty_162' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 95 [1/1] (0.78ns)   --->   "%icmp_ln203 = icmp ugt i6 %shl_ln, %empty_162" [firmware/myproject_axi.cpp:21]   --->   Operation 95 'icmp' 'icmp_ln203' <Predicate = true> <Delay = 0.78> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 94 [1/1] (0.00ns)   --->   "%empty_164 = or i6 %shl_ln, 15" [firmware/myproject_axi.cpp:21]   --->   Operation 94 'or' 'empty_164' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 95 [1/1] (0.78ns)   --->   "%icmp_ln203 = icmp ugt i6 %shl_ln, %empty_164" [firmware/myproject_axi.cpp:21]   --->   Operation 95 'icmp' 'icmp_ln203' <Predicate = true> <Delay = 0.78> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 96 [1/1] (0.00ns) (grouped into LUT with out node shl_ln203)   --->   "%zext_ln203 = zext i16 %select_ln603_3 to i48" [firmware/myproject_axi.cpp:21]   --->   Operation 96 'zext' 'zext_ln203' <Predicate = true> <Delay = 0.00>
 ST_6 : Operation 97 [1/1] (0.78ns)   --->   "%sub_ln203 = sub i6 -17, %shl_ln" [firmware/myproject_axi.cpp:21]   --->   Operation 97 'sub' 'sub_ln203' <Predicate = true> <Delay = 0.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 98 [1/1] (0.00ns) (grouped into LUT with out node sub_ln203_1)   --->   "%select_ln203 = select i1 %icmp_ln203, i6 %shl_ln, i6 %empty_162" [firmware/myproject_axi.cpp:21]   --->   Operation 98 'select' 'select_ln203' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_6 : Operation 99 [1/1] (0.00ns) (grouped into LUT with out node and_ln203)   --->   "%select_ln203_1 = select i1 %icmp_ln203, i6 %empty_162, i6 %shl_ln" [firmware/myproject_axi.cpp:21]   --->   Operation 99 'select' 'select_ln203_1' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 98 [1/1] (0.00ns) (grouped into LUT with out node sub_ln203_1)   --->   "%select_ln203 = select i1 %icmp_ln203, i6 %shl_ln, i6 %empty_164" [firmware/myproject_axi.cpp:21]   --->   Operation 98 'select' 'select_ln203' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 99 [1/1] (0.00ns) (grouped into LUT with out node and_ln203)   --->   "%select_ln203_1 = select i1 %icmp_ln203, i6 %empty_164, i6 %shl_ln" [firmware/myproject_axi.cpp:21]   --->   Operation 99 'select' 'select_ln203_1' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_6 : Operation 100 [1/1] (0.00ns) (grouped into LUT with out node shl_ln203)   --->   "%select_ln203_2 = select i1 %icmp_ln203, i6 %sub_ln203, i6 %shl_ln" [firmware/myproject_axi.cpp:21]   --->   Operation 100 'select' 'select_ln203_2' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_6 : Operation 101 [1/1] (0.78ns) (out node of the LUT)   --->   "%sub_ln203_1 = sub i6 -17, %select_ln203" [firmware/myproject_axi.cpp:21]   --->   Operation 101 'sub' 'sub_ln203_1' <Predicate = true> <Delay = 0.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_6 : Operation 102 [1/1] (0.00ns) (grouped into LUT with out node shl_ln203)   --->   "%zext_ln203_1 = zext i6 %select_ln203_2 to i48" [firmware/myproject_axi.cpp:21]   --->   Operation 102 'zext' 'zext_ln203_1' <Predicate = true> <Delay = 0.00>
@@ -432,11 +432,11 @@ is_last_1_load      (load             ) [ 0000000]
 ret_ln0             (ret              ) [ 0000000]
 j_0_i               (phi              ) [ 0001111]
 icmp_ln20           (icmp             ) [ 0011111]
-empty_160           (speclooptripcount) [ 0000000]
+empty_162           (speclooptripcount) [ 0000000]
 j                   (add              ) [ 0011111]
 br_ln20             (br               ) [ 0000000]
 is_last_1_load_1    (load             ) [ 0000000]
-empty_161           (read             ) [ 0000000]
+empty_163           (read             ) [ 0000000]
 in_last_V_tmp       (extractvalue     ) [ 0000000]
 in_data_tmp         (extractvalue     ) [ 0000110]
 is_last             (or               ) [ 0000000]
@@ -446,7 +446,7 @@ tmp_data_0_V        (trunc            ) [ 0000000]
 tmp_data_1_V        (partselect       ) [ 0000000]
 tmp_data_2_V        (partselect       ) [ 0000000]
 write_ln24          (write            ) [ 0000000]
-empty_159           (specregionend    ) [ 0000000]
+empty_161           (specregionend    ) [ 0000000]
 br_ln17             (br               ) [ 0111111]
 d_assign            (fpext            ) [ 0000000]
 ireg_V              (bitcast          ) [ 0000000]
@@ -499,7 +499,7 @@ or_ln603_2          (or               ) [ 0000000]
 select_ln603_3      (select           ) [ 0000001]
 ctype_data_V_load_1 (load             ) [ 0000000]
 shl_ln              (bitconcatenate   ) [ 0000000]
-empty_162           (or               ) [ 0000000]
+empty_164           (or               ) [ 0000000]
 icmp_ln203          (icmp             ) [ 0000000]
 zext_ln203          (zext             ) [ 0000000]
 sub_ln203           (sub              ) [ 0000000]
@@ -1242,7 +1242,7 @@ br_ln20             (br               ) [ 0011111]
 </bind>
 </comp>
 
-<comp id="162" class="1004" name="empty_161_read_fu_162">
+<comp id="162" class="1004" name="empty_163_read_fu_162">
 <pin_list>
 <pin id="163" dir="0" index="0" bw="33" slack="0"/>
 <pin id="164" dir="0" index="1" bw="1" slack="0"/>
@@ -1251,7 +1251,7 @@ br_ln20             (br               ) [ 0011111]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="empty_161/3 "/>
+<opset="empty_163/3 "/>
 </bind>
 </comp>
 
@@ -2090,7 +2090,7 @@ br_ln20             (br               ) [ 0011111]
 </bind>
 </comp>
 
-<comp id="584" class="1004" name="empty_162_fu_584">
+<comp id="584" class="1004" name="empty_164_fu_584">
 <pin_list>
 <pin id="585" dir="0" index="0" bw="6" slack="0"/>
 <pin id="586" dir="0" index="1" bw="6" slack="0"/>
@@ -2098,7 +2098,7 @@ br_ln20             (br               ) [ 0011111]
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
-<opset="empty_162/6 "/>
+<opset="empty_164/6 "/>
 </bind>
 </comp>
 
@@ -2948,7 +2948,7 @@ br_ln20             (br               ) [ 0011111]
 		or_ln603_2 : 1
 		select_ln603_3 : 8
 	State 6
-		empty_162 : 1
+		empty_164 : 1
 		icmp_ln203 : 1
 		sub_ln203 : 1
 		select_ln203 : 2
@@ -3029,7 +3029,7 @@ br_ln20             (br               ) [ 0011111]
 |    or    |     or_ln603_fu_534     |    0    |    0    |    2    |
 |          |    or_ln603_1_fu_548    |    0    |    0    |    2    |
 |          |    or_ln603_2_fu_562    |    0    |    0    |    2    |
-|          |     empty_162_fu_584    |    0    |    0    |    0    |
+|          |     empty_164_fu_584    |    0    |    0    |    0    |
 |          |  ctype_data_V_1_fu_707  |    0    |    0    |    48   |
 |----------|-------------------------|---------|---------|---------|
 |          |     xor_ln571_fu_462    |    0    |    0    |    2    |
@@ -3044,7 +3044,7 @@ br_ln20             (br               ) [ 0011111]
 |----------|-------------------------|---------|---------|---------|
 |   lshr   |    lshr_ln203_fu_677    |    0    |    0    |    13   |
 |----------|-------------------------|---------|---------|---------|
-|   read   |  empty_161_read_fu_162  |    0    |    0    |    0    |
+|   read   |  empty_163_read_fu_162  |    0    |    0    |    0    |
 |----------|-------------------------|---------|---------|---------|
 |   write  | write_ln24_write_fu_170 |    0    |    0    |    0    |
 |----------|-------------------------|---------|---------|---------|

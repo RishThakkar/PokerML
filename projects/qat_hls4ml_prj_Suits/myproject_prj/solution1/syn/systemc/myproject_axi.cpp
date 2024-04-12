@@ -46,7 +46,7 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     Loop_1_proc290_U0->ap_return(Loop_1_proc290_U0_ap_return);
     myproject_U0 = new myproject("myproject_U0");
     myproject_U0->ap_start(myproject_U0_ap_start);
-    myproject_U0->start_full_n(start_for_Block_myproject_axi_U0_full_n);
+    myproject_U0->start_full_n(start_for_Block_myproject_axi_exit44_proc_U0_full_n);
     myproject_U0->start_out(myproject_U0_start_out);
     myproject_U0->start_write(myproject_U0_start_write);
     myproject_U0->conv1_input_V_data_0_V_dout(in_local_V_data_0_V_dout);
@@ -59,16 +59,16 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     myproject_U0->conv1_input_V_data_2_V_empty_n(in_local_V_data_2_V_empty_n);
     myproject_U0->conv1_input_V_data_2_V_read(myproject_U0_conv1_input_V_data_2_V_read);
     myproject_U0->layer12_out_V_data_0_V_din(myproject_U0_layer12_out_V_data_0_V_din);
-    myproject_U0->layer12_out_V_data_0_V_full_n(out_local_V_data_0_s_full_n);
+    myproject_U0->layer12_out_V_data_0_V_full_n(out_local_V_data_0_V_full_n);
     myproject_U0->layer12_out_V_data_0_V_write(myproject_U0_layer12_out_V_data_0_V_write);
     myproject_U0->layer12_out_V_data_1_V_din(myproject_U0_layer12_out_V_data_1_V_din);
-    myproject_U0->layer12_out_V_data_1_V_full_n(out_local_V_data_1_s_full_n);
+    myproject_U0->layer12_out_V_data_1_V_full_n(out_local_V_data_1_V_full_n);
     myproject_U0->layer12_out_V_data_1_V_write(myproject_U0_layer12_out_V_data_1_V_write);
     myproject_U0->layer12_out_V_data_2_V_din(myproject_U0_layer12_out_V_data_2_V_din);
-    myproject_U0->layer12_out_V_data_2_V_full_n(out_local_V_data_2_s_full_n);
+    myproject_U0->layer12_out_V_data_2_V_full_n(out_local_V_data_2_V_full_n);
     myproject_U0->layer12_out_V_data_2_V_write(myproject_U0_layer12_out_V_data_2_V_write);
     myproject_U0->layer12_out_V_data_3_V_din(myproject_U0_layer12_out_V_data_3_V_din);
-    myproject_U0->layer12_out_V_data_3_V_full_n(out_local_V_data_3_s_full_n);
+    myproject_U0->layer12_out_V_data_3_V_full_n(out_local_V_data_3_V_full_n);
     myproject_U0->layer12_out_V_data_3_V_write(myproject_U0_layer12_out_V_data_3_V_write);
     myproject_U0->ap_clk(ap_clk);
     myproject_U0->ap_rst(ap_rst_n_inv);
@@ -76,34 +76,34 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     myproject_U0->ap_ready(myproject_U0_ap_ready);
     myproject_U0->ap_idle(myproject_U0_ap_idle);
     myproject_U0->ap_continue(myproject_U0_ap_continue);
-    Block_myproject_axi_U0 = new Block_myproject_axi_s("Block_myproject_axi_U0");
-    Block_myproject_axi_U0->ap_clk(ap_clk);
-    Block_myproject_axi_U0->ap_rst(ap_rst_n_inv);
-    Block_myproject_axi_U0->ap_start(Block_myproject_axi_U0_ap_start);
-    Block_myproject_axi_U0->ap_done(Block_myproject_axi_U0_ap_done);
-    Block_myproject_axi_U0->ap_continue(Block_myproject_axi_U0_ap_continue);
-    Block_myproject_axi_U0->ap_idle(Block_myproject_axi_U0_ap_idle);
-    Block_myproject_axi_U0->ap_ready(Block_myproject_axi_U0_ap_ready);
-    Block_myproject_axi_U0->out_local_V_data_0_V_dout(out_local_V_data_0_s_dout);
-    Block_myproject_axi_U0->out_local_V_data_0_V_empty_n(out_local_V_data_0_s_empty_n);
-    Block_myproject_axi_U0->out_local_V_data_0_V_read(Block_myproject_axi_U0_out_local_V_data_0_V_read);
-    Block_myproject_axi_U0->out_local_V_data_1_V_dout(out_local_V_data_1_s_dout);
-    Block_myproject_axi_U0->out_local_V_data_1_V_empty_n(out_local_V_data_1_s_empty_n);
-    Block_myproject_axi_U0->out_local_V_data_1_V_read(Block_myproject_axi_U0_out_local_V_data_1_V_read);
-    Block_myproject_axi_U0->out_local_V_data_2_V_dout(out_local_V_data_2_s_dout);
-    Block_myproject_axi_U0->out_local_V_data_2_V_empty_n(out_local_V_data_2_s_empty_n);
-    Block_myproject_axi_U0->out_local_V_data_2_V_read(Block_myproject_axi_U0_out_local_V_data_2_V_read);
-    Block_myproject_axi_U0->out_local_V_data_3_V_dout(out_local_V_data_3_s_dout);
-    Block_myproject_axi_U0->out_local_V_data_3_V_empty_n(out_local_V_data_3_s_empty_n);
-    Block_myproject_axi_U0->out_local_V_data_3_V_read(Block_myproject_axi_U0_out_local_V_data_3_V_read);
-    Block_myproject_axi_U0->tmp_data_V_0(Block_myproject_axi_U0_tmp_data_V_0);
-    Block_myproject_axi_U0->tmp_data_V_0_ap_vld(Block_myproject_axi_U0_tmp_data_V_0_ap_vld);
-    Block_myproject_axi_U0->tmp_data_V_1(Block_myproject_axi_U0_tmp_data_V_1);
-    Block_myproject_axi_U0->tmp_data_V_1_ap_vld(Block_myproject_axi_U0_tmp_data_V_1_ap_vld);
-    Block_myproject_axi_U0->tmp_data_V_2(Block_myproject_axi_U0_tmp_data_V_2);
-    Block_myproject_axi_U0->tmp_data_V_2_ap_vld(Block_myproject_axi_U0_tmp_data_V_2_ap_vld);
-    Block_myproject_axi_U0->tmp_data_V_3(Block_myproject_axi_U0_tmp_data_V_3);
-    Block_myproject_axi_U0->tmp_data_V_3_ap_vld(Block_myproject_axi_U0_tmp_data_V_3_ap_vld);
+    Block_myproject_axi_exit44_proc_U0 = new Block_myproject_axi_exit44_proc("Block_myproject_axi_exit44_proc_U0");
+    Block_myproject_axi_exit44_proc_U0->ap_clk(ap_clk);
+    Block_myproject_axi_exit44_proc_U0->ap_rst(ap_rst_n_inv);
+    Block_myproject_axi_exit44_proc_U0->ap_start(Block_myproject_axi_exit44_proc_U0_ap_start);
+    Block_myproject_axi_exit44_proc_U0->ap_done(Block_myproject_axi_exit44_proc_U0_ap_done);
+    Block_myproject_axi_exit44_proc_U0->ap_continue(Block_myproject_axi_exit44_proc_U0_ap_continue);
+    Block_myproject_axi_exit44_proc_U0->ap_idle(Block_myproject_axi_exit44_proc_U0_ap_idle);
+    Block_myproject_axi_exit44_proc_U0->ap_ready(Block_myproject_axi_exit44_proc_U0_ap_ready);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_0_V_dout(out_local_V_data_0_V_dout);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_0_V_empty_n(out_local_V_data_0_V_empty_n);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_0_V_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_0_V_read);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_1_V_dout(out_local_V_data_1_V_dout);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_1_V_empty_n(out_local_V_data_1_V_empty_n);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_1_V_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_1_V_read);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_2_V_dout(out_local_V_data_2_V_dout);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_2_V_empty_n(out_local_V_data_2_V_empty_n);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_2_V_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_2_V_read);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_3_V_dout(out_local_V_data_3_V_dout);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_3_V_empty_n(out_local_V_data_3_V_empty_n);
+    Block_myproject_axi_exit44_proc_U0->out_local_V_data_3_V_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_3_V_read);
+    Block_myproject_axi_exit44_proc_U0->tmp_data_V_0(Block_myproject_axi_exit44_proc_U0_tmp_data_V_0);
+    Block_myproject_axi_exit44_proc_U0->tmp_data_V_0_ap_vld(Block_myproject_axi_exit44_proc_U0_tmp_data_V_0_ap_vld);
+    Block_myproject_axi_exit44_proc_U0->tmp_data_V_1(Block_myproject_axi_exit44_proc_U0_tmp_data_V_1);
+    Block_myproject_axi_exit44_proc_U0->tmp_data_V_1_ap_vld(Block_myproject_axi_exit44_proc_U0_tmp_data_V_1_ap_vld);
+    Block_myproject_axi_exit44_proc_U0->tmp_data_V_2(Block_myproject_axi_exit44_proc_U0_tmp_data_V_2);
+    Block_myproject_axi_exit44_proc_U0->tmp_data_V_2_ap_vld(Block_myproject_axi_exit44_proc_U0_tmp_data_V_2_ap_vld);
+    Block_myproject_axi_exit44_proc_U0->tmp_data_V_3(Block_myproject_axi_exit44_proc_U0_tmp_data_V_3);
+    Block_myproject_axi_exit44_proc_U0->tmp_data_V_3_ap_vld(Block_myproject_axi_exit44_proc_U0_tmp_data_V_3_ap_vld);
     Loop_2_proc_U0 = new Loop_2_proc("Loop_2_proc_U0");
     Loop_2_proc_U0->ap_clk(ap_clk);
     Loop_2_proc_U0->ap_rst(ap_rst_n_inv);
@@ -116,7 +116,7 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     Loop_2_proc_U0->out_r_TVALID(Loop_2_proc_U0_out_r_TVALID);
     Loop_2_proc_U0->out_r_TREADY(out_r_TREADY);
     Loop_2_proc_U0->out_r_TLAST(Loop_2_proc_U0_out_r_TLAST);
-    Loop_2_proc_U0->p_read(is_last_0_i_loc_chan_dout);
+    Loop_2_proc_U0->p_read(is_last_0_i_loc_channel_dout);
     Loop_2_proc_U0->tmp_data_V_0(tmp_data_V_0_dout);
     Loop_2_proc_U0->tmp_data_V_1(tmp_data_V_1_dout);
     Loop_2_proc_U0->tmp_data_V_2(tmp_data_V_2_dout);
@@ -154,67 +154,67 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     in_local_V_data_2_V_U->if_dout(in_local_V_data_2_V_dout);
     in_local_V_data_2_V_U->if_empty_n(in_local_V_data_2_V_empty_n);
     in_local_V_data_2_V_U->if_read(myproject_U0_conv1_input_V_data_2_V_read);
-    is_last_0_i_loc_chan_U = new fifo_w1_d2_A("is_last_0_i_loc_chan_U");
-    is_last_0_i_loc_chan_U->clk(ap_clk);
-    is_last_0_i_loc_chan_U->reset(ap_rst_n_inv);
-    is_last_0_i_loc_chan_U->if_read_ce(ap_var_for_const0);
-    is_last_0_i_loc_chan_U->if_write_ce(ap_var_for_const0);
-    is_last_0_i_loc_chan_U->if_din(Loop_1_proc290_U0_ap_return);
-    is_last_0_i_loc_chan_U->if_full_n(is_last_0_i_loc_chan_full_n);
-    is_last_0_i_loc_chan_U->if_write(Loop_1_proc290_U0_ap_done);
-    is_last_0_i_loc_chan_U->if_dout(is_last_0_i_loc_chan_dout);
-    is_last_0_i_loc_chan_U->if_empty_n(is_last_0_i_loc_chan_empty_n);
-    is_last_0_i_loc_chan_U->if_read(Loop_2_proc_U0_ap_ready);
-    out_local_V_data_0_s_U = new fifo_w16_d1_A_x("out_local_V_data_0_s_U");
-    out_local_V_data_0_s_U->clk(ap_clk);
-    out_local_V_data_0_s_U->reset(ap_rst_n_inv);
-    out_local_V_data_0_s_U->if_read_ce(ap_var_for_const0);
-    out_local_V_data_0_s_U->if_write_ce(ap_var_for_const0);
-    out_local_V_data_0_s_U->if_din(myproject_U0_layer12_out_V_data_0_V_din);
-    out_local_V_data_0_s_U->if_full_n(out_local_V_data_0_s_full_n);
-    out_local_V_data_0_s_U->if_write(myproject_U0_layer12_out_V_data_0_V_write);
-    out_local_V_data_0_s_U->if_dout(out_local_V_data_0_s_dout);
-    out_local_V_data_0_s_U->if_empty_n(out_local_V_data_0_s_empty_n);
-    out_local_V_data_0_s_U->if_read(Block_myproject_axi_U0_out_local_V_data_0_V_read);
-    out_local_V_data_1_s_U = new fifo_w16_d1_A_x("out_local_V_data_1_s_U");
-    out_local_V_data_1_s_U->clk(ap_clk);
-    out_local_V_data_1_s_U->reset(ap_rst_n_inv);
-    out_local_V_data_1_s_U->if_read_ce(ap_var_for_const0);
-    out_local_V_data_1_s_U->if_write_ce(ap_var_for_const0);
-    out_local_V_data_1_s_U->if_din(myproject_U0_layer12_out_V_data_1_V_din);
-    out_local_V_data_1_s_U->if_full_n(out_local_V_data_1_s_full_n);
-    out_local_V_data_1_s_U->if_write(myproject_U0_layer12_out_V_data_1_V_write);
-    out_local_V_data_1_s_U->if_dout(out_local_V_data_1_s_dout);
-    out_local_V_data_1_s_U->if_empty_n(out_local_V_data_1_s_empty_n);
-    out_local_V_data_1_s_U->if_read(Block_myproject_axi_U0_out_local_V_data_1_V_read);
-    out_local_V_data_2_s_U = new fifo_w16_d1_A_x("out_local_V_data_2_s_U");
-    out_local_V_data_2_s_U->clk(ap_clk);
-    out_local_V_data_2_s_U->reset(ap_rst_n_inv);
-    out_local_V_data_2_s_U->if_read_ce(ap_var_for_const0);
-    out_local_V_data_2_s_U->if_write_ce(ap_var_for_const0);
-    out_local_V_data_2_s_U->if_din(myproject_U0_layer12_out_V_data_2_V_din);
-    out_local_V_data_2_s_U->if_full_n(out_local_V_data_2_s_full_n);
-    out_local_V_data_2_s_U->if_write(myproject_U0_layer12_out_V_data_2_V_write);
-    out_local_V_data_2_s_U->if_dout(out_local_V_data_2_s_dout);
-    out_local_V_data_2_s_U->if_empty_n(out_local_V_data_2_s_empty_n);
-    out_local_V_data_2_s_U->if_read(Block_myproject_axi_U0_out_local_V_data_2_V_read);
-    out_local_V_data_3_s_U = new fifo_w16_d1_A_x("out_local_V_data_3_s_U");
-    out_local_V_data_3_s_U->clk(ap_clk);
-    out_local_V_data_3_s_U->reset(ap_rst_n_inv);
-    out_local_V_data_3_s_U->if_read_ce(ap_var_for_const0);
-    out_local_V_data_3_s_U->if_write_ce(ap_var_for_const0);
-    out_local_V_data_3_s_U->if_din(myproject_U0_layer12_out_V_data_3_V_din);
-    out_local_V_data_3_s_U->if_full_n(out_local_V_data_3_s_full_n);
-    out_local_V_data_3_s_U->if_write(myproject_U0_layer12_out_V_data_3_V_write);
-    out_local_V_data_3_s_U->if_dout(out_local_V_data_3_s_dout);
-    out_local_V_data_3_s_U->if_empty_n(out_local_V_data_3_s_empty_n);
-    out_local_V_data_3_s_U->if_read(Block_myproject_axi_U0_out_local_V_data_3_V_read);
+    is_last_0_i_loc_channel_U = new fifo_w1_d2_A("is_last_0_i_loc_channel_U");
+    is_last_0_i_loc_channel_U->clk(ap_clk);
+    is_last_0_i_loc_channel_U->reset(ap_rst_n_inv);
+    is_last_0_i_loc_channel_U->if_read_ce(ap_var_for_const0);
+    is_last_0_i_loc_channel_U->if_write_ce(ap_var_for_const0);
+    is_last_0_i_loc_channel_U->if_din(Loop_1_proc290_U0_ap_return);
+    is_last_0_i_loc_channel_U->if_full_n(is_last_0_i_loc_channel_full_n);
+    is_last_0_i_loc_channel_U->if_write(Loop_1_proc290_U0_ap_done);
+    is_last_0_i_loc_channel_U->if_dout(is_last_0_i_loc_channel_dout);
+    is_last_0_i_loc_channel_U->if_empty_n(is_last_0_i_loc_channel_empty_n);
+    is_last_0_i_loc_channel_U->if_read(Loop_2_proc_U0_ap_ready);
+    out_local_V_data_0_V_U = new fifo_w16_d1_A_x("out_local_V_data_0_V_U");
+    out_local_V_data_0_V_U->clk(ap_clk);
+    out_local_V_data_0_V_U->reset(ap_rst_n_inv);
+    out_local_V_data_0_V_U->if_read_ce(ap_var_for_const0);
+    out_local_V_data_0_V_U->if_write_ce(ap_var_for_const0);
+    out_local_V_data_0_V_U->if_din(myproject_U0_layer12_out_V_data_0_V_din);
+    out_local_V_data_0_V_U->if_full_n(out_local_V_data_0_V_full_n);
+    out_local_V_data_0_V_U->if_write(myproject_U0_layer12_out_V_data_0_V_write);
+    out_local_V_data_0_V_U->if_dout(out_local_V_data_0_V_dout);
+    out_local_V_data_0_V_U->if_empty_n(out_local_V_data_0_V_empty_n);
+    out_local_V_data_0_V_U->if_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_0_V_read);
+    out_local_V_data_1_V_U = new fifo_w16_d1_A_x("out_local_V_data_1_V_U");
+    out_local_V_data_1_V_U->clk(ap_clk);
+    out_local_V_data_1_V_U->reset(ap_rst_n_inv);
+    out_local_V_data_1_V_U->if_read_ce(ap_var_for_const0);
+    out_local_V_data_1_V_U->if_write_ce(ap_var_for_const0);
+    out_local_V_data_1_V_U->if_din(myproject_U0_layer12_out_V_data_1_V_din);
+    out_local_V_data_1_V_U->if_full_n(out_local_V_data_1_V_full_n);
+    out_local_V_data_1_V_U->if_write(myproject_U0_layer12_out_V_data_1_V_write);
+    out_local_V_data_1_V_U->if_dout(out_local_V_data_1_V_dout);
+    out_local_V_data_1_V_U->if_empty_n(out_local_V_data_1_V_empty_n);
+    out_local_V_data_1_V_U->if_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_1_V_read);
+    out_local_V_data_2_V_U = new fifo_w16_d1_A_x("out_local_V_data_2_V_U");
+    out_local_V_data_2_V_U->clk(ap_clk);
+    out_local_V_data_2_V_U->reset(ap_rst_n_inv);
+    out_local_V_data_2_V_U->if_read_ce(ap_var_for_const0);
+    out_local_V_data_2_V_U->if_write_ce(ap_var_for_const0);
+    out_local_V_data_2_V_U->if_din(myproject_U0_layer12_out_V_data_2_V_din);
+    out_local_V_data_2_V_U->if_full_n(out_local_V_data_2_V_full_n);
+    out_local_V_data_2_V_U->if_write(myproject_U0_layer12_out_V_data_2_V_write);
+    out_local_V_data_2_V_U->if_dout(out_local_V_data_2_V_dout);
+    out_local_V_data_2_V_U->if_empty_n(out_local_V_data_2_V_empty_n);
+    out_local_V_data_2_V_U->if_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_2_V_read);
+    out_local_V_data_3_V_U = new fifo_w16_d1_A_x("out_local_V_data_3_V_U");
+    out_local_V_data_3_V_U->clk(ap_clk);
+    out_local_V_data_3_V_U->reset(ap_rst_n_inv);
+    out_local_V_data_3_V_U->if_read_ce(ap_var_for_const0);
+    out_local_V_data_3_V_U->if_write_ce(ap_var_for_const0);
+    out_local_V_data_3_V_U->if_din(myproject_U0_layer12_out_V_data_3_V_din);
+    out_local_V_data_3_V_U->if_full_n(out_local_V_data_3_V_full_n);
+    out_local_V_data_3_V_U->if_write(myproject_U0_layer12_out_V_data_3_V_write);
+    out_local_V_data_3_V_U->if_dout(out_local_V_data_3_V_dout);
+    out_local_V_data_3_V_U->if_empty_n(out_local_V_data_3_V_empty_n);
+    out_local_V_data_3_V_U->if_read(Block_myproject_axi_exit44_proc_U0_out_local_V_data_3_V_read);
     tmp_data_V_0_U = new fifo_w16_d2_A("tmp_data_V_0_U");
     tmp_data_V_0_U->clk(ap_clk);
     tmp_data_V_0_U->reset(ap_rst_n_inv);
     tmp_data_V_0_U->if_read_ce(ap_var_for_const0);
     tmp_data_V_0_U->if_write_ce(ap_var_for_const0);
-    tmp_data_V_0_U->if_din(Block_myproject_axi_U0_tmp_data_V_0);
+    tmp_data_V_0_U->if_din(Block_myproject_axi_exit44_proc_U0_tmp_data_V_0);
     tmp_data_V_0_U->if_full_n(tmp_data_V_0_full_n);
     tmp_data_V_0_U->if_write(ap_channel_done_tmp_data_V_0);
     tmp_data_V_0_U->if_dout(tmp_data_V_0_dout);
@@ -225,7 +225,7 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     tmp_data_V_1_U->reset(ap_rst_n_inv);
     tmp_data_V_1_U->if_read_ce(ap_var_for_const0);
     tmp_data_V_1_U->if_write_ce(ap_var_for_const0);
-    tmp_data_V_1_U->if_din(Block_myproject_axi_U0_tmp_data_V_1);
+    tmp_data_V_1_U->if_din(Block_myproject_axi_exit44_proc_U0_tmp_data_V_1);
     tmp_data_V_1_U->if_full_n(tmp_data_V_1_full_n);
     tmp_data_V_1_U->if_write(ap_channel_done_tmp_data_V_1);
     tmp_data_V_1_U->if_dout(tmp_data_V_1_dout);
@@ -236,7 +236,7 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     tmp_data_V_2_U->reset(ap_rst_n_inv);
     tmp_data_V_2_U->if_read_ce(ap_var_for_const0);
     tmp_data_V_2_U->if_write_ce(ap_var_for_const0);
-    tmp_data_V_2_U->if_din(Block_myproject_axi_U0_tmp_data_V_2);
+    tmp_data_V_2_U->if_din(Block_myproject_axi_exit44_proc_U0_tmp_data_V_2);
     tmp_data_V_2_U->if_full_n(tmp_data_V_2_full_n);
     tmp_data_V_2_U->if_write(ap_channel_done_tmp_data_V_2);
     tmp_data_V_2_U->if_dout(tmp_data_V_2_dout);
@@ -247,61 +247,61 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     tmp_data_V_3_U->reset(ap_rst_n_inv);
     tmp_data_V_3_U->if_read_ce(ap_var_for_const0);
     tmp_data_V_3_U->if_write_ce(ap_var_for_const0);
-    tmp_data_V_3_U->if_din(Block_myproject_axi_U0_tmp_data_V_3);
+    tmp_data_V_3_U->if_din(Block_myproject_axi_exit44_proc_U0_tmp_data_V_3);
     tmp_data_V_3_U->if_full_n(tmp_data_V_3_full_n);
     tmp_data_V_3_U->if_write(ap_channel_done_tmp_data_V_3);
     tmp_data_V_3_U->if_dout(tmp_data_V_3_dout);
     tmp_data_V_3_U->if_empty_n(tmp_data_V_3_empty_n);
     tmp_data_V_3_U->if_read(Loop_2_proc_U0_ap_ready);
-    start_for_myprojeLf8_U = new start_for_myprojeLf8("start_for_myprojeLf8_U");
-    start_for_myprojeLf8_U->clk(ap_clk);
-    start_for_myprojeLf8_U->reset(ap_rst_n_inv);
-    start_for_myprojeLf8_U->if_read_ce(ap_var_for_const0);
-    start_for_myprojeLf8_U->if_write_ce(ap_var_for_const0);
-    start_for_myprojeLf8_U->if_din(start_for_myproject_U0_din);
-    start_for_myprojeLf8_U->if_full_n(start_for_myproject_U0_full_n);
-    start_for_myprojeLf8_U->if_write(Loop_1_proc290_U0_start_write);
-    start_for_myprojeLf8_U->if_dout(start_for_myproject_U0_dout);
-    start_for_myprojeLf8_U->if_empty_n(start_for_myproject_U0_empty_n);
-    start_for_myprojeLf8_U->if_read(myproject_U0_ap_ready);
-    start_for_Block_mMgi_U = new start_for_Block_mMgi("start_for_Block_mMgi_U");
-    start_for_Block_mMgi_U->clk(ap_clk);
-    start_for_Block_mMgi_U->reset(ap_rst_n_inv);
-    start_for_Block_mMgi_U->if_read_ce(ap_var_for_const0);
-    start_for_Block_mMgi_U->if_write_ce(ap_var_for_const0);
-    start_for_Block_mMgi_U->if_din(start_for_Block_myproject_axi_U0_din);
-    start_for_Block_mMgi_U->if_full_n(start_for_Block_myproject_axi_U0_full_n);
-    start_for_Block_mMgi_U->if_write(myproject_U0_start_write);
-    start_for_Block_mMgi_U->if_dout(start_for_Block_myproject_axi_U0_dout);
-    start_for_Block_mMgi_U->if_empty_n(start_for_Block_myproject_axi_U0_empty_n);
-    start_for_Block_mMgi_U->if_read(Block_myproject_axi_U0_ap_ready);
+    start_for_myproject_U0_U = new start_for_myproject_U0("start_for_myproject_U0_U");
+    start_for_myproject_U0_U->clk(ap_clk);
+    start_for_myproject_U0_U->reset(ap_rst_n_inv);
+    start_for_myproject_U0_U->if_read_ce(ap_var_for_const0);
+    start_for_myproject_U0_U->if_write_ce(ap_var_for_const0);
+    start_for_myproject_U0_U->if_din(start_for_myproject_U0_din);
+    start_for_myproject_U0_U->if_full_n(start_for_myproject_U0_full_n);
+    start_for_myproject_U0_U->if_write(Loop_1_proc290_U0_start_write);
+    start_for_myproject_U0_U->if_dout(start_for_myproject_U0_dout);
+    start_for_myproject_U0_U->if_empty_n(start_for_myproject_U0_empty_n);
+    start_for_myproject_U0_U->if_read(myproject_U0_ap_ready);
+    start_for_Block_myproject_axi_exit44_proc_U0_U = new start_for_Block_myproject_axi_exit44_proc_U0("start_for_Block_myproject_axi_exit44_proc_U0_U");
+    start_for_Block_myproject_axi_exit44_proc_U0_U->clk(ap_clk);
+    start_for_Block_myproject_axi_exit44_proc_U0_U->reset(ap_rst_n_inv);
+    start_for_Block_myproject_axi_exit44_proc_U0_U->if_read_ce(ap_var_for_const0);
+    start_for_Block_myproject_axi_exit44_proc_U0_U->if_write_ce(ap_var_for_const0);
+    start_for_Block_myproject_axi_exit44_proc_U0_U->if_din(start_for_Block_myproject_axi_exit44_proc_U0_din);
+    start_for_Block_myproject_axi_exit44_proc_U0_U->if_full_n(start_for_Block_myproject_axi_exit44_proc_U0_full_n);
+    start_for_Block_myproject_axi_exit44_proc_U0_U->if_write(myproject_U0_start_write);
+    start_for_Block_myproject_axi_exit44_proc_U0_U->if_dout(start_for_Block_myproject_axi_exit44_proc_U0_dout);
+    start_for_Block_myproject_axi_exit44_proc_U0_U->if_empty_n(start_for_Block_myproject_axi_exit44_proc_U0_empty_n);
+    start_for_Block_myproject_axi_exit44_proc_U0_U->if_read(Block_myproject_axi_exit44_proc_U0_ap_ready);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
     sensitive << ( ap_clk.pos() );
 
-    SC_METHOD(thread_Block_myproject_axi_U0_ap_continue);
+    SC_METHOD(thread_Block_myproject_axi_exit44_proc_U0_ap_continue);
     sensitive << ( ap_sync_channel_write_tmp_data_V_3 );
     sensitive << ( ap_sync_channel_write_tmp_data_V_2 );
     sensitive << ( ap_sync_channel_write_tmp_data_V_1 );
     sensitive << ( ap_sync_channel_write_tmp_data_V_0 );
 
-    SC_METHOD(thread_Block_myproject_axi_U0_ap_start);
-    sensitive << ( start_for_Block_myproject_axi_U0_empty_n );
+    SC_METHOD(thread_Block_myproject_axi_exit44_proc_U0_ap_start);
+    sensitive << ( start_for_Block_myproject_axi_exit44_proc_U0_empty_n );
 
-    SC_METHOD(thread_Block_myproject_axi_U0_start_full_n);
+    SC_METHOD(thread_Block_myproject_axi_exit44_proc_U0_start_full_n);
 
-    SC_METHOD(thread_Block_myproject_axi_U0_start_write);
+    SC_METHOD(thread_Block_myproject_axi_exit44_proc_U0_start_write);
 
     SC_METHOD(thread_Loop_1_proc290_U0_ap_continue);
-    sensitive << ( is_last_0_i_loc_chan_full_n );
+    sensitive << ( is_last_0_i_loc_channel_full_n );
 
     SC_METHOD(thread_Loop_1_proc290_U0_ap_start);
 
     SC_METHOD(thread_Loop_2_proc_U0_ap_continue);
 
     SC_METHOD(thread_Loop_2_proc_U0_ap_start);
-    sensitive << ( is_last_0_i_loc_chan_empty_n );
+    sensitive << ( is_last_0_i_loc_channel_empty_n );
     sensitive << ( tmp_data_V_0_empty_n );
     sensitive << ( tmp_data_V_1_empty_n );
     sensitive << ( tmp_data_V_2_empty_n );
@@ -311,23 +311,23 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
 
     SC_METHOD(thread_Loop_2_proc_U0_start_write);
 
-    SC_METHOD(thread_ap_channel_done_is_last_0_i_loc_chan);
+    SC_METHOD(thread_ap_channel_done_is_last_0_i_loc_channel);
     sensitive << ( Loop_1_proc290_U0_ap_done );
 
     SC_METHOD(thread_ap_channel_done_tmp_data_V_0);
-    sensitive << ( Block_myproject_axi_U0_ap_done );
+    sensitive << ( Block_myproject_axi_exit44_proc_U0_ap_done );
     sensitive << ( ap_sync_reg_channel_write_tmp_data_V_0 );
 
     SC_METHOD(thread_ap_channel_done_tmp_data_V_1);
-    sensitive << ( Block_myproject_axi_U0_ap_done );
+    sensitive << ( Block_myproject_axi_exit44_proc_U0_ap_done );
     sensitive << ( ap_sync_reg_channel_write_tmp_data_V_1 );
 
     SC_METHOD(thread_ap_channel_done_tmp_data_V_2);
-    sensitive << ( Block_myproject_axi_U0_ap_done );
+    sensitive << ( Block_myproject_axi_exit44_proc_U0_ap_done );
     sensitive << ( ap_sync_reg_channel_write_tmp_data_V_2 );
 
     SC_METHOD(thread_ap_channel_done_tmp_data_V_3);
-    sensitive << ( Block_myproject_axi_U0_ap_done );
+    sensitive << ( Block_myproject_axi_exit44_proc_U0_ap_done );
     sensitive << ( ap_sync_reg_channel_write_tmp_data_V_3 );
 
     SC_METHOD(thread_ap_rst_n_inv);
@@ -372,7 +372,7 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     SC_METHOD(thread_out_r_TVALID);
     sensitive << ( Loop_2_proc_U0_out_r_TVALID );
 
-    SC_METHOD(thread_start_for_Block_myproject_axi_U0_din);
+    SC_METHOD(thread_start_for_Block_myproject_axi_exit44_proc_U0_din);
 
     SC_METHOD(thread_start_for_myproject_U0_din);
 
@@ -421,8 +421,8 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     sc_trace(mVcdFile, Loop_1_proc290_U0_in_local_V_data_2_V_write, "Loop_1_proc290_U0_in_local_V_data_2_V_write");
     sc_trace(mVcdFile, Loop_1_proc290_U0_in_r_TREADY, "Loop_1_proc290_U0_in_r_TREADY");
     sc_trace(mVcdFile, Loop_1_proc290_U0_ap_return, "Loop_1_proc290_U0_ap_return");
-    sc_trace(mVcdFile, ap_channel_done_is_last_0_i_loc_chan, "ap_channel_done_is_last_0_i_loc_chan");
-    sc_trace(mVcdFile, is_last_0_i_loc_chan_full_n, "is_last_0_i_loc_chan_full_n");
+    sc_trace(mVcdFile, ap_channel_done_is_last_0_i_loc_channel, "ap_channel_done_is_last_0_i_loc_channel");
+    sc_trace(mVcdFile, is_last_0_i_loc_channel_full_n, "is_last_0_i_loc_channel_full_n");
     sc_trace(mVcdFile, myproject_U0_ap_start, "myproject_U0_ap_start");
     sc_trace(mVcdFile, myproject_U0_start_out, "myproject_U0_start_out");
     sc_trace(mVcdFile, myproject_U0_start_write, "myproject_U0_start_write");
@@ -441,23 +441,23 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     sc_trace(mVcdFile, myproject_U0_ap_ready, "myproject_U0_ap_ready");
     sc_trace(mVcdFile, myproject_U0_ap_idle, "myproject_U0_ap_idle");
     sc_trace(mVcdFile, myproject_U0_ap_continue, "myproject_U0_ap_continue");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_ap_start, "Block_myproject_axi_U0_ap_start");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_ap_done, "Block_myproject_axi_U0_ap_done");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_ap_continue, "Block_myproject_axi_U0_ap_continue");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_ap_idle, "Block_myproject_axi_U0_ap_idle");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_ap_ready, "Block_myproject_axi_U0_ap_ready");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_out_local_V_data_0_V_read, "Block_myproject_axi_U0_out_local_V_data_0_V_read");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_out_local_V_data_1_V_read, "Block_myproject_axi_U0_out_local_V_data_1_V_read");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_out_local_V_data_2_V_read, "Block_myproject_axi_U0_out_local_V_data_2_V_read");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_out_local_V_data_3_V_read, "Block_myproject_axi_U0_out_local_V_data_3_V_read");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_tmp_data_V_0, "Block_myproject_axi_U0_tmp_data_V_0");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_tmp_data_V_0_ap_vld, "Block_myproject_axi_U0_tmp_data_V_0_ap_vld");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_tmp_data_V_1, "Block_myproject_axi_U0_tmp_data_V_1");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_tmp_data_V_1_ap_vld, "Block_myproject_axi_U0_tmp_data_V_1_ap_vld");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_tmp_data_V_2, "Block_myproject_axi_U0_tmp_data_V_2");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_tmp_data_V_2_ap_vld, "Block_myproject_axi_U0_tmp_data_V_2_ap_vld");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_tmp_data_V_3, "Block_myproject_axi_U0_tmp_data_V_3");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_tmp_data_V_3_ap_vld, "Block_myproject_axi_U0_tmp_data_V_3_ap_vld");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_ap_start, "Block_myproject_axi_exit44_proc_U0_ap_start");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_ap_done, "Block_myproject_axi_exit44_proc_U0_ap_done");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_ap_continue, "Block_myproject_axi_exit44_proc_U0_ap_continue");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_ap_idle, "Block_myproject_axi_exit44_proc_U0_ap_idle");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_ap_ready, "Block_myproject_axi_exit44_proc_U0_ap_ready");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_out_local_V_data_0_V_read, "Block_myproject_axi_exit44_proc_U0_out_local_V_data_0_V_read");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_out_local_V_data_1_V_read, "Block_myproject_axi_exit44_proc_U0_out_local_V_data_1_V_read");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_out_local_V_data_2_V_read, "Block_myproject_axi_exit44_proc_U0_out_local_V_data_2_V_read");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_out_local_V_data_3_V_read, "Block_myproject_axi_exit44_proc_U0_out_local_V_data_3_V_read");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_tmp_data_V_0, "Block_myproject_axi_exit44_proc_U0_tmp_data_V_0");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_tmp_data_V_0_ap_vld, "Block_myproject_axi_exit44_proc_U0_tmp_data_V_0_ap_vld");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_tmp_data_V_1, "Block_myproject_axi_exit44_proc_U0_tmp_data_V_1");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_tmp_data_V_1_ap_vld, "Block_myproject_axi_exit44_proc_U0_tmp_data_V_1_ap_vld");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_tmp_data_V_2, "Block_myproject_axi_exit44_proc_U0_tmp_data_V_2");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_tmp_data_V_2_ap_vld, "Block_myproject_axi_exit44_proc_U0_tmp_data_V_2_ap_vld");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_tmp_data_V_3, "Block_myproject_axi_exit44_proc_U0_tmp_data_V_3");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_tmp_data_V_3_ap_vld, "Block_myproject_axi_exit44_proc_U0_tmp_data_V_3_ap_vld");
     sc_trace(mVcdFile, ap_channel_done_tmp_data_V_3, "ap_channel_done_tmp_data_V_3");
     sc_trace(mVcdFile, tmp_data_V_3_full_n, "tmp_data_V_3_full_n");
     sc_trace(mVcdFile, ap_sync_reg_channel_write_tmp_data_V_3, "ap_sync_reg_channel_write_tmp_data_V_3");
@@ -492,20 +492,20 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     sc_trace(mVcdFile, in_local_V_data_2_V_full_n, "in_local_V_data_2_V_full_n");
     sc_trace(mVcdFile, in_local_V_data_2_V_dout, "in_local_V_data_2_V_dout");
     sc_trace(mVcdFile, in_local_V_data_2_V_empty_n, "in_local_V_data_2_V_empty_n");
-    sc_trace(mVcdFile, is_last_0_i_loc_chan_dout, "is_last_0_i_loc_chan_dout");
-    sc_trace(mVcdFile, is_last_0_i_loc_chan_empty_n, "is_last_0_i_loc_chan_empty_n");
-    sc_trace(mVcdFile, out_local_V_data_0_s_full_n, "out_local_V_data_0_s_full_n");
-    sc_trace(mVcdFile, out_local_V_data_0_s_dout, "out_local_V_data_0_s_dout");
-    sc_trace(mVcdFile, out_local_V_data_0_s_empty_n, "out_local_V_data_0_s_empty_n");
-    sc_trace(mVcdFile, out_local_V_data_1_s_full_n, "out_local_V_data_1_s_full_n");
-    sc_trace(mVcdFile, out_local_V_data_1_s_dout, "out_local_V_data_1_s_dout");
-    sc_trace(mVcdFile, out_local_V_data_1_s_empty_n, "out_local_V_data_1_s_empty_n");
-    sc_trace(mVcdFile, out_local_V_data_2_s_full_n, "out_local_V_data_2_s_full_n");
-    sc_trace(mVcdFile, out_local_V_data_2_s_dout, "out_local_V_data_2_s_dout");
-    sc_trace(mVcdFile, out_local_V_data_2_s_empty_n, "out_local_V_data_2_s_empty_n");
-    sc_trace(mVcdFile, out_local_V_data_3_s_full_n, "out_local_V_data_3_s_full_n");
-    sc_trace(mVcdFile, out_local_V_data_3_s_dout, "out_local_V_data_3_s_dout");
-    sc_trace(mVcdFile, out_local_V_data_3_s_empty_n, "out_local_V_data_3_s_empty_n");
+    sc_trace(mVcdFile, is_last_0_i_loc_channel_dout, "is_last_0_i_loc_channel_dout");
+    sc_trace(mVcdFile, is_last_0_i_loc_channel_empty_n, "is_last_0_i_loc_channel_empty_n");
+    sc_trace(mVcdFile, out_local_V_data_0_V_full_n, "out_local_V_data_0_V_full_n");
+    sc_trace(mVcdFile, out_local_V_data_0_V_dout, "out_local_V_data_0_V_dout");
+    sc_trace(mVcdFile, out_local_V_data_0_V_empty_n, "out_local_V_data_0_V_empty_n");
+    sc_trace(mVcdFile, out_local_V_data_1_V_full_n, "out_local_V_data_1_V_full_n");
+    sc_trace(mVcdFile, out_local_V_data_1_V_dout, "out_local_V_data_1_V_dout");
+    sc_trace(mVcdFile, out_local_V_data_1_V_empty_n, "out_local_V_data_1_V_empty_n");
+    sc_trace(mVcdFile, out_local_V_data_2_V_full_n, "out_local_V_data_2_V_full_n");
+    sc_trace(mVcdFile, out_local_V_data_2_V_dout, "out_local_V_data_2_V_dout");
+    sc_trace(mVcdFile, out_local_V_data_2_V_empty_n, "out_local_V_data_2_V_empty_n");
+    sc_trace(mVcdFile, out_local_V_data_3_V_full_n, "out_local_V_data_3_V_full_n");
+    sc_trace(mVcdFile, out_local_V_data_3_V_dout, "out_local_V_data_3_V_dout");
+    sc_trace(mVcdFile, out_local_V_data_3_V_empty_n, "out_local_V_data_3_V_empty_n");
     sc_trace(mVcdFile, tmp_data_V_0_dout, "tmp_data_V_0_dout");
     sc_trace(mVcdFile, tmp_data_V_0_empty_n, "tmp_data_V_0_empty_n");
     sc_trace(mVcdFile, tmp_data_V_1_dout, "tmp_data_V_1_dout");
@@ -518,12 +518,12 @@ myproject_axi::myproject_axi(sc_module_name name) : sc_module(name), mVcdFile(0)
     sc_trace(mVcdFile, start_for_myproject_U0_full_n, "start_for_myproject_U0_full_n");
     sc_trace(mVcdFile, start_for_myproject_U0_dout, "start_for_myproject_U0_dout");
     sc_trace(mVcdFile, start_for_myproject_U0_empty_n, "start_for_myproject_U0_empty_n");
-    sc_trace(mVcdFile, start_for_Block_myproject_axi_U0_din, "start_for_Block_myproject_axi_U0_din");
-    sc_trace(mVcdFile, start_for_Block_myproject_axi_U0_full_n, "start_for_Block_myproject_axi_U0_full_n");
-    sc_trace(mVcdFile, start_for_Block_myproject_axi_U0_dout, "start_for_Block_myproject_axi_U0_dout");
-    sc_trace(mVcdFile, start_for_Block_myproject_axi_U0_empty_n, "start_for_Block_myproject_axi_U0_empty_n");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_start_full_n, "Block_myproject_axi_U0_start_full_n");
-    sc_trace(mVcdFile, Block_myproject_axi_U0_start_write, "Block_myproject_axi_U0_start_write");
+    sc_trace(mVcdFile, start_for_Block_myproject_axi_exit44_proc_U0_din, "start_for_Block_myproject_axi_exit44_proc_U0_din");
+    sc_trace(mVcdFile, start_for_Block_myproject_axi_exit44_proc_U0_full_n, "start_for_Block_myproject_axi_exit44_proc_U0_full_n");
+    sc_trace(mVcdFile, start_for_Block_myproject_axi_exit44_proc_U0_dout, "start_for_Block_myproject_axi_exit44_proc_U0_dout");
+    sc_trace(mVcdFile, start_for_Block_myproject_axi_exit44_proc_U0_empty_n, "start_for_Block_myproject_axi_exit44_proc_U0_empty_n");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_start_full_n, "Block_myproject_axi_exit44_proc_U0_start_full_n");
+    sc_trace(mVcdFile, Block_myproject_axi_exit44_proc_U0_start_write, "Block_myproject_axi_exit44_proc_U0_start_write");
     sc_trace(mVcdFile, Loop_2_proc_U0_start_full_n, "Loop_2_proc_U0_start_full_n");
     sc_trace(mVcdFile, Loop_2_proc_U0_start_write, "Loop_2_proc_U0_start_write");
 #endif
@@ -543,22 +543,22 @@ myproject_axi::~myproject_axi() {
     mHdltvoutHandle.close();
     delete Loop_1_proc290_U0;
     delete myproject_U0;
-    delete Block_myproject_axi_U0;
+    delete Block_myproject_axi_exit44_proc_U0;
     delete Loop_2_proc_U0;
     delete in_local_V_data_0_V_U;
     delete in_local_V_data_1_V_U;
     delete in_local_V_data_2_V_U;
-    delete is_last_0_i_loc_chan_U;
-    delete out_local_V_data_0_s_U;
-    delete out_local_V_data_1_s_U;
-    delete out_local_V_data_2_s_U;
-    delete out_local_V_data_3_s_U;
+    delete is_last_0_i_loc_channel_U;
+    delete out_local_V_data_0_V_U;
+    delete out_local_V_data_1_V_U;
+    delete out_local_V_data_2_V_U;
+    delete out_local_V_data_3_V_U;
     delete tmp_data_V_0_U;
     delete tmp_data_V_1_U;
     delete tmp_data_V_2_U;
     delete tmp_data_V_3_U;
-    delete start_for_myprojeLf8_U;
-    delete start_for_Block_mMgi_U;
+    delete start_for_myproject_U0_U;
+    delete start_for_Block_myproject_axi_exit44_proc_U0_U;
 }
 
 void myproject_axi::thread_ap_var_for_const0() {
@@ -569,8 +569,8 @@ void myproject_axi::thread_ap_clk_no_reset_() {
     if ( ap_rst_n_inv.read() == ap_const_logic_1) {
         ap_sync_reg_channel_write_tmp_data_V_0 = ap_const_logic_0;
     } else {
-        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_myproject_axi_U0_ap_done.read() & 
-             Block_myproject_axi_U0_ap_continue.read()))) {
+        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_myproject_axi_exit44_proc_U0_ap_done.read() & 
+             Block_myproject_axi_exit44_proc_U0_ap_continue.read()))) {
             ap_sync_reg_channel_write_tmp_data_V_0 = ap_const_logic_0;
         } else {
             ap_sync_reg_channel_write_tmp_data_V_0 = ap_sync_channel_write_tmp_data_V_0.read();
@@ -579,8 +579,8 @@ void myproject_axi::thread_ap_clk_no_reset_() {
     if ( ap_rst_n_inv.read() == ap_const_logic_1) {
         ap_sync_reg_channel_write_tmp_data_V_1 = ap_const_logic_0;
     } else {
-        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_myproject_axi_U0_ap_done.read() & 
-             Block_myproject_axi_U0_ap_continue.read()))) {
+        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_myproject_axi_exit44_proc_U0_ap_done.read() & 
+             Block_myproject_axi_exit44_proc_U0_ap_continue.read()))) {
             ap_sync_reg_channel_write_tmp_data_V_1 = ap_const_logic_0;
         } else {
             ap_sync_reg_channel_write_tmp_data_V_1 = ap_sync_channel_write_tmp_data_V_1.read();
@@ -589,8 +589,8 @@ void myproject_axi::thread_ap_clk_no_reset_() {
     if ( ap_rst_n_inv.read() == ap_const_logic_1) {
         ap_sync_reg_channel_write_tmp_data_V_2 = ap_const_logic_0;
     } else {
-        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_myproject_axi_U0_ap_done.read() & 
-             Block_myproject_axi_U0_ap_continue.read()))) {
+        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_myproject_axi_exit44_proc_U0_ap_done.read() & 
+             Block_myproject_axi_exit44_proc_U0_ap_continue.read()))) {
             ap_sync_reg_channel_write_tmp_data_V_2 = ap_const_logic_0;
         } else {
             ap_sync_reg_channel_write_tmp_data_V_2 = ap_sync_channel_write_tmp_data_V_2.read();
@@ -599,8 +599,8 @@ void myproject_axi::thread_ap_clk_no_reset_() {
     if ( ap_rst_n_inv.read() == ap_const_logic_1) {
         ap_sync_reg_channel_write_tmp_data_V_3 = ap_const_logic_0;
     } else {
-        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_myproject_axi_U0_ap_done.read() & 
-             Block_myproject_axi_U0_ap_continue.read()))) {
+        if (esl_seteq<1,1,1>(ap_const_logic_1, (Block_myproject_axi_exit44_proc_U0_ap_done.read() & 
+             Block_myproject_axi_exit44_proc_U0_ap_continue.read()))) {
             ap_sync_reg_channel_write_tmp_data_V_3 = ap_const_logic_0;
         } else {
             ap_sync_reg_channel_write_tmp_data_V_3 = ap_sync_channel_write_tmp_data_V_3.read();
@@ -608,24 +608,24 @@ void myproject_axi::thread_ap_clk_no_reset_() {
     }
 }
 
-void myproject_axi::thread_Block_myproject_axi_U0_ap_continue() {
-    Block_myproject_axi_U0_ap_continue = (ap_sync_channel_write_tmp_data_V_3.read() & ap_sync_channel_write_tmp_data_V_2.read() & ap_sync_channel_write_tmp_data_V_1.read() & ap_sync_channel_write_tmp_data_V_0.read());
+void myproject_axi::thread_Block_myproject_axi_exit44_proc_U0_ap_continue() {
+    Block_myproject_axi_exit44_proc_U0_ap_continue = (ap_sync_channel_write_tmp_data_V_3.read() & ap_sync_channel_write_tmp_data_V_2.read() & ap_sync_channel_write_tmp_data_V_1.read() & ap_sync_channel_write_tmp_data_V_0.read());
 }
 
-void myproject_axi::thread_Block_myproject_axi_U0_ap_start() {
-    Block_myproject_axi_U0_ap_start = start_for_Block_myproject_axi_U0_empty_n.read();
+void myproject_axi::thread_Block_myproject_axi_exit44_proc_U0_ap_start() {
+    Block_myproject_axi_exit44_proc_U0_ap_start = start_for_Block_myproject_axi_exit44_proc_U0_empty_n.read();
 }
 
-void myproject_axi::thread_Block_myproject_axi_U0_start_full_n() {
-    Block_myproject_axi_U0_start_full_n = ap_const_logic_1;
+void myproject_axi::thread_Block_myproject_axi_exit44_proc_U0_start_full_n() {
+    Block_myproject_axi_exit44_proc_U0_start_full_n = ap_const_logic_1;
 }
 
-void myproject_axi::thread_Block_myproject_axi_U0_start_write() {
-    Block_myproject_axi_U0_start_write = ap_const_logic_0;
+void myproject_axi::thread_Block_myproject_axi_exit44_proc_U0_start_write() {
+    Block_myproject_axi_exit44_proc_U0_start_write = ap_const_logic_0;
 }
 
 void myproject_axi::thread_Loop_1_proc290_U0_ap_continue() {
-    Loop_1_proc290_U0_ap_continue = is_last_0_i_loc_chan_full_n.read();
+    Loop_1_proc290_U0_ap_continue = is_last_0_i_loc_channel_full_n.read();
 }
 
 void myproject_axi::thread_Loop_1_proc290_U0_ap_start() {
@@ -637,7 +637,7 @@ void myproject_axi::thread_Loop_2_proc_U0_ap_continue() {
 }
 
 void myproject_axi::thread_Loop_2_proc_U0_ap_start() {
-    Loop_2_proc_U0_ap_start = (is_last_0_i_loc_chan_empty_n.read() & tmp_data_V_0_empty_n.read() & tmp_data_V_1_empty_n.read() & tmp_data_V_2_empty_n.read() & tmp_data_V_3_empty_n.read());
+    Loop_2_proc_U0_ap_start = (is_last_0_i_loc_channel_empty_n.read() & tmp_data_V_0_empty_n.read() & tmp_data_V_1_empty_n.read() & tmp_data_V_2_empty_n.read() & tmp_data_V_3_empty_n.read());
 }
 
 void myproject_axi::thread_Loop_2_proc_U0_start_full_n() {
@@ -648,27 +648,27 @@ void myproject_axi::thread_Loop_2_proc_U0_start_write() {
     Loop_2_proc_U0_start_write = ap_const_logic_0;
 }
 
-void myproject_axi::thread_ap_channel_done_is_last_0_i_loc_chan() {
-    ap_channel_done_is_last_0_i_loc_chan = Loop_1_proc290_U0_ap_done.read();
+void myproject_axi::thread_ap_channel_done_is_last_0_i_loc_channel() {
+    ap_channel_done_is_last_0_i_loc_channel = Loop_1_proc290_U0_ap_done.read();
 }
 
 void myproject_axi::thread_ap_channel_done_tmp_data_V_0() {
-    ap_channel_done_tmp_data_V_0 = (Block_myproject_axi_U0_ap_done.read() & (ap_sync_reg_channel_write_tmp_data_V_0.read() ^ 
+    ap_channel_done_tmp_data_V_0 = (Block_myproject_axi_exit44_proc_U0_ap_done.read() & (ap_sync_reg_channel_write_tmp_data_V_0.read() ^ 
   ap_const_logic_1));
 }
 
 void myproject_axi::thread_ap_channel_done_tmp_data_V_1() {
-    ap_channel_done_tmp_data_V_1 = (Block_myproject_axi_U0_ap_done.read() & (ap_sync_reg_channel_write_tmp_data_V_1.read() ^ 
+    ap_channel_done_tmp_data_V_1 = (Block_myproject_axi_exit44_proc_U0_ap_done.read() & (ap_sync_reg_channel_write_tmp_data_V_1.read() ^ 
   ap_const_logic_1));
 }
 
 void myproject_axi::thread_ap_channel_done_tmp_data_V_2() {
-    ap_channel_done_tmp_data_V_2 = (Block_myproject_axi_U0_ap_done.read() & (ap_sync_reg_channel_write_tmp_data_V_2.read() ^ 
+    ap_channel_done_tmp_data_V_2 = (Block_myproject_axi_exit44_proc_U0_ap_done.read() & (ap_sync_reg_channel_write_tmp_data_V_2.read() ^ 
   ap_const_logic_1));
 }
 
 void myproject_axi::thread_ap_channel_done_tmp_data_V_3() {
-    ap_channel_done_tmp_data_V_3 = (Block_myproject_axi_U0_ap_done.read() & (ap_sync_reg_channel_write_tmp_data_V_3.read() ^ 
+    ap_channel_done_tmp_data_V_3 = (Block_myproject_axi_exit44_proc_U0_ap_done.read() & (ap_sync_reg_channel_write_tmp_data_V_3.read() ^ 
   ap_const_logic_1));
 }
 
@@ -724,8 +724,8 @@ void myproject_axi::thread_out_r_TVALID() {
     out_r_TVALID = Loop_2_proc_U0_out_r_TVALID.read();
 }
 
-void myproject_axi::thread_start_for_Block_myproject_axi_U0_din() {
-    start_for_Block_myproject_axi_U0_din =  (sc_lv<1>) (ap_const_logic_1);
+void myproject_axi::thread_start_for_Block_myproject_axi_exit44_proc_U0_din() {
+    start_for_Block_myproject_axi_exit44_proc_U0_din =  (sc_lv<1>) (ap_const_logic_1);
 }
 
 void myproject_axi::thread_start_for_myproject_U0_din() {

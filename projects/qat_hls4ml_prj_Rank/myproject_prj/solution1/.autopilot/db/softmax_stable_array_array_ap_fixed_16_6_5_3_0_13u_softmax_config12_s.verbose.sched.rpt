@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s'
 ================================================================
-* Date:           Tue Apr  9 23:50:14 2024
+* Date:           Wed Apr 10 16:33:19 2024
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        myproject_prj
@@ -636,6 +636,8 @@ The critical path consists of the following:
 	'icmp' operation ('icmp_ln1496_11', firmware/nnet_utils/nnet_common.h:65->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_activation_stream.h:209) [109]  (1.1 ns)
 	'select' operation ('x_max.V', firmware/nnet_utils/nnet_common.h:65->firmware/nnet_utils/nnet_common.h:45->firmware/nnet_utils/nnet_activation_stream.h:209) [110]  (0.357 ns)
 	'sub' operation ('sub_ln1193', firmware/nnet_utils/nnet_activation_stream.h:215) [113]  (0.853 ns)
+	'xor' operation ('xor_ln786', firmware/nnet_utils/nnet_activation_stream.h:215) [116]  (0 ns)
+	'and' operation ('and_ln786', firmware/nnet_utils/nnet_activation_stream.h:215) [117]  (0 ns)
 	'select' operation ('select_ln388', firmware/nnet_utils/nnet_activation_stream.h:215) [231]  (0.403 ns)
 	'select' operation ('y.V', firmware/nnet_utils/nnet_activation_stream.h:215) [232]  (0.403 ns)
 	'getelementptr' operation ('exp_table1_addr', firmware/nnet_utils/nnet_activation_stream.h:225) [234]  (0 ns)

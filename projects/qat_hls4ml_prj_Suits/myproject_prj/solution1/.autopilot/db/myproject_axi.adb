@@ -233,7 +233,7 @@
             <Obj>
               <type>0</type>
               <id>158</id>
-              <name>out_local_V_data_0_s</name>
+              <name>out_local_V_data_0_V</name>
               <fileName>firmware/myproject_axi.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>12</lineNumber>
@@ -257,7 +257,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>out_local.V.data[0].V</originalName>
-              <rtlName>out_local_V_data_0_s_U</rtlName>
+              <rtlName>out_local_V_data_0_V_U</rtlName>
               <coreName>FIFO</coreName>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -281,7 +281,7 @@
             <Obj>
               <type>0</type>
               <id>161</id>
-              <name>out_local_V_data_1_s</name>
+              <name>out_local_V_data_1_V</name>
               <fileName>firmware/myproject_axi.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>12</lineNumber>
@@ -305,7 +305,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>out_local.V.data[1].V</originalName>
-              <rtlName>out_local_V_data_1_s_U</rtlName>
+              <rtlName>out_local_V_data_1_V_U</rtlName>
               <coreName>FIFO</coreName>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -329,7 +329,7 @@
             <Obj>
               <type>0</type>
               <id>164</id>
-              <name>out_local_V_data_2_s</name>
+              <name>out_local_V_data_2_V</name>
               <fileName>firmware/myproject_axi.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>12</lineNumber>
@@ -353,7 +353,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>out_local.V.data[2].V</originalName>
-              <rtlName>out_local_V_data_2_s_U</rtlName>
+              <rtlName>out_local_V_data_2_V_U</rtlName>
               <coreName>FIFO</coreName>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -377,7 +377,7 @@
             <Obj>
               <type>0</type>
               <id>167</id>
-              <name>out_local_V_data_3_s</name>
+              <name>out_local_V_data_3_V</name>
               <fileName>firmware/myproject_axi.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>12</lineNumber>
@@ -401,7 +401,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>out_local.V.data[3].V</originalName>
-              <rtlName>out_local_V_data_3_s_U</rtlName>
+              <rtlName>out_local_V_data_3_V_U</rtlName>
               <coreName>FIFO</coreName>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -561,7 +561,7 @@
             <Obj>
               <type>0</type>
               <id>177</id>
-              <name>is_last_0_i_loc_chan</name>
+              <name>is_last_0_i_loc_channel</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -571,7 +571,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>is_last_0_i_loc_chan_U</rtlName>
+              <rtlName>is_last_0_i_loc_channel_U</rtlName>
               <coreName>FIFO</coreName>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -791,7 +791,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>Block_myproject_axi_U0</rtlName>
+              <rtlName>Block_myproject_axi_exit44_proc_U0</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -988,7 +988,7 @@
             <Obj>
               <type>2</type>
               <id>211</id>
-              <name>Block_myproject_axi_s</name>
+              <name>Block_myproject_axi_exit44_proc</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1004,7 +1004,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:Block_myproject_axi_&gt;</content>
+          <content>&lt;constant:Block_myproject_axi_.exit44_proc&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_25">
           <Value>
@@ -2301,8 +2301,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>463161</mMinLatency>
-        <mMaxLatency>463162</mMaxLatency>
+        <mMinLatency>462949</mMinLatency>
+        <mMaxLatency>462950</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_200">
           <port_list class_id="24" tracking_level="0" version="0">
@@ -2586,7 +2586,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_267">
                   <port class_id_reference="29" object_id="_268">
-                    <name>line_buffer_Array_V_21</name>
+                    <name>line_buffer_Array_V_0_0</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -2594,7 +2594,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_269">
                   <port class_id_reference="29" object_id="_270">
-                    <name>line_buffer_Array_V_10</name>
+                    <name>line_buffer_Array_V_1236_0</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -2602,7 +2602,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_271">
                   <port class_id_reference="29" object_id="_272">
-                    <name>line_buffer_Array_V_20</name>
+                    <name>line_buffer_Array_V_0_1</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -2610,7 +2610,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_273">
                   <port class_id_reference="29" object_id="_274">
-                    <name>line_buffer_Array_V_9</name>
+                    <name>line_buffer_Array_V_1236_1</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -2618,7 +2618,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_275">
                   <port class_id_reference="29" object_id="_276">
-                    <name>line_buffer_Array_V_19</name>
+                    <name>line_buffer_Array_V_0_2</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -2626,7 +2626,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_277">
                   <port class_id_reference="29" object_id="_278">
-                    <name>line_buffer_Array_V_8</name>
+                    <name>line_buffer_Array_V_1236_2</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -2850,7 +2850,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_333">
                   <port class_id_reference="29" object_id="_334">
-                    <name>line_buffer_Array_V_7</name>
+                    <name>line_buffer_Array_V_2_0_0</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -2858,7 +2858,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_335">
                   <port class_id_reference="29" object_id="_336">
-                    <name>line_buffer_Array_V_6</name>
+                    <name>line_buffer_Array_V_2_0_1</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -2866,7 +2866,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_337">
                   <port class_id_reference="29" object_id="_338">
-                    <name>line_buffer_Array_V_5</name>
+                    <name>line_buffer_Array_V_2_0_2</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -2874,7 +2874,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_339">
                   <port class_id_reference="29" object_id="_340">
-                    <name>line_buffer_Array_V_4</name>
+                    <name>line_buffer_Array_V_2_0_3</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3074,7 +3074,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_389">
                   <port class_id_reference="29" object_id="_390">
-                    <name>line_buffer_Array_V_18</name>
+                    <name>line_buffer_Array_V_1_0_0</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3082,7 +3082,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_391">
                   <port class_id_reference="29" object_id="_392">
-                    <name>line_buffer_Array_V_14</name>
+                    <name>line_buffer_Array_V_1_1_0</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3090,7 +3090,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_393">
                   <port class_id_reference="29" object_id="_394">
-                    <name>line_buffer_Array_V_17</name>
+                    <name>line_buffer_Array_V_1_0_1</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3098,7 +3098,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_395">
                   <port class_id_reference="29" object_id="_396">
-                    <name>line_buffer_Array_V_13</name>
+                    <name>line_buffer_Array_V_1_1_1</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3106,7 +3106,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_397">
                   <port class_id_reference="29" object_id="_398">
-                    <name>line_buffer_Array_V_16</name>
+                    <name>line_buffer_Array_V_1_0_2</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3114,7 +3114,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_399">
                   <port class_id_reference="29" object_id="_400">
-                    <name>line_buffer_Array_V_12</name>
+                    <name>line_buffer_Array_V_1_1_2</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3122,7 +3122,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_401">
                   <port class_id_reference="29" object_id="_402">
-                    <name>line_buffer_Array_V_15</name>
+                    <name>line_buffer_Array_V_1_0_3</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3130,7 +3130,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_403">
                   <port class_id_reference="29" object_id="_404">
-                    <name>line_buffer_Array_V_11</name>
+                    <name>line_buffer_Array_V_1_1_3</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3378,7 +3378,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_465">
                   <port class_id_reference="29" object_id="_466">
-                    <name>line_buffer_Array_V_3</name>
+                    <name>line_buffer_Array_V_3_0_0</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3386,7 +3386,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_467">
                   <port class_id_reference="29" object_id="_468">
-                    <name>line_buffer_Array_V_2</name>
+                    <name>line_buffer_Array_V_3_0_1</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3394,7 +3394,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_469">
                   <port class_id_reference="29" object_id="_470">
-                    <name>line_buffer_Array_V_1</name>
+                    <name>line_buffer_Array_V_3_0_2</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3402,7 +3402,7 @@
                 </item>
                 <item class_id_reference="28" object_id="_471">
                   <port class_id_reference="29" object_id="_472">
-                    <name>line_buffer_Array_V_s</name>
+                    <name>line_buffer_Array_V_3_0_3</name>
                     <dir>2</dir>
                     <type>3</type>
                   </port>
@@ -3436,7 +3436,7 @@
             </item>
             <item class_id_reference="26" object_id="_479">
               <type>0</type>
-              <name>Block_myproject_axi_U0</name>
+              <name>Block_myproject_axi_exit44_proc_U0</name>
               <ssdmobj_id>179</ssdmobj_id>
               <pins>
                 <count>8</count>
@@ -3449,7 +3449,7 @@
                   </port>
                   <inst class_id_reference="30" object_id="_482">
                     <type>0</type>
-                    <name>Block_myproject_axi_U0</name>
+                    <name>Block_myproject_axi_exit44_proc_U0</name>
                     <ssdmobj_id>179</ssdmobj_id>
                   </inst>
                 </item>
@@ -3658,7 +3658,7 @@
             </item>
             <item class_id_reference="32" object_id="_528">
               <type>1</type>
-              <name>is_last_0_i_loc_chan</name>
+              <name>is_last_0_i_loc_channel</name>
               <ssdmobj_id>177</ssdmobj_id>
               <ctype>0</ctype>
               <depth>2</depth>
@@ -3682,7 +3682,7 @@
             </item>
             <item class_id_reference="32" object_id="_533">
               <type>1</type>
-              <name>out_local_V_data_0_s</name>
+              <name>out_local_V_data_0_V</name>
               <ssdmobj_id>158</ssdmobj_id>
               <ctype>0</ctype>
               <depth>1</depth>
@@ -3706,7 +3706,7 @@
             </item>
             <item class_id_reference="32" object_id="_538">
               <type>1</type>
-              <name>out_local_V_data_1_s</name>
+              <name>out_local_V_data_1_V</name>
               <ssdmobj_id>161</ssdmobj_id>
               <ctype>0</ctype>
               <depth>1</depth>
@@ -3730,7 +3730,7 @@
             </item>
             <item class_id_reference="32" object_id="_543">
               <type>1</type>
-              <name>out_local_V_data_2_s</name>
+              <name>out_local_V_data_2_V</name>
               <ssdmobj_id>164</ssdmobj_id>
               <ctype>0</ctype>
               <depth>1</depth>
@@ -3754,7 +3754,7 @@
             </item>
             <item class_id_reference="32" object_id="_548">
               <type>1</type>
-              <name>out_local_V_data_3_s</name>
+              <name>out_local_V_data_3_V</name>
               <ssdmobj_id>167</ssdmobj_id>
               <ctype>0</ctype>
               <depth>1</depth>
@@ -4288,7 +4288,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item class_id="46" tracking_level="0" version="0">
-          <first>Block_myproject_axi_U0 (Block_myproject_axi_s)</first>
+          <first>Block_myproject_axi_exit44_proc_U0 (Block_myproject_axi_exit44_proc)</first>
           <second class_id="47" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -4343,31 +4343,31 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>44</second>
+              <second>45</second>
             </item>
             <item>
               <first>DSP48E</first>
-              <second>11</second>
+              <second>19</second>
             </item>
             <item>
               <first>FF</first>
-              <second>87722</second>
+              <second>44891</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>87266</second>
+              <second>57174</second>
             </item>
           </second>
         </item>
         <item>
-          <first>start_for_Block_mMgi_U (start_for_Block_mMgi)</first>
+          <first>start_for_Block_myproject_axi_exit44_proc_U0_U (start_for_Block_myproject_axi_exit44_proc_U0)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>start_for_myprojeLf8_U (start_for_myprojeLf8)</first>
+          <first>start_for_myproject_U0_U (start_for_myproject_U0)</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -4378,7 +4378,7 @@
         <count>10</count>
         <item_version>0</item_version>
         <item>
-          <first>Block_myproject_axi_U0_ap_continue ( and ) </first>
+          <first>Block_myproject_axi_exit44_proc_U0_ap_continue ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4705,7 +4705,7 @@
           </second>
         </item>
         <item>
-          <first>is_last_0_i_loc_chan_U</first>
+          <first>is_last_0_i_loc_channel_U</first>
           <second>
             <count>6</count>
             <item_version>0</item_version>
@@ -4736,7 +4736,7 @@
           </second>
         </item>
         <item>
-          <first>out_local_V_data_0_s_U</first>
+          <first>out_local_V_data_0_V_U</first>
           <second>
             <count>6</count>
             <item_version>0</item_version>
@@ -4767,7 +4767,7 @@
           </second>
         </item>
         <item>
-          <first>out_local_V_data_1_s_U</first>
+          <first>out_local_V_data_1_V_U</first>
           <second>
             <count>6</count>
             <item_version>0</item_version>
@@ -4798,7 +4798,7 @@
           </second>
         </item>
         <item>
-          <first>out_local_V_data_2_s_U</first>
+          <first>out_local_V_data_2_V_U</first>
           <second>
             <count>6</count>
             <item_version>0</item_version>
@@ -4829,7 +4829,7 @@
           </second>
         </item>
         <item>
-          <first>out_local_V_data_3_s_U</first>
+          <first>out_local_V_data_3_V_U</first>
           <second>
             <count>6</count>
             <item_version>0</item_version>
@@ -5168,7 +5168,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item>
-          <first>Block_myproject_axi_U0</first>
+          <first>Block_myproject_axi_exit44_proc_U0</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -5196,14 +5196,14 @@
           </second>
         </item>
         <item>
-          <first>start_for_Block_mMgi_U</first>
+          <first>start_for_Block_myproject_axi_exit44_proc_U0_U</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>start_for_myprojeLf8_U</first>
+          <first>start_for_myproject_U0_U</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -5214,7 +5214,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item class_id="50" tracking_level="0" version="0">
-          <first>Block_myproject_axi_U0 (Block_myproject_axi_s)</first>
+          <first>Block_myproject_axi_exit44_proc_U0 (Block_myproject_axi_exit44_proc)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5278,7 +5278,7 @@
           </second>
         </item>
         <item>
-          <first>is_last_0_i_loc_chan_U</first>
+          <first>is_last_0_i_loc_channel_U</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5286,7 +5286,7 @@
           </second>
         </item>
         <item>
-          <first>out_local_V_data_0_s_U</first>
+          <first>out_local_V_data_0_V_U</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5294,7 +5294,7 @@
           </second>
         </item>
         <item>
-          <first>out_local_V_data_1_s_U</first>
+          <first>out_local_V_data_1_V_U</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5302,7 +5302,7 @@
           </second>
         </item>
         <item>
-          <first>out_local_V_data_2_s_U</first>
+          <first>out_local_V_data_2_V_U</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5310,7 +5310,7 @@
           </second>
         </item>
         <item>
-          <first>out_local_V_data_3_s_U</first>
+          <first>out_local_V_data_3_V_U</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5696,7 +5696,7 @@
         </second>
       </item>
       <item>
-        <first>out_local_V_data_0_s_fu_424</first>
+        <first>out_local_V_data_0_V_fu_424</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5704,7 +5704,7 @@
         </second>
       </item>
       <item>
-        <first>out_local_V_data_1_s_fu_428</first>
+        <first>out_local_V_data_1_V_fu_428</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5712,7 +5712,7 @@
         </second>
       </item>
       <item>
-        <first>out_local_V_data_2_s_fu_432</first>
+        <first>out_local_V_data_2_V_fu_432</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5720,7 +5720,7 @@
         </second>
       </item>
       <item>
-        <first>out_local_V_data_3_s_fu_436</first>
+        <first>out_local_V_data_3_V_fu_436</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5764,7 +5764,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>call_ln0_Block_myproject_axi_s_fu_739</first>
+        <first>call_ln0_Block_myproject_axi_exit44_proc_fu_739</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5834,7 +5834,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_1</first>
+          <first>line_buffer_Array_V_0_0</first>
           <second>100</second>
         </first>
         <second>
@@ -5845,7 +5845,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_10</first>
+          <first>line_buffer_Array_V_0_1</first>
           <second>100</second>
         </first>
         <second>
@@ -5856,7 +5856,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_11</first>
+          <first>line_buffer_Array_V_0_2</first>
           <second>100</second>
         </first>
         <second>
@@ -5867,7 +5867,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_12</first>
+          <first>line_buffer_Array_V_1236_0</first>
           <second>100</second>
         </first>
         <second>
@@ -5878,7 +5878,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_13</first>
+          <first>line_buffer_Array_V_1236_1</first>
           <second>100</second>
         </first>
         <second>
@@ -5889,7 +5889,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_14</first>
+          <first>line_buffer_Array_V_1236_2</first>
           <second>100</second>
         </first>
         <second>
@@ -5900,7 +5900,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_15</first>
+          <first>line_buffer_Array_V_1_0_0</first>
           <second>100</second>
         </first>
         <second>
@@ -5911,7 +5911,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_16</first>
+          <first>line_buffer_Array_V_1_0_1</first>
           <second>100</second>
         </first>
         <second>
@@ -5922,7 +5922,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_17</first>
+          <first>line_buffer_Array_V_1_0_2</first>
           <second>100</second>
         </first>
         <second>
@@ -5933,7 +5933,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_18</first>
+          <first>line_buffer_Array_V_1_0_3</first>
           <second>100</second>
         </first>
         <second>
@@ -5944,7 +5944,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_19</first>
+          <first>line_buffer_Array_V_1_1_0</first>
           <second>100</second>
         </first>
         <second>
@@ -5955,7 +5955,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_2</first>
+          <first>line_buffer_Array_V_1_1_1</first>
           <second>100</second>
         </first>
         <second>
@@ -5966,7 +5966,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_20</first>
+          <first>line_buffer_Array_V_1_1_2</first>
           <second>100</second>
         </first>
         <second>
@@ -5977,7 +5977,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_21</first>
+          <first>line_buffer_Array_V_1_1_3</first>
           <second>100</second>
         </first>
         <second>
@@ -5988,7 +5988,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_3</first>
+          <first>line_buffer_Array_V_2_0_0</first>
           <second>100</second>
         </first>
         <second>
@@ -5999,7 +5999,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_4</first>
+          <first>line_buffer_Array_V_2_0_1</first>
           <second>100</second>
         </first>
         <second>
@@ -6010,7 +6010,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_5</first>
+          <first>line_buffer_Array_V_2_0_2</first>
           <second>100</second>
         </first>
         <second>
@@ -6021,7 +6021,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_6</first>
+          <first>line_buffer_Array_V_2_0_3</first>
           <second>100</second>
         </first>
         <second>
@@ -6032,7 +6032,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_7</first>
+          <first>line_buffer_Array_V_3_0_0</first>
           <second>100</second>
         </first>
         <second>
@@ -6043,7 +6043,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_8</first>
+          <first>line_buffer_Array_V_3_0_1</first>
           <second>100</second>
         </first>
         <second>
@@ -6054,7 +6054,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_9</first>
+          <first>line_buffer_Array_V_3_0_2</first>
           <second>100</second>
         </first>
         <second>
@@ -6065,7 +6065,7 @@
       </item>
       <item>
         <first>
-          <first>line_buffer_Array_V_s</first>
+          <first>line_buffer_Array_V_3_0_3</first>
           <second>100</second>
         </first>
         <second>
@@ -6258,7 +6258,7 @@
         </second>
       </item>
       <item>
-        <first>is_last_0_i_loc_chan_reg_817</first>
+        <first>is_last_0_i_loc_channel_reg_817</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6266,7 +6266,7 @@
         </second>
       </item>
       <item>
-        <first>out_local_V_data_0_s_reg_769</first>
+        <first>out_local_V_data_0_V_reg_769</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6274,7 +6274,7 @@
         </second>
       </item>
       <item>
-        <first>out_local_V_data_1_s_reg_775</first>
+        <first>out_local_V_data_1_V_reg_775</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6282,7 +6282,7 @@
         </second>
       </item>
       <item>
-        <first>out_local_V_data_2_s_reg_781</first>
+        <first>out_local_V_data_2_V_reg_781</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6290,7 +6290,7 @@
         </second>
       </item>
       <item>
-        <first>out_local_V_data_3_s_reg_787</first>
+        <first>out_local_V_data_3_V_reg_787</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -3075,7 +3075,7 @@
 					<Obj>
 						<type>0</type>
 						<id>71</id>
-						<name>tmp_62_i</name>
+						<name>tmp_70_i</name>
 						<fileName>firmware/myproject_axi.cpp</fileName>
 						<fileDirectory>/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Suits</fileDirectory>
 						<lineNumber>33</lineNumber>

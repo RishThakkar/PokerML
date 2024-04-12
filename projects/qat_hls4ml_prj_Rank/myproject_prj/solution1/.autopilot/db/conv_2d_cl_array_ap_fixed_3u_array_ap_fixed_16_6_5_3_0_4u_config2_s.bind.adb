@@ -1616,7 +1616,7 @@
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
 			<mMinLatency>12289</mMinLatency>
-			<mMaxLatency>462849</mMaxLatency>
+			<mMaxLatency>466945</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1661,7 +1661,7 @@
 			<mMinTripCount>4096</mMinTripCount>
 			<mMaxTripCount>4096</mMaxTripCount>
 			<mMinLatency>12288</mMinLatency>
-			<mMaxLatency>462848</mMaxLatency>
+			<mMaxLatency>466944</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

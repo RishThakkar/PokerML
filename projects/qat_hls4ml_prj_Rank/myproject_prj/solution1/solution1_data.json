@@ -22,11 +22,13 @@
       "config_array_partition -maximum_size=4096",
       "config_array_partition -scalarize_all=0",
       "config_array_partition -throughput_driven=0",
+      "config_export -vivado_optimization_level=2",
+      "config_export -vivado_phys_opt=place",
+      "config_export -vivado_report_level=0",
       "config_schedule -effort=medium",
       "config_schedule -enable_dsp_full_reg=0",
       "config_schedule -relax_ii_for_timing=1",
-      "config_schedule -verbose=0",
-      "config_export -vivado_optimization_level=2"
+      "config_schedule -verbose=0"
     ]},
   "Args": {
     "in": {
@@ -94,7 +96,7 @@
     "ClockPeriod": "5",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "463538",
+    "Latency": "467634",
     "Uncertainty": "0.625"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 5.000 [get_ports ap_clk]"]},
@@ -144,7 +146,6 @@
       "impl\/vhdl\/Loop_2_proc.vhd",
       "impl\/vhdl\/myproject.vhd",
       "impl\/vhdl\/myproject_axi_fpext_32ns_64_2_1.vhd",
-      "impl\/vhdl\/myproject_axi_mul_mul_6s_16s_20_1_1.vhd",
       "impl\/vhdl\/myproject_axi_mul_mul_6s_16s_21_1_1.vhd",
       "impl\/vhdl\/myproject_axi_mul_mul_6s_16s_22_1_1.vhd",
       "impl\/vhdl\/myproject_axi_mux_42_32_1_1.vhd",
@@ -214,7 +215,6 @@
       "impl\/verilog\/Loop_2_proc.v",
       "impl\/verilog\/myproject.v",
       "impl\/verilog\/myproject_axi_fpext_32ns_64_2_1.v",
-      "impl\/verilog\/myproject_axi_mul_mul_6s_16s_20_1_1.v",
       "impl\/verilog\/myproject_axi_mul_mul_6s_16s_21_1_1.v",
       "impl\/verilog\/myproject_axi_mul_mul_6s_16s_22_1_1.v",
       "impl\/verilog\/myproject_axi_mux_42_32_1_1.v",
@@ -707,7 +707,7 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "3.770"
+          "Estimate": "4.117"
         },
         "Loops": [{
             "Name": "ReuseLoop",
@@ -720,7 +720,7 @@
           "BRAM_18K": "0",
           "DSP48E": "1",
           "FF": "450",
-          "LUT": "682",
+          "LUT": "685",
           "URAM": "0"
         }
       },
@@ -728,23 +728,23 @@
         "Latency": {
           "LatencyBest": "1",
           "LatencyAvg": "56",
-          "LatencyWorst": "111",
+          "LatencyWorst": "112",
           "PipelineIIMin": "1",
-          "PipelineIIMax": "111",
-          "PipelineII": "1 ~ 111",
+          "PipelineIIMax": "112",
+          "PipelineII": "1 ~ 112",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "3.967"
+          "Estimate": "4.117"
         },
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "1",
-          "FF": "1529",
-          "LUT": "1515",
+          "FF": "1594",
+          "LUT": "1522",
           "URAM": "0"
         }
       },
@@ -752,34 +752,34 @@
         "Latency": {
           "LatencyBest": "12289",
           "LatencyAvg": "237569",
-          "LatencyWorst": "462849",
+          "LatencyWorst": "466945",
           "PipelineIIMin": "12289",
-          "PipelineIIMax": "462849",
-          "PipelineII": "12289 ~ 462849",
+          "PipelineIIMax": "466945",
+          "PipelineII": "12289 ~ 466945",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "3.967"
+          "Estimate": "4.117"
         },
         "Loops": [{
             "Name": "ReadInputHeight_ReadInputWidth",
             "TripCount": "4096",
             "LatencyMin": "12288",
-            "LatencyMax": "462848",
-            "Latency": "12288 ~ 462848",
+            "LatencyMax": "466944",
+            "Latency": "12288 ~ 466944",
             "PipelineII": "",
             "PipelineDepthMin": "3",
-            "PipelineDepthMax": "113",
-            "PipelineDepth": "3 ~ 113"
+            "PipelineDepthMax": "114",
+            "PipelineDepth": "3 ~ 114"
           }],
         "Area": {
           "BRAM_18K": "0",
           "DSP48E": "1",
-          "FF": "1609",
-          "LUT": "1665",
+          "FF": "1674",
+          "LUT": "1672",
           "URAM": "0"
         }
       },
@@ -1159,12 +1159,12 @@
       },
       "myproject": {
         "Latency": {
-          "LatencyBest": "463536",
-          "LatencyAvg": "463536",
-          "LatencyWorst": "463537",
+          "LatencyBest": "467632",
+          "LatencyAvg": "467632",
+          "LatencyWorst": "467633",
           "PipelineIIMin": "12290",
-          "PipelineIIMax": "462850",
-          "PipelineII": "12290 ~ 462850",
+          "PipelineIIMax": "466946",
+          "PipelineII": "12290 ~ 466946",
           "PipelineDepth": "",
           "PipelineType": "dataflow"
         },
@@ -1176,8 +1176,8 @@
         "Area": {
           "BRAM_18K": "47",
           "DSP48E": "16",
-          "FF": "58832",
-          "LUT": "43389",
+          "FF": "58897",
+          "LUT": "43396",
           "URAM": "0"
         }
       },
@@ -1234,12 +1234,12 @@
       },
       "myproject_axi": {
         "Latency": {
-          "LatencyBest": "463538",
-          "LatencyAvg": "463538",
-          "LatencyWorst": "463539",
+          "LatencyBest": "467634",
+          "LatencyAvg": "467634",
+          "LatencyWorst": "467635",
           "PipelineIIMin": "57346",
-          "PipelineIIMax": "462850",
-          "PipelineII": "57346 ~ 462850",
+          "PipelineIIMax": "466946",
+          "PipelineII": "57346 ~ 466946",
           "PipelineDepth": "",
           "PipelineType": "dataflow"
         },
@@ -1251,8 +1251,8 @@
         "Area": {
           "BRAM_18K": "59",
           "DSP48E": "16",
-          "FF": "59911",
-          "LUT": "47992",
+          "FF": "59976",
+          "LUT": "47999",
           "URAM": "0"
         }
       }
@@ -1268,7 +1268,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2024-04-09 23:51:19 UTC",
+    "Time": "2024-04-10 16:34:23 UTC",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

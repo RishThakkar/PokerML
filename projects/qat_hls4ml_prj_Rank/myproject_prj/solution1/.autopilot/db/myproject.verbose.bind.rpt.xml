@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myproject'" level="0">
-<item name = "Date">Tue Apr  9 23:50:21 2024
+<item name = "Date">Wed Apr 10 16:33:26 2024
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">myproject_prj</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">463536, 463537, 2.318 ms, 2.318 ms, 12290, 462850, dataflow</column>
+<column name="">467632, 467633, 2.338 ms, 2.338 ms, 12290, 466946, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
@@ -34,7 +34,7 @@
 <column name="grp_dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_13u_config11_s_fu_1258">dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_13u_config11_s, 985, 986, 4.925 us, 4.930 us, 985, 986, none</column>
 <column name="grp_softmax_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s_fu_1281">softmax_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s, 32, 32, 0.160 us, 0.160 us, 32, 32, none</column>
 <column name="grp_conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_s_fu_1328">conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_s, 2884, 143190, 14.420 us, 0.716 ms, 2884, 143190, none</column>
-<column name="grp_conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_1440">conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s, 12289, 462849, 61.445 us, 2.314 ms, 12289, 462849, none</column>
+<column name="grp_conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_1440">conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s, 12289, 466945, 61.445 us, 2.335 ms, 12289, 466945, none</column>
 <column name="grp_pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s_fu_1532">pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s, 3847, 3847, 19.235 us, 19.235 us, 3847, 3847, none</column>
 <column name="grp_pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s_fu_1576">pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s, 844, 844, 4.220 us, 4.220 us, 844, 844, none</column>
 <column name="grp_relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_s_fu_1620">relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_s, 3847, 3847, 19.235 us, 19.235 us, 3847, 3847, none</column>

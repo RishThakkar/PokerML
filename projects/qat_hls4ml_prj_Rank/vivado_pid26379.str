@@ -1,0 +1,314 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 26379
+License: Customer
+
+Current time: 	Thu Apr 11 15:42:59 UTC 2024
+Time zone: 	Coordinated Universal Time (Etc/UTC)
+
+OS: Ubuntu
+OS Version: 5.4.0-1106-gcp
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :50.0
+Screen size: 1600x829
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 34 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	rht2122
+User home directory: /home/esp2024/rht2122
+User working directory: /home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank
+User country: 	null
+User language: 	en
+User locale: 	en
+
+RDI_BASEROOT: /opt/xilinx/Vivado
+HDI_APPROOT: /opt/xilinx/Vivado/2019.2
+RDI_DATADIR: /opt/xilinx/Vivado/2019.2/data
+RDI_BINDIR: /opt/xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /home/esp2024/rht2122/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /home/esp2024/rht2122/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /home/esp2024/rht2122/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/opt/xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/vivado.log
+Vivado journal file location: 	/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-26379-socp06-ubuntu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /opt/xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/xilinx/Vivado/2019.2
+XILINX_VITIS: 
+XILINX_VIVADO: /opt/xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /opt/xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	196 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 962 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// bB (cr):  Sourcing Tcl script 'design.tcl' : addNotify
+// Tcl Message: source design.tcl 
+// Tcl Message: # set tcldir [file dirname [info script]] # source [file join $tcldir project.tcl] ## variable project_name ## set project_name "myproject" ## variable backend ## set backend "vivadoaccelerator" ## variable part ## set part "xc7z020clg400-1" ## variable clock_period ## set clock_period 5 ## variable clock_uncertainty ## set clock_uncertainty 12.5% ## variable version ## set version "1.0.0" ## set bit_width_hls_output 32 ## set bit_width_hls_input 32 # create_project project_1 ${project_name}_vivado_accelerator -part xc7z020clg400-1 -force 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 993 MB. GUI used memory: 46 MB. Current time: 4/11/24, 3:43:01 PM UTC
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 101 MB (+103811kb) [00:00:16]
+// [Engine Memory]: 1,002 MB (+898910kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  4399 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 1,061 MB (+9836kb) [00:00:19]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:11 . Memory (MB): peak = 6632.516 ; gain = 195.176 ; free physical = 13178 ; free virtual = 33486 
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: # set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project] 
+// Tcl Message: ERROR: [Board 49-71] The board_part definition was not found for tul.com.tw:pynq-z2:part0:1.0. The project's board_part property was not set, but the project's part property was set to xc7z020clg400-1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store. 
+// HOptionPane Error: 'ERROR: [Board 49-71] The board_part definition was not found for tul.com.tw:pynq-z2: part0:1.0. The project's board_part property was not set, but the project's part property was set to xc7z020clg400-1. Valid board_part values can be retrieved with the 'get_ board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store.  (Sourcing Tcl script 'design.tcl')'
+// TclEventType: STOP_PROGRESS_DIALOG
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,091 MB. GUI used memory: 51 MB. Current time: 4/11/24, 3:43:21 PM UTC
+// [GUI Memory]: 110 MB (+3474kb) [00:02:49]
+// WARNING: HEventQueue.dispatchEvent() is taking  2422 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,095 MB. GUI used memory: 51 MB. Current time: 4/11/24, 4:13:23 PM UTC
+// WARNING: HEventQueue.dispatchEvent() is taking  104526 ms.
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at com.jidesoft.plaf.synthetica.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:99)
+// Thread: TimerQueue
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.DelayQueue.take(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.TimerQueue.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Refresh Filesets Swing Worker Thread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.y.construct(SourceFile:2503)
+// 	at ui.frmwork.A.run(SourceFile:199)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Thread-1
+// Thread: SyntheticaCleanerThread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1885)
+// Thread: Update Runs Swing Worker Thread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.F.construct(SourceFile:317)
+// 	at ui.frmwork.A.run(SourceFile:199)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: hw_ila_monitor
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Monitor HEventQueue Thread
+// 	at java.base@9.0.4/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@9.0.4/java.lang.Thread.getAllStackTraces(Unknown Source)
+// 	at ui.utils.d.c.eVM(SourceFile:486)
+// 	at ui.frmwork.b.e.construct(SourceFile:140)
+// 	at ui.frmwork.A.run(SourceFile:199)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.lnf.b.run(SourceFile:100)
+// Thread: AWT-Shutdown
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.AWTAutoShutdown.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Common-Cleaner
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+// Thread: Reference Handler
+// 	at java.base@9.0.4/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference.access$000(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+// Thread: AWT-EventQueue-1
+// 	at java.desktop@9.0.4/sun.java2d.loops.Blit.Blit(Native Method)
+// 	at java.desktop@9.0.4/sun.java2d.pipe.DrawImage.blitSurfaceData(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.pipe.DrawImage.renderImageCopy(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.pipe.DrawImage.copyImage(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.pipe.DrawImage.copyImage(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.pipe.ValidatePipe.copyImage(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.SunGraphics2D.drawImage(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.SunGraphics2D.drawImage(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$PaintManager.paintDoubleBufferedImpl(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$PaintManager.paintDoubleBuffered(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$PaintManager.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.BufferStrategyPaintManager.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.paint(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent._paintImmediately(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.paintImmediately(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$4.run(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$4.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.paintDirtyRegions(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.prePaintDirtyRegions(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.access$1200(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.access$500(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEvent(Unknown Source)
+// 	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.run(Unknown Source)
+// Thread: main
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.c(SourceFile:1058)
+// 	at ui.PlanAhead.jswMain(SourceFile:1101)
+// Thread: Java2D Disposer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.Disposer.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: AWT-XAWT
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.ReentrantLock.lock(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.SunToolkit.awtLock(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.waitForEvents(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.run(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Batik CleanerThread
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: SyntheticaAnimation 70
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Process Messages Thread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.d.h.construct(SourceFile:133)
+// 	at ui.frmwork.A.run(SourceFile:199)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Attach Listener
+// Thread: Finalizer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+// WARNING: HEventQueue.dispatchEvent() is taking  2124 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,079 MB. GUI used memory: 46 MB. Current time: 4/11/24, 4:43:23 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 5:13:23 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 5:43:23 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 6:13:23 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 6:43:24 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 7:13:24 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 7:43:24 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 8:13:24 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 8:43:24 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 9:13:24 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 9:43:24 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 10:13:24 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 10:43:24 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 11:13:24 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/11/24, 11:43:24 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 12:13:24 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 12:43:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 1:13:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 1:43:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 2:13:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 2:43:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 3:13:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 3:43:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 4:13:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 4:43:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 5:13:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 5:43:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 6:13:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 6:43:25 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 7:13:26 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 7:43:26 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 8:13:26 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 8:43:26 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 9:13:26 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 9:43:26 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 10:13:26 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 10:43:26 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 11:13:26 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 11:43:26 AM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 12:13:26 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 12:43:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 1:13:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 1:43:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 2:13:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 2:43:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 3:13:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 3:43:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 4:13:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 4:43:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 5:13:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 5:43:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 6:13:27 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 6:43:28 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 7:13:28 PM UTC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,077 MB. GUI used memory: 46 MB. Current time: 4/12/24, 7:43:28 PM UTC
+// WARNING: HEventQueue.dispatchEvent() is taking  7383 ms.

@@ -1642,7 +1642,7 @@ rewind_header:0  %do_init = phi i1 [ true, %entry ], [ false, %ReuseLoop_end ], 
 
 <Node id="47" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-rewind_header:3  %p_Val2_19_0_i28 = phi i32 [ -2048, %entry ], [ %p_Val2_19_01_i, %ReuseLoop_end ], [ -2048, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
+rewind_header:3  %p_Val2_19_0_i28 = phi i32 [ 8192, %entry ], [ %p_Val2_19_01_i, %ReuseLoop_end ], [ 8192, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
 
 ]]></Node>
 <StgValue><ssdm name="p_Val2_19_0_i28"/></StgValue>
@@ -1657,7 +1657,7 @@ rewind_header:3  %p_Val2_19_0_i28 = phi i32 [ -2048, %entry ], [ %p_Val2_19_01_i
 
 <Node id="48" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-rewind_header:4  %p_Val2_19_1_i26 = phi i32 [ 2048, %entry ], [ %p_Val2_19_13_i, %ReuseLoop_end ], [ 2048, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
+rewind_header:4  %p_Val2_19_1_i26 = phi i32 [ -2048, %entry ], [ %p_Val2_19_13_i, %ReuseLoop_end ], [ -2048, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
 
 ]]></Node>
 <StgValue><ssdm name="p_Val2_19_1_i26"/></StgValue>
@@ -1672,7 +1672,7 @@ rewind_header:4  %p_Val2_19_1_i26 = phi i32 [ 2048, %entry ], [ %p_Val2_19_13_i,
 
 <Node id="49" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-rewind_header:5  %p_Val2_19_2_i24 = phi i32 [ -6144, %entry ], [ %p_Val2_19_25_i, %ReuseLoop_end ], [ -6144, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
+rewind_header:5  %p_Val2_19_2_i24 = phi i32 [ 10240, %entry ], [ %p_Val2_19_25_i, %ReuseLoop_end ], [ 10240, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
 
 ]]></Node>
 <StgValue><ssdm name="p_Val2_19_2_i24"/></StgValue>
@@ -1687,7 +1687,7 @@ rewind_header:5  %p_Val2_19_2_i24 = phi i32 [ -6144, %entry ], [ %p_Val2_19_25_i
 
 <Node id="50" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-rewind_header:6  %p_Val2_19_3_i22 = phi i32 [ 0, %entry ], [ %p_Val2_19_37_i, %ReuseLoop_end ], [ 0, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
+rewind_header:6  %p_Val2_19_3_i22 = phi i32 [ 6144, %entry ], [ %p_Val2_19_37_i, %ReuseLoop_end ], [ 6144, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
 
 ]]></Node>
 <StgValue><ssdm name="p_Val2_19_3_i22"/></StgValue>
@@ -1702,7 +1702,7 @@ rewind_header:6  %p_Val2_19_3_i22 = phi i32 [ 0, %entry ], [ %p_Val2_19_37_i, %R
 
 <Node id="51" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-rewind_header:7  %acc_0_V_020 = phi i32 [ -2048, %entry ], [ %acc_0_V_1, %ReuseLoop_end ], [ -2048, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
+rewind_header:7  %acc_0_V_020 = phi i32 [ 8192, %entry ], [ %acc_0_V_1, %ReuseLoop_end ], [ 8192, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
 
 ]]></Node>
 <StgValue><ssdm name="acc_0_V_020"/></StgValue>
@@ -1717,7 +1717,7 @@ rewind_header:7  %acc_0_V_020 = phi i32 [ -2048, %entry ], [ %acc_0_V_1, %ReuseL
 
 <Node id="52" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-rewind_header:8  %acc_1_V_019 = phi i32 [ 2048, %entry ], [ %acc_1_V_1, %ReuseLoop_end ], [ 2048, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
+rewind_header:8  %acc_1_V_019 = phi i32 [ -2048, %entry ], [ %acc_1_V_1, %ReuseLoop_end ], [ -2048, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
 
 ]]></Node>
 <StgValue><ssdm name="acc_1_V_019"/></StgValue>
@@ -1732,7 +1732,7 @@ rewind_header:8  %acc_1_V_019 = phi i32 [ 2048, %entry ], [ %acc_1_V_1, %ReuseLo
 
 <Node id="53" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-rewind_header:9  %acc_2_V_018 = phi i32 [ -6144, %entry ], [ %acc_2_V_1, %ReuseLoop_end ], [ -6144, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
+rewind_header:9  %acc_2_V_018 = phi i32 [ 10240, %entry ], [ %acc_2_V_1, %ReuseLoop_end ], [ 10240, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
 
 ]]></Node>
 <StgValue><ssdm name="acc_2_V_018"/></StgValue>
@@ -1747,7 +1747,7 @@ rewind_header:9  %acc_2_V_018 = phi i32 [ -6144, %entry ], [ %acc_2_V_1, %ReuseL
 
 <Node id="54" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-rewind_header:10  %acc_3_V_017 = phi i32 [ 0, %entry ], [ %acc_3_V_1, %ReuseLoop_end ], [ 0, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
+rewind_header:10  %acc_3_V_017 = phi i32 [ 6144, %entry ], [ %acc_3_V_1, %ReuseLoop_end ], [ 6144, %"dense_resource<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config6_mult>.exit" ]
 
 ]]></Node>
 <StgValue><ssdm name="acc_3_V_017"/></StgValue>

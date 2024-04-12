@@ -45,10 +45,10 @@ struct reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s : public sc_mod
 
     sc_trace_file* mVcdFile;
 
+    myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_134_18_1_0_U1021;
+    myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_134_18_1_0_U1022;
     myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_134_18_1_0_U1023;
     myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_134_18_1_0_U1024;
-    myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_134_18_1_0_U1025;
-    myproject_axi_mux_134_18_1_0<1,1,18,18,18,18,18,18,18,18,18,18,18,18,18,4,18>* myproject_axi_mux_134_18_1_0_U1026;
     sc_signal< sc_lv<1> > p_Result_31_reg_618;
     sc_signal< bool > ap_block_state1_pp0_stage0_iter0;
     sc_signal< bool > ap_block_state2_pp0_stage0_iter1;

@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 1023
+set id 1021
 set name myproject_axi_mux_134_18_1_0
 set corename simcore_mux
 set op mux
@@ -149,7 +149,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1028 \
+    id 1026 \
     name x_0_V \
     type other \
     dir I \
@@ -164,7 +164,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1029 \
+    id 1027 \
     name x_1_V \
     type other \
     dir I \
@@ -179,7 +179,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1030 \
+    id 1028 \
     name x_2_V \
     type other \
     dir I \
@@ -194,7 +194,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1031 \
+    id 1029 \
     name x_3_V \
     type other \
     dir I \
@@ -209,7 +209,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1032 \
+    id 1030 \
     name x_4_V \
     type other \
     dir I \
@@ -224,7 +224,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1033 \
+    id 1031 \
     name x_5_V \
     type other \
     dir I \
@@ -239,7 +239,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1034 \
+    id 1032 \
     name x_6_V \
     type other \
     dir I \
@@ -254,7 +254,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1035 \
+    id 1033 \
     name x_7_V \
     type other \
     dir I \
@@ -269,7 +269,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1036 \
+    id 1034 \
     name x_8_V \
     type other \
     dir I \
@@ -284,7 +284,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1037 \
+    id 1035 \
     name x_9_V \
     type other \
     dir I \
@@ -299,7 +299,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1038 \
+    id 1036 \
     name x_10_V \
     type other \
     dir I \
@@ -314,7 +314,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1039 \
+    id 1037 \
     name x_11_V \
     type other \
     dir I \
@@ -329,7 +329,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1040 \
+    id 1038 \
     name x_12_V \
     type other \
     dir I \
@@ -344,7 +344,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1041 \
+    id 1039 \
     name x_V_offset \
     type other \
     dir I \

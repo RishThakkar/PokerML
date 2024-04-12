@@ -11,40 +11,52 @@
 <ID>456</ID>
 <InstancesList>
 <Instance>
-<InstName>dense_U0</InstName>
-<ModuleName>dense</ModuleName>
+<InstName>dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config11_U0</InstName>
+<ModuleName>dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config11_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>952</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_dense_wrapper_fu_3722</InstName>
-<ModuleName>dense_wrapper</ModuleName>
+<InstName>grp_dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s_fu_3722</InstName>
+<ModuleName>dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>3722</ID>
 </Instance>
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>conv_2d_cl_U0</InstName>
-<ModuleName>conv_2d_cl</ModuleName>
+<InstName>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_U0</InstName>
+<ModuleName>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>966</ID>
+</Instance>
+<Instance>
+<InstName>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_U0</InstName>
+<ModuleName>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>1010</ID>
+</Instance>
+<Instance>
+<InstName>conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_U0</InstName>
+<ModuleName>conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_s</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>1054</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_compute_output_buffe_fu_265</InstName>
-<ModuleName>compute_output_buffe</ModuleName>
+<InstName>grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config6_s_fu_265</InstName>
+<ModuleName>compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config6_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>265</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_dense_resource_fu_242</InstName>
-<ModuleName>dense_resource</ModuleName>
+<InstName>grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s_fu_242</InstName>
+<ModuleName>dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>242</ID>
 </Instance>
 <Instance>
-<InstName>call_ret1_shift_line_buffer_fu_322</InstName>
-<ModuleName>shift_line_buffer</ModuleName>
+<InstName>call_ret1_shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s_fu_322</InstName>
+<ModuleName>shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>322</ID>
 </Instance>
@@ -53,26 +65,26 @@
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>conv_2d_cl_1_U0</InstName>
-<ModuleName>conv_2d_cl_1</ModuleName>
+<InstName>conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_U0</InstName>
+<ModuleName>conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>1078</ID>
+<ID>1166</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_compute_output_buffe_1_fu_227</InstName>
-<ModuleName>compute_output_buffe_1</ModuleName>
+<InstName>grp_compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s_fu_227</InstName>
+<ModuleName>compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>227</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_dense_resource_1_fu_212</InstName>
-<ModuleName>dense_resource_1</ModuleName>
+<InstName>grp_dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_fu_212</InstName>
+<ModuleName>dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>212</ID>
 </Instance>
 <Instance>
-<InstName>call_ret2_shift_line_buffer_1_fu_274</InstName>
-<ModuleName>shift_line_buffer_1</ModuleName>
+<InstName>call_ret2_shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_fu_274</InstName>
+<ModuleName>shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>274</ID>
 </Instance>
@@ -81,40 +93,28 @@
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>pooling2d_cl_1_U0</InstName>
-<ModuleName>pooling2d_cl_1</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>1170</ID>
-</Instance>
-<Instance>
-<InstName>pooling2d_cl_U0</InstName>
-<ModuleName>pooling2d_cl</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>1214</ID>
-</Instance>
-<Instance>
-<InstName>softmax_U0</InstName>
-<ModuleName>softmax</ModuleName>
+<InstName>softmax_array_array_ap_fixed_16_6_5_3_0_4u_softmax_config12_U0</InstName>
+<ModuleName>softmax_array_array_ap_fixed_16_6_5_3_0_4u_softmax_config12_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>1258</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_softmax_stable_fu_128</InstName>
-<ModuleName>softmax_stable</ModuleName>
+<InstName>grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_4u_softmax_config12_s_fu_128</InstName>
+<ModuleName>softmax_stable_array_array_ap_fixed_16_6_5_3_0_4u_softmax_config12_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>128</ID>
 </Instance>
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>relu_1_U0</InstName>
-<ModuleName>relu_1</ModuleName>
+<InstName>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_U0</InstName>
+<ModuleName>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>1278</ID>
 </Instance>
 <Instance>
-<InstName>relu_U0</InstName>
-<ModuleName>relu</ModuleName>
+<InstName>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config8_U0</InstName>
+<ModuleName>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config8_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>1290</ID>
 </Instance>
@@ -133,8 +133,8 @@
 <ID>726</ID>
 </Instance>
 <Instance>
-<InstName>Block_myproject_axi_U0</InstName>
-<ModuleName>Block_myproject_axi_s</ModuleName>
+<InstName>Block_myproject_axi_exit44_proc_U0</InstName>
+<ModuleName>Block_myproject_axi_exit44_proc</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>739</ID>
 </Instance>
@@ -455,7 +455,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>shift_line_buffer_1</Name>
+<Name>shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -487,7 +487,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -498,7 +498,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -509,7 +509,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -520,7 +520,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -531,7 +531,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -542,7 +542,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -553,7 +553,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_0</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -564,7 +564,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -575,7 +575,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -586,7 +586,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -597,7 +597,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_4</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -608,7 +608,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_5</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -619,7 +619,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_6</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -630,7 +630,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_7</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -641,7 +641,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_8</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -652,7 +652,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_9</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -663,7 +663,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_10</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -674,7 +674,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_11</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -685,7 +685,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_12</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -696,7 +696,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_13</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -707,7 +707,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_14</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -718,7 +718,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_15</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -729,7 +729,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_16</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -740,7 +740,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_17</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -751,7 +751,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_18</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -762,7 +762,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_19</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -773,7 +773,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_20</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -784,7 +784,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_21</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -795,7 +795,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_22</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -806,7 +806,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_23</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -817,7 +817,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_24</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -828,7 +828,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_25</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -839,7 +839,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_26</name>
-<Object>shift_line_buffer.1</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 3u&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1082,7 +1082,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>dense_resource_1</Name>
+<Name>dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -1121,7 +1121,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>dense_resource.1</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1132,7 +1132,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>dense_resource.1</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1143,7 +1143,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>dense_resource.1</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1154,7 +1154,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>dense_resource.1</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1165,7 +1165,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>dense_resource.1</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1176,7 +1176,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>dense_resource.1</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1187,7 +1187,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_0</name>
-<Object>dense_resource.1</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1198,7 +1198,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>dense_resource.1</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1209,7 +1209,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>dense_resource.1</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1220,7 +1220,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>dense_resource.1</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1529,7 +1529,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>compute_output_buffe_1</Name>
+<Name>compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -1559,7 +1559,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>compute_output_buffe.1</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1570,7 +1570,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>compute_output_buffe.1</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1581,7 +1581,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>compute_output_buffe.1</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1592,7 +1592,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>compute_output_buffe.1</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1603,7 +1603,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>compute_output_buffe.1</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1614,7 +1614,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>compute_output_buffe.1</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1791,7 +1791,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>conv_2d_cl_1</Name>
+<Name>conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -1835,7 +1835,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>conv_2d_cl.1</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,3u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1846,7 +1846,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>conv_2d_cl.1</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,3u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1857,7 +1857,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>conv_2d_cl.1</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,3u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1868,7 +1868,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_full_n</name>
-<Object>conv_2d_cl.1</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,3u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1879,7 +1879,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>conv_2d_cl.1</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,3u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1890,7 +1890,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>conv_2d_cl.1</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,3u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1901,7 +1901,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>conv_2d_cl.1</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,3u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1912,7 +1912,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>conv_2d_cl.1</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,3u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1923,7 +1923,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_out</name>
-<Object>conv_2d_cl.1</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,3u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1934,7 +1934,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_write</name>
-<Object>conv_2d_cl.1</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,3u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2177,7 +2177,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>relu_1</Name>
+<Name>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -2216,7 +2216,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>relu.1</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2227,7 +2227,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>relu.1</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2238,7 +2238,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>relu.1</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2249,7 +2249,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_full_n</name>
-<Object>relu.1</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2260,7 +2260,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>relu.1</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2271,7 +2271,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>relu.1</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2282,7 +2282,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>relu.1</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2293,7 +2293,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>relu.1</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2304,7 +2304,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_out</name>
-<Object>relu.1</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2315,7 +2315,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_write</name>
-<Object>relu.1</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2591,7 +2591,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>pooling2d_cl_1</Name>
+<Name>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -2630,7 +2630,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>pooling2d_cl.1</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config5&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2641,7 +2641,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>pooling2d_cl.1</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config5&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2652,7 +2652,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>pooling2d_cl.1</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config5&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2663,7 +2663,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_full_n</name>
-<Object>pooling2d_cl.1</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config5&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2674,7 +2674,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>pooling2d_cl.1</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config5&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2685,7 +2685,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>pooling2d_cl.1</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config5&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2696,7 +2696,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>pooling2d_cl.1</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config5&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2707,7 +2707,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>pooling2d_cl.1</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config5&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2718,7 +2718,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_out</name>
-<Object>pooling2d_cl.1</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config5&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2729,7 +2729,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_write</name>
-<Object>pooling2d_cl.1</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config5&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3005,7 +3005,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>shift_line_buffer</Name>
+<Name>shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -3037,7 +3037,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3048,7 +3048,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3059,7 +3059,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3070,7 +3070,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3081,7 +3081,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3092,7 +3092,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3103,7 +3103,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_0</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3114,7 +3114,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3125,7 +3125,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3136,7 +3136,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3147,7 +3147,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_4</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3158,7 +3158,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_5</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3169,7 +3169,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_6</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3180,7 +3180,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_7</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3191,7 +3191,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_8</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3202,7 +3202,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_9</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3213,7 +3213,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_10</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3224,7 +3224,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_11</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3235,7 +3235,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_12</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3246,7 +3246,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_13</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3257,7 +3257,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_14</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3268,7 +3268,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_15</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3279,7 +3279,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_16</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3290,7 +3290,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_17</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3301,7 +3301,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_18</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3312,7 +3312,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_19</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3323,7 +3323,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_20</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3334,7 +3334,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_21</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3345,7 +3345,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_22</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3356,7 +3356,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_23</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3367,7 +3367,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_24</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3378,7 +3378,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_25</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3389,7 +3389,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_26</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3400,7 +3400,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_27</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3411,7 +3411,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_28</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3422,7 +3422,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_29</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3433,7 +3433,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_30</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3444,7 +3444,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_31</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3455,7 +3455,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_32</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3466,7 +3466,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_33</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3477,7 +3477,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_34</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3488,7 +3488,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_35</name>
-<Object>shift_line_buffer</Object>
+<Object>shift_line_buffer&lt;array&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, 4u&gt;, config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3808,7 +3808,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>dense_resource</Name>
+<Name>dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -3847,7 +3847,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>dense_resource</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config6_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3858,7 +3858,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>dense_resource</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config6_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3869,7 +3869,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>dense_resource</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config6_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3880,7 +3880,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>dense_resource</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config6_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3891,7 +3891,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>dense_resource</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config6_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3902,7 +3902,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>dense_resource</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config6_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3913,7 +3913,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_0</name>
-<Object>dense_resource</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config6_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3924,7 +3924,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>dense_resource</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config6_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3935,7 +3935,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>dense_resource</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config6_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3946,7 +3946,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>dense_resource</Object>
+<Object>dense_resource&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config6_mult&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4354,7 +4354,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>compute_output_buffe</Name>
+<Name>compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config6_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -4384,7 +4384,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>compute_output_buffe</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4395,7 +4395,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>compute_output_buffe</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4406,7 +4406,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>compute_output_buffe</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4417,7 +4417,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>compute_output_buffe</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4428,7 +4428,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>compute_output_buffe</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4439,7 +4439,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>compute_output_buffe</Object>
+<Object>compute_output_buffer_2d&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4627,7 +4627,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>conv_2d_cl</Name>
+<Name>conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -4671,7 +4671,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>conv_2d_cl</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4682,7 +4682,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>conv_2d_cl</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4693,7 +4693,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>conv_2d_cl</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4704,7 +4704,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_full_n</name>
-<Object>conv_2d_cl</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4715,7 +4715,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>conv_2d_cl</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4726,7 +4726,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>conv_2d_cl</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4737,7 +4737,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>conv_2d_cl</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4748,7 +4748,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>conv_2d_cl</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4759,7 +4759,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_out</name>
-<Object>conv_2d_cl</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4770,7 +4770,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_write</name>
-<Object>conv_2d_cl</Object>
+<Object>conv_2d_cl&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5046,7 +5046,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>relu</Name>
+<Name>relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config8_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -5085,7 +5085,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>relu</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config8&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5096,7 +5096,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>relu</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config8&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5107,7 +5107,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>relu</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config8&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5118,7 +5118,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_full_n</name>
-<Object>relu</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config8&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5129,7 +5129,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>relu</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config8&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5140,7 +5140,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>relu</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config8&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5151,7 +5151,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>relu</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config8&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5162,7 +5162,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>relu</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config8&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5173,7 +5173,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_out</name>
-<Object>relu</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config8&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5184,7 +5184,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_write</name>
-<Object>relu</Object>
+<Object>relu&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_ufixed&lt;6,0,4,0,0&gt;,4u&gt;,relu_config8&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5460,7 +5460,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>pooling2d_cl</Name>
+<Name>pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -5499,7 +5499,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>pooling2d_cl</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5510,7 +5510,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>pooling2d_cl</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5521,7 +5521,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>pooling2d_cl</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5532,7 +5532,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_full_n</name>
-<Object>pooling2d_cl</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5543,7 +5543,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>pooling2d_cl</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5554,7 +5554,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>pooling2d_cl</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5565,7 +5565,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>pooling2d_cl</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5576,7 +5576,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>pooling2d_cl</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5587,7 +5587,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_out</name>
-<Object>pooling2d_cl</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5598,7 +5598,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_write</name>
-<Object>pooling2d_cl</Object>
+<Object>pooling2d_cl&lt;array&lt;ap_ufixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5874,46 +5874,46 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>dense_wrapper</Name>
+<Name>dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.284</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.770</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>409</Best-caseLatency>
-<Average-caseLatency>409</Average-caseLatency>
-<Worst-caseLatency>410</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.045 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.045 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.050 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>392</PipelineInitiationInterval>
+<Best-caseLatency>197</Best-caseLatency>
+<Average-caseLatency>197</Average-caseLatency>
+<Worst-caseLatency>198</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.985 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.985 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.990 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>196</PipelineInitiationInterval>
 <PipelineType>loop rewind(delay=0 initiation interval(s))</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <ReuseLoop>
 <Name>ReuseLoop</Name>
-<TripCount>392</TripCount>
-<Latency>409</Latency>
+<TripCount>196</TripCount>
+<Latency>197</Latency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>19</PipelineDepth>
+<PipelineDepth>3</PipelineDepth>
 </ReuseLoop>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>2</BRAM_18K>
-<DSP48E>8</DSP48E>
-<FF>68566</FF>
-<LUT>76786</LUT>
+<BRAM_18K>3</BRAM_18K>
+<DSP48E>16</DSP48E>
+<FF>25735</FF>
+<LUT>46694</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>dense_wrapper</Object>
+<Object>dense_wrapper&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5924,7 +5924,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>dense_wrapper</Object>
+<Object>dense_wrapper&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5935,7 +5935,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>dense_wrapper</Object>
+<Object>dense_wrapper&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5946,7 +5946,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>dense_wrapper</Object>
+<Object>dense_wrapper&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5957,7 +5957,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>dense_wrapper</Object>
+<Object>dense_wrapper&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5968,7 +5968,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>dense_wrapper</Object>
+<Object>dense_wrapper&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5979,7 +5979,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_0</name>
-<Object>dense_wrapper</Object>
+<Object>dense_wrapper&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5990,7 +5990,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>dense_wrapper</Object>
+<Object>dense_wrapper&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6001,7 +6001,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>dense_wrapper</Object>
+<Object>dense_wrapper&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6012,7 +6012,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>dense_wrapper</Object>
+<Object>dense_wrapper&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -14648,21 +14648,21 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>dense</Name>
+<Name>dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config11_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.284</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.770</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>608</Best-caseLatency>
-<Average-caseLatency>608</Average-caseLatency>
-<Worst-caseLatency>609</Worst-caseLatency>
-<Best-caseRealTimeLatency>3.040 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>3.040 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>3.045 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>608 ~ 609</PipelineInitiationInterval>
+<Best-caseLatency>396</Best-caseLatency>
+<Average-caseLatency>396</Average-caseLatency>
+<Worst-caseLatency>397</Worst-caseLatency>
+<Best-caseRealTimeLatency>1.980 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.980 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.985 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>396 ~ 397</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -14677,17 +14677,17 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>2</BRAM_18K>
-<DSP48E>8</DSP48E>
-<FF>81136</FF>
-<LUT>76974</LUT>
+<BRAM_18K>3</BRAM_18K>
+<DSP48E>16</DSP48E>
+<FF>38305</FF>
+<LUT>46882</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>dense</Object>
+<Object>dense&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -14698,7 +14698,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>dense</Object>
+<Object>dense&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -14709,7 +14709,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>dense</Object>
+<Object>dense&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -14720,7 +14720,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_full_n</name>
-<Object>dense</Object>
+<Object>dense&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -14731,7 +14731,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>dense</Object>
+<Object>dense&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -14742,7 +14742,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>dense</Object>
+<Object>dense&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -14753,7 +14753,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>dense</Object>
+<Object>dense&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -14764,7 +14764,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>dense</Object>
+<Object>dense&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -14775,7 +14775,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_out</name>
-<Object>dense</Object>
+<Object>dense&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -14786,7 +14786,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>start_write</name>
-<Object>dense</Object>
+<Object>dense&lt;array&lt;ap_fixed,4u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,config11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15062,7 +15062,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>softmax_stable</Name>
+<Name>softmax_stable_array_array_ap_fixed_16_6_5_3_0_4u_softmax_config12_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -15094,7 +15094,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15105,7 +15105,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15116,7 +15116,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15127,7 +15127,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15138,7 +15138,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15149,7 +15149,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15160,7 +15160,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>data_V_data_0_V_blk_n</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15171,7 +15171,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>data_V_data_1_V_blk_n</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15182,7 +15182,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>data_V_data_2_V_blk_n</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15193,7 +15193,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>data_V_data_3_V_blk_n</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15204,7 +15204,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>res_V_data_0_V_blk_n</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15215,7 +15215,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>res_V_data_1_V_blk_n</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15226,7 +15226,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>res_V_data_2_V_blk_n</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15237,7 +15237,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>res_V_data_3_V_blk_n</name>
-<Object>softmax_stable</Object>
+<Object>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15513,7 +15513,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>softmax</Name>
+<Name>softmax_array_array_ap_fixed_16_6_5_3_0_4u_softmax_config12_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -15543,7 +15543,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>softmax</Object>
+<Object>softmax&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15554,7 +15554,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>softmax</Object>
+<Object>softmax&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15565,7 +15565,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>softmax</Object>
+<Object>softmax&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15576,7 +15576,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>softmax</Object>
+<Object>softmax&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15587,7 +15587,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>softmax</Object>
+<Object>softmax&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15598,7 +15598,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>softmax</Object>
+<Object>softmax&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15609,7 +15609,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>softmax</Object>
+<Object>softmax&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,4u&gt;,softmax_config12&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -15893,12 +15893,12 @@
 <EstimatedClockPeriod>4.355</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>463159</Best-caseLatency>
-<Average-caseLatency>463159</Average-caseLatency>
-<Worst-caseLatency>463160</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.316 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.316 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.316 ms</Worst-caseRealTimeLatency>
+<Best-caseLatency>462947</Best-caseLatency>
+<Average-caseLatency>462947</Average-caseLatency>
+<Worst-caseLatency>462948</Worst-caseLatency>
+<Best-caseRealTimeLatency>2.315 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>2.315 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.315 ms</Worst-caseRealTimeLatency>
 <DataflowPipelineThroughput>
 <range>
 <min>12290</min>
@@ -15911,10 +15911,10 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>44</BRAM_18K>
-<DSP48E>11</DSP48E>
-<FF>87722</FF>
-<LUT>87266</LUT>
+<BRAM_18K>45</BRAM_18K>
+<DSP48E>19</DSP48E>
+<FF>44891</FF>
+<LUT>57174</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
@@ -16263,7 +16263,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>Block_myproject_axi_s</Name>
+<Name>Block_myproject_axi_exit44_proc</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -16293,7 +16293,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>Block_myproject_axi_</Object>
+<Object>Block_myproject_axi_.exit44_proc</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -16304,7 +16304,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>Block_myproject_axi_</Object>
+<Object>Block_myproject_axi_.exit44_proc</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -16315,7 +16315,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>Block_myproject_axi_</Object>
+<Object>Block_myproject_axi_.exit44_proc</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -16326,7 +16326,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>Block_myproject_axi_</Object>
+<Object>Block_myproject_axi_.exit44_proc</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -16337,7 +16337,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_continue</name>
-<Object>Block_myproject_axi_</Object>
+<Object>Block_myproject_axi_.exit44_proc</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -16348,7 +16348,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>Block_myproject_axi_</Object>
+<Object>Block_myproject_axi_.exit44_proc</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -16359,7 +16359,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>Block_myproject_axi_</Object>
+<Object>Block_myproject_axi_.exit44_proc</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -16815,12 +16815,12 @@
 <EstimatedClockPeriod>4.355</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>463161</Best-caseLatency>
-<Average-caseLatency>463161</Average-caseLatency>
-<Worst-caseLatency>463162</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.316 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.316 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.316 ms</Worst-caseRealTimeLatency>
+<Best-caseLatency>462949</Best-caseLatency>
+<Average-caseLatency>462949</Average-caseLatency>
+<Worst-caseLatency>462950</Worst-caseLatency>
+<Best-caseRealTimeLatency>2.315 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>2.315 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.315 ms</Worst-caseRealTimeLatency>
 <DataflowPipelineThroughput>
 <range>
 <min>57346</min>
@@ -16833,10 +16833,10 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>56</BRAM_18K>
-<DSP48E>11</DSP48E>
-<FF>88556</FF>
-<LUT>91037</LUT>
+<BRAM_18K>57</BRAM_18K>
+<DSP48E>19</DSP48E>
+<FF>45725</FF>
+<LUT>60945</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>

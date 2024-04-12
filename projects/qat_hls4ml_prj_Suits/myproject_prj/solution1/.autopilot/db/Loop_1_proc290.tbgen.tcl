@@ -109,7 +109,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "in_data", "Type" : "Axis", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "in_r_TDATA_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_fpebkb_U1", "Parent" : "0"},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myproject_axi_fpext_32ns_64_2_1_U1", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_last_V_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_in_data_U", "Parent" : "0"}]}
 

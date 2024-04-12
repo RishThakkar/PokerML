@@ -361,7 +361,7 @@ myproject_axi_mux_42_32_1_1 #(
     .din3_WIDTH( 32 ),
     .din4_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-myproject_axi_mux_42_32_1_1_U86(
+myproject_axi_mux_42_32_1_1_U84(
     .din0(tmp_31_fu_782_p1),
     .din1(tmp_31_fu_782_p2),
     .din2(tmp_31_fu_782_p3),
@@ -379,7 +379,7 @@ myproject_axi_mux_42_32_1_1 #(
     .din3_WIDTH( 32 ),
     .din4_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-myproject_axi_mux_42_32_1_1_U87(
+myproject_axi_mux_42_32_1_1_U85(
     .din0(tmp_32_fu_853_p1),
     .din1(tmp_32_fu_853_p2),
     .din2(tmp_32_fu_853_p3),
@@ -397,7 +397,7 @@ myproject_axi_mux_42_32_1_1 #(
     .din3_WIDTH( 32 ),
     .din4_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-myproject_axi_mux_42_32_1_1_U88(
+myproject_axi_mux_42_32_1_1_U86(
     .din0(tmp_33_fu_924_p1),
     .din1(tmp_33_fu_924_p2),
     .din2(tmp_33_fu_924_p3),
@@ -415,7 +415,7 @@ myproject_axi_mux_42_32_1_1 #(
     .din3_WIDTH( 32 ),
     .din4_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-myproject_axi_mux_42_32_1_1_U89(
+myproject_axi_mux_42_32_1_1_U87(
     .din0(tmp_34_fu_995_p1),
     .din1(tmp_34_fu_995_p2),
     .din2(tmp_34_fu_995_p3),

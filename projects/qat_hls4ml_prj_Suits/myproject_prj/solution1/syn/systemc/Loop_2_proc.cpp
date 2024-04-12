@@ -49,13 +49,13 @@ const sc_lv<32> Loop_2_proc::ap_const_lv32_17 = "10111";
 const bool Loop_2_proc::ap_const_boolean_1 = true;
 
 Loop_2_proc::Loop_2_proc(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    myproject_axi_muxKfY_U1075 = new myproject_axi_muxKfY<1,1,16,16,16,16,2,16>("myproject_axi_muxKfY_U1075");
-    myproject_axi_muxKfY_U1075->din0(tmp_data_V_0);
-    myproject_axi_muxKfY_U1075->din1(tmp_data_V_1);
-    myproject_axi_muxKfY_U1075->din2(tmp_data_V_2);
-    myproject_axi_muxKfY_U1075->din3(tmp_data_V_3);
-    myproject_axi_muxKfY_U1075->din4(tmp_V_3_fu_184_p5);
-    myproject_axi_muxKfY_U1075->dout(tmp_V_3_fu_184_p6);
+    myproject_axi_mux_42_16_1_1_U1085 = new myproject_axi_mux_42_16_1_1<1,1,16,16,16,16,2,16>("myproject_axi_mux_42_16_1_1_U1085");
+    myproject_axi_mux_42_16_1_1_U1085->din0(tmp_data_V_0);
+    myproject_axi_mux_42_16_1_1_U1085->din1(tmp_data_V_1);
+    myproject_axi_mux_42_16_1_1_U1085->din2(tmp_data_V_2);
+    myproject_axi_mux_42_16_1_1_U1085->din3(tmp_data_V_3);
+    myproject_axi_mux_42_16_1_1_U1085->din4(tmp_V_3_fu_184_p5);
+    myproject_axi_mux_42_16_1_1_U1085->dout(tmp_V_3_fu_184_p6);
     regslice_both_out_data_U = new regslice_both<32>("regslice_both_out_data_U");
     regslice_both_out_data_U->ap_clk(ap_clk);
     regslice_both_out_data_U->ap_rst(ap_rst);
@@ -246,7 +246,7 @@ Loop_2_proc::Loop_2_proc(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
     SC_METHOD(thread_p_Result_20_fu_477_p5);
     sensitive << ( m_6_fu_439_p1 );
-    sensitive << ( tmp_62_i_fu_470_p3 );
+    sensitive << ( tmp_70_i_fu_470_p3 );
 
     SC_METHOD(thread_p_Result_s_fu_226_p4);
     sensitive << ( tmp_V_4_fu_218_p3 );
@@ -276,7 +276,7 @@ Loop_2_proc::Loop_2_proc(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_tmp_58_fu_443_p3);
     sensitive << ( m_2_fu_423_p2 );
 
-    SC_METHOD(thread_tmp_62_i_fu_470_p3);
+    SC_METHOD(thread_tmp_70_i_fu_470_p3);
     sensitive << ( p_Result_18_reg_528 );
     sensitive << ( add_ln964_fu_464_p2 );
 
@@ -437,7 +437,7 @@ Loop_2_proc::Loop_2_proc(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, select_ln964_fu_451_p3, "select_ln964_fu_451_p3");
     sc_trace(mVcdFile, add_ln964_fu_464_p2, "add_ln964_fu_464_p2");
     sc_trace(mVcdFile, m_6_fu_439_p1, "m_6_fu_439_p1");
-    sc_trace(mVcdFile, tmp_62_i_fu_470_p3, "tmp_62_i_fu_470_p3");
+    sc_trace(mVcdFile, tmp_70_i_fu_470_p3, "tmp_70_i_fu_470_p3");
     sc_trace(mVcdFile, p_Result_20_fu_477_p5, "p_Result_20_fu_477_p5");
     sc_trace(mVcdFile, trunc_ln738_fu_489_p1, "trunc_ln738_fu_489_p1");
     sc_trace(mVcdFile, bitcast_ln739_fu_493_p1, "bitcast_ln739_fu_493_p1");
@@ -458,7 +458,7 @@ Loop_2_proc::~Loop_2_proc() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
-    delete myproject_axi_muxKfY_U1075;
+    delete myproject_axi_mux_42_16_1_1_U1085;
     delete regslice_both_out_data_U;
     delete regslice_both_out_last_V_U;
 }
@@ -701,7 +701,7 @@ void Loop_2_proc::thread_p_Result_19_fu_236_p3() {
 }
 
 void Loop_2_proc::thread_p_Result_20_fu_477_p5() {
-    p_Result_20_fu_477_p5 = esl_partset<64,64,9,32,32>(m_6_fu_439_p1.read(), tmp_62_i_fu_470_p3.read(), ap_const_lv32_17, ap_const_lv32_1F);
+    p_Result_20_fu_477_p5 = esl_partset<64,64,9,32,32>(m_6_fu_439_p1.read(), tmp_70_i_fu_470_p3.read(), ap_const_lv32_17, ap_const_lv32_1F);
 }
 
 void Loop_2_proc::thread_p_Result_s_fu_226_p4() {
@@ -740,8 +740,8 @@ void Loop_2_proc::thread_tmp_58_fu_443_p3() {
     tmp_58_fu_443_p3 = m_2_fu_423_p2.read().range(25, 25);
 }
 
-void Loop_2_proc::thread_tmp_62_i_fu_470_p3() {
-    tmp_62_i_fu_470_p3 = esl_concat<1,8>(p_Result_18_reg_528.read(), add_ln964_fu_464_p2.read());
+void Loop_2_proc::thread_tmp_70_i_fu_470_p3() {
+    tmp_70_i_fu_470_p3 = esl_concat<1,8>(p_Result_18_reg_528.read(), add_ln964_fu_464_p2.read());
 }
 
 void Loop_2_proc::thread_tmp_V_3_fu_184_p5() {

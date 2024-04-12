@@ -67,10 +67,10 @@ struct pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s : 
     pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s_line_btde* line_buffer_Array_V_3_0_1_U;
     pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s_line_btde* line_buffer_Array_V_3_0_2_U;
     pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s_line_btde* line_buffer_Array_V_3_0_3_U;
+    myproject_axi_mux_42_32_1_1<1,1,32,32,32,32,2,32>* myproject_axi_mux_42_32_1_1_U191;
+    myproject_axi_mux_42_32_1_1<1,1,32,32,32,32,2,32>* myproject_axi_mux_42_32_1_1_U192;
     myproject_axi_mux_42_32_1_1<1,1,32,32,32,32,2,32>* myproject_axi_mux_42_32_1_1_U193;
     myproject_axi_mux_42_32_1_1<1,1,32,32,32,32,2,32>* myproject_axi_mux_42_32_1_1_U194;
-    myproject_axi_mux_42_32_1_1<1,1,32,32,32,32,2,32>* myproject_axi_mux_42_32_1_1_U195;
-    myproject_axi_mux_42_32_1_1<1,1,32,32,32,32,2,32>* myproject_axi_mux_42_32_1_1_U196;
     sc_signal< sc_logic > real_start;
     sc_signal< sc_logic > start_once_reg;
     sc_signal< sc_logic > ap_done_reg;

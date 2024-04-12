@@ -223,7 +223,7 @@ architecture behav of Loop_2_proc is
 
 
 begin
-    myproject_axi_mux_134_16_1_1_U1187 : component myproject_axi_mux_134_16_1_1
+    myproject_axi_mux_134_16_1_1_U1185 : component myproject_axi_mux_134_16_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

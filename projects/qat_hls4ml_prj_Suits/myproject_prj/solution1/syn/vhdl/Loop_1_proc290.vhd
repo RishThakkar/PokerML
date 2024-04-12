@@ -177,7 +177,7 @@ architecture behav of Loop_1_proc290 is
     signal or_ln603_2_fu_562_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal select_ln603_2_fu_554_p3 : STD_LOGIC_VECTOR (15 downto 0);
     signal shl_ln_fu_576_p3 : STD_LOGIC_VECTOR (5 downto 0);
-    signal empty_162_fu_584_p2 : STD_LOGIC_VECTOR (5 downto 0);
+    signal empty_164_fu_584_p2 : STD_LOGIC_VECTOR (5 downto 0);
     signal icmp_ln203_fu_590_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal sub_ln203_fu_599_p2 : STD_LOGIC_VECTOR (5 downto 0);
     signal select_ln203_fu_605_p3 : STD_LOGIC_VECTOR (5 downto 0);
@@ -209,7 +209,7 @@ architecture behav of Loop_1_proc290 is
     signal regslice_both_in_data_U_vld_out : STD_LOGIC;
     signal regslice_both_in_data_U_ack_in : STD_LOGIC;
 
-    component myproject_axi_fpebkb IS
+    component myproject_axi_fpext_32ns_64_2_1 IS
     generic (
         ID : INTEGER;
         NUM_STAGE : INTEGER;
@@ -242,7 +242,7 @@ architecture behav of Loop_1_proc290 is
 
 
 begin
-    myproject_axi_fpebkb_U1 : component myproject_axi_fpebkb
+    myproject_axi_fpext_32ns_64_2_1_U1 : component myproject_axi_fpext_32ns_64_2_1
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -501,7 +501,7 @@ begin
     ashr_ln586_fu_427_p2 <= std_logic_vector(shift_right(signed(man_V_2_fu_354_p3),to_integer(unsigned('0' & zext_ln586_fu_423_p1(31-1 downto 0)))));
     bitcast_ln696_fu_437_p1 <= in_data_tmp_reg_747;
     ctype_data_V_1_fu_707_p2 <= (and_ln203_2_fu_701_p2 or and_ln203_1_fu_695_p2);
-    empty_162_fu_584_p2 <= (shl_ln_fu_576_p3 or ap_const_lv6_F);
+    empty_164_fu_584_p2 <= (shl_ln_fu_576_p3 or ap_const_lv6_F);
     exp_tmp_V_fu_307_p4 <= ireg_V_fu_291_p1(62 downto 52);
 
     grp_fu_206_ce_assign_proc : process(ap_CS_fsm_state3, icmp_ln20_fu_232_p2, io_acc_block_signal_op40, ap_CS_fsm_state4, in_r_TVALID_int)
@@ -515,7 +515,7 @@ begin
 
     i_fu_226_p2 <= std_logic_vector(unsigned(i_0_i_reg_183) + unsigned(ap_const_lv13_1));
     icmp_ln17_fu_220_p2 <= "1" when (i_0_i_reg_183 = ap_const_lv13_1000) else "0";
-    icmp_ln203_fu_590_p2 <= "1" when (unsigned(shl_ln_fu_576_p3) > unsigned(empty_162_fu_584_p2)) else "0";
+    icmp_ln203_fu_590_p2 <= "1" when (unsigned(shl_ln_fu_576_p3) > unsigned(empty_164_fu_584_p2)) else "0";
     icmp_ln20_fu_232_p2 <= "1" when (j_0_i_reg_194 = ap_const_lv2_3) else "0";
     icmp_ln571_fu_325_p2 <= "1" when (trunc_ln556_fu_295_p1 = ap_const_lv63_0) else "0";
     icmp_ln581_fu_361_p2 <= "1" when (signed(F2_reg_769) > signed(ap_const_lv12_A)) else "0";
@@ -651,7 +651,7 @@ begin
     end process;
 
     select_ln203_1_fu_613_p3 <= 
-        empty_162_fu_584_p2 when (icmp_ln203_fu_590_p2(0) = '1') else 
+        empty_164_fu_584_p2 when (icmp_ln203_fu_590_p2(0) = '1') else 
         shl_ln_fu_576_p3;
     select_ln203_2_fu_621_p3 <= 
         sub_ln203_fu_599_p2 when (icmp_ln203_fu_590_p2(0) = '1') else 
@@ -661,7 +661,7 @@ begin
         shl_ln203_fu_647_p2;
     select_ln203_fu_605_p3 <= 
         shl_ln_fu_576_p3 when (icmp_ln203_fu_590_p2(0) = '1') else 
-        empty_162_fu_584_p2;
+        empty_164_fu_584_p2;
     select_ln588_fu_448_p3 <= 
         ap_const_lv16_FFFF when (tmp_61_fu_440_p3(0) = '1') else 
         ap_const_lv16_0;

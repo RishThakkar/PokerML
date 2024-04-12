@@ -835,7 +835,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>tmp.V</originalName>
-              <rtlName>myproject_axi_muxKfY_U1075</rtlName>
+              <rtlName>myproject_axi_mux_42_16_1_1_U1085</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -3075,7 +3075,7 @@
             <Obj>
               <type>0</type>
               <id>71</id>
-              <name>tmp_62_i</name>
+              <name>tmp_70_i</name>
               <fileName>firmware/myproject_axi.cpp</fileName>
               <fileDirectory>..</fileDirectory>
               <lineNumber>33</lineNumber>
@@ -3099,7 +3099,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_62_i_fu_470_p3</rtlName>
+              <rtlName>tmp_70_i_fu_470_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>9</bitwidth>
@@ -5687,7 +5687,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>myproject_axi_muxKfY_U1075 (myproject_axi_muxKfY)</first>
+          <first>myproject_axi_mux_42_16_1_1_U1085 (myproject_axi_mux_42_16_1_1)</first>
           <second class_id="39" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -6827,7 +6827,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>myproject_axi_muxKfY_U1075</first>
+          <first>myproject_axi_mux_42_16_1_1_U1085</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -6852,7 +6852,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>myproject_axi_muxKfY_U1075 (myproject_axi_muxKfY)</first>
+          <first>myproject_axi_mux_42_16_1_1_U1085 (myproject_axi_mux_42_16_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8471,7 +8471,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_62_i_fu_470</first>
+        <first>tmp_70_i_fu_470</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

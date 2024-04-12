@@ -3,7 +3,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_1 is
+entity myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_0 is
 port (
     a: in std_logic_vector(6 - 1 downto 0);
     b: in std_logic_vector(16 - 1 downto 0);
@@ -11,7 +11,7 @@ port (
 
 end entity;
 
-architecture behav of myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_1 is
+architecture behav of myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_0 is
     signal a_cvt: signed(6 - 1 downto 0);
     signal b_cvt: signed(16 - 1 downto 0);
     signal p_cvt: signed(21 - 1 downto 0);
@@ -42,7 +42,7 @@ entity myproject_axi_mul_mul_6s_16s_21_1_1 is
 end entity;
 
 architecture arch of myproject_axi_mul_mul_6s_16s_21_1_1 is
-    component myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_1 is
+    component myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_0 is
         port (
             a : IN STD_LOGIC_VECTOR;
             b : IN STD_LOGIC_VECTOR;
@@ -52,7 +52,7 @@ architecture arch of myproject_axi_mul_mul_6s_16s_21_1_1 is
 
 
 begin
-    myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_1_U :  component myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_1
+    myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_0_U :  component myproject_axi_mul_mul_6s_16s_21_1_1_DSP48_0
     port map (
         a => din0,
         b => din1,

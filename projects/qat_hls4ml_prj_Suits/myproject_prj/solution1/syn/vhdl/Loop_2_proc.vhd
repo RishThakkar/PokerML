@@ -146,7 +146,7 @@ architecture behav of Loop_2_proc is
     signal select_ln964_fu_451_p3 : STD_LOGIC_VECTOR (7 downto 0);
     signal add_ln964_fu_464_p2 : STD_LOGIC_VECTOR (7 downto 0);
     signal m_6_fu_439_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal tmp_62_i_fu_470_p3 : STD_LOGIC_VECTOR (8 downto 0);
+    signal tmp_70_i_fu_470_p3 : STD_LOGIC_VECTOR (8 downto 0);
     signal p_Result_20_fu_477_p5 : STD_LOGIC_VECTOR (63 downto 0);
     signal trunc_ln738_fu_489_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal bitcast_ln739_fu_493_p1 : STD_LOGIC_VECTOR (31 downto 0);
@@ -159,7 +159,7 @@ architecture behav of Loop_2_proc is
     signal regslice_both_out_last_V_U_ack_in_dummy : STD_LOGIC;
     signal regslice_both_out_last_V_U_vld_out : STD_LOGIC;
 
-    component myproject_axi_muxKfY IS
+    component myproject_axi_mux_42_16_1_1 IS
     generic (
         ID : INTEGER;
         NUM_STAGE : INTEGER;
@@ -197,7 +197,7 @@ architecture behav of Loop_2_proc is
 
 
 begin
-    myproject_axi_muxKfY_U1075 : component myproject_axi_muxKfY
+    myproject_axi_mux_42_16_1_1_U1085 : component myproject_axi_mux_42_16_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -460,7 +460,7 @@ begin
     p_Result_16_fu_344_p3 <= tmp_V_4_reg_533(to_integer(unsigned(add_ln949_fu_338_p2)) downto to_integer(unsigned(add_ln949_fu_338_p2))) when (to_integer(unsigned(add_ln949_fu_338_p2))>= 0 and to_integer(unsigned(add_ln949_fu_338_p2))<=15) else "-";
     p_Result_18_fu_204_p3 <= tmp_V_3_fu_184_p6(15 downto 15);
     p_Result_19_fu_236_p3 <= (ap_const_lv16_FFFF & p_Result_s_fu_226_p4);
-    p_Result_20_fu_477_p5 <= (m_6_fu_439_p1(63 downto 32) & tmp_62_i_fu_470_p3 & m_6_fu_439_p1(22 downto 0));
+    p_Result_20_fu_477_p5 <= (m_6_fu_439_p1(63 downto 32) & tmp_70_i_fu_470_p3 & m_6_fu_439_p1(22 downto 0));
     
     p_Result_s_fu_226_p4_proc : process(tmp_V_4_fu_218_p3)
     variable vlo_cpy : STD_LOGIC_VECTOR(16+32 - 1 downto 0);
@@ -504,7 +504,7 @@ begin
     sub_ln964_fu_459_p2 <= std_logic_vector(unsigned(ap_const_lv8_6) - unsigned(trunc_ln943_reg_546));
     tmp_57_fu_324_p3 <= lsb_index_fu_265_p2(31 downto 31);
     tmp_58_fu_443_p3 <= m_2_fu_423_p2(25 downto 25);
-    tmp_62_i_fu_470_p3 <= (p_Result_18_reg_528 & add_ln964_fu_464_p2);
+    tmp_70_i_fu_470_p3 <= (p_Result_18_reg_528 & add_ln964_fu_464_p2);
     tmp_V_3_fu_184_p5 <= j3_0_i_reg_146(2 - 1 downto 0);
     tmp_V_4_fu_218_p3 <= 
         tmp_V_fu_212_p2 when (p_Result_18_fu_204_p3(0) = '1') else 

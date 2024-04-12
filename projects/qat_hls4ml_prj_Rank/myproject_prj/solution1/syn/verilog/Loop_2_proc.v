@@ -179,7 +179,7 @@ myproject_axi_mux_134_16_1_1 #(
     .din12_WIDTH( 16 ),
     .din13_WIDTH( 4 ),
     .dout_WIDTH( 16 ))
-myproject_axi_mux_134_16_1_1_U1187(
+myproject_axi_mux_134_16_1_1_U1185(
     .din0(tmp_data_V_0),
     .din1(tmp_data_V_1),
     .din2(tmp_data_V_2),

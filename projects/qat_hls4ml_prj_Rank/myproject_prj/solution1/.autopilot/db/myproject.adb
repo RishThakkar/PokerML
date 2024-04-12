@@ -5141,8 +5141,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>463536</mMinLatency>
-        <mMaxLatency>463537</mMaxLatency>
+        <mMinLatency>467632</mMinLatency>
+        <mMaxLatency>467633</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_350">
           <port_list class_id="24" tracking_level="0" version="0">
@@ -8959,11 +8959,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1609</second>
+              <second>1674</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1665</second>
+              <second>1672</second>
             </item>
           </second>
         </item>

@@ -350,7 +350,7 @@ begin
         d0 => data_V_data_3_V_dout,
         q0 => line_buffer_Array_V_2_0_3_q0);
 
-    myproject_axi_mux_42_32_1_1_U86 : component myproject_axi_mux_42_32_1_1
+    myproject_axi_mux_42_32_1_1_U84 : component myproject_axi_mux_42_32_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -368,7 +368,7 @@ begin
         din4 => tmp_31_fu_782_p5,
         dout => tmp_31_fu_782_p6);
 
-    myproject_axi_mux_42_32_1_1_U87 : component myproject_axi_mux_42_32_1_1
+    myproject_axi_mux_42_32_1_1_U85 : component myproject_axi_mux_42_32_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -386,7 +386,7 @@ begin
         din4 => tmp_32_fu_853_p5,
         dout => tmp_32_fu_853_p6);
 
-    myproject_axi_mux_42_32_1_1_U88 : component myproject_axi_mux_42_32_1_1
+    myproject_axi_mux_42_32_1_1_U86 : component myproject_axi_mux_42_32_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -404,7 +404,7 @@ begin
         din4 => tmp_33_fu_924_p5,
         dout => tmp_33_fu_924_p6);
 
-    myproject_axi_mux_42_32_1_1_U89 : component myproject_axi_mux_42_32_1_1
+    myproject_axi_mux_42_32_1_1_U87 : component myproject_axi_mux_42_32_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
