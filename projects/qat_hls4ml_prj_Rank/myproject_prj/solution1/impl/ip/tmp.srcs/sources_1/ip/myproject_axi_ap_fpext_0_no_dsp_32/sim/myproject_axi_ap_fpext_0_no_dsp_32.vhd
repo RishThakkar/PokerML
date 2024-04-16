@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:floating_point:7.1
--- IP Revision: 14, patched
+-- IP Revision: 16, patched, patched
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY floating_point_v7_1_14;
-USE floating_point_v7_1_14.floating_point_v7_1_14;
+LIBRARY floating_point_v7_1_16;
+USE floating_point_v7_1_16.floating_point_v7_1_16;
 
 ENTITY myproject_axi_ap_fpext_0_no_dsp_32 IS
   PORT (
@@ -68,7 +68,7 @@ END myproject_axi_ap_fpext_0_no_dsp_32;
 ARCHITECTURE myproject_axi_ap_fpext_0_no_dsp_32_arch OF myproject_axi_ap_fpext_0_no_dsp_32 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF myproject_axi_ap_fpext_0_no_dsp_32_arch: ARCHITECTURE IS "yes";
-  COMPONENT floating_point_v7_1_14 IS
+  COMPONENT floating_point_v7_1_16 IS
     GENERIC (
       C_XDEVICEFAMILY : STRING;
       C_HAS_ADD : INTEGER;
@@ -177,7 +177,7 @@ ARCHITECTURE myproject_axi_ap_fpext_0_no_dsp_32_arch OF myproject_axi_ap_fpext_0
       m_axis_result_tuser : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       m_axis_result_tlast : OUT STD_LOGIC
     );
-  END COMPONENT floating_point_v7_1_14;
+  END COMPONENT floating_point_v7_1_16;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF m_axis_result_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 M_AXIS_RESULT TDATA";
@@ -187,7 +187,7 @@ ARCHITECTURE myproject_axi_ap_fpext_0_no_dsp_32_arch OF myproject_axi_ap_fpext_0
   ATTRIBUTE X_INTERFACE_PARAMETER OF s_axis_a_tvalid: SIGNAL IS "XIL_INTERFACENAME S_AXIS_A, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_a_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_A TVALID";
 BEGIN
-  U0 : floating_point_v7_1_14
+  U0 : floating_point_v7_1_16
     GENERIC MAP (
       C_XDEVICEFAMILY => "zynquplus",
       C_HAS_ADD => 0,

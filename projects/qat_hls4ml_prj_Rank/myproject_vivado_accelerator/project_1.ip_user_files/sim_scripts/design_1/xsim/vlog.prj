@@ -1,0 +1,104 @@
+verilog xil_defaultlib --include "/opt/xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/2fcd/hdl" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/35de/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/sim/design_1_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/sim/bd_afc3_one_0.v" \
+
+sv xil_defaultlib --include "/opt/xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/2fcd/hdl" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/35de/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/sim/bd_afc3_arsw_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/sim/bd_afc3_rsw_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/sim/bd_afc3_awsw_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_5/sim/bd_afc3_wsw_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_6/sim/bd_afc3_bsw_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/sim/bd_afc3_s00mmu_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/sim/bd_afc3_s00tr_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_9/sim/bd_afc3_s00sic_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_10/sim/bd_afc3_s00a2s_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_11/sim/bd_afc3_sarn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_12/sim/bd_afc3_srn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_13/sim/bd_afc3_s01mmu_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_14/sim/bd_afc3_s01tr_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_15/sim/bd_afc3_s01sic_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_16/sim/bd_afc3_s01a2s_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_17/sim/bd_afc3_sawn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_18/sim/bd_afc3_swn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_19/sim/bd_afc3_sbn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_20/sim/bd_afc3_m00s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_21/sim/bd_afc3_m00arn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_22/sim/bd_afc3_m00rn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_23/sim/bd_afc3_m00awn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_24/sim/bd_afc3_m00wn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/sim/bd_afc3_m00bn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/sim/bd_afc3_m00e_0.sv" \
+
+verilog xil_defaultlib --include "/opt/xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/2fcd/hdl" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../project_1.gen/sources_1/bd/design_1/ipshared/35de/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/Block_myproject_axi_exit54_proc.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config2_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/compute_output_buffer_2d_array_array_ap_fixed_16_6_5_3_0_4u_config6_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/conv_2d_cl_array_ap_fixed_3u_array_ap_fixed_16_6_5_3_0_4u_config2_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_13u_config11_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_outidx3.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_mult_s_w2_V.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s_outidx.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/dense_resource_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config6_mult_s_w6_V.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/dense_wrapper_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config11_s_w11_V.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/fifo_w1_d2_A.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/fifo_w6_d841_A.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/fifo_w6_d3844_A.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/fifo_w16_d1_A.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/fifo_w16_d1_A_x.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/fifo_w16_d2_A.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/fifo_w16_d196_A.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/fifo_w16_d841_A.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/fifo_w16_d961_A.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/fifo_w16_d3844_A.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/fifo_w16_d4096_A.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/Loop_1_proc346.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/Loop_2_proc.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/myproject.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/myproject_axi_fpext_32ns_64_2_1.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/myproject_axi_mul_mul_6s_16s_21_1_1.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/myproject_axi_mul_mul_6s_16s_22_1_1.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/myproject_axi_mux_42_32_1_1.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/myproject_axi_mux_134_16_1_1.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/myproject_axi_mux_134_18_1_0.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/myproject_axi_mux_78410_16_1_1.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config5_s_line_bhbi.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_config9_s_line_btde.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/reduce_ap_fixed_18_8_0_0_0_4_Op_add_ap_fixed_18_8_0_0_0_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/reduce_ap_fixed_18_8_0_0_0_5_Op_add_ap_fixed_18_8_0_0_0_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/regslice_core.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config8_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/shift_line_buffer_array_ap_fixed_16_6_5_3_0_3u_config2_s_line_buffer_Array_V_bkb.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/shift_line_buffer_array_ap_fixed_16_6_5_3_0_4u_config6_s_line_buffer_Array_V_lbW.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/softmax_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s_exp_tabxdS.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/softmax_stable_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_s_invert_yd2.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/start_for_Block_myproject_axi_exit54_proc_U0.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/start_for_conv_2d_cl_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_4u_config6_U0.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/start_for_dense_array_ap_fixed_4u_array_ap_fixed_16_6_5_3_0_13u_config11_U0.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/start_for_myproject_U0.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/start_for_pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_configAem.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/start_for_pooling2d_cl_array_ap_ufixed_4u_array_ap_fixed_16_6_5_3_0_4u_configzec.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/start_for_relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config4_U0.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/start_for_relu_array_ap_fixed_4u_array_ap_ufixed_6_0_4_0_0_4u_relu_config8_U0.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/start_for_softmax_array_array_ap_fixed_16_6_5_3_0_13u_softmax_config12_U0.v" \
+"../../../../project_1.gen/sources_1/bd/design_1/ipshared/5485/hdl/verilog/myproject_axi.v" \
+"../../../bd/design_1/ip/design_1_auto_ds_0/sim/design_1_auto_ds_0.v" \
+"../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

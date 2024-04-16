@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Apr 16 21:11:41 2024
+# Process ID: 4682
+# Current directory: /home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank
+# Command line: vivado -source kria_hls4ml_ip_design.tcl
+# Log file: /home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/vivado.log
+# Journal file: /home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/vivado.jou
+# Running On: socp06-ubuntu, OS: Linux, CPU Frequency: 2199.998 MHz, CPU Physical cores: 4, Host memory: 33668 MB
+#-----------------------------------------------------------
+start_gui
+source kria_hls4ml_ip_design.tcl
+update_compile_order -fileset sources_1
+open_bd_design {/home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/myproject_vivado_accelerator/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0
+endgroup

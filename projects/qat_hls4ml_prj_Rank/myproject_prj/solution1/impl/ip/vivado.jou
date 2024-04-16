@@ -1,12 +1,15 @@
 #-----------------------------------------------------------
-# Vivado v2019.2 (64-bit)
-# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
-# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu Apr 11 15:38:33 2024
-# Process ID: 22235
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Apr 16 20:46:34 2024
+# Process ID: 20397
 # Current directory: /home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/myproject_prj/solution1/impl/ip
-# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Command line: vivado -source kria_hls4ml_ip_design.tcl
 # Log file: /home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/myproject_prj/solution1/impl/ip/vivado.log
 # Journal file: /home/esp2024/rht2122/PokerML/PokerML/projects/qat_hls4ml_prj_Rank/myproject_prj/solution1/impl/ip/vivado.jou
+# Running On: socp06-ubuntu, OS: Linux, CPU Frequency: 2199.998 MHz, CPU Physical cores: 4, Host memory: 33668 MB
 #-----------------------------------------------------------
-source run_ippack.tcl -notrace
+start_gui
+source kria_hls4ml_ip_design.tcl

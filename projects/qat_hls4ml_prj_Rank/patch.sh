@@ -18,11 +18,11 @@ TOP_MODULE=myproject_axi
 # find /tools/Xilinx/Vivado/2022.1 -name  floating_point_v*
 # #####
 
-FLT_REV_OLD=9
-FLT_REV_NEW=14
+FLT_REV_OLD=14
+FLT_REV_NEW=16
 
-FLT_VER_OLD=7_1_9
-FLT_VER_NEW=7_1_14
+FLT_VER_OLD=7_1_14
+FLT_VER_NEW=7_1_16
 #------------------------------------------------------------------------
 FILES=`find . -name $TOP_MODULE\_ap_fpext_*_no_dsp_32.vhd`
 for f in $FILES; do
